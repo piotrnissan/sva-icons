@@ -1,0 +1,19 @@
+import React from 'react';
+
+const Parking = ({ size = 24, color = "currentColor", ...props }) => {
+  return (
+    <svg 
+      width={size} 
+      height={size} 
+      viewBox="0 0 24 24" 
+      fill={color}
+      {...props}
+    >
+      <path d="M22 1H2C1.448 1.002 1.002 1.448 1 2V22C1.002 22.552 1.448 22.998 2 23H22C22.552 22.998 22.998 22.552 23 22V2C22.998 1.448 22.552 1.002 22 1ZM12.62 15.13H9.42V19H6.07V4.96H12.6C15.82 4.96 18.75 5.97 18.75 10.03C18.75 13.94 15.38 15.13 12.62 15.13ZM15.25 9.95C15.25 11.96 13.96 12.3 12.32 12.3H9.42V7.79H12.25C13.98 7.79 15.25 8.2 15.25 9.95Z"/>
+    </svg>
+  );
+};
+
+Parking.displayName = 'Parking';
+
+export default Parking;

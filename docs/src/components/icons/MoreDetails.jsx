@@ -1,0 +1,19 @@
+import React from 'react';
+
+const MoreDetails = ({ size = 24, color = "currentColor", ...props }) => {
+  return (
+    <svg 
+      width={size} 
+      height={size} 
+      viewBox="0 0 24 24" 
+      fill={color}
+      {...props}
+    >
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M20 19.5V12H22V20C22 21.105 21.105 22 20 22H4C2.895 22 2 21.105 2 20V4C2 2.895 2.896 2 4 2H12V4H4.5C4.224 4 4 4.224 4 4.5V19.5C4 19.776 4.224 20 4.5 20H19.5C19.776 20 20 19.776 20 19.5ZM18.5861 4H15.0001C14.4481 4 14.0001 3.552 14.0001 3C14.0001 2.448 14.4481 2 15.0001 2H22.0001V9C22.0001 9.552 21.5521 10 21.0001 10C20.4481 10 20.0001 9.552 20.0001 9V5.414L14.8281 10.586L13.4141 9.172L18.5861 4Z"/>
+    </svg>
+  );
+};
+
+MoreDetails.displayName = 'MoreDetails';
+
+export default MoreDetails;

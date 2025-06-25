@@ -1,0 +1,19 @@
+import React from 'react';
+
+const Usb = ({ size = 24, color = "currentColor", ...props }) => {
+  return (
+    <svg 
+      width={size} 
+      height={size} 
+      viewBox="0 0 24 24" 
+      fill={color}
+      {...props}
+    >
+      <path d="M12 1C5.925 1 1 5.925 1 12C1 17.738 5.394 22.444 11 22.95V18H10C9.45 18 9 17.55 9 17V10C9 9.45 9.45 9 10 9H14C14.55 9 15 9.45 15 10V17C15 17.55 14.55 18 14 18H13V22.95C18.606 22.444 23 17.738 23 12C23 5.925 18.075 1 12 1ZM14 8H10V5H14V8Z"/>
+    </svg>
+  );
+};
+
+Usb.displayName = 'Usb';
+
+export default Usb;

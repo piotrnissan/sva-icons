@@ -1,2799 +1,3969 @@
-[
-  {
-    "name": "abs-alert",
-    "filename": "abs-alert.svg",
-    "tags": [
-      "abs",
-      "alert"
-    ]
-  },
-  {
-    "name": "accelerate",
-    "filename": "accelerate.svg",
-    "tags": [
-      "accelerate"
-    ]
-  },
-  {
-    "name": "accessories",
-    "filename": "accessories.svg",
-    "tags": [
-      "accessories"
-    ]
-  },
-  {
-    "name": "aero_dynamic_body",
-    "filename": "aero_dynamic_body.svg",
-    "tags": [
-      "aero",
-      "dynamic",
-      "body"
-    ]
-  },
-  {
-    "name": "after_sales",
-    "filename": "after_sales.svg",
-    "tags": [
-      "after",
-      "sales"
-    ]
-  },
-  {
-    "name": "airbag-status",
-    "filename": "airbag-status.svg",
-    "tags": [
-      "airbag",
-      "status"
-    ]
-  },
-  {
-    "name": "airbag",
-    "filename": "airbag.svg",
-    "tags": [
-      "airbag"
-    ]
-  },
-  {
-    "name": "alert",
-    "filename": "alert.svg",
-    "tags": [
-      "alert"
-    ]
-  },
-  {
-    "name": "alert_filled",
-    "filename": "alert_filled.svg",
-    "tags": [
-      "alert",
-      "filled"
-    ]
-  },
-  {
-    "name": "alexa",
-    "filename": "alexa.svg",
-    "tags": [
-      "alexa"
-    ]
-  },
-  {
-    "name": "ambient_lighting",
-    "filename": "ambient_lighting.svg",
-    "tags": [
-      "ambient",
-      "lighting"
-    ]
-  },
-  {
-    "name": "android-auto",
-    "filename": "android-auto.svg",
-    "tags": [
-      "android",
-      "auto"
-    ]
-  },
-  {
-    "name": "android_compatibility",
-    "filename": "android_compatibility.svg",
-    "tags": [
-      "android",
-      "compatibility"
-    ]
-  },
-  {
-    "name": "apple-carplay",
-    "filename": "apple-carplay.svg",
-    "tags": [
-      "apple",
-      "carplay"
-    ]
-  },
-  {
-    "name": "area-alert",
-    "filename": "area-alert.svg",
-    "tags": [
-      "area",
-      "alert"
-    ]
-  },
-  {
-    "name": "area",
-    "filename": "area.svg",
-    "tags": [
-      "area"
-    ]
-  },
-  {
-    "name": "arrow_down",
-    "filename": "arrow_down.svg",
-    "tags": [
-      "arrow",
-      "down"
-    ]
-  },
-  {
-    "name": "arrow_left",
-    "filename": "arrow_left.svg",
-    "tags": [
-      "arrow",
-      "left"
-    ]
-  },
-  {
-    "name": "arrow_right",
-    "filename": "arrow_right.svg",
-    "tags": [
-      "arrow",
-      "right"
-    ]
-  },
-  {
-    "name": "arrow_up",
-    "filename": "arrow_up.svg",
-    "tags": [
-      "arrow",
-      "up"
-    ]
-  },
-  {
-    "name": "assistance",
-    "filename": "assistance.svg",
-    "tags": [
-      "assistance"
-    ]
-  },
-  {
-    "name": "assisted_steering",
-    "filename": "assisted_steering.svg",
-    "tags": [
-      "assisted",
-      "steering"
-    ]
-  },
-  {
-    "name": "automatic",
-    "filename": "automatic.svg",
-    "tags": [
-      "automatic"
-    ]
-  },
-  {
-    "name": "autonomous-driving",
-    "filename": "autonomous-driving.svg",
-    "tags": [
-      "autonomous",
-      "driving"
-    ]
-  },
-  {
-    "name": "aux (2)",
-    "filename": "aux (2).svg",
-    "tags": [
-      "aux (2)"
-    ]
-  },
-  {
-    "name": "back",
-    "filename": "back.svg",
-    "tags": [
-      "back"
-    ]
-  },
-  {
-    "name": "battery",
-    "filename": "battery.svg",
-    "tags": [
-      "battery"
-    ]
-  },
-  {
-    "name": "battery_leasing",
-    "filename": "battery_leasing.svg",
-    "tags": [
-      "battery",
-      "leasing"
-    ]
-  },
-  {
-    "name": "battery_service",
-    "filename": "battery_service.svg",
-    "tags": [
-      "battery",
-      "service"
-    ]
-  },
-  {
-    "name": "bed_channel_system",
-    "filename": "bed_channel_system.svg",
-    "tags": [
-      "bed",
-      "channel",
-      "system"
-    ]
-  },
-  {
-    "name": "best_seller",
-    "filename": "best_seller.svg",
-    "tags": [
-      "best",
-      "seller"
-    ]
-  },
-  {
-    "name": "bluetooth",
-    "filename": "bluetooth.svg",
-    "tags": [
-      "bluetooth"
-    ]
-  },
-  {
-    "name": "body-repair",
-    "filename": "body-repair.svg",
-    "tags": [
-      "body",
-      "repair"
-    ]
-  },
-  {
-    "name": "body_type",
-    "filename": "body_type.svg",
-    "tags": [
-      "body",
-      "type"
-    ]
-  },
-  {
-    "name": "book_service",
-    "filename": "book_service.svg",
-    "tags": [
-      "book",
-      "service"
-    ]
-  },
-  {
-    "name": "box",
-    "filename": "box.svg",
-    "tags": [
-      "box"
-    ]
-  },
-  {
-    "name": "brake-alert",
-    "filename": "brake-alert.svg",
-    "tags": [
-      "brake",
-      "alert"
-    ]
-  },
-  {
-    "name": "brake-fluid",
-    "filename": "brake-fluid.svg",
-    "tags": [
-      "brake",
-      "fluid"
-    ]
-  },
-  {
-    "name": "brake",
-    "filename": "brake.svg",
-    "tags": [
-      "brake"
-    ]
-  },
-  {
-    "name": "buy-at-home",
-    "filename": "buy-at-home.svg",
-    "tags": [
-      "buy",
-      "at",
-      "home"
-    ]
-  },
-  {
-    "name": "calculator",
-    "filename": "calculator.svg",
-    "tags": [
-      "calculator"
-    ]
-  },
-  {
-    "name": "calendar",
-    "filename": "calendar.svg",
-    "tags": [
-      "calendar"
-    ]
-  },
-  {
-    "name": "camera",
-    "filename": "camera.svg",
-    "tags": [
-      "camera"
-    ]
-  },
-  {
-    "name": "campaigns-filled",
-    "filename": "campaigns-filled.svg",
-    "tags": [
-      "campaigns",
-      "filled"
-    ]
-  },
-  {
-    "name": "campaigns-outline",
-    "filename": "campaigns-outline.svg",
-    "tags": [
-      "campaigns",
-      "outline"
-    ]
-  },
-  {
-    "name": "cant-connect",
-    "filename": "cant-connect.svg",
-    "tags": [
-      "cant",
-      "connect"
-    ]
-  },
-  {
-    "name": "car-locator",
-    "filename": "car-locator.svg",
-    "tags": [
-      "car",
-      "locator"
-    ]
-  },
-  {
-    "name": "car",
-    "filename": "car.svg",
-    "tags": [
-      "car"
-    ]
-  },
-  {
-    "name": "car_location",
-    "filename": "car_location.svg",
-    "tags": [
-      "car",
-      "location"
-    ]
-  },
-  {
-    "name": "car_wings",
-    "filename": "car_wings.svg",
-    "tags": [
-      "car",
-      "wings"
-    ]
-  },
-  {
-    "name": "change-driver",
-    "filename": "change-driver.svg",
-    "tags": [
-      "change",
-      "driver"
-    ]
-  },
-  {
-    "name": "charging",
-    "filename": "charging.svg",
-    "tags": [
-      "charging"
-    ]
-  },
-  {
-    "name": "charging_cost",
-    "filename": "charging_cost.svg",
-    "tags": [
-      "charging",
-      "cost"
-    ]
-  },
-  {
-    "name": "check-in",
-    "filename": "check-in.svg",
-    "tags": [
-      "check",
-      "in"
-    ]
-  },
-  {
-    "name": "check-out",
-    "filename": "check-out.svg",
-    "tags": [
-      "check",
-      "out"
-    ]
-  },
-  {
-    "name": "checked_box",
-    "filename": "checked_box.svg",
-    "tags": [
-      "checked",
-      "box"
-    ]
-  },
-  {
-    "name": "choice-light",
-    "filename": "choice-light.svg",
-    "tags": [
-      "choice",
-      "light"
-    ]
-  },
-  {
-    "name": "choice",
-    "filename": "choice.svg",
-    "tags": [
-      "choice"
-    ]
-  },
-  {
-    "name": "clear",
-    "filename": "clear.svg",
-    "tags": [
-      "clear"
-    ]
-  },
-  {
-    "name": "climate_control",
-    "filename": "climate_control.svg",
-    "tags": [
-      "climate",
-      "control"
-    ]
-  },
-  {
-    "name": "clock",
-    "filename": "clock.svg",
-    "tags": [
-      "clock"
-    ]
-  },
-  {
-    "name": "co2",
-    "filename": "co2.svg",
-    "tags": [
-      "co2"
-    ]
-  },
-  {
-    "name": "colour",
-    "filename": "colour.svg",
-    "tags": [
-      "colour"
-    ]
-  },
-  {
-    "name": "commerce",
-    "filename": "commerce.svg",
-    "tags": [
-      "commerce"
-    ]
-  },
-  {
-    "name": "communication-preference",
-    "filename": "communication-preference.svg",
-    "tags": [
+{
+  "metadata": {
+    "version": "1.0.0",
+    "generated": "2025-06-25T02:59:48.340Z",
+    "totalIcons": 358,
+    "categories": [
+      "actions",
+      "automotive",
       "communication",
-      "preference"
-    ]
-  },
-  {
-    "name": "compare",
-    "filename": "compare.svg",
-    "tags": [
-      "compare"
-    ]
-  },
-  {
-    "name": "configure",
-    "filename": "configure.svg",
-    "tags": [
-      "configure"
-    ]
-  },
-  {
-    "name": "contact_email",
-    "filename": "contact_email.svg",
-    "tags": [
-      "contact",
-      "email"
-    ]
-  },
-  {
-    "name": "contact_fbmessage",
-    "filename": "contact_fbmessage.svg",
-    "tags": [
-      "contact",
-      "fbmessage"
-    ]
-  },
-  {
-    "name": "contact_linkedin",
-    "filename": "contact_linkedin.svg",
-    "tags": [
-      "contact",
-      "linkedin"
-    ]
-  },
-  {
-    "name": "contact_phone",
-    "filename": "contact_phone.svg",
-    "tags": [
-      "contact",
-      "phone"
-    ]
-  },
-  {
-    "name": "contact_spotify",
-    "filename": "contact_spotify.svg",
-    "tags": [
-      "contact",
-      "spotify"
-    ]
-  },
-  {
-    "name": "contact_tiktok",
-    "filename": "contact_tiktok.svg",
-    "tags": [
-      "contact",
-      "tiktok"
-    ]
-  },
-  {
-    "name": "contact_whatsapp",
-    "filename": "contact_whatsapp.svg",
-    "tags": [
-      "contact",
-      "whatsapp"
-    ]
-  },
-  {
-    "name": "cookies",
-    "filename": "cookies.svg",
-    "tags": [
-      "cookies"
-    ]
-  },
-  {
-    "name": "cross",
-    "filename": "cross.svg",
-    "tags": [
-      "cross"
-    ]
-  },
-  {
-    "name": "crossing-boutique",
-    "filename": "crossing-boutique.svg",
-    "tags": [
-      "crossing",
-      "boutique"
-    ]
-  },
-  {
-    "name": "crossing-cafe",
-    "filename": "crossing-cafe.svg",
-    "tags": [
-      "crossing",
-      "cafe"
-    ]
-  },
-  {
-    "name": "cubic_volume",
-    "filename": "cubic_volume.svg",
-    "tags": [
-      "cubic",
-      "volume"
-    ]
-  },
-  {
-    "name": "curfew-alert",
-    "filename": "curfew-alert.svg",
-    "tags": [
-      "curfew",
-      "alert"
-    ]
-  },
-  {
-    "name": "cylinder",
-    "filename": "cylinder.svg",
-    "tags": [
-      "cylinder"
-    ]
-  },
-  {
-    "name": "dealer-sales-staff",
-    "filename": "dealer-sales-staff.svg",
-    "tags": [
-      "dealer",
-      "sales",
-      "staff"
-    ]
-  },
-  {
-    "name": "dealer-view",
-    "filename": "dealer-view.svg",
-    "tags": [
-      "dealer",
-      "view"
-    ]
-  },
-  {
-    "name": "dealership",
-    "filename": "dealership.svg",
-    "tags": [
-      "dealership"
-    ]
-  },
-  {
-    "name": "dealer_review",
-    "filename": "dealer_review.svg",
-    "tags": [
-      "dealer",
-      "review"
-    ]
-  },
-  {
-    "name": "delivery-follow-up",
-    "filename": "delivery-follow-up.svg",
-    "tags": [
-      "delivery",
-      "follow",
-      "up"
-    ]
-  },
-  {
-    "name": "delivery",
-    "filename": "delivery.svg",
-    "tags": [
-      "delivery"
-    ]
-  },
-  {
-    "name": "desktop",
-    "filename": "desktop.svg",
-    "tags": [
-      "desktop"
-    ]
-  },
-  {
-    "name": "destination-search",
-    "filename": "destination-search.svg",
-    "tags": [
-      "destination",
-      "search"
-    ]
-  },
-  {
-    "name": "devices",
-    "filename": "devices.svg",
-    "tags": [
-      "devices"
-    ]
-  },
-  {
-    "name": "device_compatibility",
-    "filename": "device_compatibility.svg",
-    "tags": [
-      "device",
-      "compatibility"
-    ]
-  },
-  {
-    "name": "device_settings",
-    "filename": "device_settings.svg",
-    "tags": [
-      "device",
-      "settings"
-    ]
-  },
-  {
-    "name": "dimensions",
-    "filename": "dimensions.svg",
-    "tags": [
-      "dimensions"
-    ]
-  },
-  {
-    "name": "direction-walking",
-    "filename": "direction-walking.svg",
-    "tags": [
-      "direction",
-      "walking"
-    ]
-  },
-  {
-    "name": "directions",
-    "filename": "directions.svg",
-    "tags": [
-      "directions"
-    ]
-  },
-  {
-    "name": "discover-at-home",
-    "filename": "discover-at-home.svg",
-    "tags": [
-      "discover",
-      "at",
-      "home"
-    ]
-  },
-  {
-    "name": "dislike-filled",
-    "filename": "dislike-filled.svg",
-    "tags": [
-      "dislike",
-      "filled"
-    ]
-  },
-  {
-    "name": "dislike",
-    "filename": "dislike.svg",
-    "tags": [
-      "dislike"
-    ]
-  },
-  {
-    "name": "door-to-door-navigation",
-    "filename": "door-to-door-navigation.svg",
-    "tags": [
-      "door",
-      "to",
-      "door",
-      "navigation"
-    ]
-  },
-  {
-    "name": "doors",
-    "filename": "doors.svg",
-    "tags": [
-      "doors"
-    ]
-  },
-  {
-    "name": "download-document",
-    "filename": "download-document.svg",
-    "tags": [
-      "download",
-      "document"
-    ]
-  },
-  {
-    "name": "download_brochure",
-    "filename": "download_brochure.svg",
-    "tags": [
-      "download",
-      "brochure"
-    ]
-  },
-  {
-    "name": "drivers-profiles",
-    "filename": "drivers-profiles.svg",
-    "tags": [
-      "drivers",
-      "profiles"
-    ]
-  },
-  {
-    "name": "drive_train_3wd",
-    "filename": "drive_train_3wd.svg",
-    "tags": [
-      "drive",
-      "train",
-      "3wd"
-    ]
-  },
-  {
-    "name": "drive_train_4WD",
-    "filename": "drive_train_4WD.svg",
-    "tags": [
-      "drive",
-      "train",
-      "4WD"
-    ]
-  },
-  {
-    "name": "drive_train_awd",
-    "filename": "drive_train_awd.svg",
-    "tags": [
-      "drive",
-      "train",
-      "awd"
-    ]
-  },
-  {
-    "name": "driving-history",
-    "filename": "driving-history.svg",
-    "tags": [
-      "driving",
-      "history"
-    ]
-  },
-  {
-    "name": "driving-restriction",
-    "filename": "driving-restriction.svg",
-    "tags": [
-      "driving",
-      "restriction"
-    ]
-  },
-  {
-    "name": "driving_log_history",
-    "filename": "driving_log_history.svg",
-    "tags": [
-      "driving",
-      "log",
-      "history"
-    ]
-  },
-  {
-    "name": "dual_climate_control",
-    "filename": "dual_climate_control.svg",
-    "tags": [
-      "dual",
-      "climate",
-      "control"
-    ]
-  },
-  {
-    "name": "edit",
-    "filename": "edit.svg",
-    "tags": [
-      "edit"
-    ]
-  },
-  {
-    "name": "efficiency_class",
-    "filename": "efficiency_class.svg",
-    "tags": [
-      "efficiency",
-      "class"
-    ]
-  },
-  {
-    "name": "elevator",
-    "filename": "elevator.svg",
-    "tags": [
-      "elevator"
-    ]
-  },
-  {
-    "name": "emission",
-    "filename": "emission.svg",
-    "tags": [
-      "emission"
-    ]
-  },
-  {
-    "name": "engine-oil",
-    "filename": "engine-oil.svg",
-    "tags": [
-      "engine",
-      "oil"
-    ]
-  },
-  {
-    "name": "engine-start-stop",
-    "filename": "engine-start-stop.svg",
-    "tags": [
-      "engine",
-      "start",
-      "stop"
-    ]
-  },
-  {
-    "name": "engine-stop",
-    "filename": "engine-stop.svg",
-    "tags": [
-      "engine",
-      "stop"
-    ]
-  },
-  {
-    "name": "engine_power",
-    "filename": "engine_power.svg",
-    "tags": [
-      "engine",
-      "power"
-    ]
-  },
-  {
-    "name": "entertainment",
-    "filename": "entertainment.svg",
-    "tags": [
-      "entertainment"
-    ]
-  },
-  {
-    "name": "epedal_driving",
-    "filename": "epedal_driving.svg",
-    "tags": [
-      "epedal",
-      "driving"
-    ]
-  },
-  {
-    "name": "error-installing-update",
-    "filename": "error-installing-update.svg",
-    "tags": [
-      "error",
-      "installing",
-      "update"
-    ]
-  },
-  {
-    "name": "escalator-down",
-    "filename": "escalator-down.svg",
-    "tags": [
-      "escalator",
-      "down"
-    ]
-  },
-  {
-    "name": "escalator-up",
-    "filename": "escalator-up.svg",
-    "tags": [
-      "escalator",
-      "up"
-    ]
-  },
-  {
-    "name": "exclamation",
-    "filename": "exclamation.svg",
-    "tags": [
-      "exclamation"
-    ]
-  },
-  {
-    "name": "explore",
-    "filename": "explore.svg",
-    "tags": [
-      "explore"
-    ]
-  },
-  {
-    "name": "export-document",
-    "filename": "export-document.svg",
-    "tags": [
-      "export",
-      "document"
-    ]
-  },
-  {
-    "name": "express_booking",
-    "filename": "express_booking.svg",
-    "tags": [
-      "express",
-      "booking"
-    ]
-  },
-  {
-    "name": "extended-test-drive",
-    "filename": "extended-test-drive.svg",
-    "tags": [
-      "extended",
-      "test",
-      "drive"
-    ]
-  },
-  {
-    "name": "extended_range",
-    "filename": "extended_range.svg",
-    "tags": [
-      "extended",
-      "range"
-    ]
-  },
-  {
-    "name": "eyes-on-the-road",
-    "filename": "eyes-on-the-road.svg",
-    "tags": [
-      "eyes",
-      "on",
-      "the",
-      "road"
-    ]
-  },
-  {
-    "name": "face-happy",
-    "filename": "face-happy.svg",
-    "tags": [
-      "face",
-      "happy"
-    ]
-  },
-  {
-    "name": "face-neutral",
-    "filename": "face-neutral.svg",
-    "tags": [
-      "face",
-      "neutral"
-    ]
-  },
-  {
-    "name": "face-unhappy",
-    "filename": "face-unhappy.svg",
-    "tags": [
-      "face",
-      "unhappy"
-    ]
-  },
-  {
-    "name": "faqs",
-    "filename": "faqs.svg",
-    "tags": [
-      "faqs"
-    ]
-  },
-  {
-    "name": "feedback_star",
-    "filename": "feedback_star.svg",
-    "tags": [
-      "feedback",
-      "star"
-    ]
-  },
-  {
-    "name": "feedback_star_empty",
-    "filename": "feedback_star_empty.svg",
-    "tags": [
-      "feedback",
-      "star",
-      "empty"
-    ]
-  },
-  {
-    "name": "feedback_star_half filled",
-    "filename": "feedback_star_half filled.svg",
-    "tags": [
-      "feedback",
-      "star",
-      "half filled"
-    ]
-  },
-  {
-    "name": "filter",
-    "filename": "filter.svg",
-    "tags": [
-      "filter"
-    ]
-  },
-  {
-    "name": "find_a_dealer-1",
-    "filename": "find_a_dealer-1.svg",
-    "tags": [
-      "find",
-      "a",
-      "dealer",
-      "1"
-    ]
-  },
-  {
-    "name": "find_a_dealer",
-    "filename": "find_a_dealer.svg",
-    "tags": [
-      "find",
-      "a",
-      "dealer"
-    ]
-  },
-  {
-    "name": "fingerprint",
-    "filename": "fingerprint.svg",
-    "tags": [
-      "fingerprint"
-    ]
-  },
-  {
-    "name": "fire-extenguisher",
-    "filename": "fire-extenguisher.svg",
-    "tags": [
-      "fire",
-      "extenguisher"
-    ]
-  },
-  {
-    "name": "fire",
-    "filename": "fire.svg",
-    "tags": [
-      "fire"
-    ]
-  },
-  {
-    "name": "floor-guide",
-    "filename": "floor-guide.svg",
-    "tags": [
-      "floor",
-      "guide"
-    ]
-  },
-  {
-    "name": "forward",
-    "filename": "forward.svg",
-    "tags": [
-      "forward"
-    ]
-  },
-  {
-    "name": "fuel-prices-dollar",
-    "filename": "fuel-prices-dollar.svg",
-    "tags": [
-      "fuel",
-      "prices",
-      "dollar"
-    ]
-  },
-  {
-    "name": "fuel-prices-gbp",
-    "filename": "fuel-prices-gbp.svg",
-    "tags": [
-      "fuel",
-      "prices",
-      "gbp"
-    ]
-  },
-  {
-    "name": "fuel-prices-jpy",
-    "filename": "fuel-prices-jpy.svg",
-    "tags": [
-      "fuel",
-      "prices",
-      "jpy"
-    ]
-  },
-  {
-    "name": "fuel_type",
-    "filename": "fuel_type.svg",
-    "tags": [
-      "fuel",
-      "type"
-    ]
-  },
-  {
-    "name": "fuel_type_ev",
-    "filename": "fuel_type_ev.svg",
-    "tags": [
-      "fuel",
-      "type",
-      "ev"
-    ]
-  },
-  {
-    "name": "fully_boxed_frame",
-    "filename": "fully_boxed_frame.svg",
-    "tags": [
-      "fully",
-      "boxed",
-      "frame"
-    ]
-  },
-  {
-    "name": "full_screen",
-    "filename": "full_screen.svg",
-    "tags": [
-      "full",
-      "screen"
-    ]
-  },
-  {
-    "name": "funnel",
-    "filename": "funnel.svg",
-    "tags": [
-      "funnel"
-    ]
-  },
-  {
-    "name": "gallery",
-    "filename": "gallery.svg",
-    "tags": [
-      "gallery"
-    ]
-  },
-  {
-    "name": "geolocator",
-    "filename": "geolocator.svg",
-    "tags": [
-      "geolocator"
-    ]
-  },
-  {
-    "name": "globe",
-    "filename": "globe.svg",
-    "tags": [
-      "globe"
-    ]
-  },
-  {
-    "name": "google-assistant",
-    "filename": "google-assistant.svg",
-    "tags": [
-      "google",
-      "assistant"
-    ]
-  },
-  {
-    "name": "grid",
-    "filename": "grid.svg",
-    "tags": [
-      "grid"
-    ]
-  },
-  {
-    "name": "gross_weight",
-    "filename": "gross_weight.svg",
-    "tags": [
-      "gross",
-      "weight"
-    ]
-  },
-  {
-    "name": "guest-driver",
-    "filename": "guest-driver.svg",
-    "tags": [
-      "guest",
-      "driver"
-    ]
-  },
-  {
-    "name": "hands-off-wheel",
-    "filename": "hands-off-wheel.svg",
-    "tags": [
-      "hands",
-      "off",
-      "wheel"
-    ]
-  },
-  {
-    "name": "hd-radio-technology",
-    "filename": "hd-radio-technology.svg",
-    "tags": [
-      "hd",
-      "radio",
-      "technology"
-    ]
-  },
-  {
-    "name": "heated_steering_wheel",
-    "filename": "heated_steering_wheel.svg",
-    "tags": [
-      "heated",
-      "steering",
-      "wheel"
-    ]
-  },
-  {
-    "name": "height",
-    "filename": "height.svg",
-    "tags": [
-      "height"
-    ]
-  },
-  {
-    "name": "home_charging",
-    "filename": "home_charging.svg",
-    "tags": [
-      "home",
-      "charging"
-    ]
-  },
-  {
-    "name": "hood-open",
-    "filename": "hood-open.svg",
-    "tags": [
-      "hood",
-      "open"
-    ]
-  },
-  {
-    "name": "horn",
-    "filename": "horn.svg",
-    "tags": [
-      "horn"
-    ]
-  },
-  {
-    "name": "horsepower-boost",
-    "filename": "horsepower-boost.svg",
-    "tags": [
-      "horsepower",
-      "boost"
-    ]
-  },
-  {
-    "name": "hot_seat",
-    "filename": "hot_seat.svg",
-    "tags": [
-      "hot",
-      "seat"
-    ]
-  },
-  {
-    "name": "info",
-    "filename": "info.svg",
-    "tags": [
-      "info"
-    ]
-  },
-  {
-    "name": "info2-filled",
-    "filename": "info2-filled.svg",
-    "tags": [
-      "info2",
-      "filled"
-    ]
-  },
-  {
-    "name": "info2",
-    "filename": "info2.svg",
-    "tags": [
-      "info2"
-    ]
-  },
-  {
-    "name": "info_filled",
-    "filename": "info_filled.svg",
-    "tags": [
-      "info",
-      "filled"
-    ]
-  },
-  {
-    "name": "install-update",
-    "filename": "install-update.svg",
-    "tags": [
-      "install",
-      "update"
-    ]
-  },
-  {
-    "name": "installation-completed",
-    "filename": "installation-completed.svg",
-    "tags": [
-      "installation",
-      "completed"
-    ]
-  },
-  {
-    "name": "instant_acceleration",
-    "filename": "instant_acceleration.svg",
-    "tags": [
-      "instant",
-      "acceleration"
-    ]
-  },
-  {
-    "name": "intelligent_connectedcar",
-    "filename": "intelligent_connectedcar.svg",
-    "tags": [
-      "intelligent",
-      "connectedcar"
-    ]
-  },
-  {
-    "name": "intelligent_key",
-    "filename": "intelligent_key.svg",
-    "tags": [
-      "intelligent",
-      "key"
-    ]
-  },
-  {
-    "name": "interior-vehicle-camera",
-    "filename": "interior-vehicle-camera.svg",
-    "tags": [
-      "interior",
-      "vehicle",
-      "camera"
-    ]
-  },
-  {
-    "name": "interior_view",
-    "filename": "interior_view.svg",
-    "tags": [
-      "interior",
-      "view"
-    ]
-  },
-  {
-    "name": "inventory",
-    "filename": "inventory.svg",
-    "tags": [
-      "inventory"
-    ]
-  },
-  {
-    "name": "invisible",
-    "filename": "invisible.svg",
-    "tags": [
-      "invisible"
-    ]
-  },
-  {
-    "name": "keep_me_informed",
-    "filename": "keep_me_informed.svg",
-    "tags": [
-      "keep",
-      "me",
-      "informed"
-    ]
-  },
-  {
-    "name": "language",
-    "filename": "language.svg",
-    "tags": [
-      "language"
-    ]
-  },
-  {
-    "name": "length",
-    "filename": "length.svg",
-    "tags": [
-      "length"
-    ]
-  },
-  {
-    "name": "license-plate",
-    "filename": "license-plate.svg",
-    "tags": [
-      "license",
-      "plate"
-    ]
-  },
-  {
-    "name": "lights",
-    "filename": "lights.svg",
-    "tags": [
-      "lights"
-    ]
-  },
-  {
-    "name": "lights_and_horn",
-    "filename": "lights_and_horn.svg",
-    "tags": [
-      "lights",
-      "and",
-      "horn"
-    ]
-  },
-  {
-    "name": "like-filled",
-    "filename": "like-filled.svg",
-    "tags": [
-      "like",
-      "filled"
-    ]
-  },
-  {
-    "name": "like",
-    "filename": "like.svg",
-    "tags": [
-      "like"
-    ]
-  },
-  {
-    "name": "link",
-    "filename": "link.svg",
-    "tags": [
-      "link"
-    ]
-  },
-  {
-    "name": "list-bullet",
-    "filename": "list-bullet.svg",
-    "tags": [
-      "list",
-      "bullet"
-    ]
-  },
-  {
-    "name": "live-traffic-information",
-    "filename": "live-traffic-information.svg",
-    "tags": [
-      "live",
-      "traffic",
-      "information"
-    ]
-  },
-  {
-    "name": "live_chat",
-    "filename": "live_chat.svg",
-    "tags": [
-      "live",
-      "chat"
-    ]
-  },
-  {
-    "name": "lock",
-    "filename": "lock.svg",
-    "tags": [
-      "lock"
-    ]
-  },
-  {
-    "name": "logout",
-    "filename": "logout.svg",
-    "tags": [
-      "logout"
-    ]
-  },
-  {
-    "name": "low-tyre-pressure",
-    "filename": "low-tyre-pressure.svg",
-    "tags": [
-      "low",
-      "tyre",
-      "pressure"
-    ]
-  },
-  {
-    "name": "mail-checked",
-    "filename": "mail-checked.svg",
-    "tags": [
-      "mail",
-      "checked"
-    ]
-  },
-  {
-    "name": "maintain_speed",
-    "filename": "maintain_speed.svg",
-    "tags": [
-      "maintain",
-      "speed"
-    ]
-  },
-  {
-    "name": "manual",
-    "filename": "manual.svg",
-    "tags": [
-      "manual"
-    ]
-  },
-  {
-    "name": "map_updates",
-    "filename": "map_updates.svg",
-    "tags": [
-      "map",
-      "updates"
-    ]
-  },
-  {
-    "name": "map_view",
-    "filename": "map_view.svg",
-    "tags": [
-      "map",
-      "view"
-    ]
-  },
-  {
-    "name": "milage",
-    "filename": "milage.svg",
-    "tags": [
-      "milage"
-    ]
-  },
-  {
-    "name": "minus",
-    "filename": "minus.svg",
-    "tags": [
-      "minus"
-    ]
-  },
-  {
-    "name": "mobile-internet-hotspot",
-    "filename": "mobile-internet-hotspot.svg",
-    "tags": [
-      "mobile",
-      "internet",
-      "hotspot"
-    ]
-  },
-  {
-    "name": "more_details",
-    "filename": "more_details.svg",
-    "tags": [
-      "more",
-      "details"
-    ]
-  },
-  {
-    "name": "mpg",
-    "filename": "mpg.svg",
-    "tags": [
-      "mpg"
-    ]
-  },
-  {
-    "name": "multiple-drivers",
-    "filename": "multiple-drivers.svg",
-    "tags": [
-      "multiple",
-      "drivers"
-    ]
-  },
-  {
-    "name": "music",
-    "filename": "music.svg",
-    "tags": [
-      "music"
-    ]
-  },
-  {
-    "name": "new-feature",
-    "filename": "new-feature.svg",
-    "tags": [
-      "new",
-      "feature"
-    ]
-  },
-  {
-    "name": "nissan_fleet",
-    "filename": "nissan_fleet.svg",
-    "tags": [
-      "nissan",
-      "fleet"
-    ]
-  },
-  {
-    "name": "noise_cancellation",
-    "filename": "noise_cancellation.svg",
-    "tags": [
-      "noise",
-      "cancellation"
-    ]
-  },
-  {
-    "name": "no_volume",
-    "filename": "no_volume.svg",
-    "tags": [
-      "no",
-      "volume"
-    ]
-  },
-  {
-    "name": "offers",
-    "filename": "offers.svg",
-    "tags": [
-      "offers"
-    ]
-  },
-  {
-    "name": "oil-alert",
-    "filename": "oil-alert.svg",
-    "tags": [
-      "oil",
-      "alert"
-    ]
-  },
-  {
-    "name": "oil-level",
-    "filename": "oil-level.svg",
-    "tags": [
-      "oil",
-      "level"
-    ]
-  },
-  {
-    "name": "oil_and_filter change",
-    "filename": "oil_and_filter change.svg",
-    "tags": [
-      "oil",
-      "and",
-      "filter change"
-    ]
-  },
-  {
-    "name": "onboarding_to_ownership",
-    "filename": "onboarding_to_ownership.svg",
-    "tags": [
-      "onboarding",
-      "to",
-      "ownership"
-    ]
-  },
-  {
-    "name": "options",
-    "filename": "options.svg",
-    "tags": [
-      "options"
-    ]
-  },
-  {
-    "name": "package",
-    "filename": "package.svg",
-    "tags": [
-      "package"
-    ]
-  },
-  {
-    "name": "packs",
-    "filename": "packs.svg",
-    "tags": [
-      "packs"
-    ]
-  },
-  {
-    "name": "pan",
-    "filename": "pan.svg",
-    "tags": [
-      "pan"
-    ]
-  },
-  {
-    "name": "pandora",
-    "filename": "pandora.svg",
-    "tags": [
-      "pandora"
-    ]
-  },
-  {
-    "name": "parking",
-    "filename": "parking.svg",
-    "tags": [
-      "parking"
-    ]
-  },
-  {
-    "name": "password",
-    "filename": "password.svg",
-    "tags": [
-      "password"
-    ]
-  },
-  {
-    "name": "pause",
-    "filename": "pause.svg",
-    "tags": [
-      "pause"
-    ]
-  },
-  {
-    "name": "payload",
-    "filename": "payload.svg",
-    "tags": [
-      "payload"
-    ]
-  },
-  {
-    "name": "payment-methods",
-    "filename": "payment-methods.svg",
-    "tags": [
-      "payment",
-      "methods"
-    ]
-  },
-  {
-    "name": "payment",
-    "filename": "payment.svg",
-    "tags": [
-      "payment"
-    ]
-  },
-  {
-    "name": "pdf",
-    "filename": "pdf.svg",
-    "tags": [
-      "pdf"
-    ]
-  },
-  {
-    "name": "photo",
-    "filename": "photo.svg",
-    "tags": [
-      "photo"
-    ]
-  },
-  {
-    "name": "pin-ev",
-    "filename": "pin-ev.svg",
-    "tags": [
-      "pin",
-      "ev"
-    ]
-  },
-  {
-    "name": "play",
-    "filename": "play.svg",
-    "tags": [
-      "play"
-    ]
-  },
-  {
-    "name": "plus",
-    "filename": "plus.svg",
-    "tags": [
-      "plus"
-    ]
-  },
-  {
-    "name": "police",
-    "filename": "police.svg",
-    "tags": [
-      "police"
-    ]
-  },
-  {
-    "name": "power-on",
-    "filename": "power-on.svg",
-    "tags": [
-      "power",
-      "on"
-    ]
-  },
-  {
-    "name": "preferred_dealer",
-    "filename": "preferred_dealer.svg",
-    "tags": [
-      "preferred",
-      "dealer"
-    ]
-  },
-  {
-    "name": "preferred_dealer_solid",
-    "filename": "preferred_dealer_solid.svg",
-    "tags": [
-      "preferred",
-      "dealer",
-      "solid"
-    ]
-  },
-  {
-    "name": "price",
-    "filename": "price.svg",
-    "tags": [
-      "price"
-    ]
-  },
-  {
-    "name": "print",
-    "filename": "print.svg",
-    "tags": [
-      "print"
-    ]
-  },
-  {
-    "name": "qibla",
-    "filename": "qibla.svg",
-    "tags": [
-      "qibla"
-    ]
-  },
-  {
-    "name": "quick_view",
-    "filename": "quick_view.svg",
-    "tags": [
-      "quick",
-      "view"
-    ]
-  },
-  {
-    "name": "ranking",
-    "filename": "ranking.svg",
-    "tags": [
-      "ranking"
-    ]
-  },
-  {
-    "name": "rapid_charge",
-    "filename": "rapid_charge.svg",
-    "tags": [
-      "rapid",
-      "charge"
-    ]
-  },
-  {
-    "name": "rear_entertainment",
-    "filename": "rear_entertainment.svg",
-    "tags": [
-      "rear",
-      "entertainment"
-    ]
-  },
-  {
-    "name": "receive-package",
-    "filename": "receive-package.svg",
-    "tags": [
-      "receive",
-      "package"
-    ]
-  },
-  {
-    "name": "red-cross",
-    "filename": "red-cross.svg",
-    "tags": [
-      "red",
-      "cross"
-    ]
-  },
-  {
-    "name": "refresh",
-    "filename": "refresh.svg",
-    "tags": [
-      "refresh"
-    ]
-  },
-  {
-    "name": "registration",
-    "filename": "registration.svg",
-    "tags": [
-      "registration"
-    ]
-  },
-  {
-    "name": "remote-battery-management",
-    "filename": "remote-battery-management.svg",
-    "tags": [
-      "remote",
-      "battery",
-      "management"
-    ]
-  },
-  {
-    "name": "remote-charging",
-    "filename": "remote-charging.svg",
-    "tags": [
-      "remote",
-      "charging"
-    ]
-  },
-  {
-    "name": "remote-climate-control",
-    "filename": "remote-climate-control.svg",
-    "tags": [
-      "remote",
-      "climate",
-      "control"
-    ]
-  },
-  {
-    "name": "remote-control",
-    "filename": "remote-control.svg",
-    "tags": [
-      "remote",
-      "control"
-    ]
-  },
-  {
-    "name": "remote-diagnostics",
-    "filename": "remote-diagnostics.svg",
-    "tags": [
-      "remote",
-      "diagnostics"
-    ]
-  },
-  {
-    "name": "remote-door-control",
-    "filename": "remote-door-control.svg",
-    "tags": [
-      "remote",
-      "door",
-      "control"
-    ]
-  },
-  {
-    "name": "remote-engine-start-stop",
-    "filename": "remote-engine-start-stop.svg",
-    "tags": [
-      "remote",
-      "engine",
-      "start",
-      "stop"
-    ]
-  },
-  {
-    "name": "remote-horn-light",
-    "filename": "remote-horn-light.svg",
-    "tags": [
-      "remote",
-      "horn",
-      "light"
-    ]
-  },
-  {
-    "name": "remote-parking",
-    "filename": "remote-parking.svg",
-    "tags": [
-      "remote",
-      "parking"
-    ]
-  },
-  {
-    "name": "remote-vehicle-servicing",
-    "filename": "remote-vehicle-servicing.svg",
-    "tags": [
-      "remote",
-      "vehicle",
-      "servicing"
-    ]
-  },
-  {
-    "name": "reports",
-    "filename": "reports.svg",
-    "tags": [
-      "reports"
-    ]
-  },
-  {
-    "name": "request_a_call back",
-    "filename": "request_a_call back.svg",
-    "tags": [
-      "request",
-      "a",
-      "call back"
-    ]
-  },
-  {
-    "name": "request_a_quote",
-    "filename": "request_a_quote.svg",
-    "tags": [
-      "request",
-      "a",
-      "quote"
-    ]
-  },
-  {
-    "name": "restaurant",
-    "filename": "restaurant.svg",
-    "tags": [
-      "restaurant"
-    ]
-  },
-  {
-    "name": "results",
-    "filename": "results.svg",
-    "tags": [
-      "results"
-    ]
-  },
-  {
-    "name": "review",
-    "filename": "review.svg",
-    "tags": [
-      "review"
-    ]
-  },
-  {
-    "name": "rewind",
-    "filename": "rewind.svg",
-    "tags": [
-      "rewind"
-    ]
-  },
-  {
-    "name": "road-ahead",
-    "filename": "road-ahead.svg",
-    "tags": [
-      "road",
-      "ahead"
-    ]
-  },
-  {
-    "name": "road_tax",
-    "filename": "road_tax.svg",
-    "tags": [
-      "road",
-      "tax"
-    ]
-  },
-  {
-    "name": "running_cost",
-    "filename": "running_cost.svg",
-    "tags": [
-      "running",
-      "cost"
-    ]
-  },
-  {
-    "name": "safety",
-    "filename": "safety.svg",
-    "tags": [
-      "safety"
-    ]
-  },
-  {
-    "name": "save",
-    "filename": "save.svg",
-    "tags": [
-      "save"
-    ]
-  },
-  {
-    "name": "savings_incentive",
-    "filename": "savings_incentive.svg",
-    "tags": [
-      "savings",
-      "incentive"
-    ]
-  },
-  {
-    "name": "schedule-an-update-installation",
-    "filename": "schedule-an-update-installation.svg",
-    "tags": [
-      "schedule",
-      "an",
-      "update",
-      "installation"
-    ]
-  },
-  {
-    "name": "search",
-    "filename": "search.svg",
-    "tags": [
-      "search"
-    ]
-  },
-  {
-    "name": "seat",
-    "filename": "seat.svg",
-    "tags": [
-      "seat"
-    ]
-  },
-  {
-    "name": "seats",
-    "filename": "seats.svg",
-    "tags": [
-      "seats"
-    ]
-  },
-  {
-    "name": "seat_capacity",
-    "filename": "seat_capacity.svg",
-    "tags": [
-      "seat",
-      "capacity"
-    ]
-  },
-  {
-    "name": "self-driving-car",
-    "filename": "self-driving-car.svg",
-    "tags": [
-      "self",
-      "driving",
-      "car"
-    ]
-  },
-  {
-    "name": "self-driving-wheel",
-    "filename": "self-driving-wheel.svg",
-    "tags": [
-      "self",
-      "driving",
-      "wheel"
-    ]
-  },
-  {
-    "name": "service-at-home",
-    "filename": "service-at-home.svg",
-    "tags": [
-      "service",
-      "at",
-      "home"
-    ]
-  },
-  {
-    "name": "service_booking_date",
-    "filename": "service_booking_date.svg",
-    "tags": [
-      "service",
-      "booking",
-      "date"
-    ]
-  },
-  {
-    "name": "service_log",
-    "filename": "service_log.svg",
-    "tags": [
-      "service",
-      "log"
-    ]
-  },
-  {
-    "name": "settings",
-    "filename": "settings.svg",
-    "tags": [
-      "settings"
-    ]
-  },
-  {
-    "name": "share-location",
-    "filename": "share-location.svg",
-    "tags": [
-      "share",
-      "location"
-    ]
-  },
-  {
-    "name": "share",
-    "filename": "share.svg",
-    "tags": [
-      "share"
-    ]
-  },
-  {
-    "name": "shared-vehicle",
-    "filename": "shared-vehicle.svg",
-    "tags": [
-      "shared",
-      "vehicle"
-    ]
-  },
-  {
-    "name": "sharing-permissions",
-    "filename": "sharing-permissions.svg",
-    "tags": [
-      "sharing",
-      "permissions"
-    ]
-  },
-  {
-    "name": "siriusxm",
-    "filename": "siriusxm.svg",
-    "tags": [
-      "siriusxm"
-    ]
-  },
-  {
-    "name": "skip",
-    "filename": "skip.svg",
-    "tags": [
-      "skip"
-    ]
-  },
-  {
-    "name": "sleep",
-    "filename": "sleep.svg",
-    "tags": [
-      "sleep"
-    ]
-  },
-  {
-    "name": "slider",
-    "filename": "slider.svg",
-    "tags": [
-      "slider"
-    ]
-  },
-  {
-    "name": "smart-alerts",
-    "filename": "smart-alerts.svg",
-    "tags": [
-      "smart",
-      "alerts"
-    ]
-  },
-  {
-    "name": "social_facebook",
-    "filename": "social_facebook.svg",
-    "tags": [
-      "social",
-      "facebook"
-    ]
-  },
-  {
-    "name": "specs-and-price",
-    "filename": "specs-and-price.svg",
-    "tags": [
-      "specs",
-      "and",
-      "price"
-    ]
-  },
-  {
-    "name": "speed-alert",
-    "filename": "speed-alert.svg",
-    "tags": [
-      "speed",
-      "alert"
-    ]
-  },
-  {
-    "name": "speed-cameras",
-    "filename": "speed-cameras.svg",
-    "tags": [
-      "speed",
-      "cameras"
-    ]
-  },
-  {
-    "name": "speed",
-    "filename": "speed.svg",
-    "tags": [
-      "speed"
-    ]
-  },
-  {
-    "name": "spinner",
-    "filename": "spinner.svg",
-    "tags": [
-      "spinner"
-    ]
-  },
-  {
-    "name": "split-billing",
-    "filename": "split-billing.svg",
-    "tags": [
-      "split",
-      "billing"
-    ]
-  },
-  {
-    "name": "sponsored_dealer",
-    "filename": "sponsored_dealer.svg",
-    "tags": [
-      "sponsored",
-      "dealer"
-    ]
-  },
-  {
-    "name": "start-at-home",
-    "filename": "start-at-home.svg",
-    "tags": [
-      "start",
-      "at",
-      "home"
-    ]
-  },
-  {
-    "name": "steering_wheel",
-    "filename": "steering_wheel.svg",
-    "tags": [
-      "steering",
-      "wheel"
-    ]
-  },
-  {
-    "name": "stolen-vehicle-tracking",
-    "filename": "stolen-vehicle-tracking.svg",
-    "tags": [
-      "stolen",
-      "vehicle",
-      "tracking"
-    ]
-  },
-  {
-    "name": "streaming-audio-via-bluetooth",
-    "filename": "streaming-audio-via-bluetooth.svg",
-    "tags": [
-      "streaming",
-      "audio",
-      "via",
-      "bluetooth"
-    ]
-  },
-  {
-    "name": "street-view",
-    "filename": "street-view.svg",
-    "tags": [
-      "street",
-      "view"
-    ]
-  },
-  {
-    "name": "style_packs",
-    "filename": "style_packs.svg",
-    "tags": [
-      "style",
-      "packs"
-    ]
-  },
-  {
-    "name": "summary",
-    "filename": "summary.svg",
-    "tags": [
-      "summary"
-    ]
-  },
-  {
-    "name": "support-at-home",
-    "filename": "support-at-home.svg",
-    "tags": [
-      "support",
-      "at",
-      "home"
-    ]
-  },
-  {
-    "name": "support",
-    "filename": "support.svg",
-    "tags": [
-      "support"
-    ]
-  },
-  {
-    "name": "sync-driver-profile",
-    "filename": "sync-driver-profile.svg",
-    "tags": [
-      "sync",
-      "driver",
-      "profile"
-    ]
-  },
-  {
-    "name": "tablet",
-    "filename": "tablet.svg",
-    "tags": [
-      "tablet"
-    ]
-  },
-  {
-    "name": "take-control",
-    "filename": "take-control.svg",
-    "tags": [
-      "take",
-      "control"
-    ]
-  },
-  {
-    "name": "test-drive-at-home",
-    "filename": "test-drive-at-home.svg",
-    "tags": [
-      "test",
-      "drive",
-      "at",
-      "home"
-    ]
-  },
-  {
-    "name": "thinking",
-    "filename": "thinking.svg",
-    "tags": [
-      "thinking"
-    ]
-  },
-  {
-    "name": "tick",
-    "filename": "tick.svg",
-    "tags": [
-      "tick"
-    ]
-  },
-  {
-    "name": "tom-tom-weather",
-    "filename": "tom-tom-weather.svg",
-    "tags": [
-      "tom",
-      "tom",
-      "weather"
-    ]
-  },
-  {
-    "name": "torque",
-    "filename": "torque.svg",
-    "tags": [
-      "torque"
-    ]
-  },
-  {
-    "name": "touch_screen",
-    "filename": "touch_screen.svg",
-    "tags": [
-      "touch",
-      "screen"
-    ]
-  },
-  {
-    "name": "towing",
-    "filename": "towing.svg",
-    "tags": [
-      "towing"
-    ]
-  },
-  {
-    "name": "trade_in",
-    "filename": "trade_in.svg",
-    "tags": [
-      "trade",
-      "in"
-    ]
-  },
-  {
-    "name": "traffic",
-    "filename": "traffic.svg",
-    "tags": [
-      "traffic"
-    ]
-  },
-  {
-    "name": "transportation",
-    "filename": "transportation.svg",
-    "tags": [
-      "transportation"
-    ]
-  },
-  {
-    "name": "trash",
-    "filename": "trash.svg",
-    "tags": [
-      "trash"
-    ]
-  },
-  {
-    "name": "trip-advisor",
-    "filename": "trip-advisor.svg",
-    "tags": [
-      "trip",
-      "advisor"
-    ]
-  },
-  {
-    "name": "trunk-open",
-    "filename": "trunk-open.svg",
-    "tags": [
-      "trunk",
-      "open"
-    ]
-  },
-  {
-    "name": "tyre-pressure",
-    "filename": "tyre-pressure.svg",
-    "tags": [
-      "tyre",
-      "pressure"
-    ]
-  },
-  {
-    "name": "update--required",
-    "filename": "update--required.svg",
-    "tags": [
-      "update",
-      "",
-      "required"
-    ]
-  },
-  {
-    "name": "upholstery",
-    "filename": "upholstery.svg",
-    "tags": [
-      "upholstery"
-    ]
-  },
-  {
-    "name": "upload-offers",
-    "filename": "upload-offers.svg",
-    "tags": [
-      "upload",
-      "offers"
-    ]
-  },
-  {
-    "name": "upload",
-    "filename": "upload.svg",
-    "tags": [
-      "upload"
-    ]
-  },
-  {
-    "name": "usb",
-    "filename": "usb.svg",
-    "tags": [
-      "usb"
-    ]
-  },
-  {
-    "name": "usb1",
-    "filename": "usb1.svg",
-    "tags": [
-      "usb1"
-    ]
-  },
-  {
-    "name": "van",
-    "filename": "van.svg",
-    "tags": [
-      "van"
-    ]
-  },
-  {
-    "name": "variable_transmission",
-    "filename": "variable_transmission.svg",
-    "tags": [
-      "variable",
-      "transmission"
-    ]
-  },
-  {
-    "name": "vehicle-damage",
-    "filename": "vehicle-damage.svg",
-    "tags": [
-      "vehicle",
-      "damage"
-    ]
-  },
-  {
-    "name": "vehicle-delivery",
-    "filename": "vehicle-delivery.svg",
-    "tags": [
-      "vehicle",
-      "delivery"
-    ]
-  },
-  {
-    "name": "vehicle-health",
-    "filename": "vehicle-health.svg",
-    "tags": [
-      "vehicle",
-      "health"
-    ]
-  },
-  {
-    "name": "vehicle-status",
-    "filename": "vehicle-status.svg",
-    "tags": [
-      "vehicle",
-      "status"
-    ]
-  },
-  {
-    "name": "vehicle-towed",
-    "filename": "vehicle-towed.svg",
-    "tags": [
-      "vehicle",
-      "towed"
-    ]
-  },
-  {
-    "name": "vehicle-unlock",
-    "filename": "vehicle-unlock.svg",
-    "tags": [
-      "vehicle",
-      "unlock"
-    ]
-  },
-  {
-    "name": "vehicle_grade",
-    "filename": "vehicle_grade.svg",
-    "tags": [
-      "vehicle",
-      "grade"
-    ]
-  },
-  {
-    "name": "video",
-    "filename": "video.svg",
-    "tags": [
-      "video"
-    ]
-  },
-  {
-    "name": "virtual-showroom",
-    "filename": "virtual-showroom.svg",
-    "tags": [
-      "virtual",
-      "showroom"
-    ]
-  },
-  {
-    "name": "voice_recognition",
-    "filename": "voice_recognition.svg",
-    "tags": [
-      "voice",
-      "recognition"
-    ]
-  },
-  {
-    "name": "volume",
-    "filename": "volume.svg",
-    "tags": [
-      "volume"
-    ]
-  },
-  {
-    "name": "wallet",
-    "filename": "wallet.svg",
-    "tags": [
-      "wallet"
-    ]
-  },
-  {
-    "name": "wds2-burger-menu",
-    "filename": "wds2-burger-menu.svg",
-    "tags": [
-      "wds2",
-      "burger",
-      "menu"
-    ]
-  },
-  {
-    "name": "weather",
-    "filename": "weather.svg",
-    "tags": [
-      "weather"
-    ]
-  },
-  {
-    "name": "wheel",
-    "filename": "wheel.svg",
-    "tags": [
-      "wheel"
-    ]
-  },
-  {
-    "name": "width",
-    "filename": "width.svg",
-    "tags": [
-      "width"
-    ]
-  },
-  {
-    "name": "wifi",
-    "filename": "wifi.svg",
-    "tags": [
-      "wifi"
-    ]
-  },
-  {
-    "name": "wiper_blade_replacement",
-    "filename": "wiper_blade_replacement.svg",
-    "tags": [
-      "wiper",
-      "blade",
-      "replacement"
-    ]
-  },
-  {
-    "name": "work_location",
-    "filename": "work_location.svg",
-    "tags": [
-      "work",
-      "location"
-    ]
-  },
-  {
-    "name": "wrench",
-    "filename": "wrench.svg",
-    "tags": [
-      "wrench"
-    ]
-  },
-  {
-    "name": "yen",
-    "filename": "yen.svg",
-    "tags": [
-      "yen"
-    ]
-  },
-  {
-    "name": "your_booked_services",
-    "filename": "your_booked_services.svg",
-    "tags": [
-      "your",
-      "booked",
-      "services"
-    ]
-  },
-  {
-    "name": "zoom_in",
-    "filename": "zoom_in.svg",
-    "tags": [
-      "zoom",
-      "in"
-    ]
-  },
-  {
-    "name": "zoom_out",
-    "filename": "zoom_out.svg",
-    "tags": [
-      "zoom",
-      "out"
-    ]
-  }
-]
+      "entertainment",
+      "files",
+      "finance",
+      "general",
+      "interface",
+      "navigation",
+      "navigation-ui",
+      "places",
+      "remote-control",
+      "settings",
+      "status",
+      "time",
+      "users"
+    ],
+    "stats": {
+      "totalFiles": 358,
+      "categories": {
+        "status": {
+          "count": 18,
+          "savings": 0
+        },
+        "general": {
+          "count": 216,
+          "savings": 0
+        },
+        "navigation-ui": {
+          "count": 24,
+          "savings": 0
+        },
+        "automotive": {
+          "count": 31,
+          "savings": 0
+        },
+        "places": {
+          "count": 5,
+          "savings": 0
+        },
+        "time": {
+          "count": 2,
+          "savings": 0
+        },
+        "navigation": {
+          "count": 8,
+          "savings": 0
+        },
+        "remote-control": {
+          "count": 14,
+          "savings": 0
+        },
+        "settings": {
+          "count": 4,
+          "savings": 0
+        },
+        "communication": {
+          "count": 8,
+          "savings": 0
+        },
+        "interface": {
+          "count": 9,
+          "savings": 0
+        },
+        "users": {
+          "count": 2,
+          "savings": 0
+        },
+        "entertainment": {
+          "count": 6,
+          "savings": 0
+        },
+        "files": {
+          "count": 2,
+          "savings": 0
+        },
+        "actions": {
+          "count": 3,
+          "savings": 0
+        },
+        "finance": {
+          "count": 6,
+          "savings": 0
+        }
+      },
+      "sizeSavings": 0,
+      "avgOptimization": "0.0"
+    }
+  },
+  "icons": [
+    {
+      "name": "abs-alert",
+      "filename": "abs-alert.svg",
+      "category": "status",
+      "tags": [
+        "abs",
+        "alert"
+      ],
+      "size": 2183,
+      "lastModified": "2025-06-25T02:59:47.314Z"
+    },
+    {
+      "name": "accelerate",
+      "filename": "accelerate.svg",
+      "category": "general",
+      "tags": [
+        "accelerate"
+      ],
+      "size": 135,
+      "lastModified": "2025-06-25T02:59:47.318Z"
+    },
+    {
+      "name": "accessories",
+      "filename": "accessories.svg",
+      "category": "general",
+      "tags": [
+        "accessories"
+      ],
+      "size": 1816,
+      "lastModified": "2025-06-25T02:59:47.325Z"
+    },
+    {
+      "name": "aero_dynamic_body",
+      "filename": "aero_dynamic_body.svg",
+      "category": "general",
+      "tags": [
+        "aero",
+        "dynamic",
+        "body"
+      ],
+      "size": 1809,
+      "lastModified": "2025-06-25T02:59:47.331Z"
+    },
+    {
+      "name": "after_sales",
+      "filename": "after_sales.svg",
+      "category": "general",
+      "tags": [
+        "after",
+        "sales"
+      ],
+      "size": 2217,
+      "lastModified": "2025-06-25T02:59:47.336Z"
+    },
+    {
+      "name": "airbag",
+      "filename": "airbag.svg",
+      "category": "general",
+      "tags": [
+        "airbag"
+      ],
+      "size": 1072,
+      "lastModified": "2025-06-25T02:59:47.346Z"
+    },
+    {
+      "name": "airbag-status",
+      "filename": "airbag-status.svg",
+      "category": "general",
+      "tags": [
+        "airbag",
+        "status"
+      ],
+      "size": 1647,
+      "lastModified": "2025-06-25T02:59:47.342Z"
+    },
+    {
+      "name": "alert",
+      "filename": "alert.svg",
+      "category": "status",
+      "tags": [
+        "alert"
+      ],
+      "size": 426,
+      "lastModified": "2025-06-25T02:59:47.349Z"
+    },
+    {
+      "name": "alert_filled",
+      "filename": "alert_filled.svg",
+      "category": "status",
+      "tags": [
+        "alert",
+        "filled"
+      ],
+      "size": 362,
+      "lastModified": "2025-06-25T02:59:47.353Z"
+    },
+    {
+      "name": "alexa",
+      "filename": "alexa.svg",
+      "category": "general",
+      "tags": [
+        "alexa"
+      ],
+      "size": 382,
+      "lastModified": "2025-06-25T02:59:47.357Z"
+    },
+    {
+      "name": "ambient_lighting",
+      "filename": "ambient_lighting.svg",
+      "category": "general",
+      "tags": [
+        "ambient",
+        "lighting"
+      ],
+      "size": 2158,
+      "lastModified": "2025-06-25T02:59:47.361Z"
+    },
+    {
+      "name": "android_compatibility",
+      "filename": "android_compatibility.svg",
+      "category": "general",
+      "tags": [
+        "android",
+        "compatibility"
+      ],
+      "size": 1885,
+      "lastModified": "2025-06-25T02:59:47.367Z"
+    },
+    {
+      "name": "android-auto",
+      "filename": "android-auto.svg",
+      "category": "general",
+      "tags": [
+        "android",
+        "auto"
+      ],
+      "size": 705,
+      "lastModified": "2025-06-25T02:59:47.364Z"
+    },
+    {
+      "name": "apple-carplay",
+      "filename": "apple-carplay.svg",
+      "category": "general",
+      "tags": [
+        "apple",
+        "carplay"
+      ],
+      "size": 1140,
+      "lastModified": "2025-06-25T02:59:47.372Z"
+    },
+    {
+      "name": "area",
+      "filename": "area.svg",
+      "category": "general",
+      "tags": [
+        "area"
+      ],
+      "size": 1979,
+      "lastModified": "2025-06-25T02:59:47.380Z"
+    },
+    {
+      "name": "area-alert",
+      "filename": "area-alert.svg",
+      "category": "status",
+      "tags": [
+        "area",
+        "alert"
+      ],
+      "size": 1804,
+      "lastModified": "2025-06-25T02:59:47.376Z"
+    },
+    {
+      "name": "arrow_down",
+      "filename": "arrow_down.svg",
+      "category": "navigation-ui",
+      "tags": [
+        "arrow",
+        "down"
+      ],
+      "size": 367,
+      "lastModified": "2025-06-25T02:59:47.383Z"
+    },
+    {
+      "name": "arrow_left",
+      "filename": "arrow_left.svg",
+      "category": "navigation-ui",
+      "tags": [
+        "arrow",
+        "left"
+      ],
+      "size": 316,
+      "lastModified": "2025-06-25T02:59:47.386Z"
+    },
+    {
+      "name": "arrow_right",
+      "filename": "arrow_right.svg",
+      "category": "navigation-ui",
+      "tags": [
+        "arrow",
+        "right"
+      ],
+      "size": 359,
+      "lastModified": "2025-06-25T02:59:47.389Z"
+    },
+    {
+      "name": "arrow_up",
+      "filename": "arrow_up.svg",
+      "category": "navigation-ui",
+      "tags": [
+        "arrow",
+        "up"
+      ],
+      "size": 362,
+      "lastModified": "2025-06-25T02:59:47.392Z"
+    },
+    {
+      "name": "assistance",
+      "filename": "assistance.svg",
+      "category": "general",
+      "tags": [
+        "assistance"
+      ],
+      "size": 407,
+      "lastModified": "2025-06-25T02:59:47.394Z"
+    },
+    {
+      "name": "assisted_steering",
+      "filename": "assisted_steering.svg",
+      "category": "general",
+      "tags": [
+        "assisted",
+        "steering"
+      ],
+      "size": 1987,
+      "lastModified": "2025-06-25T02:59:47.396Z"
+    },
+    {
+      "name": "automatic",
+      "filename": "automatic.svg",
+      "category": "general",
+      "tags": [
+        "automatic"
+      ],
+      "size": 280,
+      "lastModified": "2025-06-25T02:59:47.399Z"
+    },
+    {
+      "name": "autonomous-driving",
+      "filename": "autonomous-driving.svg",
+      "category": "general",
+      "tags": [
+        "autonomous",
+        "driving"
+      ],
+      "size": 4557,
+      "lastModified": "2025-06-25T02:59:47.401Z"
+    },
+    {
+      "name": "aux2",
+      "filename": "aux2.svg",
+      "category": "general",
+      "tags": [
+        "aux2"
+      ],
+      "size": 394,
+      "lastModified": "2025-06-25T02:59:47.404Z"
+    },
+    {
+      "name": "back",
+      "filename": "back.svg",
+      "category": "navigation-ui",
+      "tags": [
+        "back"
+      ],
+      "size": 267,
+      "lastModified": "2025-06-25T02:59:47.407Z"
+    },
+    {
+      "name": "battery",
+      "filename": "battery.svg",
+      "category": "automotive",
+      "tags": [
+        "battery"
+      ],
+      "size": 644,
+      "lastModified": "2025-06-25T02:59:47.410Z"
+    },
+    {
+      "name": "battery_leasing",
+      "filename": "battery_leasing.svg",
+      "category": "automotive",
+      "tags": [
+        "battery",
+        "leasing"
+      ],
+      "size": 1633,
+      "lastModified": "2025-06-25T02:59:47.412Z"
+    },
+    {
+      "name": "battery_service",
+      "filename": "battery_service.svg",
+      "category": "automotive",
+      "tags": [
+        "battery",
+        "service"
+      ],
+      "size": 749,
+      "lastModified": "2025-06-25T02:59:47.415Z"
+    },
+    {
+      "name": "bed_channel_system",
+      "filename": "bed_channel_system.svg",
+      "category": "general",
+      "tags": [
+        "bed",
+        "channel",
+        "system"
+      ],
+      "size": 1133,
+      "lastModified": "2025-06-25T02:59:47.417Z"
+    },
+    {
+      "name": "best_seller",
+      "filename": "best_seller.svg",
+      "category": "general",
+      "tags": [
+        "best",
+        "seller"
+      ],
+      "size": 556,
+      "lastModified": "2025-06-25T02:59:47.419Z"
+    },
+    {
+      "name": "bluetooth",
+      "filename": "bluetooth.svg",
+      "category": "general",
+      "tags": [
+        "bluetooth"
+      ],
+      "size": 891,
+      "lastModified": "2025-06-25T02:59:47.421Z"
+    },
+    {
+      "name": "body_type",
+      "filename": "body_type.svg",
+      "category": "general",
+      "tags": [
+        "body",
+        "type"
+      ],
+      "size": 2861,
+      "lastModified": "2025-06-25T02:59:47.426Z"
+    },
+    {
+      "name": "body-repair",
+      "filename": "body-repair.svg",
+      "category": "general",
+      "tags": [
+        "body",
+        "repair"
+      ],
+      "size": 2494,
+      "lastModified": "2025-06-25T02:59:47.424Z"
+    },
+    {
+      "name": "book_service",
+      "filename": "book_service.svg",
+      "category": "general",
+      "tags": [
+        "book",
+        "service"
+      ],
+      "size": 2356,
+      "lastModified": "2025-06-25T02:59:47.428Z"
+    },
+    {
+      "name": "box",
+      "filename": "box.svg",
+      "category": "general",
+      "tags": [
+        "box"
+      ],
+      "size": 528,
+      "lastModified": "2025-06-25T02:59:47.431Z"
+    },
+    {
+      "name": "brake",
+      "filename": "brake.svg",
+      "category": "automotive",
+      "tags": [
+        "brake"
+      ],
+      "size": 136,
+      "lastModified": "2025-06-25T02:59:47.439Z"
+    },
+    {
+      "name": "brake-alert",
+      "filename": "brake-alert.svg",
+      "category": "automotive",
+      "tags": [
+        "brake",
+        "alert"
+      ],
+      "size": 856,
+      "lastModified": "2025-06-25T02:59:47.433Z"
+    },
+    {
+      "name": "brake-fluid",
+      "filename": "brake-fluid.svg",
+      "category": "automotive",
+      "tags": [
+        "brake",
+        "fluid"
+      ],
+      "size": 923,
+      "lastModified": "2025-06-25T02:59:47.435Z"
+    },
+    {
+      "name": "buy-at-home",
+      "filename": "buy-at-home.svg",
+      "category": "places",
+      "tags": [
+        "buy",
+        "at",
+        "home"
+      ],
+      "size": 1923,
+      "lastModified": "2025-06-25T02:59:47.442Z"
+    },
+    {
+      "name": "calculator",
+      "filename": "calculator.svg",
+      "category": "general",
+      "tags": [
+        "calculator"
+      ],
+      "size": 1275,
+      "lastModified": "2025-06-25T02:59:47.445Z"
+    },
+    {
+      "name": "calendar",
+      "filename": "calendar.svg",
+      "category": "time",
+      "tags": [
+        "calendar"
+      ],
+      "size": 627,
+      "lastModified": "2025-06-25T02:59:47.447Z"
+    },
+    {
+      "name": "camera",
+      "filename": "camera.svg",
+      "category": "general",
+      "tags": [
+        "camera"
+      ],
+      "size": 281,
+      "lastModified": "2025-06-25T02:59:47.449Z"
+    },
+    {
+      "name": "campaigns-filled",
+      "filename": "campaigns-filled.svg",
+      "category": "general",
+      "tags": [
+        "campaigns",
+        "filled"
+      ],
+      "size": 2728,
+      "lastModified": "2025-06-25T02:59:47.454Z"
+    },
+    {
+      "name": "campaigns-outline",
+      "filename": "campaigns-outline.svg",
+      "category": "general",
+      "tags": [
+        "campaigns",
+        "outline"
+      ],
+      "size": 3744,
+      "lastModified": "2025-06-25T02:59:47.457Z"
+    },
+    {
+      "name": "cant-connect",
+      "filename": "cant-connect.svg",
+      "category": "general",
+      "tags": [
+        "cant",
+        "connect"
+      ],
+      "size": 2518,
+      "lastModified": "2025-06-25T02:59:47.459Z"
+    },
+    {
+      "name": "car",
+      "filename": "car.svg",
+      "category": "general",
+      "tags": [
+        "car"
+      ],
+      "size": 2118,
+      "lastModified": "2025-06-25T02:59:47.464Z"
+    },
+    {
+      "name": "car_location",
+      "filename": "car_location.svg",
+      "category": "navigation",
+      "tags": [
+        "car",
+        "location"
+      ],
+      "size": 1864,
+      "lastModified": "2025-06-25T02:59:47.467Z"
+    },
+    {
+      "name": "car_wings",
+      "filename": "car_wings.svg",
+      "category": "general",
+      "tags": [
+        "car",
+        "wings"
+      ],
+      "size": 1453,
+      "lastModified": "2025-06-25T02:59:47.469Z"
+    },
+    {
+      "name": "car-locator",
+      "filename": "car-locator.svg",
+      "category": "general",
+      "tags": [
+        "car",
+        "locator"
+      ],
+      "size": 4392,
+      "lastModified": "2025-06-25T02:59:47.462Z"
+    },
+    {
+      "name": "change-driver",
+      "filename": "change-driver.svg",
+      "category": "general",
+      "tags": [
+        "change",
+        "driver"
+      ],
+      "size": 891,
+      "lastModified": "2025-06-25T02:59:47.472Z"
+    },
+    {
+      "name": "charging",
+      "filename": "charging.svg",
+      "category": "automotive",
+      "tags": [
+        "charging"
+      ],
+      "size": 871,
+      "lastModified": "2025-06-25T02:59:47.475Z"
+    },
+    {
+      "name": "charging_cost",
+      "filename": "charging_cost.svg",
+      "category": "automotive",
+      "tags": [
+        "charging",
+        "cost"
+      ],
+      "size": 593,
+      "lastModified": "2025-06-25T02:59:47.477Z"
+    },
+    {
+      "name": "check-in",
+      "filename": "check-in.svg",
+      "category": "general",
+      "tags": [
+        "check",
+        "in"
+      ],
+      "size": 745,
+      "lastModified": "2025-06-25T02:59:47.479Z"
+    },
+    {
+      "name": "check-out",
+      "filename": "check-out.svg",
+      "category": "general",
+      "tags": [
+        "check",
+        "out"
+      ],
+      "size": 2242,
+      "lastModified": "2025-06-25T02:59:47.482Z"
+    },
+    {
+      "name": "checked_box",
+      "filename": "checked_box.svg",
+      "category": "general",
+      "tags": [
+        "checked",
+        "box"
+      ],
+      "size": 226,
+      "lastModified": "2025-06-25T02:59:47.484Z"
+    },
+    {
+      "name": "choice",
+      "filename": "choice.svg",
+      "category": "general",
+      "tags": [
+        "choice"
+      ],
+      "size": 459,
+      "lastModified": "2025-06-25T02:59:47.488Z"
+    },
+    {
+      "name": "choice-light",
+      "filename": "choice-light.svg",
+      "category": "general",
+      "tags": [
+        "choice",
+        "light"
+      ],
+      "size": 584,
+      "lastModified": "2025-06-25T02:59:47.486Z"
+    },
+    {
+      "name": "clear",
+      "filename": "clear.svg",
+      "category": "general",
+      "tags": [
+        "clear"
+      ],
+      "size": 571,
+      "lastModified": "2025-06-25T02:59:47.491Z"
+    },
+    {
+      "name": "climate_control",
+      "filename": "climate_control.svg",
+      "category": "remote-control",
+      "tags": [
+        "climate",
+        "control"
+      ],
+      "size": 3106,
+      "lastModified": "2025-06-25T02:59:47.493Z"
+    },
+    {
+      "name": "clock",
+      "filename": "clock.svg",
+      "category": "remote-control",
+      "tags": [
+        "clock"
+      ],
+      "size": 829,
+      "lastModified": "2025-06-25T02:59:47.495Z"
+    },
+    {
+      "name": "co2",
+      "filename": "co2.svg",
+      "category": "general",
+      "tags": [
+        "co2"
+      ],
+      "size": 3738,
+      "lastModified": "2025-06-25T02:59:47.497Z"
+    },
+    {
+      "name": "colour",
+      "filename": "colour.svg",
+      "category": "general",
+      "tags": [
+        "colour"
+      ],
+      "size": 2105,
+      "lastModified": "2025-06-25T02:59:47.499Z"
+    },
+    {
+      "name": "commerce",
+      "filename": "commerce.svg",
+      "category": "general",
+      "tags": [
+        "commerce"
+      ],
+      "size": 680,
+      "lastModified": "2025-06-25T02:59:47.501Z"
+    },
+    {
+      "name": "communication-preference",
+      "filename": "communication-preference.svg",
+      "category": "general",
+      "tags": [
+        "communication",
+        "preference"
+      ],
+      "size": 2262,
+      "lastModified": "2025-06-25T02:59:47.505Z"
+    },
+    {
+      "name": "compare",
+      "filename": "compare.svg",
+      "category": "general",
+      "tags": [
+        "compare"
+      ],
+      "size": 1170,
+      "lastModified": "2025-06-25T02:59:47.508Z"
+    },
+    {
+      "name": "configure",
+      "filename": "configure.svg",
+      "category": "settings",
+      "tags": [
+        "configure"
+      ],
+      "size": 2130,
+      "lastModified": "2025-06-25T02:59:47.511Z"
+    },
+    {
+      "name": "contact_email",
+      "filename": "contact_email.svg",
+      "category": "communication",
+      "tags": [
+        "contact",
+        "email"
+      ],
+      "size": 2169,
+      "lastModified": "2025-06-25T02:59:47.513Z"
+    },
+    {
+      "name": "contact_fbmessage",
+      "filename": "contact_fbmessage.svg",
+      "category": "communication",
+      "tags": [
+        "contact",
+        "fbmessage"
+      ],
+      "size": 794,
+      "lastModified": "2025-06-25T02:59:47.515Z"
+    },
+    {
+      "name": "contact_linkedin",
+      "filename": "contact_linkedin.svg",
+      "category": "communication",
+      "tags": [
+        "contact",
+        "linkedin"
+      ],
+      "size": 653,
+      "lastModified": "2025-06-25T02:59:47.518Z"
+    },
+    {
+      "name": "contact_phone",
+      "filename": "contact_phone.svg",
+      "category": "communication",
+      "tags": [
+        "contact",
+        "phone"
+      ],
+      "size": 857,
+      "lastModified": "2025-06-25T02:59:47.521Z"
+    },
+    {
+      "name": "contact_spotify",
+      "filename": "contact_spotify.svg",
+      "category": "communication",
+      "tags": [
+        "contact",
+        "spotify"
+      ],
+      "size": 1162,
+      "lastModified": "2025-06-25T02:59:47.523Z"
+    },
+    {
+      "name": "contact_tiktok",
+      "filename": "contact_tiktok.svg",
+      "category": "communication",
+      "tags": [
+        "contact",
+        "tiktok"
+      ],
+      "size": 928,
+      "lastModified": "2025-06-25T02:59:47.526Z"
+    },
+    {
+      "name": "contact_whatsapp",
+      "filename": "contact_whatsapp.svg",
+      "category": "communication",
+      "tags": [
+        "contact",
+        "whatsapp"
+      ],
+      "size": 1889,
+      "lastModified": "2025-06-25T02:59:47.528Z"
+    },
+    {
+      "name": "cookies",
+      "filename": "cookies.svg",
+      "category": "general",
+      "tags": [
+        "cookies"
+      ],
+      "size": 1013,
+      "lastModified": "2025-06-25T02:59:47.532Z"
+    },
+    {
+      "name": "cross",
+      "filename": "cross.svg",
+      "category": "status",
+      "tags": [
+        "cross"
+      ],
+      "size": 705,
+      "lastModified": "2025-06-25T02:59:47.535Z"
+    },
+    {
+      "name": "crossing-boutique",
+      "filename": "crossing-boutique.svg",
+      "category": "status",
+      "tags": [
+        "crossing",
+        "boutique"
+      ],
+      "size": 294,
+      "lastModified": "2025-06-25T02:59:47.537Z"
+    },
+    {
+      "name": "crossing-cafe",
+      "filename": "crossing-cafe.svg",
+      "category": "status",
+      "tags": [
+        "crossing",
+        "cafe"
+      ],
+      "size": 416,
+      "lastModified": "2025-06-25T02:59:47.540Z"
+    },
+    {
+      "name": "cubic_volume",
+      "filename": "cubic_volume.svg",
+      "category": "general",
+      "tags": [
+        "cubic",
+        "volume"
+      ],
+      "size": 482,
+      "lastModified": "2025-06-25T02:59:47.543Z"
+    },
+    {
+      "name": "curfew-alert",
+      "filename": "curfew-alert.svg",
+      "category": "status",
+      "tags": [
+        "curfew",
+        "alert"
+      ],
+      "size": 983,
+      "lastModified": "2025-06-25T02:59:47.546Z"
+    },
+    {
+      "name": "cylinder",
+      "filename": "cylinder.svg",
+      "category": "general",
+      "tags": [
+        "cylinder"
+      ],
+      "size": 1312,
+      "lastModified": "2025-06-25T02:59:47.549Z"
+    },
+    {
+      "name": "dealer_review",
+      "filename": "dealer_review.svg",
+      "category": "interface",
+      "tags": [
+        "dealer",
+        "review"
+      ],
+      "size": 568,
+      "lastModified": "2025-06-25T02:59:47.560Z"
+    },
+    {
+      "name": "dealer-sales-staff",
+      "filename": "dealer-sales-staff.svg",
+      "category": "general",
+      "tags": [
+        "dealer",
+        "sales",
+        "staff"
+      ],
+      "size": 3583,
+      "lastModified": "2025-06-25T02:59:47.551Z"
+    },
+    {
+      "name": "dealer-view",
+      "filename": "dealer-view.svg",
+      "category": "interface",
+      "tags": [
+        "dealer",
+        "view"
+      ],
+      "size": 2086,
+      "lastModified": "2025-06-25T02:59:47.555Z"
+    },
+    {
+      "name": "dealership",
+      "filename": "dealership.svg",
+      "category": "general",
+      "tags": [
+        "dealership"
+      ],
+      "size": 4260,
+      "lastModified": "2025-06-25T02:59:47.557Z"
+    },
+    {
+      "name": "delivery",
+      "filename": "delivery.svg",
+      "category": "general",
+      "tags": [
+        "delivery"
+      ],
+      "size": 361,
+      "lastModified": "2025-06-25T02:59:47.566Z"
+    },
+    {
+      "name": "delivery-follow-up",
+      "filename": "delivery-follow-up.svg",
+      "category": "navigation-ui",
+      "tags": [
+        "delivery",
+        "follow",
+        "up"
+      ],
+      "size": 1375,
+      "lastModified": "2025-06-25T02:59:47.563Z"
+    },
+    {
+      "name": "desktop",
+      "filename": "desktop.svg",
+      "category": "general",
+      "tags": [
+        "desktop"
+      ],
+      "size": 363,
+      "lastModified": "2025-06-25T02:59:47.569Z"
+    },
+    {
+      "name": "destination-search",
+      "filename": "destination-search.svg",
+      "category": "interface",
+      "tags": [
+        "destination",
+        "search"
+      ],
+      "size": 1712,
+      "lastModified": "2025-06-25T02:59:47.572Z"
+    },
+    {
+      "name": "device_compatibility",
+      "filename": "device_compatibility.svg",
+      "category": "general",
+      "tags": [
+        "device",
+        "compatibility"
+      ],
+      "size": 451,
+      "lastModified": "2025-06-25T02:59:47.578Z"
+    },
+    {
+      "name": "device_settings",
+      "filename": "device_settings.svg",
+      "category": "settings",
+      "tags": [
+        "device",
+        "settings"
+      ],
+      "size": 1243,
+      "lastModified": "2025-06-25T02:59:47.581Z"
+    },
+    {
+      "name": "devices",
+      "filename": "devices.svg",
+      "category": "general",
+      "tags": [
+        "devices"
+      ],
+      "size": 1501,
+      "lastModified": "2025-06-25T02:59:47.575Z"
+    },
+    {
+      "name": "dimensions",
+      "filename": "dimensions.svg",
+      "category": "general",
+      "tags": [
+        "dimensions"
+      ],
+      "size": 441,
+      "lastModified": "2025-06-25T02:59:47.584Z"
+    },
+    {
+      "name": "direction-walking",
+      "filename": "direction-walking.svg",
+      "category": "navigation",
+      "tags": [
+        "direction",
+        "walking"
+      ],
+      "size": 1761,
+      "lastModified": "2025-06-25T02:59:47.586Z"
+    },
+    {
+      "name": "directions",
+      "filename": "directions.svg",
+      "category": "navigation",
+      "tags": [
+        "directions"
+      ],
+      "size": 295,
+      "lastModified": "2025-06-25T02:59:47.589Z"
+    },
+    {
+      "name": "discover-at-home",
+      "filename": "discover-at-home.svg",
+      "category": "places",
+      "tags": [
+        "discover",
+        "at",
+        "home"
+      ],
+      "size": 909,
+      "lastModified": "2025-06-25T02:59:47.591Z"
+    },
+    {
+      "name": "dislike",
+      "filename": "dislike.svg",
+      "category": "general",
+      "tags": [
+        "dislike"
+      ],
+      "size": 1567,
+      "lastModified": "2025-06-25T02:59:47.596Z"
+    },
+    {
+      "name": "dislike-filled",
+      "filename": "dislike-filled.svg",
+      "category": "general",
+      "tags": [
+        "dislike",
+        "filled"
+      ],
+      "size": 692,
+      "lastModified": "2025-06-25T02:59:47.594Z"
+    },
+    {
+      "name": "door-to-door-navigation",
+      "filename": "door-to-door-navigation.svg",
+      "category": "navigation",
+      "tags": [
+        "door",
+        "to",
+        "door",
+        "navigation"
+      ],
+      "size": 7927,
+      "lastModified": "2025-06-25T02:59:47.600Z"
+    },
+    {
+      "name": "doors",
+      "filename": "doors.svg",
+      "category": "general",
+      "tags": [
+        "doors"
+      ],
+      "size": 1620,
+      "lastModified": "2025-06-25T02:59:47.603Z"
+    },
+    {
+      "name": "download_brochure",
+      "filename": "download_brochure.svg",
+      "category": "navigation-ui",
+      "tags": [
+        "download",
+        "brochure"
+      ],
+      "size": 362,
+      "lastModified": "2025-06-25T02:59:47.610Z"
+    },
+    {
+      "name": "download-document",
+      "filename": "download-document.svg",
+      "category": "navigation-ui",
+      "tags": [
+        "download",
+        "document"
+      ],
+      "size": 771,
+      "lastModified": "2025-06-25T02:59:47.607Z"
+    },
+    {
+      "name": "drive_train_3wd",
+      "filename": "drive_train_3wd.svg",
+      "category": "general",
+      "tags": [
+        "drive",
+        "train",
+        "3wd"
+      ],
+      "size": 2192,
+      "lastModified": "2025-06-25T02:59:47.615Z"
+    },
+    {
+      "name": "drive_train_4WD",
+      "filename": "drive_train_4WD.svg",
+      "category": "general",
+      "tags": [
+        "drive",
+        "train",
+        "4WD"
+      ],
+      "size": 3024,
+      "lastModified": "2025-06-25T02:59:47.618Z"
+    },
+    {
+      "name": "drive_train_awd",
+      "filename": "drive_train_awd.svg",
+      "category": "general",
+      "tags": [
+        "drive",
+        "train",
+        "awd"
+      ],
+      "size": 2857,
+      "lastModified": "2025-06-25T02:59:47.621Z"
+    },
+    {
+      "name": "drivers-profiles",
+      "filename": "drivers-profiles.svg",
+      "category": "users",
+      "tags": [
+        "drivers",
+        "profiles"
+      ],
+      "size": 2532,
+      "lastModified": "2025-06-25T02:59:47.613Z"
+    },
+    {
+      "name": "driving_log_history",
+      "filename": "driving_log_history.svg",
+      "category": "general",
+      "tags": [
+        "driving",
+        "log",
+        "history"
+      ],
+      "size": 523,
+      "lastModified": "2025-06-25T02:59:47.630Z"
+    },
+    {
+      "name": "driving-history",
+      "filename": "driving-history.svg",
+      "category": "general",
+      "tags": [
+        "driving",
+        "history"
+      ],
+      "size": 2207,
+      "lastModified": "2025-06-25T02:59:47.624Z"
+    },
+    {
+      "name": "driving-restriction",
+      "filename": "driving-restriction.svg",
+      "category": "general",
+      "tags": [
+        "driving",
+        "restriction"
+      ],
+      "size": 3613,
+      "lastModified": "2025-06-25T02:59:47.627Z"
+    },
+    {
+      "name": "dual_climate_control",
+      "filename": "dual_climate_control.svg",
+      "category": "remote-control",
+      "tags": [
+        "dual",
+        "climate",
+        "control"
+      ],
+      "size": 955,
+      "lastModified": "2025-06-25T02:59:47.632Z"
+    },
+    {
+      "name": "edit",
+      "filename": "edit.svg",
+      "category": "general",
+      "tags": [
+        "edit"
+      ],
+      "size": 373,
+      "lastModified": "2025-06-25T02:59:47.635Z"
+    },
+    {
+      "name": "efficiency_class",
+      "filename": "efficiency_class.svg",
+      "category": "general",
+      "tags": [
+        "efficiency",
+        "class"
+      ],
+      "size": 273,
+      "lastModified": "2025-06-25T02:59:47.638Z"
+    },
+    {
+      "name": "elevator",
+      "filename": "elevator.svg",
+      "category": "general",
+      "tags": [
+        "elevator"
+      ],
+      "size": 799,
+      "lastModified": "2025-06-25T02:59:47.642Z"
+    },
+    {
+      "name": "emission",
+      "filename": "emission.svg",
+      "category": "general",
+      "tags": [
+        "emission"
+      ],
+      "size": 1502,
+      "lastModified": "2025-06-25T02:59:47.645Z"
+    },
+    {
+      "name": "engine_power",
+      "filename": "engine_power.svg",
+      "category": "automotive",
+      "tags": [
+        "engine",
+        "power"
+      ],
+      "size": 1066,
+      "lastModified": "2025-06-25T02:59:47.656Z"
+    },
+    {
+      "name": "engine-oil",
+      "filename": "engine-oil.svg",
+      "category": "automotive",
+      "tags": [
+        "engine",
+        "oil"
+      ],
+      "size": 349,
+      "lastModified": "2025-06-25T02:59:47.647Z"
+    },
+    {
+      "name": "engine-start-stop",
+      "filename": "engine-start-stop.svg",
+      "category": "automotive",
+      "tags": [
+        "engine",
+        "start",
+        "stop"
+      ],
+      "size": 920,
+      "lastModified": "2025-06-25T02:59:47.650Z"
+    },
+    {
+      "name": "engine-stop",
+      "filename": "engine-stop.svg",
+      "category": "automotive",
+      "tags": [
+        "engine",
+        "stop"
+      ],
+      "size": 433,
+      "lastModified": "2025-06-25T02:59:47.653Z"
+    },
+    {
+      "name": "entertainment",
+      "filename": "entertainment.svg",
+      "category": "entertainment",
+      "tags": [
+        "entertainment"
+      ],
+      "size": 1690,
+      "lastModified": "2025-06-25T02:59:47.658Z"
+    },
+    {
+      "name": "epedal_driving",
+      "filename": "epedal_driving.svg",
+      "category": "general",
+      "tags": [
+        "epedal",
+        "driving"
+      ],
+      "size": 1480,
+      "lastModified": "2025-06-25T02:59:47.661Z"
+    },
+    {
+      "name": "error-installing-update",
+      "filename": "error-installing-update.svg",
+      "category": "navigation-ui",
+      "tags": [
+        "error",
+        "installing",
+        "update"
+      ],
+      "size": 1514,
+      "lastModified": "2025-06-25T02:59:47.664Z"
+    },
+    {
+      "name": "escalator-down",
+      "filename": "escalator-down.svg",
+      "category": "navigation-ui",
+      "tags": [
+        "escalator",
+        "down"
+      ],
+      "size": 791,
+      "lastModified": "2025-06-25T02:59:47.666Z"
+    },
+    {
+      "name": "escalator-up",
+      "filename": "escalator-up.svg",
+      "category": "navigation-ui",
+      "tags": [
+        "escalator",
+        "up"
+      ],
+      "size": 951,
+      "lastModified": "2025-06-25T02:59:47.669Z"
+    },
+    {
+      "name": "exclamation",
+      "filename": "exclamation.svg",
+      "category": "general",
+      "tags": [
+        "exclamation"
+      ],
+      "size": 531,
+      "lastModified": "2025-06-25T02:59:47.673Z"
+    },
+    {
+      "name": "explore",
+      "filename": "explore.svg",
+      "category": "general",
+      "tags": [
+        "explore"
+      ],
+      "size": 1054,
+      "lastModified": "2025-06-25T02:59:47.676Z"
+    },
+    {
+      "name": "export-document",
+      "filename": "export-document.svg",
+      "category": "files",
+      "tags": [
+        "export",
+        "document"
+      ],
+      "size": 779,
+      "lastModified": "2025-06-25T02:59:47.679Z"
+    },
+    {
+      "name": "express_booking",
+      "filename": "express_booking.svg",
+      "category": "general",
+      "tags": [
+        "express",
+        "booking"
+      ],
+      "size": 746,
+      "lastModified": "2025-06-25T02:59:47.682Z"
+    },
+    {
+      "name": "extended_range",
+      "filename": "extended_range.svg",
+      "category": "general",
+      "tags": [
+        "extended",
+        "range"
+      ],
+      "size": 1813,
+      "lastModified": "2025-06-25T02:59:47.687Z"
+    },
+    {
+      "name": "extended-test-drive",
+      "filename": "extended-test-drive.svg",
+      "category": "general",
+      "tags": [
+        "extended",
+        "test",
+        "drive"
+      ],
+      "size": 3623,
+      "lastModified": "2025-06-25T02:59:47.684Z"
+    },
+    {
+      "name": "eyes-on-the-road",
+      "filename": "eyes-on-the-road.svg",
+      "category": "general",
+      "tags": [
+        "eyes",
+        "on",
+        "the",
+        "road"
+      ],
+      "size": 1619,
+      "lastModified": "2025-06-25T02:59:47.690Z"
+    },
+    {
+      "name": "face-happy",
+      "filename": "face-happy.svg",
+      "category": "general",
+      "tags": [
+        "face",
+        "happy"
+      ],
+      "size": 901,
+      "lastModified": "2025-06-25T02:59:47.692Z"
+    },
+    {
+      "name": "face-neutral",
+      "filename": "face-neutral.svg",
+      "category": "general",
+      "tags": [
+        "face",
+        "neutral"
+      ],
+      "size": 561,
+      "lastModified": "2025-06-25T02:59:47.695Z"
+    },
+    {
+      "name": "face-unhappy",
+      "filename": "face-unhappy.svg",
+      "category": "general",
+      "tags": [
+        "face",
+        "unhappy"
+      ],
+      "size": 965,
+      "lastModified": "2025-06-25T02:59:47.697Z"
+    },
+    {
+      "name": "faqs",
+      "filename": "faqs.svg",
+      "category": "general",
+      "tags": [
+        "faqs"
+      ],
+      "size": 903,
+      "lastModified": "2025-06-25T02:59:47.700Z"
+    },
+    {
+      "name": "feedback_star",
+      "filename": "feedback_star.svg",
+      "category": "navigation-ui",
+      "tags": [
+        "feedback",
+        "star"
+      ],
+      "size": 442,
+      "lastModified": "2025-06-25T02:59:47.702Z"
+    },
+    {
+      "name": "feedback_star_empty",
+      "filename": "feedback_star_empty.svg",
+      "category": "navigation-ui",
+      "tags": [
+        "feedback",
+        "star",
+        "empty"
+      ],
+      "size": 842,
+      "lastModified": "2025-06-25T02:59:47.706Z"
+    },
+    {
+      "name": "feedback_star_half filled",
+      "filename": "feedback_star_half filled.svg",
+      "category": "navigation-ui",
+      "tags": [
+        "feedback",
+        "star",
+        "half filled"
+      ],
+      "size": 714,
+      "lastModified": "2025-06-25T02:59:47.708Z"
+    },
+    {
+      "name": "filter",
+      "filename": "filter.svg",
+      "category": "interface",
+      "tags": [
+        "filter"
+      ],
+      "size": 231,
+      "lastModified": "2025-06-25T02:59:47.711Z"
+    },
+    {
+      "name": "find_a_dealer",
+      "filename": "find_a_dealer.svg",
+      "category": "general",
+      "tags": [
+        "find",
+        "a",
+        "dealer"
+      ],
+      "size": 1894,
+      "lastModified": "2025-06-25T02:59:47.716Z"
+    },
+    {
+      "name": "find_a_dealer-1",
+      "filename": "find_a_dealer-1.svg",
+      "category": "general",
+      "tags": [
+        "find",
+        "a",
+        "dealer",
+        "1"
+      ],
+      "size": 1894,
+      "lastModified": "2025-06-25T02:59:47.714Z"
+    },
+    {
+      "name": "fingerprint",
+      "filename": "fingerprint.svg",
+      "category": "general",
+      "tags": [
+        "fingerprint"
+      ],
+      "size": 6100,
+      "lastModified": "2025-06-25T02:59:47.720Z"
+    },
+    {
+      "name": "fire",
+      "filename": "fire.svg",
+      "category": "general",
+      "tags": [
+        "fire"
+      ],
+      "size": 704,
+      "lastModified": "2025-06-25T02:59:47.726Z"
+    },
+    {
+      "name": "fire-extenguisher",
+      "filename": "fire-extenguisher.svg",
+      "category": "general",
+      "tags": [
+        "fire",
+        "extenguisher"
+      ],
+      "size": 1192,
+      "lastModified": "2025-06-25T02:59:47.723Z"
+    },
+    {
+      "name": "floor-guide",
+      "filename": "floor-guide.svg",
+      "category": "general",
+      "tags": [
+        "floor",
+        "guide"
+      ],
+      "size": 4948,
+      "lastModified": "2025-06-25T02:59:47.730Z"
+    },
+    {
+      "name": "forward",
+      "filename": "forward.svg",
+      "category": "navigation-ui",
+      "tags": [
+        "forward"
+      ],
+      "size": 275,
+      "lastModified": "2025-06-25T02:59:47.733Z"
+    },
+    {
+      "name": "fuel_type",
+      "filename": "fuel_type.svg",
+      "category": "automotive",
+      "tags": [
+        "fuel",
+        "type"
+      ],
+      "size": 921,
+      "lastModified": "2025-06-25T02:59:47.745Z"
+    },
+    {
+      "name": "fuel_type_ev",
+      "filename": "fuel_type_ev.svg",
+      "category": "automotive",
+      "tags": [
+        "fuel",
+        "type",
+        "ev"
+      ],
+      "size": 1227,
+      "lastModified": "2025-06-25T02:59:47.748Z"
+    },
+    {
+      "name": "fuel-prices-dollar",
+      "filename": "fuel-prices-dollar.svg",
+      "category": "automotive",
+      "tags": [
+        "fuel",
+        "prices",
+        "dollar"
+      ],
+      "size": 807,
+      "lastModified": "2025-06-25T02:59:47.736Z"
+    },
+    {
+      "name": "fuel-prices-gbp",
+      "filename": "fuel-prices-gbp.svg",
+      "category": "automotive",
+      "tags": [
+        "fuel",
+        "prices",
+        "gbp"
+      ],
+      "size": 568,
+      "lastModified": "2025-06-25T02:59:47.740Z"
+    },
+    {
+      "name": "fuel-prices-jpy",
+      "filename": "fuel-prices-jpy.svg",
+      "category": "automotive",
+      "tags": [
+        "fuel",
+        "prices",
+        "jpy"
+      ],
+      "size": 458,
+      "lastModified": "2025-06-25T02:59:47.743Z"
+    },
+    {
+      "name": "full_screen",
+      "filename": "full_screen.svg",
+      "category": "general",
+      "tags": [
+        "full",
+        "screen"
+      ],
+      "size": 270,
+      "lastModified": "2025-06-25T02:59:47.753Z"
+    },
+    {
+      "name": "fully_boxed_frame",
+      "filename": "fully_boxed_frame.svg",
+      "category": "general",
+      "tags": [
+        "fully",
+        "boxed",
+        "frame"
+      ],
+      "size": 898,
+      "lastModified": "2025-06-25T02:59:47.751Z"
+    },
+    {
+      "name": "funnel",
+      "filename": "funnel.svg",
+      "category": "general",
+      "tags": [
+        "funnel"
+      ],
+      "size": 367,
+      "lastModified": "2025-06-25T02:59:47.755Z"
+    },
+    {
+      "name": "gallery",
+      "filename": "gallery.svg",
+      "category": "general",
+      "tags": [
+        "gallery"
+      ],
+      "size": 568,
+      "lastModified": "2025-06-25T02:59:47.758Z"
+    },
+    {
+      "name": "geolocator",
+      "filename": "geolocator.svg",
+      "category": "general",
+      "tags": [
+        "geolocator"
+      ],
+      "size": 550,
+      "lastModified": "2025-06-25T02:59:47.760Z"
+    },
+    {
+      "name": "globe",
+      "filename": "globe.svg",
+      "category": "general",
+      "tags": [
+        "globe"
+      ],
+      "size": 1503,
+      "lastModified": "2025-06-25T02:59:47.762Z"
+    },
+    {
+      "name": "google-assistant",
+      "filename": "google-assistant.svg",
+      "category": "general",
+      "tags": [
+        "google",
+        "assistant"
+      ],
+      "size": 787,
+      "lastModified": "2025-06-25T02:59:47.765Z"
+    },
+    {
+      "name": "grid",
+      "filename": "grid.svg",
+      "category": "general",
+      "tags": [
+        "grid"
+      ],
+      "size": 1927,
+      "lastModified": "2025-06-25T02:59:47.767Z"
+    },
+    {
+      "name": "gross_weight",
+      "filename": "gross_weight.svg",
+      "category": "general",
+      "tags": [
+        "gross",
+        "weight"
+      ],
+      "size": 771,
+      "lastModified": "2025-06-25T02:59:47.770Z"
+    },
+    {
+      "name": "guest-driver",
+      "filename": "guest-driver.svg",
+      "category": "general",
+      "tags": [
+        "guest",
+        "driver"
+      ],
+      "size": 2521,
+      "lastModified": "2025-06-25T02:59:47.776Z"
+    },
+    {
+      "name": "hands-off-wheel",
+      "filename": "hands-off-wheel.svg",
+      "category": "automotive",
+      "tags": [
+        "hands",
+        "off",
+        "wheel"
+      ],
+      "size": 2201,
+      "lastModified": "2025-06-25T02:59:47.779Z"
+    },
+    {
+      "name": "hd-radio-technology",
+      "filename": "hd-radio-technology.svg",
+      "category": "entertainment",
+      "tags": [
+        "hd",
+        "radio",
+        "technology"
+      ],
+      "size": 2314,
+      "lastModified": "2025-06-25T02:59:47.782Z"
+    },
+    {
+      "name": "heated_steering_wheel",
+      "filename": "heated_steering_wheel.svg",
+      "category": "automotive",
+      "tags": [
+        "heated",
+        "steering",
+        "wheel"
+      ],
+      "size": 3413,
+      "lastModified": "2025-06-25T02:59:47.785Z"
+    },
+    {
+      "name": "height",
+      "filename": "height.svg",
+      "category": "general",
+      "tags": [
+        "height"
+      ],
+      "size": 378,
+      "lastModified": "2025-06-25T02:59:47.787Z"
+    },
+    {
+      "name": "home_charging",
+      "filename": "home_charging.svg",
+      "category": "automotive",
+      "tags": [
+        "home",
+        "charging"
+      ],
+      "size": 941,
+      "lastModified": "2025-06-25T02:59:47.790Z"
+    },
+    {
+      "name": "hood-open",
+      "filename": "hood-open.svg",
+      "category": "general",
+      "tags": [
+        "hood",
+        "open"
+      ],
+      "size": 1353,
+      "lastModified": "2025-06-25T02:59:47.792Z"
+    },
+    {
+      "name": "horn",
+      "filename": "horn.svg",
+      "category": "general",
+      "tags": [
+        "horn"
+      ],
+      "size": 593,
+      "lastModified": "2025-06-25T02:59:47.794Z"
+    },
+    {
+      "name": "horsepower-boost",
+      "filename": "horsepower-boost.svg",
+      "category": "general",
+      "tags": [
+        "horsepower",
+        "boost"
+      ],
+      "size": 1616,
+      "lastModified": "2025-06-25T02:59:47.797Z"
+    },
+    {
+      "name": "hot_seat",
+      "filename": "hot_seat.svg",
+      "category": "general",
+      "tags": [
+        "hot",
+        "seat"
+      ],
+      "size": 2302,
+      "lastModified": "2025-06-25T02:59:47.800Z"
+    },
+    {
+      "name": "info",
+      "filename": "info.svg",
+      "category": "status",
+      "tags": [
+        "info"
+      ],
+      "size": 455,
+      "lastModified": "2025-06-25T02:59:47.802Z"
+    },
+    {
+      "name": "info_filled",
+      "filename": "info_filled.svg",
+      "category": "status",
+      "tags": [
+        "info",
+        "filled"
+      ],
+      "size": 284,
+      "lastModified": "2025-06-25T02:59:47.811Z"
+    },
+    {
+      "name": "info2",
+      "filename": "info2.svg",
+      "category": "status",
+      "tags": [
+        "info2"
+      ],
+      "size": 873,
+      "lastModified": "2025-06-25T02:59:47.809Z"
+    },
+    {
+      "name": "info2-filled",
+      "filename": "info2-filled.svg",
+      "category": "status",
+      "tags": [
+        "info2",
+        "filled"
+      ],
+      "size": 704,
+      "lastModified": "2025-06-25T02:59:47.805Z"
+    },
+    {
+      "name": "install-update",
+      "filename": "install-update.svg",
+      "category": "navigation-ui",
+      "tags": [
+        "install",
+        "update"
+      ],
+      "size": 351,
+      "lastModified": "2025-06-25T02:59:47.813Z"
+    },
+    {
+      "name": "installation-completed",
+      "filename": "installation-completed.svg",
+      "category": "general",
+      "tags": [
+        "installation",
+        "completed"
+      ],
+      "size": 1339,
+      "lastModified": "2025-06-25T02:59:47.816Z"
+    },
+    {
+      "name": "instant_acceleration",
+      "filename": "instant_acceleration.svg",
+      "category": "general",
+      "tags": [
+        "instant",
+        "acceleration"
+      ],
+      "size": 926,
+      "lastModified": "2025-06-25T02:59:47.818Z"
+    },
+    {
+      "name": "intelligent_connectedcar",
+      "filename": "intelligent_connectedcar.svg",
+      "category": "general",
+      "tags": [
+        "intelligent",
+        "connectedcar"
+      ],
+      "size": 4138,
+      "lastModified": "2025-06-25T02:59:47.821Z"
+    },
+    {
+      "name": "intelligent_key",
+      "filename": "intelligent_key.svg",
+      "category": "remote-control",
+      "tags": [
+        "intelligent",
+        "key"
+      ],
+      "size": 1149,
+      "lastModified": "2025-06-25T02:59:47.824Z"
+    },
+    {
+      "name": "interior_view",
+      "filename": "interior_view.svg",
+      "category": "interface",
+      "tags": [
+        "interior",
+        "view"
+      ],
+      "size": 2010,
+      "lastModified": "2025-06-25T02:59:47.829Z"
+    },
+    {
+      "name": "interior-vehicle-camera",
+      "filename": "interior-vehicle-camera.svg",
+      "category": "general",
+      "tags": [
+        "interior",
+        "vehicle",
+        "camera"
+      ],
+      "size": 2167,
+      "lastModified": "2025-06-25T02:59:47.826Z"
+    },
+    {
+      "name": "inventory",
+      "filename": "inventory.svg",
+      "category": "general",
+      "tags": [
+        "inventory"
+      ],
+      "size": 2524,
+      "lastModified": "2025-06-25T02:59:47.831Z"
+    },
+    {
+      "name": "invisible",
+      "filename": "invisible.svg",
+      "category": "general",
+      "tags": [
+        "invisible"
+      ],
+      "size": 1776,
+      "lastModified": "2025-06-25T02:59:47.834Z"
+    },
+    {
+      "name": "keep_me_informed",
+      "filename": "keep_me_informed.svg",
+      "category": "status",
+      "tags": [
+        "keep",
+        "me",
+        "informed"
+      ],
+      "size": 699,
+      "lastModified": "2025-06-25T02:59:47.837Z"
+    },
+    {
+      "name": "language",
+      "filename": "language.svg",
+      "category": "general",
+      "tags": [
+        "language"
+      ],
+      "size": 1387,
+      "lastModified": "2025-06-25T02:59:47.840Z"
+    },
+    {
+      "name": "length",
+      "filename": "length.svg",
+      "category": "general",
+      "tags": [
+        "length"
+      ],
+      "size": 1525,
+      "lastModified": "2025-06-25T02:59:47.843Z"
+    },
+    {
+      "name": "license-plate",
+      "filename": "license-plate.svg",
+      "category": "general",
+      "tags": [
+        "license",
+        "plate"
+      ],
+      "size": 1876,
+      "lastModified": "2025-06-25T02:59:47.845Z"
+    },
+    {
+      "name": "lights",
+      "filename": "lights.svg",
+      "category": "general",
+      "tags": [
+        "lights"
+      ],
+      "size": 624,
+      "lastModified": "2025-06-25T02:59:47.847Z"
+    },
+    {
+      "name": "lights_and_horn",
+      "filename": "lights_and_horn.svg",
+      "category": "general",
+      "tags": [
+        "lights",
+        "and",
+        "horn"
+      ],
+      "size": 1066,
+      "lastModified": "2025-06-25T02:59:47.850Z"
+    },
+    {
+      "name": "like",
+      "filename": "like.svg",
+      "category": "general",
+      "tags": [
+        "like"
+      ],
+      "size": 1581,
+      "lastModified": "2025-06-25T02:59:47.855Z"
+    },
+    {
+      "name": "like-filled",
+      "filename": "like-filled.svg",
+      "category": "general",
+      "tags": [
+        "like",
+        "filled"
+      ],
+      "size": 701,
+      "lastModified": "2025-06-25T02:59:47.852Z"
+    },
+    {
+      "name": "link",
+      "filename": "link.svg",
+      "category": "general",
+      "tags": [
+        "link"
+      ],
+      "size": 1231,
+      "lastModified": "2025-06-25T02:59:47.857Z"
+    },
+    {
+      "name": "list-bullet",
+      "filename": "list-bullet.svg",
+      "category": "general",
+      "tags": [
+        "list",
+        "bullet"
+      ],
+      "size": 89,
+      "lastModified": "2025-06-25T02:59:47.859Z"
+    },
+    {
+      "name": "live_chat",
+      "filename": "live_chat.svg",
+      "category": "general",
+      "tags": [
+        "live",
+        "chat"
+      ],
+      "size": 672,
+      "lastModified": "2025-06-25T02:59:47.864Z"
+    },
+    {
+      "name": "live-traffic-information",
+      "filename": "live-traffic-information.svg",
+      "category": "status",
+      "tags": [
+        "live",
+        "traffic",
+        "information"
+      ],
+      "size": 2626,
+      "lastModified": "2025-06-25T02:59:47.862Z"
+    },
+    {
+      "name": "lock",
+      "filename": "lock.svg",
+      "category": "remote-control",
+      "tags": [
+        "lock"
+      ],
+      "size": 333,
+      "lastModified": "2025-06-25T02:59:47.866Z"
+    },
+    {
+      "name": "logout",
+      "filename": "logout.svg",
+      "category": "general",
+      "tags": [
+        "logout"
+      ],
+      "size": 462,
+      "lastModified": "2025-06-25T02:59:47.869Z"
+    },
+    {
+      "name": "low-tyre-pressure",
+      "filename": "low-tyre-pressure.svg",
+      "category": "automotive",
+      "tags": [
+        "low",
+        "tyre",
+        "pressure"
+      ],
+      "size": 1375,
+      "lastModified": "2025-06-25T02:59:47.872Z"
+    },
+    {
+      "name": "mail-checked",
+      "filename": "mail-checked.svg",
+      "category": "general",
+      "tags": [
+        "mail",
+        "checked"
+      ],
+      "size": 1181,
+      "lastModified": "2025-06-25T02:59:47.876Z"
+    },
+    {
+      "name": "maintain_speed",
+      "filename": "maintain_speed.svg",
+      "category": "general",
+      "tags": [
+        "maintain",
+        "speed"
+      ],
+      "size": 1212,
+      "lastModified": "2025-06-25T02:59:47.879Z"
+    },
+    {
+      "name": "manual",
+      "filename": "manual.svg",
+      "category": "general",
+      "tags": [
+        "manual"
+      ],
+      "size": 305,
+      "lastModified": "2025-06-25T02:59:47.882Z"
+    },
+    {
+      "name": "map_updates",
+      "filename": "map_updates.svg",
+      "category": "navigation",
+      "tags": [
+        "map",
+        "updates"
+      ],
+      "size": 941,
+      "lastModified": "2025-06-25T02:59:47.885Z"
+    },
+    {
+      "name": "map_view",
+      "filename": "map_view.svg",
+      "category": "navigation",
+      "tags": [
+        "map",
+        "view"
+      ],
+      "size": 981,
+      "lastModified": "2025-06-25T02:59:47.887Z"
+    },
+    {
+      "name": "milage",
+      "filename": "milage.svg",
+      "category": "general",
+      "tags": [
+        "milage"
+      ],
+      "size": 1549,
+      "lastModified": "2025-06-25T02:59:47.890Z"
+    },
+    {
+      "name": "minus",
+      "filename": "minus.svg",
+      "category": "actions",
+      "tags": [
+        "minus"
+      ],
+      "size": 153,
+      "lastModified": "2025-06-25T02:59:47.892Z"
+    },
+    {
+      "name": "mobile-internet-hotspot",
+      "filename": "mobile-internet-hotspot.svg",
+      "category": "general",
+      "tags": [
+        "mobile",
+        "internet",
+        "hotspot"
+      ],
+      "size": 1252,
+      "lastModified": "2025-06-25T02:59:47.894Z"
+    },
+    {
+      "name": "more_details",
+      "filename": "more_details.svg",
+      "category": "general",
+      "tags": [
+        "more",
+        "details"
+      ],
+      "size": 481,
+      "lastModified": "2025-06-25T02:59:47.897Z"
+    },
+    {
+      "name": "mpg",
+      "filename": "mpg.svg",
+      "category": "general",
+      "tags": [
+        "mpg"
+      ],
+      "size": 1689,
+      "lastModified": "2025-06-25T02:59:47.899Z"
+    },
+    {
+      "name": "multiple-drivers",
+      "filename": "multiple-drivers.svg",
+      "category": "general",
+      "tags": [
+        "multiple",
+        "drivers"
+      ],
+      "size": 999,
+      "lastModified": "2025-06-25T02:59:47.902Z"
+    },
+    {
+      "name": "music",
+      "filename": "music.svg",
+      "category": "entertainment",
+      "tags": [
+        "music"
+      ],
+      "size": 507,
+      "lastModified": "2025-06-25T02:59:47.906Z"
+    },
+    {
+      "name": "new-feature",
+      "filename": "new-feature.svg",
+      "category": "general",
+      "tags": [
+        "new",
+        "feature"
+      ],
+      "size": 417,
+      "lastModified": "2025-06-25T02:59:47.910Z"
+    },
+    {
+      "name": "nissan_fleet",
+      "filename": "nissan_fleet.svg",
+      "category": "general",
+      "tags": [
+        "nissan",
+        "fleet"
+      ],
+      "size": 2768,
+      "lastModified": "2025-06-25T02:59:47.914Z"
+    },
+    {
+      "name": "no_volume",
+      "filename": "no_volume.svg",
+      "category": "general",
+      "tags": [
+        "no",
+        "volume"
+      ],
+      "size": 768,
+      "lastModified": "2025-06-25T02:59:47.919Z"
+    },
+    {
+      "name": "noise_cancellation",
+      "filename": "noise_cancellation.svg",
+      "category": "general",
+      "tags": [
+        "noise",
+        "cancellation"
+      ],
+      "size": 826,
+      "lastModified": "2025-06-25T02:59:47.917Z"
+    },
+    {
+      "name": "offers",
+      "filename": "offers.svg",
+      "category": "general",
+      "tags": [
+        "offers"
+      ],
+      "size": 2184,
+      "lastModified": "2025-06-25T02:59:47.922Z"
+    },
+    {
+      "name": "oil_and_filter change",
+      "filename": "oil_and_filter change.svg",
+      "category": "automotive",
+      "tags": [
+        "oil",
+        "and",
+        "filter change"
+      ],
+      "size": 900,
+      "lastModified": "2025-06-25T02:59:47.930Z"
+    },
+    {
+      "name": "oil-alert",
+      "filename": "oil-alert.svg",
+      "category": "automotive",
+      "tags": [
+        "oil",
+        "alert"
+      ],
+      "size": 193,
+      "lastModified": "2025-06-25T02:59:47.924Z"
+    },
+    {
+      "name": "oil-level",
+      "filename": "oil-level.svg",
+      "category": "automotive",
+      "tags": [
+        "oil",
+        "level"
+      ],
+      "size": 2582,
+      "lastModified": "2025-06-25T02:59:47.927Z"
+    },
+    {
+      "name": "onboarding_to_ownership",
+      "filename": "onboarding_to_ownership.svg",
+      "category": "general",
+      "tags": [
+        "onboarding",
+        "to",
+        "ownership"
+      ],
+      "size": 1823,
+      "lastModified": "2025-06-25T02:59:47.933Z"
+    },
+    {
+      "name": "options",
+      "filename": "options.svg",
+      "category": "settings",
+      "tags": [
+        "options"
+      ],
+      "size": 1274,
+      "lastModified": "2025-06-25T02:59:47.936Z"
+    },
+    {
+      "name": "package",
+      "filename": "package.svg",
+      "category": "general",
+      "tags": [
+        "package"
+      ],
+      "size": 498,
+      "lastModified": "2025-06-25T02:59:47.940Z"
+    },
+    {
+      "name": "packs",
+      "filename": "packs.svg",
+      "category": "general",
+      "tags": [
+        "packs"
+      ],
+      "size": 534,
+      "lastModified": "2025-06-25T02:59:47.943Z"
+    },
+    {
+      "name": "pan",
+      "filename": "pan.svg",
+      "category": "general",
+      "tags": [
+        "pan"
+      ],
+      "size": 521,
+      "lastModified": "2025-06-25T02:59:47.946Z"
+    },
+    {
+      "name": "pandora",
+      "filename": "pandora.svg",
+      "category": "general",
+      "tags": [
+        "pandora"
+      ],
+      "size": 241,
+      "lastModified": "2025-06-25T02:59:47.948Z"
+    },
+    {
+      "name": "parking",
+      "filename": "parking.svg",
+      "category": "general",
+      "tags": [
+        "parking"
+      ],
+      "size": 383,
+      "lastModified": "2025-06-25T02:59:47.951Z"
+    },
+    {
+      "name": "password",
+      "filename": "password.svg",
+      "category": "general",
+      "tags": [
+        "password"
+      ],
+      "size": 1105,
+      "lastModified": "2025-06-25T02:59:47.953Z"
+    },
+    {
+      "name": "pause",
+      "filename": "pause.svg",
+      "category": "general",
+      "tags": [
+        "pause"
+      ],
+      "size": 294,
+      "lastModified": "2025-06-25T02:59:47.956Z"
+    },
+    {
+      "name": "payload",
+      "filename": "payload.svg",
+      "category": "general",
+      "tags": [
+        "payload"
+      ],
+      "size": 963,
+      "lastModified": "2025-06-25T02:59:47.958Z"
+    },
+    {
+      "name": "payment",
+      "filename": "payment.svg",
+      "category": "finance",
+      "tags": [
+        "payment"
+      ],
+      "size": 188,
+      "lastModified": "2025-06-25T02:59:47.963Z"
+    },
+    {
+      "name": "payment-methods",
+      "filename": "payment-methods.svg",
+      "category": "finance",
+      "tags": [
+        "payment",
+        "methods"
+      ],
+      "size": 412,
+      "lastModified": "2025-06-25T02:59:47.961Z"
+    },
+    {
+      "name": "pdf",
+      "filename": "pdf.svg",
+      "category": "files",
+      "tags": [
+        "pdf"
+      ],
+      "size": 1052,
+      "lastModified": "2025-06-25T02:59:47.965Z"
+    },
+    {
+      "name": "photo",
+      "filename": "photo.svg",
+      "category": "general",
+      "tags": [
+        "photo"
+      ],
+      "size": 813,
+      "lastModified": "2025-06-25T02:59:47.967Z"
+    },
+    {
+      "name": "pin-ev",
+      "filename": "pin-ev.svg",
+      "category": "general",
+      "tags": [
+        "pin",
+        "ev"
+      ],
+      "size": 749,
+      "lastModified": "2025-06-25T02:59:47.970Z"
+    },
+    {
+      "name": "play",
+      "filename": "play.svg",
+      "category": "general",
+      "tags": [
+        "play"
+      ],
+      "size": 244,
+      "lastModified": "2025-06-25T02:59:47.974Z"
+    },
+    {
+      "name": "plus",
+      "filename": "plus.svg",
+      "category": "actions",
+      "tags": [
+        "plus"
+      ],
+      "size": 469,
+      "lastModified": "2025-06-25T02:59:47.976Z"
+    },
+    {
+      "name": "police",
+      "filename": "police.svg",
+      "category": "general",
+      "tags": [
+        "police"
+      ],
+      "size": 2406,
+      "lastModified": "2025-06-25T02:59:47.978Z"
+    },
+    {
+      "name": "power-on",
+      "filename": "power-on.svg",
+      "category": "general",
+      "tags": [
+        "power",
+        "on"
+      ],
+      "size": 438,
+      "lastModified": "2025-06-25T02:59:47.980Z"
+    },
+    {
+      "name": "preferred_dealer",
+      "filename": "preferred_dealer.svg",
+      "category": "general",
+      "tags": [
+        "preferred",
+        "dealer"
+      ],
+      "size": 852,
+      "lastModified": "2025-06-25T02:59:47.983Z"
+    },
+    {
+      "name": "preferred_dealer_solid",
+      "filename": "preferred_dealer_solid.svg",
+      "category": "general",
+      "tags": [
+        "preferred",
+        "dealer",
+        "solid"
+      ],
+      "size": 481,
+      "lastModified": "2025-06-25T02:59:47.986Z"
+    },
+    {
+      "name": "price",
+      "filename": "price.svg",
+      "category": "finance",
+      "tags": [
+        "price"
+      ],
+      "size": 654,
+      "lastModified": "2025-06-25T02:59:47.988Z"
+    },
+    {
+      "name": "print",
+      "filename": "print.svg",
+      "category": "general",
+      "tags": [
+        "print"
+      ],
+      "size": 532,
+      "lastModified": "2025-06-25T02:59:47.990Z"
+    },
+    {
+      "name": "qibla",
+      "filename": "qibla.svg",
+      "category": "general",
+      "tags": [
+        "qibla"
+      ],
+      "size": 1473,
+      "lastModified": "2025-06-25T02:59:47.993Z"
+    },
+    {
+      "name": "quick_view",
+      "filename": "quick_view.svg",
+      "category": "interface",
+      "tags": [
+        "quick",
+        "view"
+      ],
+      "size": 829,
+      "lastModified": "2025-06-25T02:59:47.995Z"
+    },
+    {
+      "name": "ranking",
+      "filename": "ranking.svg",
+      "category": "general",
+      "tags": [
+        "ranking"
+      ],
+      "size": 1041,
+      "lastModified": "2025-06-25T02:59:47.997Z"
+    },
+    {
+      "name": "rapid_charge",
+      "filename": "rapid_charge.svg",
+      "category": "general",
+      "tags": [
+        "rapid",
+        "charge"
+      ],
+      "size": 990,
+      "lastModified": "2025-06-25T02:59:48.000Z"
+    },
+    {
+      "name": "rear_entertainment",
+      "filename": "rear_entertainment.svg",
+      "category": "entertainment",
+      "tags": [
+        "rear",
+        "entertainment"
+      ],
+      "size": 490,
+      "lastModified": "2025-06-25T02:59:48.002Z"
+    },
+    {
+      "name": "receive-package",
+      "filename": "receive-package.svg",
+      "category": "general",
+      "tags": [
+        "receive",
+        "package"
+      ],
+      "size": 2118,
+      "lastModified": "2025-06-25T02:59:48.006Z"
+    },
+    {
+      "name": "red-cross",
+      "filename": "red-cross.svg",
+      "category": "status",
+      "tags": [
+        "red",
+        "cross"
+      ],
+      "size": 236,
+      "lastModified": "2025-06-25T02:59:48.009Z"
+    },
+    {
+      "name": "refresh",
+      "filename": "refresh.svg",
+      "category": "general",
+      "tags": [
+        "refresh"
+      ],
+      "size": 709,
+      "lastModified": "2025-06-25T02:59:48.011Z"
+    },
+    {
+      "name": "registration",
+      "filename": "registration.svg",
+      "category": "general",
+      "tags": [
+        "registration"
+      ],
+      "size": 241,
+      "lastModified": "2025-06-25T02:59:48.013Z"
+    },
+    {
+      "name": "remote-battery-management",
+      "filename": "remote-battery-management.svg",
+      "category": "automotive",
+      "tags": [
+        "remote",
+        "battery",
+        "management"
+      ],
+      "size": 2124,
+      "lastModified": "2025-06-25T02:59:48.016Z"
+    },
+    {
+      "name": "remote-charging",
+      "filename": "remote-charging.svg",
+      "category": "automotive",
+      "tags": [
+        "remote",
+        "charging"
+      ],
+      "size": 1753,
+      "lastModified": "2025-06-25T02:59:48.018Z"
+    },
+    {
+      "name": "remote-climate-control",
+      "filename": "remote-climate-control.svg",
+      "category": "remote-control",
+      "tags": [
+        "remote",
+        "climate",
+        "control"
+      ],
+      "size": 5579,
+      "lastModified": "2025-06-25T02:59:48.021Z"
+    },
+    {
+      "name": "remote-control",
+      "filename": "remote-control.svg",
+      "category": "remote-control",
+      "tags": [
+        "remote",
+        "control"
+      ],
+      "size": 1518,
+      "lastModified": "2025-06-25T02:59:48.023Z"
+    },
+    {
+      "name": "remote-diagnostics",
+      "filename": "remote-diagnostics.svg",
+      "category": "remote-control",
+      "tags": [
+        "remote",
+        "diagnostics"
+      ],
+      "size": 2091,
+      "lastModified": "2025-06-25T02:59:48.025Z"
+    },
+    {
+      "name": "remote-door-control",
+      "filename": "remote-door-control.svg",
+      "category": "remote-control",
+      "tags": [
+        "remote",
+        "door",
+        "control"
+      ],
+      "size": 3639,
+      "lastModified": "2025-06-25T02:59:48.028Z"
+    },
+    {
+      "name": "remote-engine-start-stop",
+      "filename": "remote-engine-start-stop.svg",
+      "category": "automotive",
+      "tags": [
+        "remote",
+        "engine",
+        "start",
+        "stop"
+      ],
+      "size": 1997,
+      "lastModified": "2025-06-25T02:59:48.030Z"
+    },
+    {
+      "name": "remote-horn-light",
+      "filename": "remote-horn-light.svg",
+      "category": "remote-control",
+      "tags": [
+        "remote",
+        "horn",
+        "light"
+      ],
+      "size": 3251,
+      "lastModified": "2025-06-25T02:59:48.033Z"
+    },
+    {
+      "name": "remote-parking",
+      "filename": "remote-parking.svg",
+      "category": "remote-control",
+      "tags": [
+        "remote",
+        "parking"
+      ],
+      "size": 1265,
+      "lastModified": "2025-06-25T02:59:48.035Z"
+    },
+    {
+      "name": "remote-vehicle-servicing",
+      "filename": "remote-vehicle-servicing.svg",
+      "category": "remote-control",
+      "tags": [
+        "remote",
+        "vehicle",
+        "servicing"
+      ],
+      "size": 1897,
+      "lastModified": "2025-06-25T02:59:48.038Z"
+    },
+    {
+      "name": "reports",
+      "filename": "reports.svg",
+      "category": "general",
+      "tags": [
+        "reports"
+      ],
+      "size": 449,
+      "lastModified": "2025-06-25T02:59:48.041Z"
+    },
+    {
+      "name": "request_a_call back",
+      "filename": "request_a_call back.svg",
+      "category": "navigation-ui",
+      "tags": [
+        "request",
+        "a",
+        "call back"
+      ],
+      "size": 900,
+      "lastModified": "2025-06-25T02:59:48.044Z"
+    },
+    {
+      "name": "request_a_quote",
+      "filename": "request_a_quote.svg",
+      "category": "general",
+      "tags": [
+        "request",
+        "a",
+        "quote"
+      ],
+      "size": 938,
+      "lastModified": "2025-06-25T02:59:48.046Z"
+    },
+    {
+      "name": "restaurant",
+      "filename": "restaurant.svg",
+      "category": "general",
+      "tags": [
+        "restaurant"
+      ],
+      "size": 2310,
+      "lastModified": "2025-06-25T02:59:48.049Z"
+    },
+    {
+      "name": "results",
+      "filename": "results.svg",
+      "category": "general",
+      "tags": [
+        "results"
+      ],
+      "size": 365,
+      "lastModified": "2025-06-25T02:59:48.051Z"
+    },
+    {
+      "name": "review",
+      "filename": "review.svg",
+      "category": "interface",
+      "tags": [
+        "review"
+      ],
+      "size": 867,
+      "lastModified": "2025-06-25T02:59:48.053Z"
+    },
+    {
+      "name": "rewind",
+      "filename": "rewind.svg",
+      "category": "general",
+      "tags": [
+        "rewind"
+      ],
+      "size": 333,
+      "lastModified": "2025-06-25T02:59:48.056Z"
+    },
+    {
+      "name": "road_tax",
+      "filename": "road_tax.svg",
+      "category": "general",
+      "tags": [
+        "road",
+        "tax"
+      ],
+      "size": 329,
+      "lastModified": "2025-06-25T02:59:48.060Z"
+    },
+    {
+      "name": "road-ahead",
+      "filename": "road-ahead.svg",
+      "category": "general",
+      "tags": [
+        "road",
+        "ahead"
+      ],
+      "size": 896,
+      "lastModified": "2025-06-25T02:59:48.058Z"
+    },
+    {
+      "name": "running_cost",
+      "filename": "running_cost.svg",
+      "category": "finance",
+      "tags": [
+        "running",
+        "cost"
+      ],
+      "size": 1999,
+      "lastModified": "2025-06-25T02:59:48.063Z"
+    },
+    {
+      "name": "safety",
+      "filename": "safety.svg",
+      "category": "general",
+      "tags": [
+        "safety"
+      ],
+      "size": 2107,
+      "lastModified": "2025-06-25T02:59:48.065Z"
+    },
+    {
+      "name": "save",
+      "filename": "save.svg",
+      "category": "general",
+      "tags": [
+        "save"
+      ],
+      "size": 407,
+      "lastModified": "2025-06-25T02:59:48.067Z"
+    },
+    {
+      "name": "savings_incentive",
+      "filename": "savings_incentive.svg",
+      "category": "general",
+      "tags": [
+        "savings",
+        "incentive"
+      ],
+      "size": 829,
+      "lastModified": "2025-06-25T02:59:48.070Z"
+    },
+    {
+      "name": "schedule-an-update-installation",
+      "filename": "schedule-an-update-installation.svg",
+      "category": "navigation-ui",
+      "tags": [
+        "schedule",
+        "an",
+        "update",
+        "installation"
+      ],
+      "size": 1902,
+      "lastModified": "2025-06-25T02:59:48.074Z"
+    },
+    {
+      "name": "search",
+      "filename": "search.svg",
+      "category": "interface",
+      "tags": [
+        "search"
+      ],
+      "size": 786,
+      "lastModified": "2025-06-25T02:59:48.077Z"
+    },
+    {
+      "name": "seat",
+      "filename": "seat.svg",
+      "category": "general",
+      "tags": [
+        "seat"
+      ],
+      "size": 499,
+      "lastModified": "2025-06-25T02:59:48.080Z"
+    },
+    {
+      "name": "seat_capacity",
+      "filename": "seat_capacity.svg",
+      "category": "general",
+      "tags": [
+        "seat",
+        "capacity"
+      ],
+      "size": 856,
+      "lastModified": "2025-06-25T02:59:48.085Z"
+    },
+    {
+      "name": "seats",
+      "filename": "seats.svg",
+      "category": "general",
+      "tags": [
+        "seats"
+      ],
+      "size": 1394,
+      "lastModified": "2025-06-25T02:59:48.082Z"
+    },
+    {
+      "name": "self-driving-car",
+      "filename": "self-driving-car.svg",
+      "category": "general",
+      "tags": [
+        "self",
+        "driving",
+        "car"
+      ],
+      "size": 4885,
+      "lastModified": "2025-06-25T02:59:48.087Z"
+    },
+    {
+      "name": "self-driving-wheel",
+      "filename": "self-driving-wheel.svg",
+      "category": "automotive",
+      "tags": [
+        "self",
+        "driving",
+        "wheel"
+      ],
+      "size": 3793,
+      "lastModified": "2025-06-25T02:59:48.090Z"
+    },
+    {
+      "name": "service_booking_date",
+      "filename": "service_booking_date.svg",
+      "category": "time",
+      "tags": [
+        "service",
+        "booking",
+        "date"
+      ],
+      "size": 1969,
+      "lastModified": "2025-06-25T02:59:48.095Z"
+    },
+    {
+      "name": "service_log",
+      "filename": "service_log.svg",
+      "category": "general",
+      "tags": [
+        "service",
+        "log"
+      ],
+      "size": 613,
+      "lastModified": "2025-06-25T02:59:48.098Z"
+    },
+    {
+      "name": "service-at-home",
+      "filename": "service-at-home.svg",
+      "category": "places",
+      "tags": [
+        "service",
+        "at",
+        "home"
+      ],
+      "size": 974,
+      "lastModified": "2025-06-25T02:59:48.092Z"
+    },
+    {
+      "name": "settings",
+      "filename": "settings.svg",
+      "category": "settings",
+      "tags": [
+        "settings"
+      ],
+      "size": 1982,
+      "lastModified": "2025-06-25T02:59:48.101Z"
+    },
+    {
+      "name": "share",
+      "filename": "share.svg",
+      "category": "general",
+      "tags": [
+        "share"
+      ],
+      "size": 595,
+      "lastModified": "2025-06-25T02:59:48.108Z"
+    },
+    {
+      "name": "share-location",
+      "filename": "share-location.svg",
+      "category": "navigation",
+      "tags": [
+        "share",
+        "location"
+      ],
+      "size": 1762,
+      "lastModified": "2025-06-25T02:59:48.105Z"
+    },
+    {
+      "name": "shared-vehicle",
+      "filename": "shared-vehicle.svg",
+      "category": "general",
+      "tags": [
+        "shared",
+        "vehicle"
+      ],
+      "size": 2429,
+      "lastModified": "2025-06-25T02:59:48.111Z"
+    },
+    {
+      "name": "sharing-permissions",
+      "filename": "sharing-permissions.svg",
+      "category": "general",
+      "tags": [
+        "sharing",
+        "permissions"
+      ],
+      "size": 1329,
+      "lastModified": "2025-06-25T02:59:48.113Z"
+    },
+    {
+      "name": "siriusxm",
+      "filename": "siriusxm.svg",
+      "category": "general",
+      "tags": [
+        "siriusxm"
+      ],
+      "size": 2972,
+      "lastModified": "2025-06-25T02:59:48.116Z"
+    },
+    {
+      "name": "skip",
+      "filename": "skip.svg",
+      "category": "general",
+      "tags": [
+        "skip"
+      ],
+      "size": 319,
+      "lastModified": "2025-06-25T02:59:48.118Z"
+    },
+    {
+      "name": "sleep",
+      "filename": "sleep.svg",
+      "category": "general",
+      "tags": [
+        "sleep"
+      ],
+      "size": 331,
+      "lastModified": "2025-06-25T02:59:48.120Z"
+    },
+    {
+      "name": "slider",
+      "filename": "slider.svg",
+      "category": "general",
+      "tags": [
+        "slider"
+      ],
+      "size": 612,
+      "lastModified": "2025-06-25T02:59:48.123Z"
+    },
+    {
+      "name": "smart-alerts",
+      "filename": "smart-alerts.svg",
+      "category": "status",
+      "tags": [
+        "smart",
+        "alerts"
+      ],
+      "size": 1096,
+      "lastModified": "2025-06-25T02:59:48.125Z"
+    },
+    {
+      "name": "social_facebook",
+      "filename": "social_facebook.svg",
+      "category": "communication",
+      "tags": [
+        "social",
+        "facebook"
+      ],
+      "size": 350,
+      "lastModified": "2025-06-25T02:59:48.127Z"
+    },
+    {
+      "name": "specs-and-price",
+      "filename": "specs-and-price.svg",
+      "category": "finance",
+      "tags": [
+        "specs",
+        "and",
+        "price"
+      ],
+      "size": 1080,
+      "lastModified": "2025-06-25T02:59:48.130Z"
+    },
+    {
+      "name": "speed",
+      "filename": "speed.svg",
+      "category": "general",
+      "tags": [
+        "speed"
+      ],
+      "size": 1760,
+      "lastModified": "2025-06-25T02:59:48.138Z"
+    },
+    {
+      "name": "speed-alert",
+      "filename": "speed-alert.svg",
+      "category": "status",
+      "tags": [
+        "speed",
+        "alert"
+      ],
+      "size": 4287,
+      "lastModified": "2025-06-25T02:59:48.132Z"
+    },
+    {
+      "name": "speed-cameras",
+      "filename": "speed-cameras.svg",
+      "category": "general",
+      "tags": [
+        "speed",
+        "cameras"
+      ],
+      "size": 870,
+      "lastModified": "2025-06-25T02:59:48.135Z"
+    },
+    {
+      "name": "spinner",
+      "filename": "spinner.svg",
+      "category": "general",
+      "tags": [
+        "spinner"
+      ],
+      "size": 1487,
+      "lastModified": "2025-06-25T02:59:48.142Z"
+    },
+    {
+      "name": "split-billing",
+      "filename": "split-billing.svg",
+      "category": "general",
+      "tags": [
+        "split",
+        "billing"
+      ],
+      "size": 769,
+      "lastModified": "2025-06-25T02:59:48.144Z"
+    },
+    {
+      "name": "sponsored_dealer",
+      "filename": "sponsored_dealer.svg",
+      "category": "general",
+      "tags": [
+        "sponsored",
+        "dealer"
+      ],
+      "size": 4910,
+      "lastModified": "2025-06-25T02:59:48.147Z"
+    },
+    {
+      "name": "start-at-home",
+      "filename": "start-at-home.svg",
+      "category": "places",
+      "tags": [
+        "start",
+        "at",
+        "home"
+      ],
+      "size": 712,
+      "lastModified": "2025-06-25T02:59:48.150Z"
+    },
+    {
+      "name": "steering_wheel",
+      "filename": "steering_wheel.svg",
+      "category": "automotive",
+      "tags": [
+        "steering",
+        "wheel"
+      ],
+      "size": 1470,
+      "lastModified": "2025-06-25T02:59:48.154Z"
+    },
+    {
+      "name": "stolen-vehicle-tracking",
+      "filename": "stolen-vehicle-tracking.svg",
+      "category": "general",
+      "tags": [
+        "stolen",
+        "vehicle",
+        "tracking"
+      ],
+      "size": 882,
+      "lastModified": "2025-06-25T02:59:48.156Z"
+    },
+    {
+      "name": "streaming-audio-via-bluetooth",
+      "filename": "streaming-audio-via-bluetooth.svg",
+      "category": "entertainment",
+      "tags": [
+        "streaming",
+        "audio",
+        "via",
+        "bluetooth"
+      ],
+      "size": 2417,
+      "lastModified": "2025-06-25T02:59:48.159Z"
+    },
+    {
+      "name": "street-view",
+      "filename": "street-view.svg",
+      "category": "interface",
+      "tags": [
+        "street",
+        "view"
+      ],
+      "size": 639,
+      "lastModified": "2025-06-25T02:59:48.162Z"
+    },
+    {
+      "name": "style_packs",
+      "filename": "style_packs.svg",
+      "category": "general",
+      "tags": [
+        "style",
+        "packs"
+      ],
+      "size": 519,
+      "lastModified": "2025-06-25T02:59:48.164Z"
+    },
+    {
+      "name": "summary",
+      "filename": "summary.svg",
+      "category": "general",
+      "tags": [
+        "summary"
+      ],
+      "size": 290,
+      "lastModified": "2025-06-25T02:59:48.167Z"
+    },
+    {
+      "name": "support",
+      "filename": "support.svg",
+      "category": "navigation-ui",
+      "tags": [
+        "support"
+      ],
+      "size": 1903,
+      "lastModified": "2025-06-25T02:59:48.175Z"
+    },
+    {
+      "name": "support-at-home",
+      "filename": "support-at-home.svg",
+      "category": "navigation-ui",
+      "tags": [
+        "support",
+        "at",
+        "home"
+      ],
+      "size": 1467,
+      "lastModified": "2025-06-25T02:59:48.171Z"
+    },
+    {
+      "name": "sync-driver-profile",
+      "filename": "sync-driver-profile.svg",
+      "category": "users",
+      "tags": [
+        "sync",
+        "driver",
+        "profile"
+      ],
+      "size": 1407,
+      "lastModified": "2025-06-25T02:59:48.178Z"
+    },
+    {
+      "name": "tablet",
+      "filename": "tablet.svg",
+      "category": "general",
+      "tags": [
+        "tablet"
+      ],
+      "size": 398,
+      "lastModified": "2025-06-25T02:59:48.181Z"
+    },
+    {
+      "name": "take-control",
+      "filename": "take-control.svg",
+      "category": "remote-control",
+      "tags": [
+        "take",
+        "control"
+      ],
+      "size": 3344,
+      "lastModified": "2025-06-25T02:59:48.184Z"
+    },
+    {
+      "name": "test-drive-at-home",
+      "filename": "test-drive-at-home.svg",
+      "category": "places",
+      "tags": [
+        "test",
+        "drive",
+        "at",
+        "home"
+      ],
+      "size": 2587,
+      "lastModified": "2025-06-25T02:59:48.186Z"
+    },
+    {
+      "name": "thinking",
+      "filename": "thinking.svg",
+      "category": "general",
+      "tags": [
+        "thinking"
+      ],
+      "size": 4068,
+      "lastModified": "2025-06-25T02:59:48.189Z"
+    },
+    {
+      "name": "tick",
+      "filename": "tick.svg",
+      "category": "status",
+      "tags": [
+        "tick"
+      ],
+      "size": 314,
+      "lastModified": "2025-06-25T02:59:48.191Z"
+    },
+    {
+      "name": "tom-tom-weather",
+      "filename": "tom-tom-weather.svg",
+      "category": "general",
+      "tags": [
+        "tom",
+        "tom",
+        "weather"
+      ],
+      "size": 10746,
+      "lastModified": "2025-06-25T02:59:48.194Z"
+    },
+    {
+      "name": "torque",
+      "filename": "torque.svg",
+      "category": "general",
+      "tags": [
+        "torque"
+      ],
+      "size": 1660,
+      "lastModified": "2025-06-25T02:59:48.196Z"
+    },
+    {
+      "name": "touch_screen",
+      "filename": "touch_screen.svg",
+      "category": "general",
+      "tags": [
+        "touch",
+        "screen"
+      ],
+      "size": 1141,
+      "lastModified": "2025-06-25T02:59:48.198Z"
+    },
+    {
+      "name": "towing",
+      "filename": "towing.svg",
+      "category": "general",
+      "tags": [
+        "towing"
+      ],
+      "size": 590,
+      "lastModified": "2025-06-25T02:59:48.201Z"
+    },
+    {
+      "name": "trade_in",
+      "filename": "trade_in.svg",
+      "category": "general",
+      "tags": [
+        "trade",
+        "in"
+      ],
+      "size": 213,
+      "lastModified": "2025-06-25T02:59:48.204Z"
+    },
+    {
+      "name": "traffic",
+      "filename": "traffic.svg",
+      "category": "general",
+      "tags": [
+        "traffic"
+      ],
+      "size": 758,
+      "lastModified": "2025-06-25T02:59:48.207Z"
+    },
+    {
+      "name": "transportation",
+      "filename": "transportation.svg",
+      "category": "general",
+      "tags": [
+        "transportation"
+      ],
+      "size": 7618,
+      "lastModified": "2025-06-25T02:59:48.210Z"
+    },
+    {
+      "name": "trash",
+      "filename": "trash.svg",
+      "category": "actions",
+      "tags": [
+        "trash"
+      ],
+      "size": 531,
+      "lastModified": "2025-06-25T02:59:48.212Z"
+    },
+    {
+      "name": "trip-advisor",
+      "filename": "trip-advisor.svg",
+      "category": "general",
+      "tags": [
+        "trip",
+        "advisor"
+      ],
+      "size": 2986,
+      "lastModified": "2025-06-25T02:59:48.215Z"
+    },
+    {
+      "name": "trunk-open",
+      "filename": "trunk-open.svg",
+      "category": "general",
+      "tags": [
+        "trunk",
+        "open"
+      ],
+      "size": 1957,
+      "lastModified": "2025-06-25T02:59:48.217Z"
+    },
+    {
+      "name": "tyre-pressure",
+      "filename": "tyre-pressure.svg",
+      "category": "automotive",
+      "tags": [
+        "tyre",
+        "pressure"
+      ],
+      "size": 2600,
+      "lastModified": "2025-06-25T02:59:48.220Z"
+    },
+    {
+      "name": "update--required",
+      "filename": "update--required.svg",
+      "category": "navigation-ui",
+      "tags": [
+        "update",
+        "",
+        "required"
+      ],
+      "size": 961,
+      "lastModified": "2025-06-25T02:59:48.222Z"
+    },
+    {
+      "name": "upholstery",
+      "filename": "upholstery.svg",
+      "category": "navigation-ui",
+      "tags": [
+        "upholstery"
+      ],
+      "size": 2497,
+      "lastModified": "2025-06-25T02:59:48.224Z"
+    },
+    {
+      "name": "upload",
+      "filename": "upload.svg",
+      "category": "navigation-ui",
+      "tags": [
+        "upload"
+      ],
+      "size": 527,
+      "lastModified": "2025-06-25T02:59:48.228Z"
+    },
+    {
+      "name": "upload-offers",
+      "filename": "upload-offers.svg",
+      "category": "navigation-ui",
+      "tags": [
+        "upload",
+        "offers"
+      ],
+      "size": 4384,
+      "lastModified": "2025-06-25T02:59:48.226Z"
+    },
+    {
+      "name": "usb",
+      "filename": "usb.svg",
+      "category": "general",
+      "tags": [
+        "usb"
+      ],
+      "size": 280,
+      "lastModified": "2025-06-25T02:59:48.230Z"
+    },
+    {
+      "name": "usb1",
+      "filename": "usb1.svg",
+      "category": "general",
+      "tags": [
+        "usb1"
+      ],
+      "size": 527,
+      "lastModified": "2025-06-25T02:59:48.232Z"
+    },
+    {
+      "name": "van",
+      "filename": "van.svg",
+      "category": "general",
+      "tags": [
+        "van"
+      ],
+      "size": 2079,
+      "lastModified": "2025-06-25T02:59:48.234Z"
+    },
+    {
+      "name": "variable_transmission",
+      "filename": "variable_transmission.svg",
+      "category": "general",
+      "tags": [
+        "variable",
+        "transmission"
+      ],
+      "size": 1282,
+      "lastModified": "2025-06-25T02:59:48.236Z"
+    },
+    {
+      "name": "vehicle_grade",
+      "filename": "vehicle_grade.svg",
+      "category": "general",
+      "tags": [
+        "vehicle",
+        "grade"
+      ],
+      "size": 2334,
+      "lastModified": "2025-06-25T02:59:48.255Z"
+    },
+    {
+      "name": "vehicle-damage",
+      "filename": "vehicle-damage.svg",
+      "category": "general",
+      "tags": [
+        "vehicle",
+        "damage"
+      ],
+      "size": 2959,
+      "lastModified": "2025-06-25T02:59:48.239Z"
+    },
+    {
+      "name": "vehicle-delivery",
+      "filename": "vehicle-delivery.svg",
+      "category": "general",
+      "tags": [
+        "vehicle",
+        "delivery"
+      ],
+      "size": 1496,
+      "lastModified": "2025-06-25T02:59:48.242Z"
+    },
+    {
+      "name": "vehicle-health",
+      "filename": "vehicle-health.svg",
+      "category": "general",
+      "tags": [
+        "vehicle",
+        "health"
+      ],
+      "size": 2117,
+      "lastModified": "2025-06-25T02:59:48.244Z"
+    },
+    {
+      "name": "vehicle-status",
+      "filename": "vehicle-status.svg",
+      "category": "general",
+      "tags": [
+        "vehicle",
+        "status"
+      ],
+      "size": 1901,
+      "lastModified": "2025-06-25T02:59:48.246Z"
+    },
+    {
+      "name": "vehicle-towed",
+      "filename": "vehicle-towed.svg",
+      "category": "general",
+      "tags": [
+        "vehicle",
+        "towed"
+      ],
+      "size": 2145,
+      "lastModified": "2025-06-25T02:59:48.248Z"
+    },
+    {
+      "name": "vehicle-unlock",
+      "filename": "vehicle-unlock.svg",
+      "category": "remote-control",
+      "tags": [
+        "vehicle",
+        "unlock"
+      ],
+      "size": 2170,
+      "lastModified": "2025-06-25T02:59:48.250Z"
+    },
+    {
+      "name": "video",
+      "filename": "video.svg",
+      "category": "entertainment",
+      "tags": [
+        "video"
+      ],
+      "size": 290,
+      "lastModified": "2025-06-25T02:59:48.256Z"
+    },
+    {
+      "name": "virtual-showroom",
+      "filename": "virtual-showroom.svg",
+      "category": "general",
+      "tags": [
+        "virtual",
+        "showroom"
+      ],
+      "size": 1032,
+      "lastModified": "2025-06-25T02:59:48.259Z"
+    },
+    {
+      "name": "voice_recognition",
+      "filename": "voice_recognition.svg",
+      "category": "general",
+      "tags": [
+        "voice",
+        "recognition"
+      ],
+      "size": 904,
+      "lastModified": "2025-06-25T02:59:48.261Z"
+    },
+    {
+      "name": "volume",
+      "filename": "volume.svg",
+      "category": "general",
+      "tags": [
+        "volume"
+      ],
+      "size": 662,
+      "lastModified": "2025-06-25T02:59:48.263Z"
+    },
+    {
+      "name": "wallet",
+      "filename": "wallet.svg",
+      "category": "general",
+      "tags": [
+        "wallet"
+      ],
+      "size": 1165,
+      "lastModified": "2025-06-25T02:59:48.265Z"
+    },
+    {
+      "name": "wds2-burger-menu",
+      "filename": "wds2-burger-menu.svg",
+      "category": "general",
+      "tags": [
+        "wds2",
+        "burger",
+        "menu"
+      ],
+      "size": 431,
+      "lastModified": "2025-06-25T02:59:48.267Z"
+    },
+    {
+      "name": "weather",
+      "filename": "weather.svg",
+      "category": "general",
+      "tags": [
+        "weather"
+      ],
+      "size": 2879,
+      "lastModified": "2025-06-25T02:59:48.270Z"
+    },
+    {
+      "name": "wheel",
+      "filename": "wheel.svg",
+      "category": "automotive",
+      "tags": [
+        "wheel"
+      ],
+      "size": 1786,
+      "lastModified": "2025-06-25T02:59:48.273Z"
+    },
+    {
+      "name": "width",
+      "filename": "width.svg",
+      "category": "general",
+      "tags": [
+        "width"
+      ],
+      "size": 377,
+      "lastModified": "2025-06-25T02:59:48.275Z"
+    },
+    {
+      "name": "wifi",
+      "filename": "wifi.svg",
+      "category": "general",
+      "tags": [
+        "wifi"
+      ],
+      "size": 1326,
+      "lastModified": "2025-06-25T02:59:48.277Z"
+    },
+    {
+      "name": "wiper_blade_replacement",
+      "filename": "wiper_blade_replacement.svg",
+      "category": "general",
+      "tags": [
+        "wiper",
+        "blade",
+        "replacement"
+      ],
+      "size": 859,
+      "lastModified": "2025-06-25T02:59:48.279Z"
+    },
+    {
+      "name": "work_location",
+      "filename": "work_location.svg",
+      "category": "navigation",
+      "tags": [
+        "work",
+        "location"
+      ],
+      "size": 712,
+      "lastModified": "2025-06-25T02:59:48.281Z"
+    },
+    {
+      "name": "wrench",
+      "filename": "wrench.svg",
+      "category": "general",
+      "tags": [
+        "wrench"
+      ],
+      "size": 524,
+      "lastModified": "2025-06-25T02:59:48.283Z"
+    },
+    {
+      "name": "yen",
+      "filename": "yen.svg",
+      "category": "finance",
+      "tags": [
+        "yen"
+      ],
+      "size": 325,
+      "lastModified": "2025-06-25T02:59:48.285Z"
+    },
+    {
+      "name": "your_booked_services",
+      "filename": "your_booked_services.svg",
+      "category": "general",
+      "tags": [
+        "your",
+        "booked",
+        "services"
+      ],
+      "size": 894,
+      "lastModified": "2025-06-25T02:59:48.287Z"
+    },
+    {
+      "name": "zoom_in",
+      "filename": "zoom_in.svg",
+      "category": "general",
+      "tags": [
+        "zoom",
+        "in"
+      ],
+      "size": 771,
+      "lastModified": "2025-06-25T02:59:48.289Z"
+    },
+    {
+      "name": "zoom_out",
+      "filename": "zoom_out.svg",
+      "category": "general",
+      "tags": [
+        "zoom",
+        "out"
+      ],
+      "size": 603,
+      "lastModified": "2025-06-25T02:59:48.292Z"
+    }
+  ]
+}

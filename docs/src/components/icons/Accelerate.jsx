@@ -1,0 +1,19 @@
+import React from 'react';
+
+const Accelerate = ({ size = 24, color = "currentColor", ...props }) => {
+  return (
+    <svg 
+      width={size} 
+      height={size} 
+      viewBox="0 0 24 24" 
+      fill={color}
+      {...props}
+    >
+      <path d="M24 12L16 20L14 18L20 12L14 6L16 4L24 12ZM8 4L6 6L10.5 10.5H0V13.5H10.5L6 18L8 20L16 12L8 4Z"/>
+    </svg>
+  );
+};
+
+Accelerate.displayName = 'Accelerate';
+
+export default Accelerate;

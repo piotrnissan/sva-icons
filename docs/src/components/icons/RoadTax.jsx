@@ -1,0 +1,19 @@
+import React from 'react';
+
+const RoadTax = ({ size = 24, color = "currentColor", ...props }) => {
+  return (
+    <svg 
+      width={size} 
+      height={size} 
+      viewBox="0 0 24 24" 
+      fill={color}
+      {...props}
+    >
+      <path d="M16 5V1H8C7.448 1 7 1.448 7 2V11H14C15.103 11 16 11.897 16 13V19H21C21.552 19 22 18.552 22 18V7H18C16.897 7 16 6.103 16 5ZM17 1V5C17 5.552 17.448 6 18 6H22L17 1ZM0 22C0 22.55 0.45 23 1 23H14C14.55 23 15 22.55 15 22V17H0V22ZM14 12H1C0.45 12 0 12.45 0 13V15H15V13C15 12.45 14.55 12 14 12Z"/>
+    </svg>
+  );
+};
+
+RoadTax.displayName = 'RoadTax';
+
+export default RoadTax;

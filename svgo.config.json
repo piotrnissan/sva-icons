@@ -2,7 +2,6 @@
   "multipass": true,
   "plugins": [
     "removeDimensions",
-    "removeAttrs",
     {
       "name": "removeAttrs",
       "params": { "attrs": "(fill|stroke|style|class|id)" }

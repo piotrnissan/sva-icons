@@ -1,0 +1,19 @@
+import React from 'react';
+
+const CrossingCafe = ({ size = 24, color = "currentColor", ...props }) => {
+  return (
+    <svg 
+      width={size} 
+      height={size} 
+      viewBox="0 0 24 24" 
+      fill={color}
+      {...props}
+    >
+      <path d="M18 22C18 22.552 17.552 23 17 23H2C1.448 23 1 22.552 1 22C1 21.448 1.448 21 2 21H17C17.552 21 18 21.448 18 22ZM22 7V11C21.998 13.208 20.208 14.998 18 15H17C17 17.761 14.761 20 12 20H7C4.239 20 2 17.761 2 15V2C2 1.448 2.448 1 3 1H16C16.552 1 17 1.448 17 2V3H18C20.208 3.002 21.998 4.792 22 7ZM20 7C19.999 5.896 19.104 5.001 18 5H17V13H18C19.104 12.999 19.999 12.104 20 11V7Z"/>
+    </svg>
+  );
+};
+
+CrossingCafe.displayName = 'CrossingCafe';
+
+export default CrossingCafe;

@@ -1,6 +1,70 @@
 {
+  "name": "sva-icons",
+  "version": "1.0.0",
+  "description": "SVA Icons - A comprehensive icon library for automotive and general UI use",
+  "type": "module",
+  "main": "./dist/icons/index.js",
+  "module": "./dist/icons/esm/index.js",
+  "types": "./dist/icons/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/icons/esm/index.js",
+      "require": "./dist/icons/cjs/index.js",
+      "types": "./dist/icons/index.d.ts"
+    },
+    "./svg/*": "./svg/*",
+    "./react": "./dist/react/index.js",
+    "./sprite": "./dist/sprite/sva-icons-sprite.svg",
+    "./web-components": "./dist/web-components/sva-icon.js"
+  },
+  "files": [
+    "dist/icons/**/*",
+    "dist/react/**/*",
+    "dist/sprite/**/*",
+    "dist/web-components/**/*",
+    "svg/**/*",
+    "icons.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "icons",
+    "svg",
+    "automotive",
+    "nissan",
+    "ui",
+    "react",
+    "web-components",
+    "sprite"
+  ],
+  "author": "Nissan Motor Corporation",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nissan/sva-icons.git"
+  },
+  "homepage": "https://github.com/nissan/sva-icons#readme",
+  "bugs": {
+    "url": "https://github.com/nissan/sva-icons/issues"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "build:web": "node scripts/build-web-component.js && rollup -c scripts/rollup.web.config.js",
+    "build:icons": "node scripts/build-icons.js",
+    "build:sprite": "node scripts/build-sprite.js",
+    "build:react": "node scripts/build-react-simple.js",
+    "build:all": "npm run build:icons && npm run build:sprite && npm run build:react && npm run build:web",
+    "prepublishOnly": "npm run build:all",
+    "publish:prep": "node scripts/publish-prep.js"
+  },
   "dependencies": {
     "@svgr/core": "^8.1.0",
+    "@svgr/plugin-jsx": "^8.1.0",
     "svgo": "^4.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

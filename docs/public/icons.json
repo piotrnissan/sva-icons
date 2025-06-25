@@ -1,0 +1,2799 @@
+[
+  {
+    "name": "abs-alert",
+    "filename": "abs-alert.svg",
+    "tags": [
+      "abs",
+      "alert"
+    ]
+  },
+  {
+    "name": "accelerate",
+    "filename": "accelerate.svg",
+    "tags": [
+      "accelerate"
+    ]
+  },
+  {
+    "name": "accessories",
+    "filename": "accessories.svg",
+    "tags": [
+      "accessories"
+    ]
+  },
+  {
+    "name": "aero_dynamic_body",
+    "filename": "aero_dynamic_body.svg",
+    "tags": [
+      "aero",
+      "dynamic",
+      "body"
+    ]
+  },
+  {
+    "name": "after_sales",
+    "filename": "after_sales.svg",
+    "tags": [
+      "after",
+      "sales"
+    ]
+  },
+  {
+    "name": "airbag-status",
+    "filename": "airbag-status.svg",
+    "tags": [
+      "airbag",
+      "status"
+    ]
+  },
+  {
+    "name": "airbag",
+    "filename": "airbag.svg",
+    "tags": [
+      "airbag"
+    ]
+  },
+  {
+    "name": "alert",
+    "filename": "alert.svg",
+    "tags": [
+      "alert"
+    ]
+  },
+  {
+    "name": "alert_filled",
+    "filename": "alert_filled.svg",
+    "tags": [
+      "alert",
+      "filled"
+    ]
+  },
+  {
+    "name": "alexa",
+    "filename": "alexa.svg",
+    "tags": [
+      "alexa"
+    ]
+  },
+  {
+    "name": "ambient_lighting",
+    "filename": "ambient_lighting.svg",
+    "tags": [
+      "ambient",
+      "lighting"
+    ]
+  },
+  {
+    "name": "android-auto",
+    "filename": "android-auto.svg",
+    "tags": [
+      "android",
+      "auto"
+    ]
+  },
+  {
+    "name": "android_compatibility",
+    "filename": "android_compatibility.svg",
+    "tags": [
+      "android",
+      "compatibility"
+    ]
+  },
+  {
+    "name": "apple-carplay",
+    "filename": "apple-carplay.svg",
+    "tags": [
+      "apple",
+      "carplay"
+    ]
+  },
+  {
+    "name": "area-alert",
+    "filename": "area-alert.svg",
+    "tags": [
+      "area",
+      "alert"
+    ]
+  },
+  {
+    "name": "area",
+    "filename": "area.svg",
+    "tags": [
+      "area"
+    ]
+  },
+  {
+    "name": "arrow_down",
+    "filename": "arrow_down.svg",
+    "tags": [
+      "arrow",
+      "down"
+    ]
+  },
+  {
+    "name": "arrow_left",
+    "filename": "arrow_left.svg",
+    "tags": [
+      "arrow",
+      "left"
+    ]
+  },
+  {
+    "name": "arrow_right",
+    "filename": "arrow_right.svg",
+    "tags": [
+      "arrow",
+      "right"
+    ]
+  },
+  {
+    "name": "arrow_up",
+    "filename": "arrow_up.svg",
+    "tags": [
+      "arrow",
+      "up"
+    ]
+  },
+  {
+    "name": "assistance",
+    "filename": "assistance.svg",
+    "tags": [
+      "assistance"
+    ]
+  },
+  {
+    "name": "assisted_steering",
+    "filename": "assisted_steering.svg",
+    "tags": [
+      "assisted",
+      "steering"
+    ]
+  },
+  {
+    "name": "automatic",
+    "filename": "automatic.svg",
+    "tags": [
+      "automatic"
+    ]
+  },
+  {
+    "name": "autonomous-driving",
+    "filename": "autonomous-driving.svg",
+    "tags": [
+      "autonomous",
+      "driving"
+    ]
+  },
+  {
+    "name": "aux2",
+    "filename": "aux2.svg",
+    "tags": [
+      "aux2"
+    ]
+  },
+  {
+    "name": "back",
+    "filename": "back.svg",
+    "tags": [
+      "back"
+    ]
+  },
+  {
+    "name": "battery",
+    "filename": "battery.svg",
+    "tags": [
+      "battery"
+    ]
+  },
+  {
+    "name": "battery_leasing",
+    "filename": "battery_leasing.svg",
+    "tags": [
+      "battery",
+      "leasing"
+    ]
+  },
+  {
+    "name": "battery_service",
+    "filename": "battery_service.svg",
+    "tags": [
+      "battery",
+      "service"
+    ]
+  },
+  {
+    "name": "bed_channel_system",
+    "filename": "bed_channel_system.svg",
+    "tags": [
+      "bed",
+      "channel",
+      "system"
+    ]
+  },
+  {
+    "name": "best_seller",
+    "filename": "best_seller.svg",
+    "tags": [
+      "best",
+      "seller"
+    ]
+  },
+  {
+    "name": "bluetooth",
+    "filename": "bluetooth.svg",
+    "tags": [
+      "bluetooth"
+    ]
+  },
+  {
+    "name": "body-repair",
+    "filename": "body-repair.svg",
+    "tags": [
+      "body",
+      "repair"
+    ]
+  },
+  {
+    "name": "body_type",
+    "filename": "body_type.svg",
+    "tags": [
+      "body",
+      "type"
+    ]
+  },
+  {
+    "name": "book_service",
+    "filename": "book_service.svg",
+    "tags": [
+      "book",
+      "service"
+    ]
+  },
+  {
+    "name": "box",
+    "filename": "box.svg",
+    "tags": [
+      "box"
+    ]
+  },
+  {
+    "name": "brake-alert",
+    "filename": "brake-alert.svg",
+    "tags": [
+      "brake",
+      "alert"
+    ]
+  },
+  {
+    "name": "brake-fluid",
+    "filename": "brake-fluid.svg",
+    "tags": [
+      "brake",
+      "fluid"
+    ]
+  },
+  {
+    "name": "brake",
+    "filename": "brake.svg",
+    "tags": [
+      "brake"
+    ]
+  },
+  {
+    "name": "buy-at-home",
+    "filename": "buy-at-home.svg",
+    "tags": [
+      "buy",
+      "at",
+      "home"
+    ]
+  },
+  {
+    "name": "calculator",
+    "filename": "calculator.svg",
+    "tags": [
+      "calculator"
+    ]
+  },
+  {
+    "name": "calendar",
+    "filename": "calendar.svg",
+    "tags": [
+      "calendar"
+    ]
+  },
+  {
+    "name": "camera",
+    "filename": "camera.svg",
+    "tags": [
+      "camera"
+    ]
+  },
+  {
+    "name": "campaigns-filled",
+    "filename": "campaigns-filled.svg",
+    "tags": [
+      "campaigns",
+      "filled"
+    ]
+  },
+  {
+    "name": "campaigns-outline",
+    "filename": "campaigns-outline.svg",
+    "tags": [
+      "campaigns",
+      "outline"
+    ]
+  },
+  {
+    "name": "cant-connect",
+    "filename": "cant-connect.svg",
+    "tags": [
+      "cant",
+      "connect"
+    ]
+  },
+  {
+    "name": "car-locator",
+    "filename": "car-locator.svg",
+    "tags": [
+      "car",
+      "locator"
+    ]
+  },
+  {
+    "name": "car",
+    "filename": "car.svg",
+    "tags": [
+      "car"
+    ]
+  },
+  {
+    "name": "car_location",
+    "filename": "car_location.svg",
+    "tags": [
+      "car",
+      "location"
+    ]
+  },
+  {
+    "name": "car_wings",
+    "filename": "car_wings.svg",
+    "tags": [
+      "car",
+      "wings"
+    ]
+  },
+  {
+    "name": "change-driver",
+    "filename": "change-driver.svg",
+    "tags": [
+      "change",
+      "driver"
+    ]
+  },
+  {
+    "name": "charging",
+    "filename": "charging.svg",
+    "tags": [
+      "charging"
+    ]
+  },
+  {
+    "name": "charging_cost",
+    "filename": "charging_cost.svg",
+    "tags": [
+      "charging",
+      "cost"
+    ]
+  },
+  {
+    "name": "check-in",
+    "filename": "check-in.svg",
+    "tags": [
+      "check",
+      "in"
+    ]
+  },
+  {
+    "name": "check-out",
+    "filename": "check-out.svg",
+    "tags": [
+      "check",
+      "out"
+    ]
+  },
+  {
+    "name": "checked_box",
+    "filename": "checked_box.svg",
+    "tags": [
+      "checked",
+      "box"
+    ]
+  },
+  {
+    "name": "choice-light",
+    "filename": "choice-light.svg",
+    "tags": [
+      "choice",
+      "light"
+    ]
+  },
+  {
+    "name": "choice",
+    "filename": "choice.svg",
+    "tags": [
+      "choice"
+    ]
+  },
+  {
+    "name": "clear",
+    "filename": "clear.svg",
+    "tags": [
+      "clear"
+    ]
+  },
+  {
+    "name": "climate_control",
+    "filename": "climate_control.svg",
+    "tags": [
+      "climate",
+      "control"
+    ]
+  },
+  {
+    "name": "clock",
+    "filename": "clock.svg",
+    "tags": [
+      "clock"
+    ]
+  },
+  {
+    "name": "co2",
+    "filename": "co2.svg",
+    "tags": [
+      "co2"
+    ]
+  },
+  {
+    "name": "colour",
+    "filename": "colour.svg",
+    "tags": [
+      "colour"
+    ]
+  },
+  {
+    "name": "commerce",
+    "filename": "commerce.svg",
+    "tags": [
+      "commerce"
+    ]
+  },
+  {
+    "name": "communication-preference",
+    "filename": "communication-preference.svg",
+    "tags": [
+      "communication",
+      "preference"
+    ]
+  },
+  {
+    "name": "compare",
+    "filename": "compare.svg",
+    "tags": [
+      "compare"
+    ]
+  },
+  {
+    "name": "configure",
+    "filename": "configure.svg",
+    "tags": [
+      "configure"
+    ]
+  },
+  {
+    "name": "contact_email",
+    "filename": "contact_email.svg",
+    "tags": [
+      "contact",
+      "email"
+    ]
+  },
+  {
+    "name": "contact_fbmessage",
+    "filename": "contact_fbmessage.svg",
+    "tags": [
+      "contact",
+      "fbmessage"
+    ]
+  },
+  {
+    "name": "contact_linkedin",
+    "filename": "contact_linkedin.svg",
+    "tags": [
+      "contact",
+      "linkedin"
+    ]
+  },
+  {
+    "name": "contact_phone",
+    "filename": "contact_phone.svg",
+    "tags": [
+      "contact",
+      "phone"
+    ]
+  },
+  {
+    "name": "contact_spotify",
+    "filename": "contact_spotify.svg",
+    "tags": [
+      "contact",
+      "spotify"
+    ]
+  },
+  {
+    "name": "contact_tiktok",
+    "filename": "contact_tiktok.svg",
+    "tags": [
+      "contact",
+      "tiktok"
+    ]
+  },
+  {
+    "name": "contact_whatsapp",
+    "filename": "contact_whatsapp.svg",
+    "tags": [
+      "contact",
+      "whatsapp"
+    ]
+  },
+  {
+    "name": "cookies",
+    "filename": "cookies.svg",
+    "tags": [
+      "cookies"
+    ]
+  },
+  {
+    "name": "cross",
+    "filename": "cross.svg",
+    "tags": [
+      "cross"
+    ]
+  },
+  {
+    "name": "crossing-boutique",
+    "filename": "crossing-boutique.svg",
+    "tags": [
+      "crossing",
+      "boutique"
+    ]
+  },
+  {
+    "name": "crossing-cafe",
+    "filename": "crossing-cafe.svg",
+    "tags": [
+      "crossing",
+      "cafe"
+    ]
+  },
+  {
+    "name": "cubic_volume",
+    "filename": "cubic_volume.svg",
+    "tags": [
+      "cubic",
+      "volume"
+    ]
+  },
+  {
+    "name": "curfew-alert",
+    "filename": "curfew-alert.svg",
+    "tags": [
+      "curfew",
+      "alert"
+    ]
+  },
+  {
+    "name": "cylinder",
+    "filename": "cylinder.svg",
+    "tags": [
+      "cylinder"
+    ]
+  },
+  {
+    "name": "dealer-sales-staff",
+    "filename": "dealer-sales-staff.svg",
+    "tags": [
+      "dealer",
+      "sales",
+      "staff"
+    ]
+  },
+  {
+    "name": "dealer-view",
+    "filename": "dealer-view.svg",
+    "tags": [
+      "dealer",
+      "view"
+    ]
+  },
+  {
+    "name": "dealership",
+    "filename": "dealership.svg",
+    "tags": [
+      "dealership"
+    ]
+  },
+  {
+    "name": "dealer_review",
+    "filename": "dealer_review.svg",
+    "tags": [
+      "dealer",
+      "review"
+    ]
+  },
+  {
+    "name": "delivery-follow-up",
+    "filename": "delivery-follow-up.svg",
+    "tags": [
+      "delivery",
+      "follow",
+      "up"
+    ]
+  },
+  {
+    "name": "delivery",
+    "filename": "delivery.svg",
+    "tags": [
+      "delivery"
+    ]
+  },
+  {
+    "name": "desktop",
+    "filename": "desktop.svg",
+    "tags": [
+      "desktop"
+    ]
+  },
+  {
+    "name": "destination-search",
+    "filename": "destination-search.svg",
+    "tags": [
+      "destination",
+      "search"
+    ]
+  },
+  {
+    "name": "devices",
+    "filename": "devices.svg",
+    "tags": [
+      "devices"
+    ]
+  },
+  {
+    "name": "device_compatibility",
+    "filename": "device_compatibility.svg",
+    "tags": [
+      "device",
+      "compatibility"
+    ]
+  },
+  {
+    "name": "device_settings",
+    "filename": "device_settings.svg",
+    "tags": [
+      "device",
+      "settings"
+    ]
+  },
+  {
+    "name": "dimensions",
+    "filename": "dimensions.svg",
+    "tags": [
+      "dimensions"
+    ]
+  },
+  {
+    "name": "direction-walking",
+    "filename": "direction-walking.svg",
+    "tags": [
+      "direction",
+      "walking"
+    ]
+  },
+  {
+    "name": "directions",
+    "filename": "directions.svg",
+    "tags": [
+      "directions"
+    ]
+  },
+  {
+    "name": "discover-at-home",
+    "filename": "discover-at-home.svg",
+    "tags": [
+      "discover",
+      "at",
+      "home"
+    ]
+  },
+  {
+    "name": "dislike-filled",
+    "filename": "dislike-filled.svg",
+    "tags": [
+      "dislike",
+      "filled"
+    ]
+  },
+  {
+    "name": "dislike",
+    "filename": "dislike.svg",
+    "tags": [
+      "dislike"
+    ]
+  },
+  {
+    "name": "door-to-door-navigation",
+    "filename": "door-to-door-navigation.svg",
+    "tags": [
+      "door",
+      "to",
+      "door",
+      "navigation"
+    ]
+  },
+  {
+    "name": "doors",
+    "filename": "doors.svg",
+    "tags": [
+      "doors"
+    ]
+  },
+  {
+    "name": "download-document",
+    "filename": "download-document.svg",
+    "tags": [
+      "download",
+      "document"
+    ]
+  },
+  {
+    "name": "download_brochure",
+    "filename": "download_brochure.svg",
+    "tags": [
+      "download",
+      "brochure"
+    ]
+  },
+  {
+    "name": "drivers-profiles",
+    "filename": "drivers-profiles.svg",
+    "tags": [
+      "drivers",
+      "profiles"
+    ]
+  },
+  {
+    "name": "drive_train_3wd",
+    "filename": "drive_train_3wd.svg",
+    "tags": [
+      "drive",
+      "train",
+      "3wd"
+    ]
+  },
+  {
+    "name": "drive_train_4WD",
+    "filename": "drive_train_4WD.svg",
+    "tags": [
+      "drive",
+      "train",
+      "4WD"
+    ]
+  },
+  {
+    "name": "drive_train_awd",
+    "filename": "drive_train_awd.svg",
+    "tags": [
+      "drive",
+      "train",
+      "awd"
+    ]
+  },
+  {
+    "name": "driving-history",
+    "filename": "driving-history.svg",
+    "tags": [
+      "driving",
+      "history"
+    ]
+  },
+  {
+    "name": "driving-restriction",
+    "filename": "driving-restriction.svg",
+    "tags": [
+      "driving",
+      "restriction"
+    ]
+  },
+  {
+    "name": "driving_log_history",
+    "filename": "driving_log_history.svg",
+    "tags": [
+      "driving",
+      "log",
+      "history"
+    ]
+  },
+  {
+    "name": "dual_climate_control",
+    "filename": "dual_climate_control.svg",
+    "tags": [
+      "dual",
+      "climate",
+      "control"
+    ]
+  },
+  {
+    "name": "edit",
+    "filename": "edit.svg",
+    "tags": [
+      "edit"
+    ]
+  },
+  {
+    "name": "efficiency_class",
+    "filename": "efficiency_class.svg",
+    "tags": [
+      "efficiency",
+      "class"
+    ]
+  },
+  {
+    "name": "elevator",
+    "filename": "elevator.svg",
+    "tags": [
+      "elevator"
+    ]
+  },
+  {
+    "name": "emission",
+    "filename": "emission.svg",
+    "tags": [
+      "emission"
+    ]
+  },
+  {
+    "name": "engine-oil",
+    "filename": "engine-oil.svg",
+    "tags": [
+      "engine",
+      "oil"
+    ]
+  },
+  {
+    "name": "engine-start-stop",
+    "filename": "engine-start-stop.svg",
+    "tags": [
+      "engine",
+      "start",
+      "stop"
+    ]
+  },
+  {
+    "name": "engine-stop",
+    "filename": "engine-stop.svg",
+    "tags": [
+      "engine",
+      "stop"
+    ]
+  },
+  {
+    "name": "engine_power",
+    "filename": "engine_power.svg",
+    "tags": [
+      "engine",
+      "power"
+    ]
+  },
+  {
+    "name": "entertainment",
+    "filename": "entertainment.svg",
+    "tags": [
+      "entertainment"
+    ]
+  },
+  {
+    "name": "epedal_driving",
+    "filename": "epedal_driving.svg",
+    "tags": [
+      "epedal",
+      "driving"
+    ]
+  },
+  {
+    "name": "error-installing-update",
+    "filename": "error-installing-update.svg",
+    "tags": [
+      "error",
+      "installing",
+      "update"
+    ]
+  },
+  {
+    "name": "escalator-down",
+    "filename": "escalator-down.svg",
+    "tags": [
+      "escalator",
+      "down"
+    ]
+  },
+  {
+    "name": "escalator-up",
+    "filename": "escalator-up.svg",
+    "tags": [
+      "escalator",
+      "up"
+    ]
+  },
+  {
+    "name": "exclamation",
+    "filename": "exclamation.svg",
+    "tags": [
+      "exclamation"
+    ]
+  },
+  {
+    "name": "explore",
+    "filename": "explore.svg",
+    "tags": [
+      "explore"
+    ]
+  },
+  {
+    "name": "export-document",
+    "filename": "export-document.svg",
+    "tags": [
+      "export",
+      "document"
+    ]
+  },
+  {
+    "name": "express_booking",
+    "filename": "express_booking.svg",
+    "tags": [
+      "express",
+      "booking"
+    ]
+  },
+  {
+    "name": "extended-test-drive",
+    "filename": "extended-test-drive.svg",
+    "tags": [
+      "extended",
+      "test",
+      "drive"
+    ]
+  },
+  {
+    "name": "extended_range",
+    "filename": "extended_range.svg",
+    "tags": [
+      "extended",
+      "range"
+    ]
+  },
+  {
+    "name": "eyes-on-the-road",
+    "filename": "eyes-on-the-road.svg",
+    "tags": [
+      "eyes",
+      "on",
+      "the",
+      "road"
+    ]
+  },
+  {
+    "name": "face-happy",
+    "filename": "face-happy.svg",
+    "tags": [
+      "face",
+      "happy"
+    ]
+  },
+  {
+    "name": "face-neutral",
+    "filename": "face-neutral.svg",
+    "tags": [
+      "face",
+      "neutral"
+    ]
+  },
+  {
+    "name": "face-unhappy",
+    "filename": "face-unhappy.svg",
+    "tags": [
+      "face",
+      "unhappy"
+    ]
+  },
+  {
+    "name": "faqs",
+    "filename": "faqs.svg",
+    "tags": [
+      "faqs"
+    ]
+  },
+  {
+    "name": "feedback_star",
+    "filename": "feedback_star.svg",
+    "tags": [
+      "feedback",
+      "star"
+    ]
+  },
+  {
+    "name": "feedback_star_empty",
+    "filename": "feedback_star_empty.svg",
+    "tags": [
+      "feedback",
+      "star",
+      "empty"
+    ]
+  },
+  {
+    "name": "feedback_star_half filled",
+    "filename": "feedback_star_half filled.svg",
+    "tags": [
+      "feedback",
+      "star",
+      "half filled"
+    ]
+  },
+  {
+    "name": "filter",
+    "filename": "filter.svg",
+    "tags": [
+      "filter"
+    ]
+  },
+  {
+    "name": "find_a_dealer-1",
+    "filename": "find_a_dealer-1.svg",
+    "tags": [
+      "find",
+      "a",
+      "dealer",
+      "1"
+    ]
+  },
+  {
+    "name": "find_a_dealer",
+    "filename": "find_a_dealer.svg",
+    "tags": [
+      "find",
+      "a",
+      "dealer"
+    ]
+  },
+  {
+    "name": "fingerprint",
+    "filename": "fingerprint.svg",
+    "tags": [
+      "fingerprint"
+    ]
+  },
+  {
+    "name": "fire-extenguisher",
+    "filename": "fire-extenguisher.svg",
+    "tags": [
+      "fire",
+      "extenguisher"
+    ]
+  },
+  {
+    "name": "fire",
+    "filename": "fire.svg",
+    "tags": [
+      "fire"
+    ]
+  },
+  {
+    "name": "floor-guide",
+    "filename": "floor-guide.svg",
+    "tags": [
+      "floor",
+      "guide"
+    ]
+  },
+  {
+    "name": "forward",
+    "filename": "forward.svg",
+    "tags": [
+      "forward"
+    ]
+  },
+  {
+    "name": "fuel-prices-dollar",
+    "filename": "fuel-prices-dollar.svg",
+    "tags": [
+      "fuel",
+      "prices",
+      "dollar"
+    ]
+  },
+  {
+    "name": "fuel-prices-gbp",
+    "filename": "fuel-prices-gbp.svg",
+    "tags": [
+      "fuel",
+      "prices",
+      "gbp"
+    ]
+  },
+  {
+    "name": "fuel-prices-jpy",
+    "filename": "fuel-prices-jpy.svg",
+    "tags": [
+      "fuel",
+      "prices",
+      "jpy"
+    ]
+  },
+  {
+    "name": "fuel_type",
+    "filename": "fuel_type.svg",
+    "tags": [
+      "fuel",
+      "type"
+    ]
+  },
+  {
+    "name": "fuel_type_ev",
+    "filename": "fuel_type_ev.svg",
+    "tags": [
+      "fuel",
+      "type",
+      "ev"
+    ]
+  },
+  {
+    "name": "fully_boxed_frame",
+    "filename": "fully_boxed_frame.svg",
+    "tags": [
+      "fully",
+      "boxed",
+      "frame"
+    ]
+  },
+  {
+    "name": "full_screen",
+    "filename": "full_screen.svg",
+    "tags": [
+      "full",
+      "screen"
+    ]
+  },
+  {
+    "name": "funnel",
+    "filename": "funnel.svg",
+    "tags": [
+      "funnel"
+    ]
+  },
+  {
+    "name": "gallery",
+    "filename": "gallery.svg",
+    "tags": [
+      "gallery"
+    ]
+  },
+  {
+    "name": "geolocator",
+    "filename": "geolocator.svg",
+    "tags": [
+      "geolocator"
+    ]
+  },
+  {
+    "name": "globe",
+    "filename": "globe.svg",
+    "tags": [
+      "globe"
+    ]
+  },
+  {
+    "name": "google-assistant",
+    "filename": "google-assistant.svg",
+    "tags": [
+      "google",
+      "assistant"
+    ]
+  },
+  {
+    "name": "grid",
+    "filename": "grid.svg",
+    "tags": [
+      "grid"
+    ]
+  },
+  {
+    "name": "gross_weight",
+    "filename": "gross_weight.svg",
+    "tags": [
+      "gross",
+      "weight"
+    ]
+  },
+  {
+    "name": "guest-driver",
+    "filename": "guest-driver.svg",
+    "tags": [
+      "guest",
+      "driver"
+    ]
+  },
+  {
+    "name": "hands-off-wheel",
+    "filename": "hands-off-wheel.svg",
+    "tags": [
+      "hands",
+      "off",
+      "wheel"
+    ]
+  },
+  {
+    "name": "hd-radio-technology",
+    "filename": "hd-radio-technology.svg",
+    "tags": [
+      "hd",
+      "radio",
+      "technology"
+    ]
+  },
+  {
+    "name": "heated_steering_wheel",
+    "filename": "heated_steering_wheel.svg",
+    "tags": [
+      "heated",
+      "steering",
+      "wheel"
+    ]
+  },
+  {
+    "name": "height",
+    "filename": "height.svg",
+    "tags": [
+      "height"
+    ]
+  },
+  {
+    "name": "home_charging",
+    "filename": "home_charging.svg",
+    "tags": [
+      "home",
+      "charging"
+    ]
+  },
+  {
+    "name": "hood-open",
+    "filename": "hood-open.svg",
+    "tags": [
+      "hood",
+      "open"
+    ]
+  },
+  {
+    "name": "horn",
+    "filename": "horn.svg",
+    "tags": [
+      "horn"
+    ]
+  },
+  {
+    "name": "horsepower-boost",
+    "filename": "horsepower-boost.svg",
+    "tags": [
+      "horsepower",
+      "boost"
+    ]
+  },
+  {
+    "name": "hot_seat",
+    "filename": "hot_seat.svg",
+    "tags": [
+      "hot",
+      "seat"
+    ]
+  },
+  {
+    "name": "info",
+    "filename": "info.svg",
+    "tags": [
+      "info"
+    ]
+  },
+  {
+    "name": "info2-filled",
+    "filename": "info2-filled.svg",
+    "tags": [
+      "info2",
+      "filled"
+    ]
+  },
+  {
+    "name": "info2",
+    "filename": "info2.svg",
+    "tags": [
+      "info2"
+    ]
+  },
+  {
+    "name": "info_filled",
+    "filename": "info_filled.svg",
+    "tags": [
+      "info",
+      "filled"
+    ]
+  },
+  {
+    "name": "install-update",
+    "filename": "install-update.svg",
+    "tags": [
+      "install",
+      "update"
+    ]
+  },
+  {
+    "name": "installation-completed",
+    "filename": "installation-completed.svg",
+    "tags": [
+      "installation",
+      "completed"
+    ]
+  },
+  {
+    "name": "instant_acceleration",
+    "filename": "instant_acceleration.svg",
+    "tags": [
+      "instant",
+      "acceleration"
+    ]
+  },
+  {
+    "name": "intelligent_connectedcar",
+    "filename": "intelligent_connectedcar.svg",
+    "tags": [
+      "intelligent",
+      "connectedcar"
+    ]
+  },
+  {
+    "name": "intelligent_key",
+    "filename": "intelligent_key.svg",
+    "tags": [
+      "intelligent",
+      "key"
+    ]
+  },
+  {
+    "name": "interior-vehicle-camera",
+    "filename": "interior-vehicle-camera.svg",
+    "tags": [
+      "interior",
+      "vehicle",
+      "camera"
+    ]
+  },
+  {
+    "name": "interior_view",
+    "filename": "interior_view.svg",
+    "tags": [
+      "interior",
+      "view"
+    ]
+  },
+  {
+    "name": "inventory",
+    "filename": "inventory.svg",
+    "tags": [
+      "inventory"
+    ]
+  },
+  {
+    "name": "invisible",
+    "filename": "invisible.svg",
+    "tags": [
+      "invisible"
+    ]
+  },
+  {
+    "name": "keep_me_informed",
+    "filename": "keep_me_informed.svg",
+    "tags": [
+      "keep",
+      "me",
+      "informed"
+    ]
+  },
+  {
+    "name": "language",
+    "filename": "language.svg",
+    "tags": [
+      "language"
+    ]
+  },
+  {
+    "name": "length",
+    "filename": "length.svg",
+    "tags": [
+      "length"
+    ]
+  },
+  {
+    "name": "license-plate",
+    "filename": "license-plate.svg",
+    "tags": [
+      "license",
+      "plate"
+    ]
+  },
+  {
+    "name": "lights",
+    "filename": "lights.svg",
+    "tags": [
+      "lights"
+    ]
+  },
+  {
+    "name": "lights_and_horn",
+    "filename": "lights_and_horn.svg",
+    "tags": [
+      "lights",
+      "and",
+      "horn"
+    ]
+  },
+  {
+    "name": "like-filled",
+    "filename": "like-filled.svg",
+    "tags": [
+      "like",
+      "filled"
+    ]
+  },
+  {
+    "name": "like",
+    "filename": "like.svg",
+    "tags": [
+      "like"
+    ]
+  },
+  {
+    "name": "link",
+    "filename": "link.svg",
+    "tags": [
+      "link"
+    ]
+  },
+  {
+    "name": "list-bullet",
+    "filename": "list-bullet.svg",
+    "tags": [
+      "list",
+      "bullet"
+    ]
+  },
+  {
+    "name": "live-traffic-information",
+    "filename": "live-traffic-information.svg",
+    "tags": [
+      "live",
+      "traffic",
+      "information"
+    ]
+  },
+  {
+    "name": "live_chat",
+    "filename": "live_chat.svg",
+    "tags": [
+      "live",
+      "chat"
+    ]
+  },
+  {
+    "name": "lock",
+    "filename": "lock.svg",
+    "tags": [
+      "lock"
+    ]
+  },
+  {
+    "name": "logout",
+    "filename": "logout.svg",
+    "tags": [
+      "logout"
+    ]
+  },
+  {
+    "name": "low-tyre-pressure",
+    "filename": "low-tyre-pressure.svg",
+    "tags": [
+      "low",
+      "tyre",
+      "pressure"
+    ]
+  },
+  {
+    "name": "mail-checked",
+    "filename": "mail-checked.svg",
+    "tags": [
+      "mail",
+      "checked"
+    ]
+  },
+  {
+    "name": "maintain_speed",
+    "filename": "maintain_speed.svg",
+    "tags": [
+      "maintain",
+      "speed"
+    ]
+  },
+  {
+    "name": "manual",
+    "filename": "manual.svg",
+    "tags": [
+      "manual"
+    ]
+  },
+  {
+    "name": "map_updates",
+    "filename": "map_updates.svg",
+    "tags": [
+      "map",
+      "updates"
+    ]
+  },
+  {
+    "name": "map_view",
+    "filename": "map_view.svg",
+    "tags": [
+      "map",
+      "view"
+    ]
+  },
+  {
+    "name": "milage",
+    "filename": "milage.svg",
+    "tags": [
+      "milage"
+    ]
+  },
+  {
+    "name": "minus",
+    "filename": "minus.svg",
+    "tags": [
+      "minus"
+    ]
+  },
+  {
+    "name": "mobile-internet-hotspot",
+    "filename": "mobile-internet-hotspot.svg",
+    "tags": [
+      "mobile",
+      "internet",
+      "hotspot"
+    ]
+  },
+  {
+    "name": "more_details",
+    "filename": "more_details.svg",
+    "tags": [
+      "more",
+      "details"
+    ]
+  },
+  {
+    "name": "mpg",
+    "filename": "mpg.svg",
+    "tags": [
+      "mpg"
+    ]
+  },
+  {
+    "name": "multiple-drivers",
+    "filename": "multiple-drivers.svg",
+    "tags": [
+      "multiple",
+      "drivers"
+    ]
+  },
+  {
+    "name": "music",
+    "filename": "music.svg",
+    "tags": [
+      "music"
+    ]
+  },
+  {
+    "name": "new-feature",
+    "filename": "new-feature.svg",
+    "tags": [
+      "new",
+      "feature"
+    ]
+  },
+  {
+    "name": "nissan_fleet",
+    "filename": "nissan_fleet.svg",
+    "tags": [
+      "nissan",
+      "fleet"
+    ]
+  },
+  {
+    "name": "noise_cancellation",
+    "filename": "noise_cancellation.svg",
+    "tags": [
+      "noise",
+      "cancellation"
+    ]
+  },
+  {
+    "name": "no_volume",
+    "filename": "no_volume.svg",
+    "tags": [
+      "no",
+      "volume"
+    ]
+  },
+  {
+    "name": "offers",
+    "filename": "offers.svg",
+    "tags": [
+      "offers"
+    ]
+  },
+  {
+    "name": "oil-alert",
+    "filename": "oil-alert.svg",
+    "tags": [
+      "oil",
+      "alert"
+    ]
+  },
+  {
+    "name": "oil-level",
+    "filename": "oil-level.svg",
+    "tags": [
+      "oil",
+      "level"
+    ]
+  },
+  {
+    "name": "oil_and_filter change",
+    "filename": "oil_and_filter change.svg",
+    "tags": [
+      "oil",
+      "and",
+      "filter change"
+    ]
+  },
+  {
+    "name": "onboarding_to_ownership",
+    "filename": "onboarding_to_ownership.svg",
+    "tags": [
+      "onboarding",
+      "to",
+      "ownership"
+    ]
+  },
+  {
+    "name": "options",
+    "filename": "options.svg",
+    "tags": [
+      "options"
+    ]
+  },
+  {
+    "name": "package",
+    "filename": "package.svg",
+    "tags": [
+      "package"
+    ]
+  },
+  {
+    "name": "packs",
+    "filename": "packs.svg",
+    "tags": [
+      "packs"
+    ]
+  },
+  {
+    "name": "pan",
+    "filename": "pan.svg",
+    "tags": [
+      "pan"
+    ]
+  },
+  {
+    "name": "pandora",
+    "filename": "pandora.svg",
+    "tags": [
+      "pandora"
+    ]
+  },
+  {
+    "name": "parking",
+    "filename": "parking.svg",
+    "tags": [
+      "parking"
+    ]
+  },
+  {
+    "name": "password",
+    "filename": "password.svg",
+    "tags": [
+      "password"
+    ]
+  },
+  {
+    "name": "pause",
+    "filename": "pause.svg",
+    "tags": [
+      "pause"
+    ]
+  },
+  {
+    "name": "payload",
+    "filename": "payload.svg",
+    "tags": [
+      "payload"
+    ]
+  },
+  {
+    "name": "payment-methods",
+    "filename": "payment-methods.svg",
+    "tags": [
+      "payment",
+      "methods"
+    ]
+  },
+  {
+    "name": "payment",
+    "filename": "payment.svg",
+    "tags": [
+      "payment"
+    ]
+  },
+  {
+    "name": "pdf",
+    "filename": "pdf.svg",
+    "tags": [
+      "pdf"
+    ]
+  },
+  {
+    "name": "photo",
+    "filename": "photo.svg",
+    "tags": [
+      "photo"
+    ]
+  },
+  {
+    "name": "pin-ev",
+    "filename": "pin-ev.svg",
+    "tags": [
+      "pin",
+      "ev"
+    ]
+  },
+  {
+    "name": "play",
+    "filename": "play.svg",
+    "tags": [
+      "play"
+    ]
+  },
+  {
+    "name": "plus",
+    "filename": "plus.svg",
+    "tags": [
+      "plus"
+    ]
+  },
+  {
+    "name": "police",
+    "filename": "police.svg",
+    "tags": [
+      "police"
+    ]
+  },
+  {
+    "name": "power-on",
+    "filename": "power-on.svg",
+    "tags": [
+      "power",
+      "on"
+    ]
+  },
+  {
+    "name": "preferred_dealer",
+    "filename": "preferred_dealer.svg",
+    "tags": [
+      "preferred",
+      "dealer"
+    ]
+  },
+  {
+    "name": "preferred_dealer_solid",
+    "filename": "preferred_dealer_solid.svg",
+    "tags": [
+      "preferred",
+      "dealer",
+      "solid"
+    ]
+  },
+  {
+    "name": "price",
+    "filename": "price.svg",
+    "tags": [
+      "price"
+    ]
+  },
+  {
+    "name": "print",
+    "filename": "print.svg",
+    "tags": [
+      "print"
+    ]
+  },
+  {
+    "name": "qibla",
+    "filename": "qibla.svg",
+    "tags": [
+      "qibla"
+    ]
+  },
+  {
+    "name": "quick_view",
+    "filename": "quick_view.svg",
+    "tags": [
+      "quick",
+      "view"
+    ]
+  },
+  {
+    "name": "ranking",
+    "filename": "ranking.svg",
+    "tags": [
+      "ranking"
+    ]
+  },
+  {
+    "name": "rapid_charge",
+    "filename": "rapid_charge.svg",
+    "tags": [
+      "rapid",
+      "charge"
+    ]
+  },
+  {
+    "name": "rear_entertainment",
+    "filename": "rear_entertainment.svg",
+    "tags": [
+      "rear",
+      "entertainment"
+    ]
+  },
+  {
+    "name": "receive-package",
+    "filename": "receive-package.svg",
+    "tags": [
+      "receive",
+      "package"
+    ]
+  },
+  {
+    "name": "red-cross",
+    "filename": "red-cross.svg",
+    "tags": [
+      "red",
+      "cross"
+    ]
+  },
+  {
+    "name": "refresh",
+    "filename": "refresh.svg",
+    "tags": [
+      "refresh"
+    ]
+  },
+  {
+    "name": "registration",
+    "filename": "registration.svg",
+    "tags": [
+      "registration"
+    ]
+  },
+  {
+    "name": "remote-battery-management",
+    "filename": "remote-battery-management.svg",
+    "tags": [
+      "remote",
+      "battery",
+      "management"
+    ]
+  },
+  {
+    "name": "remote-charging",
+    "filename": "remote-charging.svg",
+    "tags": [
+      "remote",
+      "charging"
+    ]
+  },
+  {
+    "name": "remote-climate-control",
+    "filename": "remote-climate-control.svg",
+    "tags": [
+      "remote",
+      "climate",
+      "control"
+    ]
+  },
+  {
+    "name": "remote-control",
+    "filename": "remote-control.svg",
+    "tags": [
+      "remote",
+      "control"
+    ]
+  },
+  {
+    "name": "remote-diagnostics",
+    "filename": "remote-diagnostics.svg",
+    "tags": [
+      "remote",
+      "diagnostics"
+    ]
+  },
+  {
+    "name": "remote-door-control",
+    "filename": "remote-door-control.svg",
+    "tags": [
+      "remote",
+      "door",
+      "control"
+    ]
+  },
+  {
+    "name": "remote-engine-start-stop",
+    "filename": "remote-engine-start-stop.svg",
+    "tags": [
+      "remote",
+      "engine",
+      "start",
+      "stop"
+    ]
+  },
+  {
+    "name": "remote-horn-light",
+    "filename": "remote-horn-light.svg",
+    "tags": [
+      "remote",
+      "horn",
+      "light"
+    ]
+  },
+  {
+    "name": "remote-parking",
+    "filename": "remote-parking.svg",
+    "tags": [
+      "remote",
+      "parking"
+    ]
+  },
+  {
+    "name": "remote-vehicle-servicing",
+    "filename": "remote-vehicle-servicing.svg",
+    "tags": [
+      "remote",
+      "vehicle",
+      "servicing"
+    ]
+  },
+  {
+    "name": "reports",
+    "filename": "reports.svg",
+    "tags": [
+      "reports"
+    ]
+  },
+  {
+    "name": "request_a_call back",
+    "filename": "request_a_call back.svg",
+    "tags": [
+      "request",
+      "a",
+      "call back"
+    ]
+  },
+  {
+    "name": "request_a_quote",
+    "filename": "request_a_quote.svg",
+    "tags": [
+      "request",
+      "a",
+      "quote"
+    ]
+  },
+  {
+    "name": "restaurant",
+    "filename": "restaurant.svg",
+    "tags": [
+      "restaurant"
+    ]
+  },
+  {
+    "name": "results",
+    "filename": "results.svg",
+    "tags": [
+      "results"
+    ]
+  },
+  {
+    "name": "review",
+    "filename": "review.svg",
+    "tags": [
+      "review"
+    ]
+  },
+  {
+    "name": "rewind",
+    "filename": "rewind.svg",
+    "tags": [
+      "rewind"
+    ]
+  },
+  {
+    "name": "road-ahead",
+    "filename": "road-ahead.svg",
+    "tags": [
+      "road",
+      "ahead"
+    ]
+  },
+  {
+    "name": "road_tax",
+    "filename": "road_tax.svg",
+    "tags": [
+      "road",
+      "tax"
+    ]
+  },
+  {
+    "name": "running_cost",
+    "filename": "running_cost.svg",
+    "tags": [
+      "running",
+      "cost"
+    ]
+  },
+  {
+    "name": "safety",
+    "filename": "safety.svg",
+    "tags": [
+      "safety"
+    ]
+  },
+  {
+    "name": "save",
+    "filename": "save.svg",
+    "tags": [
+      "save"
+    ]
+  },
+  {
+    "name": "savings_incentive",
+    "filename": "savings_incentive.svg",
+    "tags": [
+      "savings",
+      "incentive"
+    ]
+  },
+  {
+    "name": "schedule-an-update-installation",
+    "filename": "schedule-an-update-installation.svg",
+    "tags": [
+      "schedule",
+      "an",
+      "update",
+      "installation"
+    ]
+  },
+  {
+    "name": "search",
+    "filename": "search.svg",
+    "tags": [
+      "search"
+    ]
+  },
+  {
+    "name": "seat",
+    "filename": "seat.svg",
+    "tags": [
+      "seat"
+    ]
+  },
+  {
+    "name": "seats",
+    "filename": "seats.svg",
+    "tags": [
+      "seats"
+    ]
+  },
+  {
+    "name": "seat_capacity",
+    "filename": "seat_capacity.svg",
+    "tags": [
+      "seat",
+      "capacity"
+    ]
+  },
+  {
+    "name": "self-driving-car",
+    "filename": "self-driving-car.svg",
+    "tags": [
+      "self",
+      "driving",
+      "car"
+    ]
+  },
+  {
+    "name": "self-driving-wheel",
+    "filename": "self-driving-wheel.svg",
+    "tags": [
+      "self",
+      "driving",
+      "wheel"
+    ]
+  },
+  {
+    "name": "service-at-home",
+    "filename": "service-at-home.svg",
+    "tags": [
+      "service",
+      "at",
+      "home"
+    ]
+  },
+  {
+    "name": "service_booking_date",
+    "filename": "service_booking_date.svg",
+    "tags": [
+      "service",
+      "booking",
+      "date"
+    ]
+  },
+  {
+    "name": "service_log",
+    "filename": "service_log.svg",
+    "tags": [
+      "service",
+      "log"
+    ]
+  },
+  {
+    "name": "settings",
+    "filename": "settings.svg",
+    "tags": [
+      "settings"
+    ]
+  },
+  {
+    "name": "share-location",
+    "filename": "share-location.svg",
+    "tags": [
+      "share",
+      "location"
+    ]
+  },
+  {
+    "name": "share",
+    "filename": "share.svg",
+    "tags": [
+      "share"
+    ]
+  },
+  {
+    "name": "shared-vehicle",
+    "filename": "shared-vehicle.svg",
+    "tags": [
+      "shared",
+      "vehicle"
+    ]
+  },
+  {
+    "name": "sharing-permissions",
+    "filename": "sharing-permissions.svg",
+    "tags": [
+      "sharing",
+      "permissions"
+    ]
+  },
+  {
+    "name": "siriusxm",
+    "filename": "siriusxm.svg",
+    "tags": [
+      "siriusxm"
+    ]
+  },
+  {
+    "name": "skip",
+    "filename": "skip.svg",
+    "tags": [
+      "skip"
+    ]
+  },
+  {
+    "name": "sleep",
+    "filename": "sleep.svg",
+    "tags": [
+      "sleep"
+    ]
+  },
+  {
+    "name": "slider",
+    "filename": "slider.svg",
+    "tags": [
+      "slider"
+    ]
+  },
+  {
+    "name": "smart-alerts",
+    "filename": "smart-alerts.svg",
+    "tags": [
+      "smart",
+      "alerts"
+    ]
+  },
+  {
+    "name": "social_facebook",
+    "filename": "social_facebook.svg",
+    "tags": [
+      "social",
+      "facebook"
+    ]
+  },
+  {
+    "name": "specs-and-price",
+    "filename": "specs-and-price.svg",
+    "tags": [
+      "specs",
+      "and",
+      "price"
+    ]
+  },
+  {
+    "name": "speed-alert",
+    "filename": "speed-alert.svg",
+    "tags": [
+      "speed",
+      "alert"
+    ]
+  },
+  {
+    "name": "speed-cameras",
+    "filename": "speed-cameras.svg",
+    "tags": [
+      "speed",
+      "cameras"
+    ]
+  },
+  {
+    "name": "speed",
+    "filename": "speed.svg",
+    "tags": [
+      "speed"
+    ]
+  },
+  {
+    "name": "spinner",
+    "filename": "spinner.svg",
+    "tags": [
+      "spinner"
+    ]
+  },
+  {
+    "name": "split-billing",
+    "filename": "split-billing.svg",
+    "tags": [
+      "split",
+      "billing"
+    ]
+  },
+  {
+    "name": "sponsored_dealer",
+    "filename": "sponsored_dealer.svg",
+    "tags": [
+      "sponsored",
+      "dealer"
+    ]
+  },
+  {
+    "name": "start-at-home",
+    "filename": "start-at-home.svg",
+    "tags": [
+      "start",
+      "at",
+      "home"
+    ]
+  },
+  {
+    "name": "steering_wheel",
+    "filename": "steering_wheel.svg",
+    "tags": [
+      "steering",
+      "wheel"
+    ]
+  },
+  {
+    "name": "stolen-vehicle-tracking",
+    "filename": "stolen-vehicle-tracking.svg",
+    "tags": [
+      "stolen",
+      "vehicle",
+      "tracking"
+    ]
+  },
+  {
+    "name": "streaming-audio-via-bluetooth",
+    "filename": "streaming-audio-via-bluetooth.svg",
+    "tags": [
+      "streaming",
+      "audio",
+      "via",
+      "bluetooth"
+    ]
+  },
+  {
+    "name": "street-view",
+    "filename": "street-view.svg",
+    "tags": [
+      "street",
+      "view"
+    ]
+  },
+  {
+    "name": "style_packs",
+    "filename": "style_packs.svg",
+    "tags": [
+      "style",
+      "packs"
+    ]
+  },
+  {
+    "name": "summary",
+    "filename": "summary.svg",
+    "tags": [
+      "summary"
+    ]
+  },
+  {
+    "name": "support-at-home",
+    "filename": "support-at-home.svg",
+    "tags": [
+      "support",
+      "at",
+      "home"
+    ]
+  },
+  {
+    "name": "support",
+    "filename": "support.svg",
+    "tags": [
+      "support"
+    ]
+  },
+  {
+    "name": "sync-driver-profile",
+    "filename": "sync-driver-profile.svg",
+    "tags": [
+      "sync",
+      "driver",
+      "profile"
+    ]
+  },
+  {
+    "name": "tablet",
+    "filename": "tablet.svg",
+    "tags": [
+      "tablet"
+    ]
+  },
+  {
+    "name": "take-control",
+    "filename": "take-control.svg",
+    "tags": [
+      "take",
+      "control"
+    ]
+  },
+  {
+    "name": "test-drive-at-home",
+    "filename": "test-drive-at-home.svg",
+    "tags": [
+      "test",
+      "drive",
+      "at",
+      "home"
+    ]
+  },
+  {
+    "name": "thinking",
+    "filename": "thinking.svg",
+    "tags": [
+      "thinking"
+    ]
+  },
+  {
+    "name": "tick",
+    "filename": "tick.svg",
+    "tags": [
+      "tick"
+    ]
+  },
+  {
+    "name": "tom-tom-weather",
+    "filename": "tom-tom-weather.svg",
+    "tags": [
+      "tom",
+      "tom",
+      "weather"
+    ]
+  },
+  {
+    "name": "torque",
+    "filename": "torque.svg",
+    "tags": [
+      "torque"
+    ]
+  },
+  {
+    "name": "touch_screen",
+    "filename": "touch_screen.svg",
+    "tags": [
+      "touch",
+      "screen"
+    ]
+  },
+  {
+    "name": "towing",
+    "filename": "towing.svg",
+    "tags": [
+      "towing"
+    ]
+  },
+  {
+    "name": "trade_in",
+    "filename": "trade_in.svg",
+    "tags": [
+      "trade",
+      "in"
+    ]
+  },
+  {
+    "name": "traffic",
+    "filename": "traffic.svg",
+    "tags": [
+      "traffic"
+    ]
+  },
+  {
+    "name": "transportation",
+    "filename": "transportation.svg",
+    "tags": [
+      "transportation"
+    ]
+  },
+  {
+    "name": "trash",
+    "filename": "trash.svg",
+    "tags": [
+      "trash"
+    ]
+  },
+  {
+    "name": "trip-advisor",
+    "filename": "trip-advisor.svg",
+    "tags": [
+      "trip",
+      "advisor"
+    ]
+  },
+  {
+    "name": "trunk-open",
+    "filename": "trunk-open.svg",
+    "tags": [
+      "trunk",
+      "open"
+    ]
+  },
+  {
+    "name": "tyre-pressure",
+    "filename": "tyre-pressure.svg",
+    "tags": [
+      "tyre",
+      "pressure"
+    ]
+  },
+  {
+    "name": "update--required",
+    "filename": "update--required.svg",
+    "tags": [
+      "update",
+      "",
+      "required"
+    ]
+  },
+  {
+    "name": "upholstery",
+    "filename": "upholstery.svg",
+    "tags": [
+      "upholstery"
+    ]
+  },
+  {
+    "name": "upload-offers",
+    "filename": "upload-offers.svg",
+    "tags": [
+      "upload",
+      "offers"
+    ]
+  },
+  {
+    "name": "upload",
+    "filename": "upload.svg",
+    "tags": [
+      "upload"
+    ]
+  },
+  {
+    "name": "usb",
+    "filename": "usb.svg",
+    "tags": [
+      "usb"
+    ]
+  },
+  {
+    "name": "usb1",
+    "filename": "usb1.svg",
+    "tags": [
+      "usb1"
+    ]
+  },
+  {
+    "name": "van",
+    "filename": "van.svg",
+    "tags": [
+      "van"
+    ]
+  },
+  {
+    "name": "variable_transmission",
+    "filename": "variable_transmission.svg",
+    "tags": [
+      "variable",
+      "transmission"
+    ]
+  },
+  {
+    "name": "vehicle-damage",
+    "filename": "vehicle-damage.svg",
+    "tags": [
+      "vehicle",
+      "damage"
+    ]
+  },
+  {
+    "name": "vehicle-delivery",
+    "filename": "vehicle-delivery.svg",
+    "tags": [
+      "vehicle",
+      "delivery"
+    ]
+  },
+  {
+    "name": "vehicle-health",
+    "filename": "vehicle-health.svg",
+    "tags": [
+      "vehicle",
+      "health"
+    ]
+  },
+  {
+    "name": "vehicle-status",
+    "filename": "vehicle-status.svg",
+    "tags": [
+      "vehicle",
+      "status"
+    ]
+  },
+  {
+    "name": "vehicle-towed",
+    "filename": "vehicle-towed.svg",
+    "tags": [
+      "vehicle",
+      "towed"
+    ]
+  },
+  {
+    "name": "vehicle-unlock",
+    "filename": "vehicle-unlock.svg",
+    "tags": [
+      "vehicle",
+      "unlock"
+    ]
+  },
+  {
+    "name": "vehicle_grade",
+    "filename": "vehicle_grade.svg",
+    "tags": [
+      "vehicle",
+      "grade"
+    ]
+  },
+  {
+    "name": "video",
+    "filename": "video.svg",
+    "tags": [
+      "video"
+    ]
+  },
+  {
+    "name": "virtual-showroom",
+    "filename": "virtual-showroom.svg",
+    "tags": [
+      "virtual",
+      "showroom"
+    ]
+  },
+  {
+    "name": "voice_recognition",
+    "filename": "voice_recognition.svg",
+    "tags": [
+      "voice",
+      "recognition"
+    ]
+  },
+  {
+    "name": "volume",
+    "filename": "volume.svg",
+    "tags": [
+      "volume"
+    ]
+  },
+  {
+    "name": "wallet",
+    "filename": "wallet.svg",
+    "tags": [
+      "wallet"
+    ]
+  },
+  {
+    "name": "wds2-burger-menu",
+    "filename": "wds2-burger-menu.svg",
+    "tags": [
+      "wds2",
+      "burger",
+      "menu"
+    ]
+  },
+  {
+    "name": "weather",
+    "filename": "weather.svg",
+    "tags": [
+      "weather"
+    ]
+  },
+  {
+    "name": "wheel",
+    "filename": "wheel.svg",
+    "tags": [
+      "wheel"
+    ]
+  },
+  {
+    "name": "width",
+    "filename": "width.svg",
+    "tags": [
+      "width"
+    ]
+  },
+  {
+    "name": "wifi",
+    "filename": "wifi.svg",
+    "tags": [
+      "wifi"
+    ]
+  },
+  {
+    "name": "wiper_blade_replacement",
+    "filename": "wiper_blade_replacement.svg",
+    "tags": [
+      "wiper",
+      "blade",
+      "replacement"
+    ]
+  },
+  {
+    "name": "work_location",
+    "filename": "work_location.svg",
+    "tags": [
+      "work",
+      "location"
+    ]
+  },
+  {
+    "name": "wrench",
+    "filename": "wrench.svg",
+    "tags": [
+      "wrench"
+    ]
+  },
+  {
+    "name": "yen",
+    "filename": "yen.svg",
+    "tags": [
+      "yen"
+    ]
+  },
+  {
+    "name": "your_booked_services",
+    "filename": "your_booked_services.svg",
+    "tags": [
+      "your",
+      "booked",
+      "services"
+    ]
+  },
+  {
+    "name": "zoom_in",
+    "filename": "zoom_in.svg",
+    "tags": [
+      "zoom",
+      "in"
+    ]
+  },
+  {
+    "name": "zoom_out",
+    "filename": "zoom_out.svg",
+    "tags": [
+      "zoom",
+      "out"
+    ]
+  }
+]

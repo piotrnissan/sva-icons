@@ -1,0 +1,19 @@
+import React from 'react';
+
+const DrivingLogHistory = ({ size = 24, color = "currentColor", ...props }) => {
+  return (
+    <svg 
+      width={size} 
+      height={size} 
+      viewBox="0 0 24 24" 
+      fill={color}
+      {...props}
+    >
+      <path d="M18 1C18 0.448 17.552 0 17 0H7C6.448 0 6 0.448 6 1V2H18V1ZM21 6H3C2.448 6 2 6.448 2 7V22C2 22.552 2.448 23 3 23H21C21.552 23 22 22.552 22 22V7C22 6.448 21.552 6 21 6ZM7 20H5V13C5 12.448 5.448 12 6 12C6.552 12 7 12.448 7 13V20ZM11 20H9V10C9 9.448 9.448 9 10 9C10.552 9 11 9.448 11 10V20ZM15 20H13V13C13 12.448 13.448 12 14 12C14.552 12 15 12.448 15 13V20ZM19 20H17V17C17 16.448 17.448 16 18 16C18.552 16 19 16.448 19 17V20ZM20 4C20 3.448 19.552 3 19 3H5C4.448 3 4 3.448 4 4V5H20V4Z"/>
+    </svg>
+  );
+};
+
+DrivingLogHistory.displayName = 'DrivingLogHistory';
+
+export default DrivingLogHistory;
