@@ -43,7 +43,7 @@
     "type": "git",
     "url": "https://github.com/nissan/sva-icons.git"
   },
-  "homepage": "https://github.com/nissan/sva-icons#readme",
+  "homepage": "https://sva-icons.vercel.app",
   "bugs": {
     "url": "https://github.com/nissan/sva-icons/issues"
   },
@@ -56,6 +56,10 @@
     "build:sprite": "node scripts/build-sprite.js",
     "build:react": "node scripts/build-react-simple.js",
     "build:all": "npm run build:icons && npm run build:sprite && npm run build:react && npm run build:web",
+    "docs:dev": "cd docs && npm run dev",
+    "docs:build": "cd docs && npm run build",
+    "docs:preview": "cd docs && npm run preview",
+    "docs:deploy": "node scripts/deploy-docs.js",
     "prepublishOnly": "npm run build:all",
     "publish:prep": "node scripts/publish-prep.js"
   },

@@ -1,0 +1,7 @@
+{
+  "buildCommand": "cd docs && npm install && npm run build",
+  "outputDirectory": "docs/dist",
+  "installCommand": "npm install",
+  "framework": "vite",
+  "nodejs": "20.x"
+}

@@ -2,6 +2,12 @@
 
 A modern, multi-platform icon system for SVA icons. Supports React components, Web Components, ESM/CJS modules, and SVG sprites.
 
+## 📖 Documentation
+
+**[View Full Documentation & Icon Explorer →](https://sva-icons.vercel.app)**
+
+Interactive documentation with live examples, searchable icon gallery, and complete API reference.
+
 ## Features
 
 - 🎨 **358 carefully crafted icons**
