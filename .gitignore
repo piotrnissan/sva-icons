@@ -1,0 +1,24 @@
+# Node
+node_modules/
+.env
+.DS_Store
+npm-debug.log*
+
+# Build outputs
+dist/
+react/
+web/
+*.tsbuildinfo
+
+# VS Code
+.vscode/
+
+# OS
+Thumbs.db
+
+# Misc
+*.log
+*.tmp
+
+# Icon build artifacts
+icons-sprite.svg
