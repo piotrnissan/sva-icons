@@ -1,6 +1,6 @@
 {
   "name": "sva-icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SVA Icons - A comprehensive icon library for automotive and general UI use",
   "type": "module",
   "main": "./dist/icons/index.js",
@@ -15,7 +15,13 @@
     "./svg/*": "./svg/*",
     "./react": "./dist/react/index.js",
     "./sprite": "./dist/sprite/sva-icons-sprite.svg",
-    "./web-components": "./dist/web-components/sva-icon.js"
+    "./web-components": "./dist/web-components/sva-icon.js",
+    "./web-components/tree-shakable": "./tree-shakable-web-components.js",
+    "./create-icons": {
+      "import": "./dist/icons/create-icons.js",
+      "require": "./dist/icons/create-icons.js",
+      "types": "./dist/icons/create-icons.d.ts"
+    }
   },
   "files": [
     "dist/icons/**/*",
@@ -23,8 +29,11 @@
     "dist/sprite/**/*",
     "dist/web-components/**/*",
     "svg/**/*",
+    "tree-shakable-web-components.js",
     "icons.json",
     "README.md",
+    "QUICKSTART.md",
+    "USAGE.md",
     "LICENSE"
   ],
   "keywords": [
@@ -43,7 +52,7 @@
     "type": "git",
     "url": "https://github.com/nissan/sva-icons.git"
   },
-  "homepage": "https://sva-icons.vercel.app",
+  "homepage": "https://github.com/nissan/sva-icons#readme",
   "bugs": {
     "url": "https://github.com/nissan/sva-icons/issues"
   },
@@ -52,14 +61,12 @@
   },
   "scripts": {
     "build:web": "node scripts/build-web-component.js && rollup -c scripts/rollup.web.config.js",
+    "build:web-tree-shakable": "copy tree-shakable-web-components.js dist\\web-components\\",
     "build:icons": "node scripts/build-icons.js",
     "build:sprite": "node scripts/build-sprite.js",
     "build:react": "node scripts/build-react-simple.js",
-    "build:all": "npm run build:icons && npm run build:sprite && npm run build:react && npm run build:web",
-    "docs:dev": "cd docs && npm run dev",
-    "docs:build": "cd docs && npm run build",
-    "docs:preview": "cd docs && npm run preview",
-    "docs:deploy": "node scripts/deploy-docs.js",
+    "build:create-icons": "node scripts/build-create-icons.js",
+    "build:all": "npm run build:icons && npm run build:sprite && npm run build:react && npm run build:web && npm run build:web-tree-shakable && npm run build:create-icons",
     "prepublishOnly": "npm run build:all",
     "publish:prep": "node scripts/publish-prep.js"
   },

@@ -175,24 +175,37 @@ function App() {
 
 ---
 
-### 13. Vue Usage
+### 13. Framework Integration Summary
 
-If you have generated Vue components:
+SVA Icons supports multiple integration patterns:
 
-```js
-// main.js
-import { Alert, Car } from 'sva-icons/vue';
+**React Components:**
+```jsx
+import { Alert, Car } from 'sva-icons/react';
 
-export default {
-  components: { Alert, Car }
+function App() {
+  return (
+    <div>
+      <Alert color="red" size={32} />
+      <Car color="#e11d48" size={40} />
+    </div>
+  );
 }
 ```
 
+**Web Components:**
 ```html
-<template>
-  <Alert color="red" :size="32" aria-label="Alert" />
-  <Car color="#e11d48" :size="40" />
-</template>
+<sva-icon name="alert" color="red" size="32"></sva-icon>
+<sva-icon name="car" color="#e11d48" size="40"></sva-icon>
+```
+
+**JavaScript with createIcons:**
+```javascript
+import { createIcons } from 'sva-icons/create-icons';
+import alert from 'sva-icons/dist/icons/esm/alert.js';
+import car from 'sva-icons/dist/icons/esm/car.js';
+
+createIcons({ icons: { alert, car } });
 ```
 
 - All icon components accept `color`, `size`, `class`, `style`, and accessibility props.

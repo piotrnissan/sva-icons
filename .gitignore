@@ -8,7 +8,8 @@ npm-debug.log*
 dist/
 react/
 web/
-test/react/dist/
+.test/
+
 *.tsbuildinfo
 
 # VS Code
