@@ -1,6 +1,6 @@
 {
   "name": "sva-icons",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "SVA Icons v2.1 - Function-based icon library with configurable props and full framework integration support",
   "type": "module",
   "main": "./dist/icons/index.js",
