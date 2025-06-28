@@ -1,7 +1,7 @@
 {
   "name": "sva-icons",
-  "version": "2.0.0",
-  "description": "SVA Icons v2.0 - A comprehensive icon library with smart bundles and theme support",
+  "version": "2.1.0",
+  "description": "SVA Icons v2.1 - Function-based icon library with configurable props and full framework integration support",
   "type": "module",
   "main": "./dist/icons/index.js",
   "module": "./dist/icons/esm/index.js",
@@ -77,7 +77,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nissan/sva-icons.git"
+    "url": "git+https://github.com/nissan/sva-icons.git"
   },
   "homepage": "https://github.com/nissan/sva-icons#readme",
   "bugs": {

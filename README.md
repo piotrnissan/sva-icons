@@ -1,52 +1,99 @@
-# SVA Icons v2.0
+# SVA Icons v2.1
 
-A modern, enterprise-ready icon system designed for automotive and general UI applications. Features smart bundles, enhanced React components, comprehensive theming, and advanced developer tools.
+A modern, enterprise-ready icon system designed for automotive and framework integration. Features function-based icons with configurable props, smart bundles, enhanced React components, and comprehensive framework support.
 
-## ✨ What's New in v2.0
+## ✨ What's New in v2.1
 
-- 🎯 **Smart Bundle System** - Optimized icon bundles reducing bundle size by 50-70%
-- ⚛️ **Enhanced React Icon Component** - Unified component with theme, size, and variant support
-- 🎨 **CSS Theme System** - Complete theming framework with predefined sizes, colors, and animations
-- ⚙️ **JavaScript Theme API** - Programmatic theme configuration and runtime customization
-- 🔍 **Bundle Analyzer** - Analyze and optimize icon usage with built-in tools
-- 🛠️ **Developer Tools** - Enhanced debugging, validation, and development utilities
-- 📦 **Improved Exports** - Better tree-shaking and module resolution
-- 🔄 **Full Backward Compatibility** - Seamless upgrade from v1.x
+- 🎯 **Function-Based Icons** - Icons are now configurable functions that accept props
+- 📦 **Framework Integration Ready** - Full compatibility with modern frameworks (React, Vue, Angular)
+- ⚡ **Configurable Props** - Dynamic sizing, colors, classes, and accessibility features
+- 🔧 **SVA Framework Integration** - Complete integration support for SVA design system
+- � **Import Flexibility** - Multiple import patterns for optimal developer experience
+- 🎨 **Enhanced Props Interface** - Support for size, color, className, strokeWidth, title, aria-* attributes
+- � **Better Developer Experience** - Function signatures provide better IDE support and type safety
+- 🔄 **Backward Compatible** - Seamless upgrade from v2.0 with maintained compatibility
 
 ## 🚀 Quick Start
 
-### Enhanced React Components (v2.0)
+### Function-Based Icons (v2.1 NEW!)
 
+```javascript
+import { Plus, Minus, Settings, Car } from 'sva-icons';
+
+// Basic usage - returns SVG string
+const iconHtml = Plus();
+
+// Configurable with props
+const customIcon = Plus({
+  size: 32,
+  color: 'blue',
+  className: 'my-custom-icon',
+  strokeWidth: 2,
+  title: 'Add Item',
+  'aria-label': 'Add new item'
+});
+
+// Use in HTML
+document.getElementById('my-button').innerHTML = customIcon;
+```
+
+### Framework Integration Examples
+
+#### React Integration
 ```jsx
-import { Icon } from 'sva-icons/react'
+import { Plus, Settings } from 'sva-icons';
 
-function MyComponent() {
+function IconButton({ onClick }) {
+  const iconHtml = Plus({ size: 20, color: 'currentColor' });
+  
   return (
-    <div>
-      {/* Theme-aware sizing */}
-      <Icon name="alert" size="lg" theme="primary" />
-      <Icon name="car" size="xl" variant="outline" />
-      
-      {/* Individual components still available */}
-      <Alert size={24} color="red" />
-    </div>
-  )
+    <button onClick={onClick}>
+      <span dangerouslySetInnerHTML={{ __html: iconHtml }} />
+      Add Item
+    </button>
+  );
 }
 ```
 
-### Smart Bundles (v2.0)
+#### Vue Integration
+```vue
+<template>
+  <button @click="handleClick">
+    <span v-html="plusIcon"></span>
+    Add Item
+  </button>
+</template>
 
-```javascript
-// Import only what you need for optimal performance
-import { automotiveCore } from 'sva-icons/bundles'
-import { uiEssentials } from 'sva-icons/bundles'
+<script>
+import { Plus } from 'sva-icons';
 
-// 50-70% smaller bundle sizes
-const carIcon = automotiveCore.car
-const homeIcon = uiEssentials.home
+export default {
+  computed: {
+    plusIcon() {
+      return Plus({ size: 20, color: 'currentColor' });
+    }
+  }
+}
+</script>
 ```
 
-### CSS Theme System (v2.0)
+### Import Patterns
+
+```javascript
+// Individual imports (recommended for tree-shaking)
+import { Plus, Minus, Settings } from 'sva-icons';
+
+// Namespace import
+import * as SvaIcons from 'sva-icons';
+const iconHtml = SvaIcons.Plus({ size: 24 });
+
+// CommonJS support
+const { Plus, Minus } = require('sva-icons');
+
+// All icons collection
+import { allIcons } from 'sva-icons';
+const iconHtml = allIcons.Plus({ size: 24 });
+```
 
 ```css
 /* Import the theme system */
@@ -337,210 +384,89 @@ Perfect for upgrading existing button systems that use `::before` with backgroun
 
 **See the [Framework Integration Guide](./.test/FRAMEWORK_INTEGRATION_GUIDE.md) for complete migration instructions.**
 
-## 📊 Platform Support & Bundle Sizes
+## 🔧 Props Interface (v2.1)
 
-| Platform | Package | Bundle Size | Tree-Shakable |
-|----------|---------|-------------|---------------|
-| **Button Integration** | `sva-icons/create-icons` | **2KB + 0.5KB/icon** | ✅ Yes |
-| **React Components** | `sva-icons/react` | **2KB + 0.5KB/icon** | ✅ Yes |
-| **Web Components (Registry)** | `sva-icons/web-components/tree-shakable` | **3KB + 0.5KB/icon** | ✅ Yes |
-| **Web Components (Embedded)** | `sva-icons/web-components` | **100KB+** | ❌ No |
-| **ESM Modules** | `sva-icons` | **2KB + 0.5KB/icon** | ✅ Yes |
-| **SVG Sprite** | `sva-icons/sprite` | **50KB** | ❌ No |
+All SVA Icons now accept a comprehensive props object for customization:
 
-## 🔧 Advanced Usage
+```typescript
+interface SvaIconProps {
+  size?: number | string;        // Icon size (default: 24)
+  color?: string;               // Icon color (default: 'currentColor')
+  className?: string;           // CSS classes to apply
+  strokeWidth?: number;         // Stroke width (default: 1.5)
+  title?: string;              // Accessibility title
+  focusable?: boolean;         // Whether icon is focusable (default: false)
+  'aria-hidden'?: boolean;     // Hide from screen readers (default: true)
+  'aria-label'?: string;       // Accessibility label
+  [key: string]: any;          // Additional SVG attributes
+}
+```
 
-### Theme-Aware Icons
+### Props Examples
+
 ```javascript
-import { createThemeAwareIcons } from 'sva-icons/create-icons';
+import { Plus, Car, Settings } from 'sva-icons';
 
-createThemeAwareIcons({
-  icons: { plus, minus },
-  themeColors: {
-    light: { default: '#333333' },
-    dark: { default: '#ffffff' }
-  }
+// Size variations
+const smallIcon = Plus({ size: 16 });
+const largeIcon = Plus({ size: 48 });
+const responsiveIcon = Plus({ size: 'clamp(16px, 4vw, 32px)' });
+
+// Color variations
+const blueIcon = Plus({ color: 'blue' });
+const primaryIcon = Plus({ color: 'var(--color-primary)' });
+const currentIcon = Plus({ color: 'currentColor' }); // Default
+
+// Styling and classes
+const styledIcon = Plus({
+  className: 'icon-button hover:scale-110 transition-transform',
+  strokeWidth: 2
+});
+
+// Accessibility
+const accessibleIcon = Plus({
+  title: 'Add new item',
+  'aria-label': 'Add item to cart',
+  'aria-hidden': false,
+  focusable: true
+});
+
+// Custom attributes
+const customIcon = Plus({
+  'data-testid': 'add-button-icon',
+  'data-tooltip': 'Click to add'
 });
 ```
 
-### Dynamic Icon Loading
+## 🔄 Migration Guide: v2.0 → v2.1
+
+### What Changed
+- **Icons are now functions** instead of static SVG strings
+- **Props support** added for dynamic configuration
+- **Better framework integration** with configurable output
+- **Maintained compatibility** - existing imports still work
+
+### Before (v2.0)
 ```javascript
-import { createIconsAsync } from 'sva-icons/create-icons';
-
-// Automatically loads icons as needed
-createIconsAsync({
-  autoLoad: true,
-  basePath: '/node_modules/sva-icons/dist/icons/esm/'
-});
+import plus from 'sva-icons/dist/icons/esm/plus.js';
+console.log(plus); // Static SVG string
 ```
 
-### React Hook Integration
-```jsx
-import { useSvaIcons } from './hooks/useSvaIcons';
-
-function MyComponent() {
-  useSvaIcons(); // Initializes icons when component mounts
-  
-  return (
-    <button className="sva-c-button sva-c-button--hotspot">
-      <i data-sva-icon="plus" className="sva-c-button__icon" />
-      Add Item
-    </button>
-  );
-}
+### After (v2.1)
+```javascript
+import { Plus } from 'sva-icons';
+console.log(Plus()); // Function that returns SVG string
+console.log(Plus({ size: 32, color: 'blue' })); // Configurable output
 ```
 
-## 🔍 Icon Explorer
+### Migration Steps
+1. **No breaking changes** - existing code continues to work
+2. **Gradual adoption** - migrate to function-based imports for new features
+3. **Enhanced props** - leverage new configuration options where needed
 
-Browse all available icons and copy usage examples:
-
-👀 **[View Icon Explorer](./docs/)** - Interactive icon browser with search and copy-to-clipboard
-
-## 📚 Documentation
-
-- **[Framework Integration Guide](./.test/FRAMEWORK_INTEGRATION_GUIDE.md)** - Complete migration guide from CSS pseudo-elements
-- **[Usage Examples](./USAGE.md)** - Platform-specific usage examples
-- **[API Reference](#api-reference)** - Complete API documentation
-
-## 🛠️ API Reference
-
-### createIcons Utility
-
-The main utility for button integration and icon replacement:
-
-```typescript
-interface CreateIconsOptions {
-  icons: Record<string, string>;           // Icon name to SVG string mapping
-  nameAttr?: string;                       // Attribute to search for (default: 'data-sva-icon')
-  attrs?: Record<string, string>;          // Additional SVG attributes
-  classPrefix?: string;                    // CSS class prefix (default: 'sva-icon')
-  replaceOnly?: boolean;                   // Only replace, don't add classes
-}
-
-// Main function
-createIcons(options: CreateIconsOptions): void;
-
-// Async version with auto-loading
-createIconsAsync(options: CreateIconsOptions & {
-  autoLoad?: boolean;
-  basePath?: string;
-}): Promise<void>;
-
-// Theme-aware version
-createThemeAwareIcons(options: CreateIconsOptions & {
-  themeAttribute?: string;
-  themeColors?: Record<string, { default: string }>;
-}): void;
+### Framework Integration Benefits
+- **React**: Better prop handling and re-rendering optimization
+- **Vue**: Reactive prop binding for dynamic icons  
+- **Angular**: Type-safe icon configuration
+- **Any Framework**: Consistent API across all platforms
 ```
-
-### React Components
-
-All React components accept these props:
-
-```typescript
-interface IconProps {
-  size?: number | string;          // Default: 24
-  color?: string;                  // Default: "currentColor"
-  className?: string;
-  style?: React.CSSProperties;
-  // ...other SVG attributes
-}
-```
-
-### Web Components
-
-The `<sva-icon>` web component accepts these attributes:
-
-- `name`: Icon name (required)
-- `size`: Icon size in pixels or CSS value (default: "24")
-- `color`: Icon color (default: "currentColor")
-
-Tree-shakable web components with registry:
-
-```typescript
-class SvaIconRegistry {
-  static register(iconName: string, svgContent: string): void;
-  static registerMultiple(icons: Record<string, string>): void;
-  static get(iconName: string): string | undefined;
-  static has(iconName: string): boolean;
-}
-```
-
-### Icon Names
-
-All icons use kebab-case naming:
-- `car` → `<Car />` (React) or `<sva-icon name="car">` (Web Component)
-- `battery-status` → `<BatteryStatus />` (React) or `<sva-icon name="battery-status">` (Web Component)
-- `air-conditioning` → `<AirConditioning />` (React) or `<sva-icon name="air-conditioning">` (Web Component)
-
-## 🏗️ Building from Source
-
-```bash
-# Install dependencies
-npm install
-
-# Build all platforms
-npm run build:all
-
-# Individual builds
-npm run build:react          # React components
-npm run build:icons          # ESM/CJS modules  
-npm run build:sprite         # SVG sprite
-npm run build:web            # Web components
-npm run build:create-icons   # createIcons utility
-
-# Start documentation site
-cd docs && npm run dev
-```
-
-## 🤝 Contributing
-
-1. Add new SVG files to the `svg/` directory
-2. Update `icons.json` with metadata and tags
-3. Run `npm run build:all` to generate all platform outputs
-4. Test in the documentation site
-
-## 📁 File Structure
-
-```
-sva-icons/
-├── svg/                     # Source SVG files
-├── dist/
-│   ├── react/               # React components
-│   ├── icons/               # ESM/CJS modules + createIcons utility
-│   ├── sprite/              # SVG sprite
-│   └── web-components/      # Web components (embedded + tree-shakable)
-├── .test/                   # Test files and integration guides
-├── docs/                    # Documentation site
-├── scripts/                 # Build scripts
-├── icons.json               # Icon metadata
-├── USAGE.md                 # Usage examples
-└── package.json
-```
-
-## 🆚 Comparison with Other Libraries
-
-| Feature | SVA Icons | Lucide | Heroicons | Tabler |
-|---------|-----------|--------|-----------|--------|
-| **Tree-shakable** | ✅ All platforms | ✅ React only | ✅ React only | ✅ React only |
-| **Button Integration** | ✅ Built-in utility | ❌ Manual | ❌ Manual | ❌ Manual |
-| **Theme Support** | ✅ Automatic | ⚠️ Manual | ⚠️ Manual | ⚠️ Manual |
-| **Web Components** | ✅ Tree-shakable | ❌ No | ❌ No | ❌ No |
-| **Automotive Icons** | ✅ Specialized | ❌ General | ❌ General | ❌ General |
-| **Bundle Size** | **2KB + 0.5KB/icon** | 3KB + 1KB/icon | 2KB + 0.8KB/icon | 3KB + 0.7KB/icon |
-
-## 📝 License
-
-MIT License - see [LICENSE](LICENSE) file for details.
-
-## 🔗 Related Projects
-
-- [Lucide](https://lucide.dev/) - Beautiful & consistent icon toolkit
-- [Heroicons](https://heroicons.com/) - Beautiful hand-crafted SVG icons
-- [Tabler Icons](https://tabler-icons.io/) - Over 4000 free SVG icons
-
----
-
-**Made with ❤️ by Nissan Motor Corporation**
-
-*For support, questions, or feature requests, please [open an issue](https://github.com/nissan/sva-icons/issues).*

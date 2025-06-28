@@ -1,18 +1,22 @@
 # SVA Icons Documentation Site
 
-This is the documentation site for SVA Icons v2.0, built with React and Vite. It showcases the enhanced features, provides usage examples, and includes an interactive icon explorer.
+This is the documentation site for SVA Icons v2.1, built with React and Vite. It showcases the function-based architecture, framework integration capabilities, and provides usage examples with an interactive icon explorer.
 
 ## Features
 
 - **Icon Explorer**: Browse and search through all available icons
-- **Usage Examples**: Comprehensive examples for all integration methods
-- **v2.0 Features**: Detailed overview of new v2.0 capabilities including:
-  - Smart Bundle System
-  - Enhanced React Icon Component
-  - CSS Theme System
-  - JavaScript Theme API
-  - Bundle Analyzer
-  - Developer Tools
+- **Function-Based Examples**: Comprehensive examples for v2.1 function-based icons
+- **Framework Integration**: Examples for React, Vue, Angular, and vanilla JavaScript
+- **Props Configuration**: Interactive examples showing configurable icon props
+- **v2.1 Features**: Detailed overview of new v2.1 capabilities including:
+  - Function-Based Icon Architecture
+  - Configurable Props Interface  
+  - Framework Integration Support
+  - Enhanced Developer Experience
+  - SVA Design System Compatibility
+  - Smart Bundle System (maintained from v2.0)
+  - Enhanced React Icon Component (maintained from v2.0)
+  - CSS Theme System (maintained from v2.0)
 
 ## Development
 
