@@ -12,15 +12,19 @@ const IconExplorer = () => {
     // Load icons.json
     fetch('/icons.json')
       .then(response => response.json())
-      .then(iconsJson => {
-        console.log('Loaded icons:', iconsJson.length, 'icons')
-        setIcons(iconsJson)
-        setFilteredIcons(iconsJson)
+      .then(iconsData => {
+        // Handle both old array format and new object format with icons array
+        const iconsArray = Array.isArray(iconsData) ? iconsData : iconsData.icons || [];
+        console.log('Loaded icons:', iconsArray.length, 'icons')
+        setIcons(iconsArray)
+        setFilteredIcons(iconsArray)
       })
       .catch(error => console.error('Error loading icons:', error))
   }, [])
 
   useEffect(() => {
+    if (!Array.isArray(icons)) return; // Safety check
+    
     const filtered = icons.filter(icon => 
       icon.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       (icon.tags && icon.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase())))

@@ -132,7 +132,8 @@ function updateManifest(files, stats) {
   let manifest = [];
   if (fs.existsSync(MANIFEST)) {
     try {
-      manifest = JSON.parse(fs.readFileSync(MANIFEST, 'utf8'));
+      const manifestData = JSON.parse(fs.readFileSync(MANIFEST, 'utf8'));
+      manifest = manifestData.icons || manifestData; // Handle both old and new formats
     } catch (e) {
       console.warn('Could not parse existing manifest, starting fresh.');
     }
