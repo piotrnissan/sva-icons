@@ -1,6 +1,6 @@
 {
   "name": "sva-icons",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "SVA Icons v2.1 - Function-based icon library with configurable props and full framework integration support",
   "type": "module",
   "main": "./dist/icons/index.js",
@@ -89,7 +89,7 @@
   "scripts": {
     "build:web": "node scripts/build-web-component.js && rollup -c scripts/rollup.web.config.js",
     "build:web-tree-shakable": "copy tree-shakable-web-components.js dist\\web-components\\",
-    "build:icons": "node scripts/build-icons.js",
+    "build:icons": "node scripts/build-icons.js && node scripts/build-function-icons.js && node scripts/build-index-files.js",
     "build:sprite": "node scripts/build-sprite.js",
     "build:react": "node scripts/build-react-simple.js",
     "build:create-icons": "node scripts/build-create-icons.js",
