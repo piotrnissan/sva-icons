@@ -3,10 +3,79 @@ import React from 'react'
 const V2Features = () => {
   return (
     <div className="v2-features">
-      <h2>What's New in v2.0</h2>
+      <h2>What's New in v2.1</h2>
       
       <section className="feature-section">
-        <h3>🎯 Smart Bundle System</h3>
+        <h3>🎯 Function-Based Icon Architecture (NEW!)</h3>
+        <p>Icons are now configurable functions that accept props, providing better developer experience and framework integration.</p>
+        <div className="feature-details">
+          <h4>Key Benefits:</h4>
+          <ul>
+            <li><strong>Configurable Props</strong> - Dynamic sizing, colors, classes, and accessibility features</li>
+            <li><strong>Framework Ready</strong> - Perfect integration with React, Vue, Angular, and vanilla JS</li>
+            <li><strong>Better DX</strong> - IDE support, type safety, and intuitive API</li>
+            <li><strong>SVA Compatible</strong> - Full compatibility with SVA design system requirements</li>
+            <li><strong>Flexible Import</strong> - Multiple import patterns for optimal developer experience</li>
+          </ul>
+        </div>
+        <div className="code-block">
+          <pre><code>{`// Import icons as functions
+import { Plus, Settings, Car } from 'sva-icons'
+
+// Basic usage
+const iconHtml = Plus()
+
+// Configurable with props
+const customIcon = Plus({
+  size: 32,
+  color: 'blue',
+  className: 'my-icon',
+  strokeWidth: 2,
+  title: 'Add Item',
+  'aria-label': 'Add new item'
+})
+
+// Perfect for framework integration
+export type SvaIconComponent = (props: SvaIconProps) => string`}</code></pre>
+        </div>
+      </section>
+
+      <section className="feature-section">
+        <h3>📦 Enhanced Framework Integration</h3>
+        <p>Seamless integration with modern frameworks through function-based architecture.</p>
+        <div className="code-block">
+          <pre><code>{`// React Integration
+function IconButton() {
+  const iconHtml = Plus({ size: 20, color: 'currentColor' })
+  return <button dangerouslySetInnerHTML={{ __html: iconHtml }} />
+}
+
+// Vue Integration
+<template>
+  <button v-html="iconHtml"></button>
+</template>
+<script>
+import { Plus } from 'sva-icons'
+export default {
+  computed: {
+    iconHtml() { return Plus({ size: 24 }) }
+  }
+}
+</script>
+
+// Angular Integration
+import { Plus } from 'sva-icons'
+@Component({
+  template: '<button [innerHTML]="iconHtml"></button>'
+})
+class MyComponent {
+  iconHtml = Plus({ size: 20, className: 'btn-icon' })
+}`}</code></pre>
+        </div>
+      </section>
+
+      <section className="feature-section">
+        <h3>🎯 Smart Bundle System (v2.0)</h3>
         <p>Optimized icon bundles for specific use cases, reducing bundle size and improving performance.</p>
         <div className="feature-details">
           <h4>Available Bundles:</h4>

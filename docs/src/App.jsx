@@ -11,8 +11,8 @@ function App() {
     <div className="app">
       <header className="header">
         <div className="container">
-          <h1 className="title">SVA Icons v2.0</h1>
-          <p className="subtitle">Modern, multi-platform icon system with smart bundles, themes, and enhanced React components</p>
+          <h1 className="title">SVA Icons v2.1</h1>
+          <p className="subtitle">Modern, function-based icon system with configurable props, full framework integration, and enhanced developer experience</p>
         </div>
       </header>
 
@@ -34,7 +34,7 @@ function App() {
             className={`nav-button ${activeTab === 'v2-features' ? 'active' : ''}`}
             onClick={() => setActiveTab('v2-features')}
           >
-            v2.0 Features
+            v2.1 Features
           </button>
         </div>
       </nav>

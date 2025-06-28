@@ -13,6 +13,97 @@ const UsageExamples = () => {
       </section>
 
       <section className="usage-section">
+        <h3>🎯 Function-Based Icons (v2.1 NEW!)</h3>
+        <div className="code-block">
+          <pre><code>{`// Import icons as configurable functions
+import { Plus, Minus, Settings, Car } from 'sva-icons'
+
+// Basic usage - returns SVG string
+const iconHtml = Plus()
+
+// Configurable with props
+const customIcon = Plus({
+  size: 32,
+  color: 'blue',
+  className: 'my-custom-icon',
+  strokeWidth: 2,
+  title: 'Add Item',
+  'aria-label': 'Add new item'
+})
+
+// Use in HTML
+document.getElementById('my-button').innerHTML = customIcon
+
+// Framework Integration Examples:
+
+// React
+function IconButton() {
+  return (
+    <button>
+      <span dangerouslySetInnerHTML={{ __html: Plus({ size: 20 }) }} />
+      Add Item
+    </button>
+  )
+}
+
+// Vue
+<template>
+  <button v-html="plusIcon"></button>
+</template>
+<script>
+import { Plus } from 'sva-icons'
+export default {
+  computed: {
+    plusIcon() {
+      return Plus({ size: 24, color: 'currentColor' })
+    }
+  }
+}
+</script>
+
+// Angular
+import { Plus } from 'sva-icons'
+@Component({
+  template: '<button [innerHTML]="iconHtml"></button>'
+})
+class MyComponent {
+  iconHtml = Plus({ size: 20, className: 'btn-icon' })
+}`}</code></pre>
+        </div>
+      </section>
+
+      <section className="usage-section">
+        <h3>📦 SVA Framework Integration (v2.1)</h3>
+        <div className="code-block">
+          <pre><code>{`// Perfect for SVA design system integration
+import { Alert, Car, Settings, Plus } from 'sva-icons'
+
+// SVA Framework compatible function interface
+export type SvaIconComponent = (props: SvaIconProps) => string
+
+// Available props interface
+interface SvaIconProps {
+  size?: number | string
+  color?: string
+  className?: string
+  strokeWidth?: number
+  title?: string
+  'aria-label'?: string
+  'aria-hidden'?: boolean
+  focusable?: boolean
+}
+
+// Usage in SVA components
+const iconHtml = Alert({
+  size: 24,
+  color: 'var(--sva-color-danger)',
+  className: 'sva-alert__icon',
+  'aria-hidden': true
+})`}</code></pre>
+        </div>
+      </section>
+
+      <section className="usage-section">
         <h3>Enhanced React Components (v2.0)</h3>
         <div className="code-block">
           <pre><code>{`// Import individual components
