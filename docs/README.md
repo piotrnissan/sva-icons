@@ -1,12 +1,99 @@
-# React + Vite
+# SVA Icons Documentation Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the documentation site for SVA Icons v2.0, built with React and Vite. It showcases the enhanced features, provides usage examples, and includes an interactive icon explorer.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Icon Explorer**: Browse and search through all available icons
+- **Usage Examples**: Comprehensive examples for all integration methods
+- **v2.0 Features**: Detailed overview of new v2.0 capabilities including:
+  - Smart Bundle System
+  - Enhanced React Icon Component
+  - CSS Theme System
+  - JavaScript Theme API
+  - Bundle Analyzer
+  - Developer Tools
 
-## Expanding the ESLint configuration
+## Development
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+## Technology Stack
+
+- **React** - UI framework
+- **Vite** - Build tool and dev server
+- **ESLint** - Code linting
+
+## Project Structure
+
+```
+docs/
+├── src/
+│   ├── components/
+│   │   ├── IconExplorer.jsx    # Interactive icon browser
+│   │   ├── UsageExamples.jsx   # Code examples and documentation
+│   │   ├── V2Features.jsx      # v2.0 feature showcase
+│   │   └── icons/              # Icon component mappings
+│   ├── App.jsx                 # Main application component
+│   ├── App.css                 # Global styles
+│   └── main.jsx               # Application entry point
+├── public/                     # Static assets
+├── index.html                  # HTML template
+├── package.json               # Dependencies and scripts
+├── vite.config.js             # Vite configuration
+└── README.md                  # This file
+```
+
+## Documentation Content
+
+The site includes comprehensive documentation for:
+
+### Installation & Setup
+- Package installation
+- Import methods
+- TypeScript support
+
+### React Integration
+- Individual icon components
+- Enhanced Icon component with theme support
+- Props and customization options
+
+### Smart Bundles (v2.0)
+- Bundle-based imports for optimized loading
+- Available bundle categories
+- Performance benefits
+
+### Theme System (v2.0)
+- CSS theme framework
+- JavaScript theme API
+- Custom theme configuration
+
+### Developer Tools (v2.0)
+- Bundle analyzer
+- Development utilities
+- Performance monitoring
+
+### Migration Guide
+- Upgrading from v1.x to v2.0
+- Backward compatibility notes
+- New feature adoption
+
+## Deployment
+
+The documentation site is configured for deployment to:
+- **Netlify** (via `netlify.toml` in root)
+- **Vercel** (via `vercel.json` in root)
+
+The site builds to the `dist/` directory and can be served statically.

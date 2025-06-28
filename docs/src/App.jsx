@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import IconExplorer from './components/IconExplorer'
 import UsageExamples from './components/UsageExamples'
+import V2Features from './components/V2Features'
 import './App.css'
 
 function App() {
@@ -10,8 +11,8 @@ function App() {
     <div className="app">
       <header className="header">
         <div className="container">
-          <h1 className="title">SVA Icons</h1>
-          <p className="subtitle">Modern, multi-platform icon system with React, Web Components, and more</p>
+          <h1 className="title">SVA Icons v2.0</h1>
+          <p className="subtitle">Modern, multi-platform icon system with smart bundles, themes, and enhanced React components</p>
         </div>
       </header>
 
@@ -29,6 +30,12 @@ function App() {
           >
             Usage Examples
           </button>
+          <button 
+            className={`nav-button ${activeTab === 'v2-features' ? 'active' : ''}`}
+            onClick={() => setActiveTab('v2-features')}
+          >
+            v2.0 Features
+          </button>
         </div>
       </nav>
 
@@ -36,6 +43,7 @@ function App() {
         <div className="container">
           {activeTab === 'explorer' && <IconExplorer />}
           {activeTab === 'usage' && <UsageExamples />}
+          {activeTab === 'v2-features' && <V2Features />}
         </div>
       </main>
     </div>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVA Icons v2.0 Demo</title>
+    <link rel="stylesheet" href="dist/sva-icons.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+        
+        .hero {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 3rem 0;
+            background: linear-gradient(135deg, #e62020, #c41e3a);
+            color: white;
+            border-radius: 12px;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0 0 1rem 0;
+            font-weight: 700;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            margin: 0;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .feature {
+            padding: 2rem;
+            border: 1px solid #e1e5e9;
+            border-radius: 8px;
+            background: #fff;
+        }
+        
+        .feature h3 {
+            margin: 0 0 1rem 0;
+            color: #e62020;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .icon-demo {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .icon-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem;
+            border: 1px solid #e1e5e9;
+            border-radius: 6px;
+            background: #f8f9fa;
+        }
+        
+        .icon-group small {
+            font-size: 0.8rem;
+            color: #666;
+        }
+        
+        .size-demo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .theme-demo {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .theme-demo button {
+            padding: 0.5rem 1rem;
+            border: 1px solid #e62020;
+            background: white;
+            color: #e62020;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .theme-demo button:hover {
+            background: #e62020;
+            color: white;
+        }
+        
+        .code {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 4px;
+            font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+            font-size: 0.9rem;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .stat {
+            text-align: center;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #e62020;
+            margin-bottom: 0.5rem;
+        }
+        
+        .sva-theme--nissan {
+            --sva-automotive-color: #e62020;
+            --sva-ui-color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>🚀 SVA Icons v2.0</h1>
+        <p>Smart bundles, theme system, and enhanced React components</p>
+    </div>
+
+    <div class="features">
+        <div class="feature">
+            <h3>
+                <svg class="sva-icon sva-icon--lg" viewBox="0 0 24 24"><path d="M7 4V2C7 1.45 6.55 1 6 1S5 1.45 5 2V4H4C2.9 4 2 4.9 2 6V20C2 21.1 2.9 22 4 22H20C21.1 22 22 21.1 22 20V6C22 4.9 21.1 4 20 4H19V2C19 1.45 18.55 1 18 1S17 1.45 17 2V4H7ZM20 8V20H4V8H20Z"/></svg>
+                Smart Bundles
+            </h3>
+            <p>Lazy-loaded icon bundles optimized for different use cases:</p>
+            <div class="icon-demo">
+                <div class="icon-group">
+                    <svg class="sva-icon sva-icon--automotive sva-icon--lg" viewBox="0 0 24 24"><path d="M22.994 7.00005H21.494C20.997 7.00005 20.604 7.36905 20.526 7.84305L18.316 4.30805C17.796 3.47605 16.902 2.95205 15.922 2.90205C14.623 2.83405 13.316 2.80005 12 2.80005C10.685 2.80005 9.377 2.83405 8.078 2.90105C7.098 2.95205 6.204 3.47605 5.684 4.30705L3.47 7.85005C3.394 7.37205 2.999 7.00005 2.5 7.00005H1C0.448 7.00005 0 7.44805 0 8.00005V9.00005C0 9.55205 0.448 10 1 10H1.488C1.171 10.743 1 11.543 1 12.357L0.994 22C0.994 22.552 1.442 23 1.994 23H3.994C4.546 23 4.994 22.552 4.994 22V19.664C7.302 19.878 9.636 20 12 20C14.36 20 16.69 19.878 18.994 19.6651V22C18.994 22.552 19.442 23 19.994 23H21.994C22.546 23 22.994 22.552 22.994 22L23 12.357C23 11.543 22.829 10.743 22.512 10H22.995C23.547 10 23.995 9.55205 23.995 9.00005V8.00005C23.994 7.44805 23.547 7.00005 22.994 7.00005Z"/></svg>
+                    <small>automotive-core</small>
+                </div>
+                <div class="icon-group">
+                    <svg class="sva-icon sva-icon--ui sva-icon--lg" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.86087 6.94938L11 6.56957V5.43043L9.86087 5.05062C9.73428 4.67087 9.60752 4.29109 9.35435 3.91134L9.86087 2.89876L9.10124 2.13913L8.08851 2.6455C7.70876 2.39233 7.32913 2.26571 6.94938 2.13913L6.56957 1H5.43043L5.05062 2.13913C4.67096 2.26568 4.29084 2.39239 3.91118 2.6455L2.89876 2.13913L2.13913 2.89876L2.64534 3.91134C2.39244 4.29069 2.26598 4.67007 2.13953 5.04942L2.13913 5.05062L1 5.43043V6.56957L2.13913 6.94938L2.13953 6.95058C2.26598 7.32993 2.39244 7.70931 2.64534 8.08866L2.13913 9.10124L2.89876 9.86087L3.91118 9.3545C4.29084 9.6076 4.67069 9.73423 5.05035 9.86078L5.43043 11H6.56957L6.94938 9.86087C7.32913 9.73428 7.70876 9.60767 8.08851 9.3545L9.10124 9.86087L9.86087 9.10124L9.35435 8.08866C9.60752 7.70891 9.73428 7.32913 9.86087 6.94938ZM7.5 6C7.5 6.82843 6.82843 7.5 6 7.5C5.17157 7.5 4.5 6.82843 4.5 6C4.5 5.17157 5.17157 4.5 6 4.5C6.82843 4.5 7.5 5.17157 7.5 6Z"/></svg>
+                    <small>ui-essentials</small>
+                </div>
+                <div class="icon-group">
+                    <svg class="sva-icon sva-icon--status sva-icon--lg" viewBox="0 0 24 24"><path d="M23.3572 20.75L13.2992 3.32996C13.0102 2.82996 12.5052 2.57996 12.0002 2.57996C11.4952 2.57996 10.9902 2.82996 10.7012 3.32996L0.643152 20.75C0.0661518 21.75 0.788152 23 1.94215 23H22.0572C23.2122 23 23.9342 21.75 23.3572 20.75ZM2.80815 21L12.0002 5.07996L21.1922 21H2.80815ZM10.9212 18.858H13.0272V16.843H10.9212V18.858ZM11.0252 15.816H12.9102L13.0662 10.408H10.8692L11.0252 15.816Z"/></svg>
+                    <small>status-icons</small>
+                </div>
+                <div class="icon-group">
+                    <svg class="sva-icon sva-icon--controls sva-icon--lg" viewBox="0 0 24 24"><path d="M19.7219 12.5001C20.1979 12.2251 20.1979 11.7751 19.7219 11.5001L4.99991 3.00006C4.52391 2.72506 4.13391 2.95006 4.13391 3.50006V20.5001C4.13391 21.0501 4.52391 21.2751 4.99991 21.0001L19.7219 12.5001Z"/></svg>
+                    <small>controls</small>
+                </div>
+                <div class="icon-group">
+                    <svg class="sva-icon sva-icon--navigation sva-icon--lg" viewBox="0 0 24 24"><path d="M22 1H2C1.448 1 1 1.448 1 2V22C1 22.552 1.448 23 2 23H22C22.552 23 23 22.552 23 22V2C23 1.448 22.552 1 22 1ZM18 20H15V17C15 16.448 14.552 16 14 16H9C7.343 16 6 14.657 6 13V9H4L7.5 3.399L11 9H9V12C9 12.552 9.448 13 10 13H15C16.657 13 18 14.343 18 16V20Z"/></svg>
+                    <small>navigation</small>
+                </div>
+            </div>
+            <div class="code">import { automotiveCore } from 'sva-icons/bundles';
+const { Car, Engine } = await automotiveCore.lazy();</div>
+        </div>
+
+        <div class="feature">
+            <h3>
+                <svg class="sva-icon sva-icon--lg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM17 13H13V17C13 17.55 12.55 18 12 18S11 17.55 11 17V13H7C6.45 13 6 12.55 6 12S6.45 11 7 11H11V7C11 6.45 11.45 6 12 6S13 6.45 13 7V11H17C17.55 11 18 11.45 18 12S17.55 13 17 13Z"/></svg>
+                Theme System
+            </h3>
+            <p>Complete CSS custom properties and JavaScript theme API:</p>
+            <div class="size-demo">
+                <svg class="sva-icon sva-icon--automotive sva-icon--xs" viewBox="0 0 24 24"><path d="M22.994 7.00005H21.494C20.997 7.00005 20.604 7.36905 20.526 7.84305L18.316 4.30805C17.796 3.47605 16.902 2.95205 15.922 2.90205C14.623 2.83405 13.316 2.80005 12 2.80005C10.685 2.80005 9.377 2.83405 8.078 2.90105C7.098 2.95205 6.204 3.47605 5.684 4.30705L3.47 7.85005C3.394 7.37205 2.999 7.00005 2.5 7.00005H1C0.448 7.00005 0 7.44805 0 8.00005V9.00005C0 9.55205 0.448 10 1 10H1.488C1.171 10.743 1 11.543 1 12.357L0.994 22C0.994 22.552 1.442 23 1.994 23H3.994C4.546 23 4.994 22.552 4.994 22V19.664C7.302 19.878 9.636 20 12 20C14.36 20 16.69 19.878 18.994 19.6651V22C18.994 22.552 19.442 23 19.994 23H21.994C22.546 23 22.994 22.552 22.994 22L23 12.357C23 11.543 22.829 10.743 22.512 10H22.995C23.547 10 23.995 9.55205 23.995 9.00005V8.00005C23.994 7.44805 23.547 7.00005 22.994 7.00005Z"/></svg>
+                <svg class="sva-icon sva-icon--automotive sva-icon--sm" viewBox="0 0 24 24"><path d="M22.994 7.00005H21.494C20.997 7.00005 20.604 7.36905 20.526 7.84305L18.316 4.30805C17.796 3.47605 16.902 2.95205 15.922 2.90205C14.623 2.83405 13.316 2.80005 12 2.80005C10.685 2.80005 9.377 2.83405 8.078 2.90105C7.098 2.95205 6.204 3.47605 5.684 4.30705L3.47 7.85005C3.394 7.37205 2.999 7.00005 2.5 7.00005H1C0.448 7.00005 0 7.44805 0 8.00005V9.00005C0 9.55205 0.448 10 1 10H1.488C1.171 10.743 1 11.543 1 12.357L0.994 22C0.994 22.552 1.442 23 1.994 23H3.994C4.546 23 4.994 22.552 4.994 22V19.664C7.302 19.878 9.636 20 12 20C14.36 20 16.69 19.878 18.994 19.6651V22C18.994 22.552 19.442 23 19.994 23H21.994C22.546 23 22.994 22.552 22.994 22L23 12.357C23 11.543 22.829 10.743 22.512 10H22.995C23.547 10 23.995 9.55205 23.995 9.00005V8.00005C23.994 7.44805 23.547 7.00005 22.994 7.00005Z"/></svg>
+                <svg class="sva-icon sva-icon--automotive sva-icon--md" viewBox="0 0 24 24"><path d="M22.994 7.00005H21.494C20.997 7.00005 20.604 7.36905 20.526 7.84305L18.316 4.30805C17.796 3.47605 16.902 2.95205 15.922 2.90205C14.623 2.83405 13.316 2.80005 12 2.80005C10.685 2.80005 9.377 2.83405 8.078 2.90105C7.098 2.95205 6.204 3.47605 5.684 4.30705L3.47 7.85005C3.394 7.37205 2.999 7.00005 2.5 7.00005H1C0.448 7.00005 0 7.44805 0 8.00005V9.00005C0 9.55205 0.448 10 1 10H1.488C1.171 10.743 1 11.543 1 12.357L0.994 22C0.994 22.552 1.442 23 1.994 23H3.994C4.546 23 4.994 22.552 4.994 22V19.664C7.302 19.878 9.636 20 12 20C14.36 20 16.69 19.878 18.994 19.6651V22C18.994 22.552 19.442 23 19.994 23H21.994C22.546 23 22.994 22.552 22.994 22L23 12.357C23 11.543 22.829 10.743 22.512 10H22.995C23.547 10 23.995 9.55205 23.995 9.00005V8.00005C23.994 7.44805 23.547 7.00005 22.994 7.00005Z"/></svg>
+                <svg class="sva-icon sva-icon--automotive sva-icon--lg" viewBox="0 0 24 24"><path d="M22.994 7.00005H21.494C20.997 7.00005 20.604 7.36905 20.526 7.84305L18.316 4.30805C17.796 3.47605 16.902 2.95205 15.922 2.90205C14.623 2.83405 13.316 2.80005 12 2.80005C10.685 2.80005 9.377 2.83405 8.078 2.90105C7.098 2.95205 6.204 3.47605 5.684 4.30705L3.47 7.85005C3.394 7.37205 2.999 7.00005 2.5 7.00005H1C0.448 7.00005 0 7.44805 0 8.00005V9.00005C0 9.55205 0.448 10 1 10H1.488C1.171 10.743 1 11.543 1 12.357L0.994 22C0.994 22.552 1.442 23 1.994 23H3.994C4.546 23 4.994 22.552 4.994 22V19.664C7.302 19.878 9.636 20 12 20C14.36 20 16.69 19.878 18.994 19.6651V22C18.994 22.552 19.442 23 19.994 23H21.994C22.546 23 22.994 22.552 22.994 22L23 12.357C23 11.543 22.829 10.743 22.512 10H22.995C23.547 10 23.995 9.55205 23.995 9.00005V8.00005C23.994 7.44805 23.547 7.00005 22.994 7.00005Z"/></svg>
+                <svg class="sva-icon sva-icon--automotive sva-icon--xl" viewBox="0 0 24 24"><path d="M22.994 7.00005H21.494C20.997 7.00005 20.604 7.36905 20.526 7.84305L18.316 4.30805C17.796 3.47605 16.902 2.95205 15.922 2.90205C14.623 2.83405 13.316 2.80005 12 2.80005C10.685 2.80005 9.377 2.83405 8.078 2.90105C7.098 2.95205 6.204 3.47605 5.684 4.30705L3.47 7.85005C3.394 7.37205 2.999 7.00005 2.5 7.00005H1C0.448 7.00005 0 7.44805 0 8.00005V9.00005C0 9.55205 0.448 10 1 10H1.488C1.171 10.743 1 11.543 1 12.357L0.994 22C0.994 22.552 1.442 23 1.994 23H3.994C4.546 23 4.994 22.552 4.994 22V19.664C7.302 19.878 9.636 20 12 20C14.36 20 16.69 19.878 18.994 19.6651V22C18.994 22.552 19.442 23 19.994 23H21.994C22.546 23 22.994 22.552 22.994 22L23 12.357C23 11.543 22.829 10.743 22.512 10H22.995C23.547 10 23.995 9.55205 23.995 9.00005V8.00005C23.994 7.44805 23.547 7.00005 22.994 7.00005Z"/></svg>
+                <svg class="sva-icon sva-icon--automotive sva-icon--xxl" viewBox="0 0 24 24"><path d="M22.994 7.00005H21.494C20.997 7.00005 20.604 7.36905 20.526 7.84305L18.316 4.30805C17.796 3.47605 16.902 2.95205 15.922 2.90205C14.623 2.83405 13.316 2.80005 12 2.80005C10.685 2.80005 9.377 2.83405 8.078 2.90105C7.098 2.95205 6.204 3.47605 5.684 4.30705L3.47 7.85005C3.394 7.37205 2.999 7.00005 2.5 7.00005H1C0.448 7.00005 0 7.44805 0 8.00005V9.00005C0 9.55205 0.448 10 1 10H1.488C1.171 10.743 1 11.543 1 12.357L0.994 22C0.994 22.552 1.442 23 1.994 23H3.994C4.546 23 4.994 22.552 4.994 22V19.664C7.302 19.878 9.636 20 12 20C14.36 20 16.69 19.878 18.994 19.6651V22C18.994 22.552 19.442 23 19.994 23H21.994C22.546 23 22.994 22.552 22.994 22L23 12.357C23 11.543 22.829 10.743 22.512 10H22.995C23.547 10 23.995 9.55205 23.995 9.00005V8.00005C23.994 7.44805 23.547 7.00005 22.994 7.00005Z"/></svg>
+            </div>
+            <div class="theme-demo">
+                <button onclick="setTheme('light')">Light</button>
+                <button onclick="setTheme('dark')">Dark</button>
+                <button onclick="setTheme('nissan')">Nissan</button>
+            </div>
+            <div class="code">import { setTheme } from 'sva-icons/theme';
+setTheme('nissan');</div>
+        </div>
+
+        <div class="feature">
+            <h3>
+                <svg class="sva-icon sva-icon--lg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"/><path d="M13 7H11V11H7V13H11V17H13V13H17V11H13V7Z"/></svg>
+                Enhanced React
+            </h3>
+            <p>Advanced Icon component with theme-aware props:</p>
+            <div class="icon-demo">
+                <div class="icon-group">
+                    <svg class="sva-icon sva-icon--outline sva-icon--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+                    <small>outline</small>
+                </div>
+                <div class="icon-group">
+                    <svg class="sva-icon sva-icon--filled sva-icon--lg" viewBox="0 0 24 24"><path d="M8.01908 20.8027L1.59187 14.4394C0.808066 13.6645 0.802076 12.3995 1.57789 11.6157C2.35371 10.8319 3.61779 10.8259 4.40259 11.6017L8.0051 15.1693L19.5914 3.58291C20.3713 2.80309 21.6353 2.80309 22.4151 3.58291C23.195 4.36272 23.195 5.62679 22.4151 6.4066L8.01908 20.8027Z"/></svg>
+                    <small>filled</small>
+                </div>
+                <div class="icon-group">
+                    <svg class="sva-icon sva-icon--interactive sva-icon--lg" viewBox="0 0 24 24"><path d="M19.7219 12.5001C20.1979 12.2251 20.1979 11.7751 19.7219 11.5001L4.99991 3.00006C4.52391 2.72506 4.13391 2.95006 4.13391 3.50006V20.5001C4.13391 21.0501 4.52391 21.2751 4.99991 21.0001L19.7219 12.5001Z"/></svg>
+                    <small>interactive</small>
+                </div>
+                <div class="icon-group">
+                    <svg class="sva-icon sva-icon--spinning sva-icon--lg" viewBox="0 0 24 24"><path d="M12 5C13.1046 5 14 4.10457 14 3C14 1.89543 13.1046 1 12 1C10.8954 1 10 1.89543 10 3C10 4.10457 10.8954 5 12 5Z"/><path opacity="0.4" d="M12 23C13.1046 23 14 22.1046 14 21C14 19.8954 13.1046 19 12 19C10.8954 19 10 19.8954 10 21C10 22.1046 10.8954 23 12 23Z"/><path d="M18.3641 7.63599C19.4687 7.63599 20.3641 6.74056 20.3641 5.63599C20.3641 4.53142 19.4687 3.63599 18.3641 3.63599C17.2596 3.63599 16.3641 4.53142 16.3641 5.63599C16.3641 6.74056 17.2596 7.63599 18.3641 7.63599Z"/><path opacity="0.3" d="M5.63586 20.364C6.74043 20.364 7.63586 19.4686 7.63586 18.364C7.63586 17.2594 6.74043 16.364 5.63586 16.364C4.53129 16.364 3.63586 17.2594 3.63586 18.364C3.63586 19.4686 4.53129 20.364 5.63586 20.364Z"/><path opacity="0.8" d="M21 14C22.1046 14 23 13.1046 23 12C23 10.8954 22.1046 10 21 10C19.8954 10 19 10.8954 19 12C19 13.1046 19.8954 14 21 14Z"/><path opacity="0.2" d="M3 14C4.10457 14 5 13.1046 5 12C5 10.8954 4.10457 10 3 10C1.89543 10 1 10.8954 1 12C1 13.1046 1.89543 14 3 14Z"/><path opacity="0.6" d="M18.3641 20.364C19.4687 20.364 20.3641 19.4686 20.3641 18.364C20.3641 17.2594 19.4687 16.364 18.3641 16.364C17.2596 16.364 16.3641 17.2594 16.3641 18.364C16.3641 19.4686 17.2596 20.364 18.3641 20.364Z"/><path opacity="0.1" d="M5.63586 7.63599C6.74043 7.63599 7.63586 6.74056 7.63586 5.63599C7.63586 4.53142 6.74043 3.63599 5.63586 3.63599C4.53129 3.63599 3.63586 4.53142 3.63586 5.63599C3.63586 6.74056 4.53129 7.63599 5.63586 7.63599Z"/></svg>
+                    <small>animated</small>
+                </div>
+            </div>
+            <div class="code">&lt;Icon name="car" size="lg" variant="filled" 
+      themeAware bundle="automotive" /&gt;</div>
+        </div>
+
+        <div class="feature">
+            <h3>
+                <svg class="sva-icon sva-icon--lg" viewBox="0 0 24 24"><path d="M22.7 19L13.6 9.9C14.5 7.6 14 4.9 12.1 3C10.1 1 7.1 1 5.1 3L9.2 7.1L7.1 9.2L3 5.1C1 7.1 1 10.1 3 12.1C4.9 14 7.6 14.5 9.9 13.6L19 22.7C19.4 23.1 20.1 23.1 20.5 22.7L22.8 20.4C23.1 20 23.1 19.3 22.7 19Z"/></svg>
+                Developer Tools
+            </h3>
+            <p>Bundle analysis, validation, and development utilities:</p>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">400+</div>
+                    <div>Total Icons</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">5</div>
+                    <div>Smart Bundles</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">100%</div>
+                    <div>Tree-shakable</div>
+                </div>
+            </div>
+            <div class="code">import { analyzeProject } from 'sva-icons/analyzer';
+const report = await analyzeProject();</div>
+        </div>
+    </div>
+
+    <div class="feature">
+        <h3>
+            <svg class="sva-icon sva-icon--lg" viewBox="0 0 24 24"><path d="M8.01908 20.8027L1.59187 14.4394C0.808066 13.6645 0.802076 12.3995 1.57789 11.6157C2.35371 10.8319 3.61779 10.8259 4.40259 11.6017L8.0051 15.1693L19.5914 3.58291C20.3713 2.80309 21.6353 2.80309 22.4151 3.58291C23.195 4.36272 23.195 5.62679 22.4151 6.4066L8.01908 20.8027Z"/></svg>
+            Import Examples (All Working!)
+        </h3>
+        <div class="code">// Smart bundles
+import { automotiveCore, uiEssentials } from 'sva-icons/bundles';
+
+// Enhanced React component
+import { Icon } from 'sva-icons/react';
+
+// Theme system
+import { setTheme, THEMES } from 'sva-icons/theme';
+
+// Developer tools
+import { analyzeProject } from 'sva-icons/analyzer';
+import { devCommands } from 'sva-icons/dev';
+
+// CSS themes
+import 'sva-icons/dist/sva-icons.css';</div>
+    </div>
+
+    <script>
+        // Demo theme switching
+        function setTheme(themeName) {
+            const root = document.documentElement;
+            
+            if (themeName === 'light') {
+                root.className = '';
+                root.style.setProperty('--sva-automotive-color', '#e62020');
+                root.style.setProperty('--sva-ui-color', '#333333');
+            } else if (themeName === 'dark') {
+                root.className = '';
+                root.style.setProperty('--sva-automotive-color', '#ff4757');
+                root.style.setProperty('--sva-ui-color', '#f8f9fa');
+                document.body.style.background = '#1a1a1a';
+                document.body.style.color = '#f8f9fa';
+            } else if (themeName === 'nissan') {
+                root.className = 'sva-theme--nissan';
+                document.body.style.background = '';
+                document.body.style.color = '';
+            }
+        }
+
+        // Demo animations
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('🎉 SVA Icons v2.0 Demo loaded!');
+            console.log('Features implemented:');
+            console.log('✅ Smart bundles with lazy loading');
+            console.log('✅ Complete CSS theme system');
+            console.log('✅ Enhanced React Icon component');
+            console.log('✅ Bundle analyzer and dev tools');
+            console.log('✅ TypeScript definitions');
+            console.log('✅ Tree-shaking ready exports');
+        });
+    </script>
+</body>
+</html>

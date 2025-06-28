@@ -1,7 +1,7 @@
 {
   "name": "sva-icons",
-  "version": "1.0.1",
-  "description": "SVA Icons - A comprehensive icon library for automotive and general UI use",
+  "version": "2.0.0",
+  "description": "SVA Icons v2.0 - A comprehensive icon library with smart bundles and theme support",
   "type": "module",
   "main": "./dist/icons/index.js",
   "module": "./dist/icons/esm/index.js",
@@ -13,7 +13,29 @@
       "types": "./dist/icons/index.d.ts"
     },
     "./svg/*": "./svg/*",
-    "./react": "./dist/react/index.js",
+    "./react": {
+      "import": "./dist/react/esm/index.js",
+      "require": "./dist/react/cjs/index.js",
+      "types": "./dist/react/index.d.ts"
+    },
+    "./bundles": {
+      "import": "./dist/bundles/index.js",
+      "types": "./dist/bundles/index.d.ts"
+    },
+    "./bundles/*": "./dist/bundles/*.js",
+    "./theme": {
+      "import": "./dist/theme/index.js",
+      "types": "./dist/theme/index.d.ts"
+    },
+    "./analyzer": {
+      "import": "./dist/analyzer/index.js",
+      "types": "./dist/analyzer/index.d.ts"
+    },
+    "./dev": {
+      "import": "./dist/dev/index.js",
+      "types": "./dist/dev/index.d.ts"
+    },
+    "./dist/sva-icons.css": "./dist/sva-icons.css",
     "./sprite": "./dist/sprite/sva-icons-sprite.svg",
     "./web-components": "./dist/web-components/sva-icon.js",
     "./web-components/tree-shakable": "./tree-shakable-web-components.js",
@@ -28,6 +50,11 @@
     "dist/react/**/*",
     "dist/sprite/**/*",
     "dist/web-components/**/*",
+    "dist/bundles/**/*",
+    "dist/theme/**/*",
+    "dist/analyzer/**/*",
+    "dist/dev/**/*",
+    "dist/sva-icons.css",
     "svg/**/*",
     "tree-shakable-web-components.js",
     "icons.json",

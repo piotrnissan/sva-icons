@@ -157,7 +157,14 @@ const IconExplorer = () => {
 
             <div className="code-examples">
               <div className="code-section">
-                <h4>React Component</h4>
+                <h4>Enhanced Icon Component (v2.0)</h4>
+                <code onClick={() => copyToClipboard(`import { Icon } from 'sva-icons/react'\n\n<Icon name="${selectedIcon.name}" size="lg" theme="primary" />`)}>
+                  {`<Icon name="${selectedIcon.name}" size="lg" theme="primary" />`}
+                </code>
+              </div>
+
+              <div className="code-section">
+                <h4>Individual React Component</h4>
                 <code onClick={() => copyToClipboard(`import { ${iconMap[selectedIcon.name]} } from 'sva-icons/react'\n\n<${iconMap[selectedIcon.name]} />`)}>
                   {`<${iconMap[selectedIcon.name]} />`}
                 </code>
@@ -167,6 +174,20 @@ const IconExplorer = () => {
                 <h4>Web Component</h4>
                 <code onClick={() => copyToClipboard(`<sva-icon name="${selectedIcon.name}"></sva-icon>`)}>
                   {`<sva-icon name="${selectedIcon.name}"></sva-icon>`}
+                </code>
+              </div>
+
+              <div className="code-section">
+                <h4>Smart Bundle (v2.0)</h4>
+                <code onClick={() => copyToClipboard(`import { automotiveCore } from 'sva-icons/bundles'\nconst icon = automotiveCore.${selectedIcon.name}`)}>
+                  {`automotiveCore.${selectedIcon.name}`}
+                </code>
+              </div>
+
+              <div className="code-section">
+                <h4>CSS Classes (v2.0)</h4>
+                <code onClick={() => copyToClipboard(`<div class="sva-icon-lg sva-icon-primary">${selectedIcon.name}</div>`)}>
+                  {`<div class="sva-icon-lg sva-icon-primary">${selectedIcon.name}</div>`}
                 </code>
               </div>
 

@@ -13,19 +13,92 @@ const UsageExamples = () => {
       </section>
 
       <section className="usage-section">
-        <h3>React Components</h3>
+        <h3>Enhanced React Components (v2.0)</h3>
         <div className="code-block">
-          <pre><code>{`import { Alert, Car, Calendar } from 'sva-icons/react'
+          <pre><code>{`// Import individual components
+import { Alert, Car, Calendar } from 'sva-icons/react'
+
+// Or use the enhanced Icon component
+import { Icon } from 'sva-icons/react'
 
 function MyComponent() {
   return (
     <div>
+      {/* Individual components */}
       <Alert size={24} color="red" />
       <Car size={32} color="blue" />
       <Calendar size={16} />
+      
+      {/* Enhanced Icon component with theme support */}
+      <Icon name="alert" size="lg" theme="primary" />
+      <Icon name="car" size="xl" variant="outline" />
+      <Icon name="calendar" size="sm" color="#333" />
     </div>
   )
 }`}</code></pre>
+        </div>
+      </section>
+
+      <section className="usage-section">
+        <h3>Smart Bundles (v2.0)</h3>
+        <div className="code-block">
+          <pre><code>{`// Import specific bundles for optimized loading
+import { automotiveCore } from 'sva-icons/bundles'
+import { uiEssentials } from 'sva-icons/bundles'
+import { statusIcons } from 'sva-icons/bundles'
+import { controls } from 'sva-icons/bundles'
+import { navigation } from 'sva-icons/bundles'
+
+// Use bundle icons
+const alertIcon = automotiveCore.alert
+const carIcon = automotiveCore.car
+const homeIcon = navigation.home`}</code></pre>
+        </div>
+      </section>
+
+      <section className="usage-section">
+        <h3>Theme System (v2.0)</h3>
+        <div className="code-block">
+          <pre><code>{`// Import CSS theme system
+import 'sva-icons/dist/sva-icons.css'
+
+// Use theme classes
+<div className="sva-icon-sm sva-icon-primary">...</div>
+<div className="sva-icon-lg sva-icon-secondary">...</div>
+<div className="sva-icon-xl sva-icon-danger sva-icon-animated">...</div>
+
+// Or use JavaScript theme API
+import { SVATheme } from 'sva-icons/theme'
+
+SVATheme.configure({
+  primaryColor: '#007bff',
+  secondaryColor: '#6c757d',
+  dangerColor: '#dc3545',
+  sizes: {
+    sm: '16px',
+    md: '24px',
+    lg: '32px',
+    xl: '48px'
+  }
+})`}</code></pre>
+        </div>
+      </section>
+
+      <section className="usage-section">
+        <h3>Developer Tools (v2.0)</h3>
+        <div className="code-block">
+          <pre><code>{`// Bundle analyzer
+import { BundleAnalyzer } from 'sva-icons/analyzer'
+
+const analysis = BundleAnalyzer.analyze(['alert', 'car', 'home'])
+console.log(analysis.totalSize, analysis.recommendations)
+
+// Development utilities
+import { DevTools } from 'sva-icons/dev'
+
+DevTools.logIconUsage()
+DevTools.validateBundle(['alert', 'car'])
+DevTools.generateManifest(['automotive-core', 'ui-essentials'])`}</code></pre>
         </div>
       </section>
 
@@ -92,19 +165,33 @@ document.getElementById('icon').innerHTML = alertSvg`}</code></pre>
       </section>
 
       <section className="usage-section">
-        <h3>Theming & Styling</h3>
+        <h3>Theming & Styling (v2.0)</h3>
         <div className="code-block">
-          <pre><code>{`/* CSS Variables for Web Components */
+          <pre><code>{`/* Import the CSS theme system */
+@import 'sva-icons/dist/sva-icons.css';
+
+/* CSS Variables for theming */
 :root {
-  --sva-icon-color: #333;
-  --sva-icon-size: 24px;
+  --sva-icon-primary: #007bff;
+  --sva-icon-secondary: #6c757d;
+  --sva-icon-danger: #dc3545;
+  --sva-icon-warning: #ffc107;
+  --sva-icon-size-sm: 16px;
+  --sva-icon-size-md: 24px;
+  --sva-icon-size-lg: 32px;
+  --sva-icon-size-xl: 48px;
 }
 
-/* Direct styling */
+/* Use theme classes */
+.my-icon {
+  @apply sva-icon-lg sva-icon-primary sva-icon-animated;
+}
+
+/* Web Component styling */
 sva-icon {
   color: var(--primary-color);
-  width: 2rem;
-  height: 2rem;
+  width: var(--sva-icon-size-md);
+  height: var(--sva-icon-size-md);
 }`}</code></pre>
         </div>
       </section>
