@@ -35,7 +35,49 @@
       "import": "./dist/dev/index.js",
       "types": "./dist/dev/index.d.ts"
     },
+    "./class-based": {
+      "import": "./dist/class-based/esm/index.js",
+      "require": "./dist/class-based/cjs/index.js",
+      "types": "./dist/class-based/index.d.ts"
+    },
+    "./class-based/scanner": {
+      "import": "./dist/class-based/esm/scanner.js",
+      "require": "./dist/class-based/cjs/scanner.js",
+      "types": "./dist/class-based/index.d.ts"
+    },
+    "./class-based/injector": {
+      "import": "./dist/class-based/esm/injector.js",
+      "require": "./dist/class-based/cjs/injector.js",
+      "types": "./dist/class-based/index.d.ts"
+    },
+    "./class-based/resolver": {
+      "import": "./dist/class-based/esm/resolver.js",
+      "require": "./dist/class-based/cjs/resolver.js",
+      "types": "./dist/class-based/index.d.ts"
+    },
+    "./class-based/observer": {
+      "import": "./dist/class-based/esm/observer.js",
+      "require": "./dist/class-based/cjs/observer.js",
+      "types": "./dist/class-based/index.d.ts"
+    },
+    "./class-based/performance": {
+      "import": "./dist/class-based/esm/performance.js",
+      "require": "./dist/class-based/cjs/performance.js",
+      "types": "./dist/class-based/index.d.ts"
+    },
+    "./class-based/bundles": {
+      "import": "./dist/class-based/esm/bundles.js",
+      "require": "./dist/class-based/cjs/bundles.js",
+      "types": "./dist/class-based/index.d.ts"
+    },
+    "./class-based/accessibility": {
+      "import": "./dist/class-based/esm/accessibility.js",
+      "require": "./dist/class-based/cjs/accessibility.js",
+      "types": "./dist/class-based/index.d.ts"
+    },
     "./dist/sva-icons.css": "./dist/sva-icons.css",
+    "./dist/sva-icons-class-based.css": "./dist/sva-icons-class-based.css",
+    "./dist/sva-icons-class-based.min.css": "./dist/sva-icons-class-based.min.css",
     "./sprite": "./dist/sprite/sva-icons-sprite.svg",
     "./web-components": "./dist/web-components/sva-icon.js",
     "./web-components/tree-shakable": "./tree-shakable-web-components.js",
@@ -54,7 +96,10 @@
     "dist/theme/**/*",
     "dist/analyzer/**/*",
     "dist/dev/**/*",
+    "dist/class-based/**/*",
     "dist/sva-icons.css",
+    "dist/sva-icons-class-based.css",
+    "dist/sva-icons-class-based.min.css",
     "svg/**/*",
     "tree-shakable-web-components.js",
     "icons.json",
@@ -93,7 +138,15 @@
     "build:sprite": "node scripts/build-sprite.js",
     "build:react": "node scripts/build-react-simple.js",
     "build:create-icons": "node scripts/build-create-icons.js",
-    "build:all": "npm run build:icons && npm run build:sprite && npm run build:react && npm run build:web && npm run build:web-tree-shakable && npm run build:create-icons",
+    "build:class-based": "node scripts/build-class-based.js",
+    "build:css": "node scripts/build-css.js",
+    "build:typescript": "node scripts/build-typescript-definitions.js",
+    "build:all": "npm run build:icons && npm run build:sprite && npm run build:react && npm run build:web && npm run build:web-tree-shakable && npm run build:create-icons && npm run build:class-based && npm run build:css && npm run build:typescript",
+    "update-icons": "node scripts/update-icons.js",
+    "clean": "node scripts/clean-dist.js",
+    "validate-icons": "node scripts/validate-icons.js",
+    "clean-build": "npm run clean && npm run build:all",
+    "full-update": "npm run update-icons -- --clean --validate",
     "prepublishOnly": "npm run build:all",
     "publish:prep": "node scripts/publish-prep.js"
   },

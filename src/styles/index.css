@@ -1,0 +1,78 @@
+/**
+ * SVA Icons v2.2.0 - Main CSS Entry Point
+ * 
+ * This file imports all the CSS modules for the SVA Icons class-based API.
+ * Import this file to get the complete CSS system, or import individual
+ * modules as needed for smaller bundle sizes.
+ * 
+ * Usage:
+ * - Import everything: @import 'sva-icons/src/styles/index.css';
+ * - Import selectively: @import 'sva-icons/src/styles/base.css';
+ * 
+ * Modules included:
+ * - variables.css: CSS custom properties and theme variables
+ * - base.css: Base icon styling and core functionality
+ * - sizes.css: Size modifier classes (xs, s, m, l, xl)
+ * - colors.css: Color modifier classes and theme support
+ * - positions.css: Position, layout, and spacing utilities
+ */
+
+/* ==========================================================================
+   CORE STYLES
+   ========================================================================== */
+
+/* CSS Variables - Must be loaded first */
+@import './variables.css';
+
+/* Base icon styles - Foundation classes */
+@import './base.css';
+
+/* ==========================================================================
+   MODIFIER CLASSES
+   ========================================================================== */
+
+/* Size modifiers */
+@import './sizes.css';
+
+/* Color modifiers */
+@import './colors.css';
+
+/* Position and layout modifiers */
+@import './positions.css';
+
+/* ==========================================================================
+   OPTIONAL UTILITIES
+   ========================================================================== */
+
+/* Stroke-based icon utilities (optional) */
+/* Uncomment if you need stroke-based icons */
+/* @import './stroke.css'; */
+
+/* ==========================================================================
+   CUSTOM PROPERTIES FALLBACKS
+   ========================================================================== */
+
+/**
+ * Provide fallback values for older browsers that don't support CSS custom properties.
+ * These will be overridden by the custom properties in supported browsers.
+ */
+:root {
+  /* Legacy fallbacks - will be overridden by variables.css */
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   BUNDLE INFORMATION
+   ========================================================================== */
+
+/**
+ * CSS Bundle Information
+ * This comment block is preserved in production builds for debugging.
+ * 
+ * @package: SVA Icons v2.2.0
+ * @build-date: auto-generated
+ * @modules: variables, base, sizes, colors, positions
+ * @size: ~15KB gzipped
+ * @compatibility: Modern browsers, IE11+ with polyfills
+ */

@@ -1,0 +1,125 @@
+/**
+ * SVA Icons Class-Based API - Stroke Icon Utilities
+ * 
+ * This file provides utility classes for stroke-based icons.
+ * By default, SVA Icons are fill-based, but these utilities
+ * allow you to use stroke-based icons when needed.
+ * 
+ * Usage:
+ * <i class="sva-icon-plus sva-icon--stroke"></i>
+ * <i class="sva-icon-heart sva-icon--stroke sva-icon--stroke-thick"></i>
+ * 
+ * @version 2.2.0
+ * @author SVA Icons Team
+ */
+
+/* ==========================================================================
+   STROKE MODIFIER CLASSES
+   ========================================================================== */
+
+/**
+ * Enable stroke rendering for icons
+ */
+.sva-icon--stroke {
+  fill: none !important;
+  stroke: currentColor !important;
+  stroke-width: var(--sva-icon-stroke-width-normal, 1.5px) !important;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/**
+ * Stroke width variations
+ */
+.sva-icon--stroke-thin {
+  stroke-width: var(--sva-icon-stroke-width-thin, 1px) !important;
+}
+
+.sva-icon--stroke-normal {
+  stroke-width: var(--sva-icon-stroke-width-normal, 1.5px) !important;
+}
+
+.sva-icon--stroke-thick {
+  stroke-width: var(--sva-icon-stroke-width-thick, 2px) !important;
+}
+
+/**
+ * Stroke line cap styles
+ */
+.sva-icon--stroke-cap-butt {
+  stroke-linecap: butt !important;
+}
+
+.sva-icon--stroke-cap-round {
+  stroke-linecap: round !important;
+}
+
+.sva-icon--stroke-cap-square {
+  stroke-linecap: square !important;
+}
+
+/**
+ * Stroke line join styles
+ */
+.sva-icon--stroke-join-miter {
+  stroke-linejoin: miter !important;
+}
+
+.sva-icon--stroke-join-round {
+  stroke-linejoin: round !important;
+}
+
+.sva-icon--stroke-join-bevel {
+  stroke-linejoin: bevel !important;
+}
+
+/* ==========================================================================
+   MIXED FILL AND STROKE ICONS
+   ========================================================================== */
+
+/**
+ * For icons that use both fill and stroke
+ */
+.sva-icon--mixed {
+  fill: currentColor !important;
+  stroke: currentColor !important;
+  stroke-width: var(--sva-icon-stroke-width-normal, 1.5px) !important;
+}
+
+/**
+ * Different fill and stroke colors
+ */
+.sva-icon--fill-primary {
+  fill: var(--sva-icon-color-primary) !important;
+}
+
+.sva-icon--stroke-secondary {
+  stroke: var(--sva-icon-color-secondary) !important;
+}
+
+/* ==========================================================================
+   RESPONSIVE STROKE WIDTHS
+   ========================================================================== */
+
+/**
+ * Adjust stroke width based on icon size
+ */
+.sva-icon--xs.sva-icon--stroke {
+  stroke-width: 1px !important;
+}
+
+.sva-icon--s.sva-icon--stroke {
+  stroke-width: 1px !important;
+}
+
+.sva-icon--m.sva-icon--stroke {
+  stroke-width: 1.5px !important;
+}
+
+.sva-icon--l.sva-icon--stroke {
+  stroke-width: 2px !important;
+}
+
+.sva-icon--xl.sva-icon--stroke {
+  stroke-width: 2.5px !important;
+}

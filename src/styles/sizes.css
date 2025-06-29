@@ -1,0 +1,279 @@
+/**
+ * SVA Icons Class-Based API - Size Modifier Classes
+ * 
+ * This file defines size modifier classes that use CSS variables
+ * to provide consistent icon sizing across the design system.
+ * 
+ * Features:
+ * - Size modifier classes using CSS variables
+ * - Responsive size support
+ * - No conflicts with base styles
+ * - Integration with design tokens
+ * 
+ * @version 2.2.0
+ * @author SVA Icons Team
+ */
+
+/* ==========================================================================
+   SIZE MODIFIER CLASSES
+   ========================================================================== */
+
+/**
+ * Extra small icons (12px)
+ * Used for dense interfaces, footnotes, or supplementary information
+ */
+.sva-icon--xs {
+  width: var(--sva-icon-size-xs, 12px);
+  height: var(--sva-icon-size-xs, 12px);
+}
+
+/**
+ * Small icons (16px)
+ * Used for compact buttons, list items, or secondary actions
+ */
+.sva-icon--s {
+  width: var(--sva-icon-size-s, 16px);
+  height: var(--sva-icon-size-s, 16px);
+}
+
+/**
+ * Medium icons (24px) - Default size
+ * Used for general purpose icons, primary actions
+ */
+.sva-icon--m {
+  width: var(--sva-icon-size-m, 24px);
+  height: var(--sva-icon-size-m, 24px);
+}
+
+/**
+ * Large icons (32px)
+ * Used for prominent actions, headers, or important UI elements
+ */
+.sva-icon--l {
+  width: var(--sva-icon-size-l, 32px);
+  height: var(--sva-icon-size-l, 32px);
+}
+
+/**
+ * Extra large icons (48px)
+ * Used for hero sections, empty states, or very prominent actions
+ */
+.sva-icon--xl {
+  width: var(--sva-icon-size-xl, 48px);
+  height: var(--sva-icon-size-xl, 48px);
+}
+
+/* ==========================================================================
+   CONTEXTUAL SIZE MODIFIERS
+   ========================================================================== */
+
+/**
+ * Inherit size from parent element
+ * Useful for icons that should match text size
+ */
+.sva-icon--inherit {
+  width: 1em;
+  height: 1em;
+  font-size: inherit;
+}
+
+/**
+ * Custom size using CSS custom property
+ * Allows for one-off custom sizes while maintaining consistency
+ */
+.sva-icon--custom {
+  width: var(--sva-icon-custom-size, var(--sva-icon-size-m, 24px));
+  height: var(--sva-icon-custom-size, var(--sva-icon-size-m, 24px));
+}
+
+/* ==========================================================================
+   RESPONSIVE SIZE MODIFIERS
+   ========================================================================== */
+
+/**
+ * Responsive small - small on mobile, medium on desktop
+ */
+.sva-icon--responsive-sm {
+  width: var(--sva-icon-size-s, 16px);
+  height: var(--sva-icon-size-s, 16px);
+}
+
+@media (min-width: 768px) {
+  .sva-icon--responsive-sm {
+    width: var(--sva-icon-size-m, 24px);
+    height: var(--sva-icon-size-m, 24px);
+  }
+}
+
+/**
+ * Responsive medium - medium on mobile, large on desktop
+ */
+.sva-icon--responsive-md {
+  width: var(--sva-icon-size-m, 24px);
+  height: var(--sva-icon-size-m, 24px);
+}
+
+@media (min-width: 768px) {
+  .sva-icon--responsive-md {
+    width: var(--sva-icon-size-l, 32px);
+    height: var(--sva-icon-size-l, 32px);
+  }
+}
+
+/**
+ * Responsive large - large on mobile, extra large on desktop
+ */
+.sva-icon--responsive-lg {
+  width: var(--sva-icon-size-l, 32px);
+  height: var(--sva-icon-size-l, 32px);
+}
+
+@media (min-width: 768px) {
+  .sva-icon--responsive-lg {
+    width: var(--sva-icon-size-xl, 48px);
+    height: var(--sva-icon-size-xl, 48px);
+  }
+}
+
+/* ==========================================================================
+   COMPONENT-SPECIFIC SIZE MODIFIERS
+   ========================================================================== */
+
+/**
+ * Button-specific icon sizes
+ * These account for button padding and visual balance
+ */
+.sva-icon--button-xs {
+  width: 14px;
+  height: 14px;
+}
+
+.sva-icon--button-s {
+  width: 16px;
+  height: 16px;
+}
+
+.sva-icon--button-m {
+  width: 18px;
+  height: 18px;
+}
+
+.sva-icon--button-l {
+  width: 20px;
+  height: 20px;
+}
+
+.sva-icon--button-xl {
+  width: 24px;
+  height: 24px;
+}
+
+/**
+ * Input field icon sizes
+ * Smaller icons that fit well in form inputs
+ */
+.sva-icon--input {
+  width: 16px;
+  height: 16px;
+}
+
+/**
+ * Navigation icon sizes
+ * Consistent sizing for navigation elements
+ */
+.sva-icon--nav {
+  width: 20px;
+  height: 20px;
+}
+
+/**
+ * Card header icon sizes
+ * Appropriate sizing for card headers and titles
+ */
+.sva-icon--card-header {
+  width: 20px;
+  height: 20px;
+}
+
+/**
+ * Notification icon sizes
+ * Sized for notification badges and alerts
+ */
+.sva-icon--notification {
+  width: 16px;
+  height: 16px;
+}
+
+/* ==========================================================================
+   ACCESSIBILITY AND TOUCH TARGET CONSIDERATIONS
+   ========================================================================== */
+
+/**
+ * Touch-friendly size modifier
+ * Ensures minimum 44x44px touch target on mobile
+ */
+.sva-icon--touch {
+  min-width: 44px;
+  min-height: 44px;
+  padding: calc((44px - var(--sva-icon-size-m, 24px)) / 2);
+  margin: calc((var(--sva-icon-size-m, 24px) - 44px) / 2);
+}
+
+/* Only apply touch sizing on touch devices */
+@media (pointer: coarse) {
+  .sva-icon--interactive {
+    min-width: 44px;
+    min-height: 44px;
+    padding: calc((44px - var(--sva-icon-size-m, 24px)) / 2);
+    margin: calc((var(--sva-icon-size-m, 24px) - 44px) / 2);
+  }
+}
+
+/* ==========================================================================
+   PRINT-SPECIFIC SIZE ADJUSTMENTS
+   ========================================================================== */
+
+/**
+ * Print size adjustments
+ * Ensure icons print at appropriate sizes
+ */
+@media print {
+  .sva-icon--xs { width: 10px; height: 10px; }
+  .sva-icon--s { width: 12px; height: 12px; }
+  .sva-icon--m { width: 16px; height: 16px; }
+  .sva-icon--l { width: 20px; height: 20px; }
+  .sva-icon--xl { width: 24px; height: 24px; }
+  
+  /* Remove responsive behavior in print */
+  .sva-icon--responsive-sm,
+  .sva-icon--responsive-md,
+  .sva-icon--responsive-lg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  /* Remove touch targets in print */
+  .sva-icon--touch,
+  .sva-icon--interactive {
+    min-width: auto;
+    min-height: auto;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* ==========================================================================
+   LEGACY BROWSER SUPPORT
+   ========================================================================== */
+
+/**
+ * Fallback sizes for browsers that don't support CSS custom properties
+ * Primarily for Internet Explorer 11
+ */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .sva-icon--xs { width: 12px; height: 12px; }
+  .sva-icon--s { width: 16px; height: 16px; }
+  .sva-icon--m { width: 24px; height: 24px; }
+  .sva-icon--l { width: 32px; height: 32px; }
+  .sva-icon--xl { width: 48px; height: 48px; }
+}

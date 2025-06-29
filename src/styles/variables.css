@@ -1,0 +1,299 @@
+/**
+ * SVA Icons Class-Based API - CSS Variables Definition
+ * 
+ * This file defines all CSS custom properties (variables) used by the 
+ * SVA Icons class-based API system. These variables enable theming,
+ * design token integration, and runtime customization.
+ * 
+ * Features:
+ * - Icon size variables with pixel values
+ * - Icon color variables with fallback chains
+ * - Icon spacing variables with rem units
+ * - Support for light and dark themes
+ * - Integration with SVA framework design tokens
+ * 
+ * @version 2.2.0
+ * @author SVA Icons Team
+ */
+
+:root {
+  /* ==========================================================================
+     ICON SIZES
+     ========================================================================== */
+  
+  /**
+   * Icon size variables mapped to design system scale
+   * These can be overridden by themes or components
+   */
+  --sva-icon-size-xs: 12px;   /* Extra small icons - for dense interfaces */
+  --sva-icon-size-s: 16px;    /* Small icons - for compact buttons, list items */
+  --sva-icon-size-m: 24px;    /* Medium icons - default size, general use */
+  --sva-icon-size-l: 32px;    /* Large icons - for prominent actions */
+  --sva-icon-size-xl: 48px;   /* Extra large icons - for hero sections, empty states */
+  
+  /* Default icon size (medium) */
+  --sva-icon-size-default: var(--sva-icon-size-m);
+  
+  
+  /* ==========================================================================
+     ICON COLORS
+     ========================================================================== */
+  
+  /**
+   * Semantic color variables with fallback chain
+   * Priority: 1. Icon-specific -> 2. General color -> 3. Hard-coded fallback
+   */
+  
+  /* Primary colors */
+  --sva-icon-color-primary: var(--color-primary, #1a73e8);
+  --sva-icon-color-secondary: var(--color-secondary, #5f6368);
+  
+  /* Status colors */
+  --sva-icon-color-success: var(--color-success, #22c55e);
+  --sva-icon-color-warning: var(--color-warning, #f59e0b);
+  --sva-icon-color-error: var(--color-error, #ef4444);
+  --sva-icon-color-info: var(--color-info, #3b82f6);
+  
+  /* Neutral colors */
+  --sva-icon-color-neutral: var(--color-neutral, #6b7280);
+  --sva-icon-color-muted: var(--color-muted, #9ca3af);
+  --sva-icon-color-inverse: var(--color-inverse, #ffffff);
+  
+  /* Default icon color - inherits from text by default */
+  --sva-icon-color-default: var(--color-text-primary, currentColor);
+  
+  
+  /* ==========================================================================
+     ICON SPACING
+     ========================================================================== */
+  
+  /**
+   * Spacing variables for consistent icon positioning
+   * Used for margins in leading/trailing icon patterns
+   */
+  --sva-icon-spacing-xs: 0.25rem;  /* 4px - very tight spacing */
+  --sva-icon-spacing-s: 0.375rem;  /* 6px - compact spacing */
+  --sva-icon-spacing-m: 0.5rem;    /* 8px - default spacing */
+  --sva-icon-spacing-l: 0.75rem;   /* 12px - generous spacing */
+  --sva-icon-spacing-xl: 1rem;     /* 16px - very generous spacing */
+  
+  /* Default icon spacing */
+  --sva-icon-spacing-default: var(--sva-icon-spacing-m);
+  
+  
+  /* ==========================================================================
+     ICON STROKE AND FILL
+     ========================================================================== */
+  
+  /**
+   * Stroke and fill defaults for fill-based icons
+   * SVA Icons are fill-based by default, so stroke should be disabled
+   */
+  --sva-icon-stroke: none;                    /* No stroke by default */
+  --sva-icon-stroke-width: 0;                 /* Zero stroke width */
+  --sva-icon-fill: currentColor;              /* Fill inherits text color */
+  
+  /**
+   * Stroke width variables for stroke-based icons (when needed)
+   * These are available but not used by default
+   */
+  --sva-icon-stroke-width-thin: 1px;
+  --sva-icon-stroke-width-normal: 1.5px;
+  --sva-icon-stroke-width-thick: 2px;
+  
+  
+  /* ==========================================================================
+     TRANSITIONS AND ANIMATIONS
+     ========================================================================== */
+  
+  /**
+   * Animation variables for smooth icon transitions
+   */
+  --sva-icon-transition-duration: 0.15s;
+  --sva-icon-transition-timing: ease-in-out;
+  --sva-icon-transition-default: color var(--sva-icon-transition-duration) var(--sva-icon-transition-timing);
+  
+  
+  /* ==========================================================================
+     RESPONSIVE BREAKPOINTS
+     ========================================================================== */
+  
+  /**
+   * Icon size adjustments for different screen sizes
+   * These can be overridden in responsive stylesheets
+   */
+  --sva-icon-size-mobile: var(--sva-icon-size-s);    /* Smaller icons on mobile */
+  --sva-icon-size-tablet: var(--sva-icon-size-m);    /* Default size on tablet */
+  --sva-icon-size-desktop: var(--sva-icon-size-m);   /* Default size on desktop */
+  --sva-icon-size-large-screen: var(--sva-icon-size-l); /* Larger icons on big screens */
+}
+
+/* ==========================================================================
+   THEME OVERRIDES
+   ========================================================================== */
+
+/**
+ * Dark theme overrides
+ * Applied when [data-theme="dark"] is present on html or body
+ */
+[data-theme="dark"] {
+  --sva-icon-color-primary: #4285f4;
+  --sva-icon-color-secondary: #9aa0a6;
+  --sva-icon-color-neutral: #9aa0a6;
+  --sva-icon-color-muted: #5f6368;
+  --sva-icon-color-inverse: #202124;
+  --sva-icon-color-default: var(--color-text-primary, #e8eaed);
+}
+
+/**
+ * Light theme overrides (explicit)
+ * Applied when [data-theme="light"] is present
+ */
+[data-theme="light"] {
+  --sva-icon-color-primary: #1a73e8;
+  --sva-icon-color-secondary: #5f6368;
+  --sva-icon-color-neutral: #6b7280;
+  --sva-icon-color-muted: #9ca3af;
+  --sva-icon-color-inverse: #ffffff;
+  --sva-icon-color-default: var(--color-text-primary, #202124);
+}
+
+/**
+ * High contrast theme for accessibility
+ */
+[data-theme="high-contrast"] {
+  --sva-icon-color-primary: #000000;
+  --sva-icon-color-secondary: #000000;
+  --sva-icon-color-neutral: #000000;
+  --sva-icon-color-success: #00ff00;
+  --sva-icon-color-warning: #ffff00;
+  --sva-icon-color-error: #ff0000;
+  --sva-icon-color-inverse: #ffffff;
+  --sva-icon-color-default: #000000;
+}
+
+/* ==========================================================================
+   BRAND SPECIFIC OVERRIDES
+   ========================================================================== */
+
+/**
+ * Nissan brand colors
+ */
+.brand-nissan {
+  --sva-icon-color-primary: #c3002f;   /* Nissan red */
+  --sva-icon-color-secondary: #1a1a1a; /* Nissan dark gray */
+}
+
+/**
+ * Infiniti brand colors
+ */
+.brand-infiniti {
+  --sva-icon-color-primary: #000000;   /* Infiniti black */
+  --sva-icon-color-secondary: #666666; /* Infiniti gray */
+}
+
+/* ==========================================================================
+   COMPONENT SPECIFIC OVERRIDES
+   ========================================================================== */
+
+/**
+ * Button components
+ */
+.sva-c-button {
+  --sva-icon-size-default: 18px;       /* Slightly smaller for buttons */
+  --sva-icon-spacing-default: 0.5rem;  /* Standard button spacing */
+}
+
+.sva-c-button--small {
+  --sva-icon-size-default: 14px;       /* Smaller icons for small buttons */
+  --sva-icon-spacing-default: 0.375rem;
+}
+
+.sva-c-button--large {
+  --sva-icon-size-default: 20px;       /* Larger icons for large buttons */
+  --sva-icon-spacing-default: 0.75rem;
+}
+
+/**
+ * Card components
+ */
+.sva-c-card-header {
+  --sva-icon-color-default: var(--color-text-tertiary, #9ca3af);
+}
+
+/**
+ * Navigation components
+ */
+.sva-c-nav {
+  --sva-icon-size-default: 20px;       /* Consistent nav icon size */
+}
+
+/**
+ * Form components
+ */
+.sva-c-input {
+  --sva-icon-size-default: 16px;       /* Smaller icons in form inputs */
+  --sva-icon-color-default: var(--color-text-secondary, #6b7280);
+}
+
+/* ==========================================================================
+   RESPONSIVE ADJUSTMENTS
+   ========================================================================== */
+
+/**
+ * Mobile devices (max-width: 768px)
+ */
+@media (max-width: 768px) {
+  :root {
+    --sva-icon-size-m: 20px;           /* Slightly smaller default on mobile */
+    --sva-icon-spacing-default: 0.375rem; /* Tighter spacing on mobile */
+  }
+}
+
+/**
+ * Large screens (min-width: 1200px)
+ */
+@media (min-width: 1200px) {
+  :root {
+    --sva-icon-size-m: 26px;           /* Slightly larger default on large screens */
+    --sva-icon-spacing-default: 0.625rem; /* More generous spacing */
+  }
+}
+
+/**
+ * Very large screens (min-width: 1600px)
+ */
+@media (min-width: 1600px) {
+  :root {
+    --sva-icon-size-m: 28px;           /* Even larger on very large screens */
+  }
+}
+
+/* ==========================================================================
+   REDUCED MOTION PREFERENCES
+   ========================================================================== */
+
+/**
+ * Respect user's reduced motion preferences
+ */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --sva-icon-transition-duration: 0s;
+    --sva-icon-transition-default: none;
+  }
+}
+
+/* ==========================================================================
+   PRINT STYLES
+   ========================================================================== */
+
+/**
+ * Print-specific icon adjustments
+ */
+@media print {
+  :root {
+    --sva-icon-color-default: #000000;  /* Ensure icons print in black */
+    --sva-icon-color-primary: #000000;
+    --sva-icon-color-secondary: #666666;
+  }
+}

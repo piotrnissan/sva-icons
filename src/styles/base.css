@@ -1,0 +1,337 @@
+/**
+ * SVA Icons Class-Based API - Base Icon Styles
+ * 
+ * This file defines the core `.sva-icon` base class and essential
+ * styling for SVG icons. These styles ensure consistent display
+ * and behavior across all browsers and contexts.
+ * 
+ * Features:
+ * - Default sizing using CSS variables
+ * - SVG styling (fill, stroke, color)
+ * - Flexible layout properties
+ * - Cross-browser compatibility
+ * - Accessibility support
+ * 
+ * @version 2.2.0
+ * @author SVA Icons Team
+ */
+
+/* ==========================================================================
+   BASE ICON CLASS
+   ========================================================================== */
+
+/**
+ * Base class for all SVA icons
+ * Applied to elements that will receive SVG content
+ */
+.sva-icon {
+  /* Display and positioning */
+  display: inline-block;
+  vertical-align: middle;
+  
+  /* Default sizing using CSS variables */
+  width: var(--sva-icon-size-default, var(--sva-icon-size-m, 24px));
+  height: var(--sva-icon-size-default, var(--sva-icon-size-m, 24px));
+  
+  /* Default color using CSS variables */
+  color: var(--sva-icon-color-default, currentColor);
+  
+  /* SVG-specific properties for fill-based icons */
+  fill: var(--sva-icon-fill, currentColor);
+  stroke: var(--sva-icon-stroke, none);
+  stroke-width: var(--sva-icon-stroke-width, 0);
+  
+  /* Flex properties for layout */
+  flex-shrink: 0;   /* Prevent icons from shrinking in flex containers */
+  flex-grow: 0;     /* Prevent icons from growing in flex containers */
+  
+  /* Typography */
+  line-height: 1;   /* Prevent line-height from affecting icon size */
+  
+  /* Transitions */
+  transition: var(--sva-icon-transition-default, color 0.15s ease-in-out);
+  
+  /* User interaction */
+  user-select: none;  /* Prevent text selection on icons */
+  pointer-events: none; /* Icons don't interfere with parent click events by default */
+}
+
+/**
+ * Make icons clickable when they are interactive
+ */
+.sva-icon--interactive {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+/**
+ * Icon hover states for interactive icons
+ */
+.sva-icon--interactive:hover {
+  opacity: 0.8;
+}
+
+/* ==========================================================================
+   SVG ELEMENT STYLING
+   ========================================================================== */
+
+/**
+ * Ensure SVG elements inside icons behave correctly
+ */
+.sva-icon svg {
+  /* Size SVG to fill container */
+  width: 100%;
+  height: 100%;
+  
+  /* Inherit color properties */
+  fill: inherit;
+  stroke: inherit;
+  stroke-width: inherit;
+  
+  /* Remove any default SVG styling */
+  display: block;
+  
+  /* Ensure SVG maintains aspect ratio */
+  overflow: visible;
+}
+
+/**
+ * Handle SVG path elements specifically
+ */
+.sva-icon svg path {
+  fill: inherit;
+  stroke: inherit;
+  stroke-width: inherit;
+}
+
+/**
+ * Handle SVG circle, rect, and other shape elements
+ */
+.sva-icon svg circle,
+.sva-icon svg rect,
+.sva-icon svg ellipse,
+.sva-icon svg polygon,
+.sva-icon svg polyline {
+  fill: inherit;
+  stroke: inherit;
+  stroke-width: inherit;
+}
+
+/* ==========================================================================
+   ACCESSIBILITY ENHANCEMENTS
+   ========================================================================== */
+
+/**
+ * Decorative icons (default)
+ * These icons are purely visual and should be hidden from screen readers
+ */
+.sva-icon[aria-hidden="true"] {
+  /* Screen readers will ignore these icons due to aria-hidden */
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/**
+ * Meaningful icons
+ * These icons convey information and should be accessible
+ */
+.sva-icon[role="img"] {
+  /* Ensure proper role for screen readers */
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/**
+ * Interactive icons (buttons, links)
+ */
+.sva-icon[role="button"] {
+  pointer-events: auto;
+  cursor: pointer;
+  
+  /* Add focus styles for keyboard navigation */
+  outline: none;
+  border-radius: 2px;
+}
+
+.sva-icon[role="button"]:focus {
+  outline: 2px solid var(--sva-icon-color-primary, #1a73e8);
+  outline-offset: 2px;
+}
+
+/* ==========================================================================
+   HIGH CONTRAST MODE SUPPORT
+   ========================================================================== */
+
+/**
+ * Windows High Contrast Mode support
+ */
+@media (prefers-contrast: high) {
+  .sva-icon {
+    /* Ensure icons are visible in high contrast mode */
+    forced-color-adjust: auto;
+  }
+}
+
+/**
+ * Forced colors mode (Windows High Contrast)
+ */
+@media (forced-colors: active) {
+  .sva-icon {
+    color: ButtonText;
+    fill: ButtonText;
+    stroke: ButtonText;
+  }
+  
+  .sva-icon--interactive:hover {
+    color: Highlight;
+    fill: Highlight;
+    stroke: Highlight;
+  }
+}
+
+/* ==========================================================================
+   PRINT STYLES
+   ========================================================================== */
+
+/**
+ * Print-specific icon styles
+ */
+@media print {
+  .sva-icon {
+    /* Ensure icons print clearly */
+    color: black !important;
+    fill: black !important;
+    stroke: black !important;
+    
+    /* Remove transitions in print */
+    transition: none !important;
+    
+    /* Ensure proper sizing in print */
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+/* ==========================================================================
+   BROWSER COMPATIBILITY
+   ========================================================================== */
+
+/**
+ * Internet Explorer 11 support
+ */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .sva-icon {
+    /* IE11 doesn't support CSS custom properties, use fallbacks */
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/**
+ * Safari-specific adjustments
+ */
+@supports (-webkit-appearance: none) {
+  .sva-icon {
+    /* Safari sometimes needs explicit SVG sizing */
+    overflow: hidden;
+  }
+}
+
+/* ==========================================================================
+   SPECIAL ICON BEHAVIORS
+   ========================================================================== */
+
+/**
+ * Spinning/animated icons
+ */
+.sva-icon--spinning {
+  animation: sva-icon-spin 1s linear infinite;
+}
+
+@keyframes sva-icon-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/**
+ * Pulsing icons (for loading states)
+ */
+.sva-icon--pulsing {
+  animation: sva-icon-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes sva-icon-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/**
+ * Bouncing icons (for notifications)
+ */
+.sva-icon--bouncing {
+  animation: sva-icon-bounce 0.6s ease-in-out;
+}
+
+@keyframes sva-icon-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-4px);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+}
+
+/**
+ * Respect reduced motion preferences for animations
+ */
+@media (prefers-reduced-motion: reduce) {
+  .sva-icon--spinning,
+  .sva-icon--pulsing,
+  .sva-icon--bouncing {
+    animation: none;
+  }
+}
+
+/* ==========================================================================
+   RESPONSIVE BEHAVIOR
+   ========================================================================== */
+
+/**
+ * Mobile-specific adjustments
+ */
+@media (max-width: 768px) {
+  .sva-icon {
+    /* Slightly smaller touch targets on mobile */
+    width: var(--sva-icon-size-mobile, var(--sva-icon-size-s, 16px));
+    height: var(--sva-icon-size-mobile, var(--sva-icon-size-s, 16px));
+  }
+  
+  .sva-icon--interactive {
+    /* Larger touch targets for interactive icons on mobile */
+    min-width: 44px;
+    min-height: 44px;
+    padding: 10px;
+    margin: -10px;
+  }
+}
+
+/**
+ * Large screen adjustments
+ */
+@media (min-width: 1200px) {
+  .sva-icon {
+    width: var(--sva-icon-size-desktop, var(--sva-icon-size-m, 24px));
+    height: var(--sva-icon-size-desktop, var(--sva-icon-size-m, 24px));
+  }
+}

@@ -1,0 +1,358 @@
+/**
+ * SVA Icons Class-Based API - Color Modifier Classes
+ * 
+ * This file defines semantic color classes that use CSS variables
+ * with graceful fallbacks. These colors integrate with theme systems
+ * and maintain accessibility standards.
+ * 
+ * Features:
+ * - Semantic color classes using CSS variables
+ * - Fallback chain for missing variables
+ * - Theme system compatibility
+ * - Proper CSS specificity and inheritance
+ * 
+ * @version 2.2.0
+ * @author SVA Icons Team
+ */
+
+/* ==========================================================================
+   SEMANTIC COLOR MODIFIERS
+   ========================================================================== */
+
+/**
+ * Primary color - main brand color
+ * Used for primary actions and key interface elements
+ */
+.sva-icon--primary {
+  color: var(--sva-icon-color-primary, var(--color-primary, #1a73e8));
+  fill: var(--sva-icon-color-primary, var(--color-primary, #1a73e8));
+  stroke: var(--sva-icon-color-primary, var(--color-primary, #1a73e8));
+}
+
+/**
+ * Secondary color - supporting brand color
+ * Used for secondary actions and supporting elements
+ */
+.sva-icon--secondary {
+  color: var(--sva-icon-color-secondary, var(--color-secondary, #5f6368));
+  fill: var(--sva-icon-color-secondary, var(--color-secondary, #5f6368));
+  stroke: var(--sva-icon-color-secondary, var(--color-secondary, #5f6368));
+}
+
+/**
+ * Success color - positive states
+ * Used for success messages, confirmations, and positive actions
+ */
+.sva-icon--success {
+  color: var(--sva-icon-color-success, var(--color-success, #22c55e));
+  fill: var(--sva-icon-color-success, var(--color-success, #22c55e));
+  stroke: var(--sva-icon-color-success, var(--color-success, #22c55e));
+}
+
+/**
+ * Warning color - caution states
+ * Used for warnings, alerts, and actions that need attention
+ */
+.sva-icon--warning {
+  color: var(--sva-icon-color-warning, var(--color-warning, #f59e0b));
+  fill: var(--sva-icon-color-warning, var(--color-warning, #f59e0b));
+  stroke: var(--sva-icon-color-warning, var(--color-warning, #f59e0b));
+}
+
+/**
+ * Error color - error states
+ * Used for errors, dangers, and destructive actions
+ */
+.sva-icon--error {
+  color: var(--sva-icon-color-error, var(--color-error, #ef4444));
+  fill: var(--sva-icon-color-error, var(--color-error, #ef4444));
+  stroke: var(--sva-icon-color-error, var(--color-error, #ef4444));
+}
+
+/**
+ * Info color - informational states
+ * Used for information, tips, and neutral notifications
+ */
+.sva-icon--info {
+  color: var(--sva-icon-color-info, var(--color-info, #3b82f6));
+  fill: var(--sva-icon-color-info, var(--color-info, #3b82f6));
+  stroke: var(--sva-icon-color-info, var(--color-info, #3b82f6));
+}
+
+/* ==========================================================================
+   NEUTRAL COLOR MODIFIERS
+   ========================================================================== */
+
+/**
+ * Neutral color - standard neutral
+ * Used for general content and neutral interface elements
+ */
+.sva-icon--neutral {
+  color: var(--sva-icon-color-neutral, var(--color-neutral, #6b7280));
+  fill: var(--sva-icon-color-neutral, var(--color-neutral, #6b7280));
+  stroke: var(--sva-icon-color-neutral, var(--color-neutral, #6b7280));
+}
+
+/**
+ * Muted color - de-emphasized content
+ * Used for secondary text, placeholders, and subtle elements
+ */
+.sva-icon--muted {
+  color: var(--sva-icon-color-muted, var(--color-muted, #9ca3af));
+  fill: var(--sva-icon-color-muted, var(--color-muted, #9ca3af));
+  stroke: var(--sva-icon-color-muted, var(--color-muted, #9ca3af));
+}
+
+/**
+ * Inverse color - for dark backgrounds
+ * Used on dark backgrounds or for inverted color schemes
+ */
+.sva-icon--inverse {
+  color: var(--sva-icon-color-inverse, var(--color-inverse, #ffffff));
+  fill: var(--sva-icon-color-inverse, var(--color-inverse, #ffffff));
+  stroke: var(--sva-icon-color-inverse, var(--color-inverse, #ffffff));
+}
+
+/* ==========================================================================
+   CONTEXT-AWARE COLOR MODIFIERS
+   ========================================================================== */
+
+/**
+ * Inherit color from parent element
+ * Useful for icons that should match surrounding text color
+ */
+.sva-icon--inherit {
+  color: inherit;
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+/**
+ * Current color - uses currentColor for all fill/stroke
+ * Ensures icon color matches the element's text color
+ */
+.sva-icon--current {
+  color: currentColor;
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+/**
+ * Transparent - makes icon transparent
+ * Useful for spacing or hidden states
+ */
+.sva-icon--transparent {
+  color: transparent;
+  fill: transparent;
+  stroke: transparent;
+  opacity: 0;
+}
+
+/* ==========================================================================
+   HOVER AND INTERACTIVE STATES
+   ========================================================================== */
+
+/**
+ * Hover states for interactive icons
+ * These provide visual feedback for interactive elements
+ */
+.sva-icon--primary.sva-icon--interactive:hover {
+  color: var(--sva-icon-color-primary-hover, var(--color-primary-hover, #1557b0));
+  fill: var(--sva-icon-color-primary-hover, var(--color-primary-hover, #1557b0));
+  stroke: var(--sva-icon-color-primary-hover, var(--color-primary-hover, #1557b0));
+}
+
+.sva-icon--secondary.sva-icon--interactive:hover {
+  color: var(--sva-icon-color-secondary-hover, var(--color-secondary-hover, #3c4043));
+  fill: var(--sva-icon-color-secondary-hover, var(--color-secondary-hover, #3c4043));
+  stroke: var(--sva-icon-color-secondary-hover, var(--color-secondary-hover, #3c4043));
+}
+
+.sva-icon--success.sva-icon--interactive:hover {
+  color: var(--sva-icon-color-success-hover, var(--color-success-hover, #16a34a));
+  fill: var(--sva-icon-color-success-hover, var(--color-success-hover, #16a34a));
+  stroke: var(--sva-icon-color-success-hover, var(--color-success-hover, #16a34a));
+}
+
+.sva-icon--warning.sva-icon--interactive:hover {
+  color: var(--sva-icon-color-warning-hover, var(--color-warning-hover, #d97706));
+  fill: var(--sva-icon-color-warning-hover, var(--color-warning-hover, #d97706));
+  stroke: var(--sva-icon-color-warning-hover, var(--color-warning-hover, #d97706));
+}
+
+.sva-icon--error.sva-icon--interactive:hover {
+  color: var(--sva-icon-color-error-hover, var(--color-error-hover, #dc2626));
+  fill: var(--sva-icon-color-error-hover, var(--color-error-hover, #dc2626));
+  stroke: var(--sva-icon-color-error-hover, var(--color-error-hover, #dc2626));
+}
+
+/* ==========================================================================
+   DISABLED STATES
+   ========================================================================== */
+
+/**
+ * Disabled state for all color modifiers
+ * Reduces opacity and removes interaction
+ */
+.sva-icon--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+/* ==========================================================================
+   THEME-SPECIFIC OVERRIDES
+   ========================================================================== */
+
+/**
+ * Dark theme color adjustments
+ * Automatically applied when dark theme is active
+ */
+[data-theme="dark"] .sva-icon--primary {
+  color: var(--sva-icon-color-primary-dark, #4285f4);
+  fill: var(--sva-icon-color-primary-dark, #4285f4);
+  stroke: var(--sva-icon-color-primary-dark, #4285f4);
+}
+
+[data-theme="dark"] .sva-icon--secondary {
+  color: var(--sva-icon-color-secondary-dark, #9aa0a6);
+  fill: var(--sva-icon-color-secondary-dark, #9aa0a6);
+  stroke: var(--sva-icon-color-secondary-dark, #9aa0a6);
+}
+
+[data-theme="dark"] .sva-icon--neutral {
+  color: var(--sva-icon-color-neutral-dark, #9aa0a6);
+  fill: var(--sva-icon-color-neutral-dark, #9aa0a6);
+  stroke: var(--sva-icon-color-neutral-dark, #9aa0a6);
+}
+
+[data-theme="dark"] .sva-icon--muted {
+  color: var(--sva-icon-color-muted-dark, #5f6368);
+  fill: var(--sva-icon-color-muted-dark, #5f6368);
+  stroke: var(--sva-icon-color-muted-dark, #5f6368);
+}
+
+/**
+ * High contrast theme adjustments
+ * Ensures accessibility in high contrast mode
+ */
+[data-theme="high-contrast"] .sva-icon--primary,
+[data-theme="high-contrast"] .sva-icon--secondary,
+[data-theme="high-contrast"] .sva-icon--neutral {
+  color: #000000;
+  fill: #000000;
+  stroke: #000000;
+}
+
+[data-theme="high-contrast"] .sva-icon--inverse {
+  color: #ffffff;
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+
+[data-theme="high-contrast"] .sva-icon--success {
+  color: #00ff00;
+  fill: #00ff00;
+  stroke: #00ff00;
+}
+
+[data-theme="high-contrast"] .sva-icon--warning {
+  color: #ffff00;
+  fill: #ffff00;
+  stroke: #ffff00;
+}
+
+[data-theme="high-contrast"] .sva-icon--error {
+  color: #ff0000;
+  fill: #ff0000;
+  stroke: #ff0000;
+}
+
+/* ==========================================================================
+   FORCED COLORS MODE (Windows High Contrast)
+   ========================================================================== */
+
+@media (forced-colors: active) {
+  .sva-icon--primary {
+    color: ButtonText;
+    fill: ButtonText;
+    stroke: ButtonText;
+  }
+  
+  .sva-icon--secondary,
+  .sva-icon--neutral,
+  .sva-icon--muted {
+    color: GrayText;
+    fill: GrayText;
+    stroke: GrayText;
+  }
+  
+  .sva-icon--success {
+    color: ButtonText;
+    fill: ButtonText;
+    stroke: ButtonText;
+  }
+  
+  .sva-icon--warning,
+  .sva-icon--error {
+    color: ButtonText;
+    fill: ButtonText;
+    stroke: ButtonText;
+  }
+  
+  .sva-icon--inverse {
+    color: ButtonFace;
+    fill: ButtonFace;
+    stroke: ButtonFace;
+  }
+  
+  .sva-icon--interactive:hover {
+    color: Highlight;
+    fill: Highlight;
+    stroke: Highlight;
+  }
+}
+
+/* ==========================================================================
+   PRINT STYLES
+   ========================================================================== */
+
+/**
+ * Print color adjustments
+ * Ensure icons print clearly in black and white
+ */
+@media print {
+  .sva-icon--primary,
+  .sva-icon--secondary,
+  .sva-icon--neutral,
+  .sva-icon--success,
+  .sva-icon--info {
+    color: #000000 !important;
+    fill: #000000 !important;
+    stroke: #000000 !important;
+  }
+  
+  .sva-icon--warning {
+    color: #666666 !important;
+    fill: #666666 !important;
+    stroke: #666666 !important;
+  }
+  
+  .sva-icon--error {
+    color: #000000 !important;
+    fill: #000000 !important;
+    stroke: #000000 !important;
+  }
+  
+  .sva-icon--muted {
+    color: #999999 !important;
+    fill: #999999 !important;
+    stroke: #999999 !important;
+  }
+  
+  .sva-icon--inverse {
+    color: #000000 !important;
+    fill: #000000 !important;
+    stroke: #000000 !important;
+  }
+}

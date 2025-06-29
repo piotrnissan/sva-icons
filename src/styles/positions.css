@@ -1,0 +1,408 @@
+/**
+ * SVA Icons v2.2.0 - Position and Layout Modifiers
+ * 
+ * Position modifier classes for controlling icon placement and alignment.
+ * Includes utilities for flexbox alignment, absolute positioning, margins,
+ * and layout helpers for common use cases.
+ */
+
+/* ==========================================================================
+   ALIGNMENT UTILITIES
+   ========================================================================== */
+
+/* Vertical alignment modifiers */
+.sva-icon-align-top {
+  vertical-align: top;
+}
+
+.sva-icon-align-middle {
+  vertical-align: middle;
+}
+
+.sva-icon-align-bottom {
+  vertical-align: bottom;
+}
+
+.sva-icon-align-baseline {
+  vertical-align: baseline;
+}
+
+.sva-icon-align-text-top {
+  vertical-align: text-top;
+}
+
+.sva-icon-align-text-bottom {
+  vertical-align: text-bottom;
+}
+
+/* ==========================================================================
+   FLEXBOX ALIGNMENT
+   ========================================================================== */
+
+/* Flex container modifiers for parent elements */
+.sva-icon-flex-start {
+  display: flex;
+  align-items: flex-start;
+}
+
+.sva-icon-flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.sva-icon-flex-end {
+  display: flex;
+  align-items: flex-end;
+}
+
+.sva-icon-flex-stretch {
+  display: flex;
+  align-items: stretch;
+}
+
+/* Self alignment for individual icons */
+.sva-icon-self-start {
+  align-self: flex-start;
+}
+
+.sva-icon-self-center {
+  align-self: center;
+}
+
+.sva-icon-self-end {
+  align-self: flex-end;
+}
+
+.sva-icon-self-stretch {
+  align-self: stretch;
+}
+
+/* ==========================================================================
+   DISPLAY UTILITIES
+   ========================================================================== */
+
+.sva-icon-inline {
+  display: inline;
+}
+
+.sva-icon-inline-block {
+  display: inline-block;
+}
+
+.sva-icon-block {
+  display: block;
+}
+
+.sva-icon-inline-flex {
+  display: inline-flex;
+}
+
+.sva-icon-flex {
+  display: flex;
+}
+
+/* ==========================================================================
+   POSITION UTILITIES
+   ========================================================================== */
+
+.sva-icon-relative {
+  position: relative;
+}
+
+.sva-icon-absolute {
+  position: absolute;
+}
+
+.sva-icon-fixed {
+  position: fixed;
+}
+
+.sva-icon-sticky {
+  position: sticky;
+}
+
+/* ==========================================================================
+   FLOAT UTILITIES
+   ========================================================================== */
+
+.sva-icon-float-left {
+  float: left;
+}
+
+.sva-icon-float-right {
+  float: right;
+}
+
+.sva-icon-float-none {
+  float: none;
+}
+
+/* Clear floats */
+.sva-icon-clear {
+  clear: both;
+}
+
+.sva-icon-clear-left {
+  clear: left;
+}
+
+.sva-icon-clear-right {
+  clear: right;
+}
+
+/* ==========================================================================
+   MARGIN UTILITIES
+   ========================================================================== */
+
+/* All margins */
+.sva-icon-m-0 { margin: 0; }
+.sva-icon-m-xs { margin: var(--sva-icon-spacing-xs); }
+.sva-icon-m-s { margin: var(--sva-icon-spacing-s); }
+.sva-icon-m-m { margin: var(--sva-icon-spacing-m); }
+.sva-icon-m-l { margin: var(--sva-icon-spacing-l); }
+.sva-icon-m-xl { margin: var(--sva-icon-spacing-xl); }
+
+/* Horizontal margins */
+.sva-icon-mx-0 { margin-left: 0; margin-right: 0; }
+.sva-icon-mx-xs { margin-left: var(--sva-icon-spacing-xs); margin-right: var(--sva-icon-spacing-xs); }
+.sva-icon-mx-s { margin-left: var(--sva-icon-spacing-s); margin-right: var(--sva-icon-spacing-s); }
+.sva-icon-mx-m { margin-left: var(--sva-icon-spacing-m); margin-right: var(--sva-icon-spacing-m); }
+.sva-icon-mx-l { margin-left: var(--sva-icon-spacing-l); margin-right: var(--sva-icon-spacing-l); }
+.sva-icon-mx-xl { margin-left: var(--sva-icon-spacing-xl); margin-right: var(--sva-icon-spacing-xl); }
+
+/* Vertical margins */
+.sva-icon-my-0 { margin-top: 0; margin-bottom: 0; }
+.sva-icon-my-xs { margin-top: var(--sva-icon-spacing-xs); margin-bottom: var(--sva-icon-spacing-xs); }
+.sva-icon-my-s { margin-top: var(--sva-icon-spacing-s); margin-bottom: var(--sva-icon-spacing-s); }
+.sva-icon-my-m { margin-top: var(--sva-icon-spacing-m); margin-bottom: var(--sva-icon-spacing-m); }
+.sva-icon-my-l { margin-top: var(--sva-icon-spacing-l); margin-bottom: var(--sva-icon-spacing-l); }
+.sva-icon-my-xl { margin-top: var(--sva-icon-spacing-xl); margin-bottom: var(--sva-icon-spacing-xl); }
+
+/* Individual margins */
+.sva-icon-mt-0 { margin-top: 0; }
+.sva-icon-mt-xs { margin-top: var(--sva-icon-spacing-xs); }
+.sva-icon-mt-s { margin-top: var(--sva-icon-spacing-s); }
+.sva-icon-mt-m { margin-top: var(--sva-icon-spacing-m); }
+.sva-icon-mt-l { margin-top: var(--sva-icon-spacing-l); }
+.sva-icon-mt-xl { margin-top: var(--sva-icon-spacing-xl); }
+
+.sva-icon-mr-0 { margin-right: 0; }
+.sva-icon-mr-xs { margin-right: var(--sva-icon-spacing-xs); }
+.sva-icon-mr-s { margin-right: var(--sva-icon-spacing-s); }
+.sva-icon-mr-m { margin-right: var(--sva-icon-spacing-m); }
+.sva-icon-mr-l { margin-right: var(--sva-icon-spacing-l); }
+.sva-icon-mr-xl { margin-right: var(--sva-icon-spacing-xl); }
+
+.sva-icon-mb-0 { margin-bottom: 0; }
+.sva-icon-mb-xs { margin-bottom: var(--sva-icon-spacing-xs); }
+.sva-icon-mb-s { margin-bottom: var(--sva-icon-spacing-s); }
+.sva-icon-mb-m { margin-bottom: var(--sva-icon-spacing-m); }
+.sva-icon-mb-l { margin-bottom: var(--sva-icon-spacing-l); }
+.sva-icon-mb-xl { margin-bottom: var(--sva-icon-spacing-xl); }
+
+.sva-icon-ml-0 { margin-left: 0; }
+.sva-icon-ml-xs { margin-left: var(--sva-icon-spacing-xs); }
+.sva-icon-ml-s { margin-left: var(--sva-icon-spacing-s); }
+.sva-icon-ml-m { margin-left: var(--sva-icon-spacing-m); }
+.sva-icon-ml-l { margin-left: var(--sva-icon-spacing-l); }
+.sva-icon-ml-xl { margin-left: var(--sva-icon-spacing-xl); }
+
+/* ==========================================================================
+   PADDING UTILITIES
+   ========================================================================== */
+
+/* All padding */
+.sva-icon-p-0 { padding: 0; }
+.sva-icon-p-xs { padding: var(--sva-spacing-xs); }
+.sva-icon-p-s { padding: var(--sva-spacing-s); }
+.sva-icon-p-m { padding: var(--sva-spacing-m); }
+.sva-icon-p-l { padding: var(--sva-spacing-l); }
+.sva-icon-p-xl { padding: var(--sva-spacing-xl); }
+
+/* Horizontal padding */
+.sva-icon-px-0 { padding-left: 0; padding-right: 0; }
+.sva-icon-px-xs { padding-left: var(--sva-spacing-xs); padding-right: var(--sva-spacing-xs); }
+.sva-icon-px-s { padding-left: var(--sva-spacing-s); padding-right: var(--sva-spacing-s); }
+.sva-icon-px-m { padding-left: var(--sva-spacing-m); padding-right: var(--sva-spacing-m); }
+.sva-icon-px-l { padding-left: var(--sva-spacing-l); padding-right: var(--sva-spacing-l); }
+.sva-icon-px-xl { padding-left: var(--sva-spacing-xl); padding-right: var(--sva-spacing-xl); }
+
+/* Vertical padding */
+.sva-icon-py-0 { padding-top: 0; padding-bottom: 0; }
+.sva-icon-py-xs { padding-top: var(--sva-spacing-xs); padding-bottom: var(--sva-spacing-xs); }
+.sva-icon-py-s { padding-top: var(--sva-spacing-s); padding-bottom: var(--sva-spacing-s); }
+.sva-icon-py-m { padding-top: var(--sva-spacing-m); padding-bottom: var(--sva-spacing-m); }
+.sva-icon-py-l { padding-top: var(--sva-spacing-l); padding-bottom: var(--sva-spacing-l); }
+.sva-icon-py-xl { padding-top: var(--sva-spacing-xl); padding-bottom: var(--sva-spacing-xl); }
+
+/* Individual padding */
+.sva-icon-pt-0 { padding-top: 0; }
+.sva-icon-pt-xs { padding-top: var(--sva-spacing-xs); }
+.sva-icon-pt-s { padding-top: var(--sva-spacing-s); }
+.sva-icon-pt-m { padding-top: var(--sva-spacing-m); }
+.sva-icon-pt-l { padding-top: var(--sva-spacing-l); }
+.sva-icon-pt-xl { padding-top: var(--sva-spacing-xl); }
+
+.sva-icon-pr-0 { padding-right: 0; }
+.sva-icon-pr-xs { padding-right: var(--sva-spacing-xs); }
+.sva-icon-pr-s { padding-right: var(--sva-spacing-s); }
+.sva-icon-pr-m { padding-right: var(--sva-spacing-m); }
+.sva-icon-pr-l { padding-right: var(--sva-spacing-l); }
+.sva-icon-pr-xl { padding-right: var(--sva-spacing-xl); }
+
+.sva-icon-pb-0 { padding-bottom: 0; }
+.sva-icon-pb-xs { padding-bottom: var(--sva-spacing-xs); }
+.sva-icon-pb-s { padding-bottom: var(--sva-spacing-s); }
+.sva-icon-pb-m { padding-bottom: var(--sva-spacing-m); }
+.sva-icon-pb-l { padding-bottom: var(--sva-spacing-l); }
+.sva-icon-pb-xl { padding-bottom: var(--sva-spacing-xl); }
+
+.sva-icon-pl-0 { padding-left: 0; }
+.sva-icon-pl-xs { padding-left: var(--sva-spacing-xs); }
+.sva-icon-pl-s { padding-left: var(--sva-spacing-s); }
+.sva-icon-pl-m { padding-left: var(--sva-spacing-m); }
+.sva-icon-pl-l { padding-left: var(--sva-spacing-l); }
+.sva-icon-pl-xl { padding-left: var(--sva-spacing-xl); }
+
+/* ==========================================================================
+   Z-INDEX UTILITIES
+   ========================================================================== */
+
+.sva-icon-z-auto { z-index: auto; }
+.sva-icon-z-0 { z-index: 0; }
+.sva-icon-z-10 { z-index: 10; }
+.sva-icon-z-20 { z-index: 20; }
+.sva-icon-z-30 { z-index: 30; }
+.sva-icon-z-40 { z-index: 40; }
+.sva-icon-z-50 { z-index: 50; }
+
+/* ==========================================================================
+   SEMANTIC POSITION CLASSES
+   ========================================================================== */
+
+/* Icon positioning for buttons and text elements */
+.sva-icon--leading {
+  margin-right: var(--sva-icon-spacing-m);
+  margin-left: 0;
+}
+
+.sva-icon--trailing {
+  margin-left: var(--sva-icon-spacing-m);
+  margin-right: 0;
+}
+
+.sva-icon--center {
+  margin: 0 auto;
+}
+
+/* Compact variants for tighter spacing */
+.sva-icon--leading.sva-icon--compact {
+  margin-right: var(--sva-icon-spacing-s);
+}
+
+.sva-icon--trailing.sva-icon--compact {
+  margin-left: var(--sva-icon-spacing-s);
+}
+
+/* ==========================================================================
+   LAYOUT HELPERS
+   ========================================================================== */
+
+/* Center an icon absolutely */
+.sva-icon-center-absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Center an icon with flexbox */
+.sva-icon-center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon with text alignment helpers */
+.sva-icon-with-text-left {
+  margin-right: var(--sva-spacing-xs);
+  vertical-align: middle;
+}
+
+.sva-icon-with-text-right {
+  margin-left: var(--sva-spacing-xs);
+  vertical-align: middle;
+}
+
+.sva-icon-with-text-top {
+  margin-bottom: var(--sva-spacing-xs);
+  vertical-align: top;
+}
+
+.sva-icon-with-text-bottom {
+  margin-top: var(--sva-spacing-xs);
+  vertical-align: bottom;
+}
+
+/* ==========================================================================
+   RESPONSIVE UTILITIES
+   ========================================================================== */
+
+/* Mobile-first responsive positioning */
+@media (min-width: 640px) {
+  .sva-icon-sm-block { display: block; }
+  .sva-icon-sm-inline { display: inline; }
+  .sva-icon-sm-inline-block { display: inline-block; }
+  .sva-icon-sm-flex { display: flex; }
+  .sva-icon-sm-inline-flex { display: inline-flex; }
+  .sva-icon-sm-hidden { display: none; }
+}
+
+@media (min-width: 768px) {
+  .sva-icon-md-block { display: block; }
+  .sva-icon-md-inline { display: inline; }
+  .sva-icon-md-inline-block { display: inline-block; }
+  .sva-icon-md-flex { display: flex; }
+  .sva-icon-md-inline-flex { display: inline-flex; }
+  .sva-icon-md-hidden { display: none; }
+}
+
+@media (min-width: 1024px) {
+  .sva-icon-lg-block { display: block; }
+  .sva-icon-lg-inline { display: inline; }
+  .sva-icon-lg-inline-block { display: inline-block; }
+  .sva-icon-lg-flex { display: flex; }
+  .sva-icon-lg-inline-flex { display: inline-flex; }
+  .sva-icon-lg-hidden { display: none; }
+}
+
+@media (min-width: 1280px) {
+  .sva-icon-xl-block { display: block; }
+  .sva-icon-xl-inline { display: inline; }
+  .sva-icon-xl-inline-block { display: inline-block; }
+  .sva-icon-xl-flex { display: flex; }
+  .sva-icon-xl-inline-flex { display: inline-flex; }
+  .sva-icon-xl-hidden { display: none; }
+}
+
+/* ==========================================================================
+   ACCESSIBILITY
+   ========================================================================== */
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .sva-icon-animate {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast adjustments */
+@media (prefers-contrast: high) {
+  .sva-icon-center-absolute,
+  .sva-icon-center-flex {
+    outline: 1px solid currentColor;
+    outline-offset: 2px;
+  }
+}

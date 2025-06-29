@@ -10,6 +10,9 @@ react/
 web/
 .test/
 
+tests/
+.docs/
+
 *.tsbuildinfo
 
 # VS Code
