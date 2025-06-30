@@ -108,9 +108,11 @@ const iconHtml = allIcons.Plus({ size: 24 });
 ## ✨ Features
 
 - 🎨 **358 carefully crafted icons** optimized for automotive and UI use
-- 🎯 **Smart bundles** with 50-70% smaller bundle sizes  
+- 🎯 **Function-based icons** with configurable props (v2.1)
+- ⚡ **Smart bundles** with 50-70% smaller bundle sizes  
 - 🌳 **Fully tree-shakable** - only bundle the icons you use
 - ⚛️ **Enhanced React components** with theme and variant support
+- 🔧 **Class-based API** for advanced icon management
 - 🔧 **Web Components** for any framework
 - 📦 **ESM/CJS modules** for vanilla JavaScript
 - 🖼️ **SVG sprite** for traditional HTML/CSS usage
@@ -123,17 +125,20 @@ const iconHtml = allIcons.Plus({ size: 24 });
 ## 📦 Installation
 
 ```bash
-npm install sva-icons@^2.0.0
+npm install sva-icons@^2.1.0
 ```
 
 Or via CDN:
 
 ```html
+<!-- Function-based icons (v2.1) -->
+<script src="https://unpkg.com/sva-icons@2.1/dist/icons/index.js"></script>
+
 <!-- Web Components -->
-<script src="https://unpkg.com/sva-icons@2/dist/web-components/sva-icon.js"></script>
+<script src="https://unpkg.com/sva-icons@2.1/dist/web-components/sva-icon.js"></script>
 
 <!-- CSS Theme System -->
-<link rel="stylesheet" href="https://unpkg.com/sva-icons@2/dist/sva-icons.css">
+<link rel="stylesheet" href="https://unpkg.com/sva-icons@2.1/dist/sva-icons.css">
 ```
 
 ### Button Integration (Recommended for existing designs)

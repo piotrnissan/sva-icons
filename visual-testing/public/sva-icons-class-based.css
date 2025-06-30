@@ -1,0 +1,1785 @@
+/*!
+ * SVA Icons Class-Based API - CSS System
+ * Version: 2.2.0
+ * 
+ * This CSS file provides the styling foundation for the SVA Icons Class-Based API.
+ * It includes variables, base styles, size utilities, color utilities, and positioning helpers.
+ * 
+ * Features:
+ * - CSS custom properties for theming
+ * - Size utilities (xs, sm, md, lg, xl, xxl)
+ * - Color utilities (primary, secondary, success, warning, error)
+ * - Position utilities (left, right, top, bottom)
+ * - Responsive design support
+ * - High contrast mode support
+ * - Accessibility optimizations
+ * 
+ * Generated: 2025-06-30T07:42:42.201Z
+ */
+
+
+/* ====================================
+   VARIABLES
+   ==================================== */
+
+/**
+ * SVA Icons Class-Based API - CSS Variables Definition
+ * 
+ * This file defines all CSS custom properties (variables) used by the 
+ * SVA Icons class-based API system. These variables enable theming,
+ * design token integration, and runtime customization.
+ * 
+ * Features:
+ * - Icon size variables with pixel values
+ * - Icon color variables with fallback chains
+ * - Icon spacing variables with rem units
+ * - Support for light and dark themes
+ * - Integration with SVA framework design tokens
+ * 
+ * @version 2.2.0
+ * @author SVA Icons Team
+ */
+:root {
+  /* ==========================================================================
+     ICON SIZES
+     ========================================================================== */
+  /**
+   * Icon size variables mapped to design system scale
+   * These can be overridden by themes or components
+   */
+  --sva-icon-size-xs: 12px;   /* Extra small icons - for dense interfaces */
+  --sva-icon-size-s: 16px;    /* Small icons - for compact buttons, list items */
+  --sva-icon-size-m: 24px;    /* Medium icons - default size, general use */
+  --sva-icon-size-l: 32px;    /* Large icons - for prominent actions */
+  --sva-icon-size-xl: 48px;   /* Extra large icons - for hero sections, empty states */
+  /* Default icon size (medium) */
+  --sva-icon-size-default: var(--sva-icon-size-m);
+  /* ==========================================================================
+     ICON COLORS
+     ========================================================================== */
+  /**
+   * Semantic color variables with fallback chain
+   * Priority: 1. Icon-specific -> 2. General color -> 3. Hard-coded fallback
+   */
+  /* Primary colors */
+  --sva-icon-color-primary: var(--color-primary, #1a73e8);
+  --sva-icon-color-secondary: var(--color-secondary, #5f6368);
+  /* Status colors */
+  --sva-icon-color-success: var(--color-success, #22c55e);
+  --sva-icon-color-warning: var(--color-warning, #f59e0b);
+  --sva-icon-color-error: var(--color-error, #ef4444);
+  --sva-icon-color-info: var(--color-info, #3b82f6);
+  /* Neutral colors */
+  --sva-icon-color-neutral: var(--color-neutral, #6b7280);
+  --sva-icon-color-muted: var(--color-muted, #9ca3af);
+  --sva-icon-color-inverse: var(--color-inverse, #ffffff);
+  /* Default icon color - inherits from text by default */
+  --sva-icon-color-default: var(--color-text-primary, currentColor);
+  /* ==========================================================================
+     ICON SPACING
+     ========================================================================== */
+  /**
+   * Spacing variables for consistent icon positioning
+   * Used for margins in leading/trailing icon patterns
+   */
+  --sva-icon-spacing-xs: 0.25rem;  /* 4px - very tight spacing */
+  --sva-icon-spacing-s: 0.375rem;  /* 6px - compact spacing */
+  --sva-icon-spacing-m: 0.5rem;    /* 8px - default spacing */
+  --sva-icon-spacing-l: 0.75rem;   /* 12px - generous spacing */
+  --sva-icon-spacing-xl: 1rem;     /* 16px - very generous spacing */
+  /* Default icon spacing */
+  --sva-icon-spacing-default: var(--sva-icon-spacing-m);
+  /* ==========================================================================
+     ICON STROKE AND FILL
+     ========================================================================== */
+  /**
+   * Stroke and fill defaults for fill-based icons
+   * SVA Icons are fill-based by default, so stroke should be disabled
+   */
+  --sva-icon-stroke: none;                    /* No stroke by default */
+  --sva-icon-stroke-width: 0;                 /* Zero stroke width */
+  --sva-icon-fill: currentColor;              /* Fill inherits text color */
+  /**
+   * Stroke width variables for stroke-based icons (when needed)
+   * These are available but not used by default
+   */
+  --sva-icon-stroke-width-thin: 1px;
+  --sva-icon-stroke-width-normal: 1.5px;
+  --sva-icon-stroke-width-thick: 2px;
+  /* ==========================================================================
+     TRANSITIONS AND ANIMATIONS
+     ========================================================================== */
+  /**
+   * Animation variables for smooth icon transitions
+   */
+  --sva-icon-transition-duration: 0.15s;
+  --sva-icon-transition-timing: ease-in-out;
+  --sva-icon-transition-default: color var(--sva-icon-transition-duration) var(--sva-icon-transition-timing);
+  /* ==========================================================================
+     RESPONSIVE BREAKPOINTS
+     ========================================================================== */
+  /**
+   * Icon size adjustments for different screen sizes
+   * These can be overridden in responsive stylesheets
+   */
+  --sva-icon-size-mobile: var(--sva-icon-size-s);    /* Smaller icons on mobile */
+  --sva-icon-size-tablet: var(--sva-icon-size-m);    /* Default size on tablet */
+  --sva-icon-size-desktop: var(--sva-icon-size-m);   /* Default size on desktop */
+  --sva-icon-size-large-screen: var(--sva-icon-size-l); /* Larger icons on big screens */
+}
+/* ==========================================================================
+   THEME OVERRIDES
+   ========================================================================== */
+/**
+ * Dark theme overrides
+ * Applied when [data-theme="dark"] is present on html or body
+ */
+[data-theme="dark"] {
+  --sva-icon-color-primary: #4285f4;
+  --sva-icon-color-secondary: #9aa0a6;
+  --sva-icon-color-neutral: #9aa0a6;
+  --sva-icon-color-muted: #5f6368;
+  --sva-icon-color-inverse: #202124;
+  --sva-icon-color-default: var(--color-text-primary, #e8eaed);
+}
+/**
+ * Light theme overrides (explicit)
+ * Applied when [data-theme="light"] is present
+ */
+[data-theme="light"] {
+  --sva-icon-color-primary: #1a73e8;
+  --sva-icon-color-secondary: #5f6368;
+  --sva-icon-color-neutral: #6b7280;
+  --sva-icon-color-muted: #9ca3af;
+  --sva-icon-color-inverse: #ffffff;
+  --sva-icon-color-default: var(--color-text-primary, #202124);
+}
+/**
+ * High contrast theme for accessibility
+ */
+[data-theme="high-contrast"] {
+  --sva-icon-color-primary: #000000;
+  --sva-icon-color-secondary: #000000;
+  --sva-icon-color-neutral: #000000;
+  --sva-icon-color-success: #00ff00;
+  --sva-icon-color-warning: #ffff00;
+  --sva-icon-color-error: #ff0000;
+  --sva-icon-color-inverse: #ffffff;
+  --sva-icon-color-default: #000000;
+}
+/* ==========================================================================
+   BRAND SPECIFIC OVERRIDES
+   ========================================================================== */
+/**
+ * Nissan brand colors
+ */
+.brand-nissan {
+  --sva-icon-color-primary: #c3002f;   /* Nissan red */
+  --sva-icon-color-secondary: #1a1a1a; /* Nissan dark gray */
+}
+/**
+ * Infiniti brand colors
+ */
+.brand-infiniti {
+  --sva-icon-color-primary: #000000;   /* Infiniti black */
+  --sva-icon-color-secondary: #666666; /* Infiniti gray */
+}
+/* ==========================================================================
+   COMPONENT SPECIFIC OVERRIDES
+   ========================================================================== */
+/**
+ * Button components
+ */
+.sva-c-button {
+  --sva-icon-size-default: 18px;       /* Slightly smaller for buttons */
+  --sva-icon-spacing-default: 0.5rem;  /* Standard button spacing */
+}
+
+.sva-c-button--small {
+  --sva-icon-size-default: 14px;       /* Smaller icons for small buttons */
+  --sva-icon-spacing-default: 0.375rem;
+}
+
+.sva-c-button--large {
+  --sva-icon-size-default: 20px;       /* Larger icons for large buttons */
+  --sva-icon-spacing-default: 0.75rem;
+}
+/**
+ * Card components
+ */
+.sva-c-card-header {
+  --sva-icon-color-default: var(--color-text-tertiary, #9ca3af);
+}
+/**
+ * Navigation components
+ */
+.sva-c-nav {
+  --sva-icon-size-default: 20px;       /* Consistent nav icon size */
+}
+/**
+ * Form components
+ */
+.sva-c-input {
+  --sva-icon-size-default: 16px;       /* Smaller icons in form inputs */
+  --sva-icon-color-default: var(--color-text-secondary, #6b7280);
+}
+/* ==========================================================================
+   RESPONSIVE ADJUSTMENTS
+   ========================================================================== */
+/**
+ * Mobile devices (max-width: 768px)
+ */
+@media (max-width: 768px) {
+  :root {
+    --sva-icon-size-m: 20px;           /* Slightly smaller default on mobile */
+    --sva-icon-spacing-default: 0.375rem; /* Tighter spacing on mobile */
+  }
+}
+/**
+ * Large screens (min-width: 1200px)
+ */
+@media (min-width: 1200px) {
+  :root {
+    --sva-icon-size-m: 26px;           /* Slightly larger default on large screens */
+    --sva-icon-spacing-default: 0.625rem; /* More generous spacing */
+  }
+}
+/**
+ * Very large screens (min-width: 1600px)
+ */
+@media (min-width: 1600px) {
+  :root {
+    --sva-icon-size-m: 28px;           /* Even larger on very large screens */
+  }
+}
+/* ==========================================================================
+   REDUCED MOTION PREFERENCES
+   ========================================================================== */
+/**
+ * Respect user's reduced motion preferences
+ */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --sva-icon-transition-duration: 0s;
+    --sva-icon-transition-default: none;
+  }
+}
+/* ==========================================================================
+   PRINT STYLES
+   ========================================================================== */
+/**
+ * Print-specific icon adjustments
+ */
+@media print {
+  :root {
+    --sva-icon-color-default: #000000;  /* Ensure icons print in black */
+    --sva-icon-color-primary: #000000;
+    --sva-icon-color-secondary: #666666;
+  }
+}
+
+
+/* ====================================
+   BASE
+   ==================================== */
+
+/**
+ * SVA Icons Class-Based API - Base Icon Styles
+ * 
+ * This file defines the core `.sva-icon` base class and essential
+ * styling for SVG icons. These styles ensure consistent display
+ * and behavior across all browsers and contexts.
+ * 
+ * Features:
+ * - Default sizing using CSS variables
+ * - SVG styling (fill, stroke, color)
+ * - Flexible layout properties
+ * - Cross-browser compatibility
+ * - Accessibility support
+ * 
+ * @version 2.2.0
+ * @author SVA Icons Team
+ */
+/* ==========================================================================
+   BASE ICON CLASS
+   ========================================================================== */
+/**
+ * Base class for all SVA icons
+ * Applied to elements that will receive SVG content
+ */
+.sva-icon {
+  /* Display and positioning */
+  display: inline-block;
+  vertical-align: middle;
+  /* Default sizing using CSS variables */
+  width: var(--sva-icon-size-default, var(--sva-icon-size-m, 24px));
+  height: var(--sva-icon-size-default, var(--sva-icon-size-m, 24px));
+  /* Default color using CSS variables */
+  color: var(--sva-icon-color-default, currentColor);
+  /* SVG-specific properties for fill-based icons */
+  fill: var(--sva-icon-fill, currentColor);
+  stroke: var(--sva-icon-stroke, none);
+  stroke-width: var(--sva-icon-stroke-width, 0);
+  /* Flex properties for layout */
+  flex-shrink: 0;   /* Prevent icons from shrinking in flex containers */
+  flex-grow: 0;     /* Prevent icons from growing in flex containers */
+  /* Typography */
+  line-height: 1;   /* Prevent line-height from affecting icon size */
+  /* Transitions */
+  transition: var(--sva-icon-transition-default, color 0.15s ease-in-out);
+  /* User interaction */
+  user-select: none;  /* Prevent text selection on icons */
+  pointer-events: none; /* Icons don't interfere with parent click events by default */
+}
+/**
+ * Make icons clickable when they are interactive
+ */
+.sva-icon--interactive {
+  pointer-events: auto;
+  cursor: pointer;
+}
+/**
+ * Icon hover states for interactive icons
+ */
+.sva-icon--interactive:hover {
+  opacity: 0.8;
+}
+/* ==========================================================================
+   SVG ELEMENT STYLING
+   ========================================================================== */
+/**
+ * Ensure SVG elements inside icons behave correctly
+ */
+.sva-icon svg {
+  /* Size SVG to fill container */
+  width: 100%;
+  height: 100%;
+  /* Inherit color properties */
+  fill: inherit;
+  stroke: inherit;
+  stroke-width: inherit;
+  /* Remove any default SVG styling */
+  display: block;
+  /* Ensure SVG maintains aspect ratio */
+  overflow: visible;
+}
+/**
+ * Handle SVG path elements specifically
+ */
+.sva-icon svg path {
+  fill: inherit;
+  stroke: inherit;
+  stroke-width: inherit;
+}
+/**
+ * Handle SVG circle, rect, and other shape elements
+ */
+.sva-icon svg circle,
+.sva-icon svg rect,
+.sva-icon svg ellipse,
+.sva-icon svg polygon,
+.sva-icon svg polyline {
+  fill: inherit;
+  stroke: inherit;
+  stroke-width: inherit;
+}
+/* ==========================================================================
+   ACCESSIBILITY ENHANCEMENTS
+   ========================================================================== */
+/**
+ * Decorative icons (default)
+ * These icons are purely visual and should be hidden from screen readers
+ */
+.sva-icon[aria-hidden="true"] {
+  /* Screen readers will ignore these icons due to aria-hidden */
+  -webkit-user-select: none;
+  user-select: none;
+}
+/**
+ * Meaningful icons
+ * These icons convey information and should be accessible
+ */
+.sva-icon[role="img"] {
+  /* Ensure proper role for screen readers */
+  -webkit-user-select: none;
+  user-select: none;
+}
+/**
+ * Interactive icons (buttons, links)
+ */
+.sva-icon[role="button"] {
+  pointer-events: auto;
+  cursor: pointer;
+  /* Add focus styles for keyboard navigation */
+  outline: none;
+  border-radius: 2px;
+}
+
+.sva-icon[role="button"]:focus {
+  outline: 2px solid var(--sva-icon-color-primary, #1a73e8);
+  outline-offset: 2px;
+}
+/* ==========================================================================
+   HIGH CONTRAST MODE SUPPORT
+   ========================================================================== */
+/**
+ * Windows High Contrast Mode support
+ */
+@media (prefers-contrast: high) {
+  .sva-icon {
+    /* Ensure icons are visible in high contrast mode */
+    forced-color-adjust: auto;
+  }
+}
+/**
+ * Forced colors mode (Windows High Contrast)
+ */
+@media (forced-colors: active) {
+  .sva-icon {
+    color: ButtonText;
+    fill: ButtonText;
+    stroke: ButtonText;
+  }
+
+.sva-icon--interactive:hover {
+    color: Highlight;
+    fill: Highlight;
+    stroke: Highlight;
+  }
+}
+/* ==========================================================================
+   PRINT STYLES
+   ========================================================================== */
+/**
+ * Print-specific icon styles
+ */
+@media print {
+  .sva-icon {
+    /* Ensure icons print clearly */
+    color: black !important;
+    fill: black !important;
+    stroke: black !important;
+    /* Remove transitions in print */
+    transition: none !important;
+    /* Ensure proper sizing in print */
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+/* ==========================================================================
+   BROWSER COMPATIBILITY
+   ========================================================================== */
+/**
+ * Internet Explorer 11 support
+ */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .sva-icon {
+    /* IE11 doesn't support CSS custom properties, use fallbacks */
+    width: 24px;
+    height: 24px;
+  }
+}
+/**
+ * Safari-specific adjustments
+ */
+@supports (-webkit-appearance: none) {
+  .sva-icon {
+    /* Safari sometimes needs explicit SVG sizing */
+    overflow: hidden;
+  }
+}
+/* ==========================================================================
+   SPECIAL ICON BEHAVIORS
+   ========================================================================== */
+/**
+ * Spinning/animated icons
+ */
+.sva-icon--spinning {
+  animation: sva-icon-spin 1s linear infinite;
+}
+@keyframes sva-icon-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/**
+ * Pulsing icons (for loading states)
+ */
+.sva-icon--pulsing {
+  animation: sva-icon-pulse 1.5s ease-in-out infinite;
+}
+@keyframes sva-icon-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+/**
+ * Bouncing icons (for notifications)
+ */
+.sva-icon--bouncing {
+  animation: sva-icon-bounce 0.6s ease-in-out;
+}
+@keyframes sva-icon-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-4px);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+}
+/**
+ * Respect reduced motion preferences for animations
+ */
+@media (prefers-reduced-motion: reduce) {
+  .sva-icon--spinning,
+  .sva-icon--pulsing,
+  .sva-icon--bouncing {
+    animation: none;
+  }
+}
+/* ==========================================================================
+   RESPONSIVE BEHAVIOR
+   ========================================================================== */
+/**
+ * Mobile-specific adjustments
+ */
+@media (max-width: 768px) {
+  .sva-icon {
+    /* Slightly smaller touch targets on mobile */
+    width: var(--sva-icon-size-mobile, var(--sva-icon-size-s, 16px));
+    height: var(--sva-icon-size-mobile, var(--sva-icon-size-s, 16px));
+  }
+
+.sva-icon--interactive {
+    /* Larger touch targets for interactive icons on mobile */
+    min-width: 44px;
+    min-height: 44px;
+    padding: 10px;
+    margin: -10px;
+  }
+}
+/**
+ * Large screen adjustments
+ */
+@media (min-width: 1200px) {
+  .sva-icon {
+    width: var(--sva-icon-size-desktop, var(--sva-icon-size-m, 24px));
+    height: var(--sva-icon-size-desktop, var(--sva-icon-size-m, 24px));
+  }
+}
+
+
+/* ====================================
+   SIZES
+   ==================================== */
+
+/**
+ * SVA Icons Class-Based API - Size Modifier Classes
+ * 
+ * This file defines size modifier classes that use CSS variables
+ * to provide consistent icon sizing across the design system.
+ * 
+ * Features:
+ * - Size modifier classes using CSS variables
+ * - Responsive size support
+ * - No conflicts with base styles
+ * - Integration with design tokens
+ * 
+ * @version 2.2.0
+ * @author SVA Icons Team
+ */
+/* ==========================================================================
+   SIZE MODIFIER CLASSES
+   ========================================================================== */
+/**
+ * Extra small icons (12px)
+ * Used for dense interfaces, footnotes, or supplementary information
+ */
+.sva-icon--xs {
+  width: var(--sva-icon-size-xs, 12px);
+  height: var(--sva-icon-size-xs, 12px);
+}
+/**
+ * Small icons (16px)
+ * Used for compact buttons, list items, or secondary actions
+ */
+.sva-icon--s {
+  width: var(--sva-icon-size-s, 16px);
+  height: var(--sva-icon-size-s, 16px);
+}
+/**
+ * Medium icons (24px) - Default size
+ * Used for general purpose icons, primary actions
+ */
+.sva-icon--m {
+  width: var(--sva-icon-size-m, 24px);
+  height: var(--sva-icon-size-m, 24px);
+}
+/**
+ * Large icons (32px)
+ * Used for prominent actions, headers, or important UI elements
+ */
+.sva-icon--l {
+  width: var(--sva-icon-size-l, 32px);
+  height: var(--sva-icon-size-l, 32px);
+}
+/**
+ * Extra large icons (48px)
+ * Used for hero sections, empty states, or very prominent actions
+ */
+.sva-icon--xl {
+  width: var(--sva-icon-size-xl, 48px);
+  height: var(--sva-icon-size-xl, 48px);
+}
+/* ==========================================================================
+   CONTEXTUAL SIZE MODIFIERS
+   ========================================================================== */
+/**
+ * Inherit size from parent element
+ * Useful for icons that should match text size
+ */
+.sva-icon--inherit {
+  width: 1em;
+  height: 1em;
+  font-size: inherit;
+}
+/**
+ * Custom size using CSS custom property
+ * Allows for one-off custom sizes while maintaining consistency
+ */
+.sva-icon--custom {
+  width: var(--sva-icon-custom-size, var(--sva-icon-size-m, 24px));
+  height: var(--sva-icon-custom-size, var(--sva-icon-size-m, 24px));
+}
+/* ==========================================================================
+   RESPONSIVE SIZE MODIFIERS
+   ========================================================================== */
+/**
+ * Responsive small - small on mobile, medium on desktop
+ */
+.sva-icon--responsive-sm {
+  width: var(--sva-icon-size-s, 16px);
+  height: var(--sva-icon-size-s, 16px);
+}
+@media (min-width: 768px) {
+  .sva-icon--responsive-sm {
+    width: var(--sva-icon-size-m, 24px);
+    height: var(--sva-icon-size-m, 24px);
+  }
+}
+/**
+ * Responsive medium - medium on mobile, large on desktop
+ */
+.sva-icon--responsive-md {
+  width: var(--sva-icon-size-m, 24px);
+  height: var(--sva-icon-size-m, 24px);
+}
+@media (min-width: 768px) {
+  .sva-icon--responsive-md {
+    width: var(--sva-icon-size-l, 32px);
+    height: var(--sva-icon-size-l, 32px);
+  }
+}
+/**
+ * Responsive large - large on mobile, extra large on desktop
+ */
+.sva-icon--responsive-lg {
+  width: var(--sva-icon-size-l, 32px);
+  height: var(--sva-icon-size-l, 32px);
+}
+@media (min-width: 768px) {
+  .sva-icon--responsive-lg {
+    width: var(--sva-icon-size-xl, 48px);
+    height: var(--sva-icon-size-xl, 48px);
+  }
+}
+/* ==========================================================================
+   COMPONENT-SPECIFIC SIZE MODIFIERS
+   ========================================================================== */
+/**
+ * Button-specific icon sizes
+ * These account for button padding and visual balance
+ */
+.sva-icon--button-xs {
+  width: 14px;
+  height: 14px;
+}
+
+.sva-icon--button-s {
+  width: 16px;
+  height: 16px;
+}
+
+.sva-icon--button-m {
+  width: 18px;
+  height: 18px;
+}
+
+.sva-icon--button-l {
+  width: 20px;
+  height: 20px;
+}
+
+.sva-icon--button-xl {
+  width: 24px;
+  height: 24px;
+}
+/**
+ * Input field icon sizes
+ * Smaller icons that fit well in form inputs
+ */
+.sva-icon--input {
+  width: 16px;
+  height: 16px;
+}
+/**
+ * Navigation icon sizes
+ * Consistent sizing for navigation elements
+ */
+.sva-icon--nav {
+  width: 20px;
+  height: 20px;
+}
+/**
+ * Card header icon sizes
+ * Appropriate sizing for card headers and titles
+ */
+.sva-icon--card-header {
+  width: 20px;
+  height: 20px;
+}
+/**
+ * Notification icon sizes
+ * Sized for notification badges and alerts
+ */
+.sva-icon--notification {
+  width: 16px;
+  height: 16px;
+}
+/* ==========================================================================
+   ACCESSIBILITY AND TOUCH TARGET CONSIDERATIONS
+   ========================================================================== */
+/**
+ * Touch-friendly size modifier
+ * Ensures minimum 44x44px touch target on mobile
+ */
+.sva-icon--touch {
+  min-width: 44px;
+  min-height: 44px;
+  padding: calc((44px - var(--sva-icon-size-m, 24px)) / 2);
+  margin: calc((var(--sva-icon-size-m, 24px) - 44px) / 2);
+}
+/* Only apply touch sizing on touch devices */
+@media (pointer: coarse) {
+  .sva-icon--interactive {
+    min-width: 44px;
+    min-height: 44px;
+    padding: calc((44px - var(--sva-icon-size-m, 24px)) / 2);
+    margin: calc((var(--sva-icon-size-m, 24px) - 44px) / 2);
+  }
+}
+/* ==========================================================================
+   PRINT-SPECIFIC SIZE ADJUSTMENTS
+   ========================================================================== */
+/**
+ * Print size adjustments
+ * Ensure icons print at appropriate sizes
+ */
+@media print {
+  .sva-icon--xs { width: 10px; height: 10px; }
+
+.sva-icon--s { width: 12px; height: 12px; }
+
+.sva-icon--m { width: 16px; height: 16px; }
+
+.sva-icon--l { width: 20px; height: 20px; }
+
+.sva-icon--xl { width: 24px; height: 24px; }
+  /* Remove responsive behavior in print */
+  .sva-icon--responsive-sm,
+  .sva-icon--responsive-md,
+  .sva-icon--responsive-lg {
+    width: 16px;
+    height: 16px;
+  }
+  /* Remove touch targets in print */
+  .sva-icon--touch,
+  .sva-icon--interactive {
+    min-width: auto;
+    min-height: auto;
+    padding: 0;
+    margin: 0;
+  }
+}
+/* ==========================================================================
+   LEGACY BROWSER SUPPORT
+   ========================================================================== */
+/**
+ * Fallback sizes for browsers that don't support CSS custom properties
+ * Primarily for Internet Explorer 11
+ */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .sva-icon--xs { width: 12px; height: 12px; }
+
+.sva-icon--s { width: 16px; height: 16px; }
+
+.sva-icon--m { width: 24px; height: 24px; }
+
+.sva-icon--l { width: 32px; height: 32px; }
+
+.sva-icon--xl { width: 48px; height: 48px; }
+}
+
+
+/* ====================================
+   COLORS
+   ==================================== */
+
+/**
+ * SVA Icons Class-Based API - Color Modifier Classes
+ * 
+ * This file defines semantic color classes that use CSS variables
+ * with graceful fallbacks. These colors integrate with theme systems
+ * and maintain accessibility standards.
+ * 
+ * Features:
+ * - Semantic color classes using CSS variables
+ * - Fallback chain for missing variables
+ * - Theme system compatibility
+ * - Proper CSS specificity and inheritance
+ * 
+ * @version 2.2.0
+ * @author SVA Icons Team
+ */
+/* ==========================================================================
+   SEMANTIC COLOR MODIFIERS
+   ========================================================================== */
+/**
+ * Primary color - main brand color
+ * Used for primary actions and key interface elements
+ */
+.sva-icon--primary {
+  color: var(--sva-icon-color-primary, var(--color-primary, #1a73e8));
+  fill: var(--sva-icon-color-primary, var(--color-primary, #1a73e8));
+  stroke: var(--sva-icon-color-primary, var(--color-primary, #1a73e8));
+}
+/**
+ * Secondary color - supporting brand color
+ * Used for secondary actions and supporting elements
+ */
+.sva-icon--secondary {
+  color: var(--sva-icon-color-secondary, var(--color-secondary, #5f6368));
+  fill: var(--sva-icon-color-secondary, var(--color-secondary, #5f6368));
+  stroke: var(--sva-icon-color-secondary, var(--color-secondary, #5f6368));
+}
+/**
+ * Success color - positive states
+ * Used for success messages, confirmations, and positive actions
+ */
+.sva-icon--success {
+  color: var(--sva-icon-color-success, var(--color-success, #22c55e));
+  fill: var(--sva-icon-color-success, var(--color-success, #22c55e));
+  stroke: var(--sva-icon-color-success, var(--color-success, #22c55e));
+}
+/**
+ * Warning color - caution states
+ * Used for warnings, alerts, and actions that need attention
+ */
+.sva-icon--warning {
+  color: var(--sva-icon-color-warning, var(--color-warning, #f59e0b));
+  fill: var(--sva-icon-color-warning, var(--color-warning, #f59e0b));
+  stroke: var(--sva-icon-color-warning, var(--color-warning, #f59e0b));
+}
+/**
+ * Error color - error states
+ * Used for errors, dangers, and destructive actions
+ */
+.sva-icon--error {
+  color: var(--sva-icon-color-error, var(--color-error, #ef4444));
+  fill: var(--sva-icon-color-error, var(--color-error, #ef4444));
+  stroke: var(--sva-icon-color-error, var(--color-error, #ef4444));
+}
+/**
+ * Info color - informational states
+ * Used for information, tips, and neutral notifications
+ */
+.sva-icon--info {
+  color: var(--sva-icon-color-info, var(--color-info, #3b82f6));
+  fill: var(--sva-icon-color-info, var(--color-info, #3b82f6));
+  stroke: var(--sva-icon-color-info, var(--color-info, #3b82f6));
+}
+/* ==========================================================================
+   NEUTRAL COLOR MODIFIERS
+   ========================================================================== */
+/**
+ * Neutral color - standard neutral
+ * Used for general content and neutral interface elements
+ */
+.sva-icon--neutral {
+  color: var(--sva-icon-color-neutral, var(--color-neutral, #6b7280));
+  fill: var(--sva-icon-color-neutral, var(--color-neutral, #6b7280));
+  stroke: var(--sva-icon-color-neutral, var(--color-neutral, #6b7280));
+}
+/**
+ * Muted color - de-emphasized content
+ * Used for secondary text, placeholders, and subtle elements
+ */
+.sva-icon--muted {
+  color: var(--sva-icon-color-muted, var(--color-muted, #9ca3af));
+  fill: var(--sva-icon-color-muted, var(--color-muted, #9ca3af));
+  stroke: var(--sva-icon-color-muted, var(--color-muted, #9ca3af));
+}
+/**
+ * Inverse color - for dark backgrounds
+ * Used on dark backgrounds or for inverted color schemes
+ */
+.sva-icon--inverse {
+  color: var(--sva-icon-color-inverse, var(--color-inverse, #ffffff));
+  fill: var(--sva-icon-color-inverse, var(--color-inverse, #ffffff));
+  stroke: var(--sva-icon-color-inverse, var(--color-inverse, #ffffff));
+}
+/* ==========================================================================
+   CONTEXT-AWARE COLOR MODIFIERS
+   ========================================================================== */
+/**
+ * Inherit color from parent element
+ * Useful for icons that should match surrounding text color
+ */
+.sva-icon--inherit {
+  color: inherit;
+  fill: currentColor;
+  stroke: currentColor;
+}
+/**
+ * Current color - uses currentColor for all fill/stroke
+ * Ensures icon color matches the element's text color
+ */
+.sva-icon--current {
+  color: currentColor;
+  fill: currentColor;
+  stroke: currentColor;
+}
+/**
+ * Transparent - makes icon transparent
+ * Useful for spacing or hidden states
+ */
+.sva-icon--transparent {
+  color: transparent;
+  fill: transparent;
+  stroke: transparent;
+  opacity: 0;
+}
+/* ==========================================================================
+   HOVER AND INTERACTIVE STATES
+   ========================================================================== */
+/**
+ * Hover states for interactive icons
+ * These provide visual feedback for interactive elements
+ */
+.sva-icon--primary.sva-icon--interactive:hover {
+  color: var(--sva-icon-color-primary-hover, var(--color-primary-hover, #1557b0));
+  fill: var(--sva-icon-color-primary-hover, var(--color-primary-hover, #1557b0));
+  stroke: var(--sva-icon-color-primary-hover, var(--color-primary-hover, #1557b0));
+}
+
+.sva-icon--secondary.sva-icon--interactive:hover {
+  color: var(--sva-icon-color-secondary-hover, var(--color-secondary-hover, #3c4043));
+  fill: var(--sva-icon-color-secondary-hover, var(--color-secondary-hover, #3c4043));
+  stroke: var(--sva-icon-color-secondary-hover, var(--color-secondary-hover, #3c4043));
+}
+
+.sva-icon--success.sva-icon--interactive:hover {
+  color: var(--sva-icon-color-success-hover, var(--color-success-hover, #16a34a));
+  fill: var(--sva-icon-color-success-hover, var(--color-success-hover, #16a34a));
+  stroke: var(--sva-icon-color-success-hover, var(--color-success-hover, #16a34a));
+}
+
+.sva-icon--warning.sva-icon--interactive:hover {
+  color: var(--sva-icon-color-warning-hover, var(--color-warning-hover, #d97706));
+  fill: var(--sva-icon-color-warning-hover, var(--color-warning-hover, #d97706));
+  stroke: var(--sva-icon-color-warning-hover, var(--color-warning-hover, #d97706));
+}
+
+.sva-icon--error.sva-icon--interactive:hover {
+  color: var(--sva-icon-color-error-hover, var(--color-error-hover, #dc2626));
+  fill: var(--sva-icon-color-error-hover, var(--color-error-hover, #dc2626));
+  stroke: var(--sva-icon-color-error-hover, var(--color-error-hover, #dc2626));
+}
+/* ==========================================================================
+   DISABLED STATES
+   ========================================================================== */
+/**
+ * Disabled state for all color modifiers
+ * Reduces opacity and removes interaction
+ */
+.sva-icon--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+/* ==========================================================================
+   THEME-SPECIFIC OVERRIDES
+   ========================================================================== */
+/**
+ * Dark theme color adjustments
+ * Automatically applied when dark theme is active
+ */
+[data-theme="dark"] .sva-icon--primary {
+  color: var(--sva-icon-color-primary-dark, #4285f4);
+  fill: var(--sva-icon-color-primary-dark, #4285f4);
+  stroke: var(--sva-icon-color-primary-dark, #4285f4);
+}
+
+[data-theme="dark"] .sva-icon--secondary {
+  color: var(--sva-icon-color-secondary-dark, #9aa0a6);
+  fill: var(--sva-icon-color-secondary-dark, #9aa0a6);
+  stroke: var(--sva-icon-color-secondary-dark, #9aa0a6);
+}
+
+[data-theme="dark"] .sva-icon--neutral {
+  color: var(--sva-icon-color-neutral-dark, #9aa0a6);
+  fill: var(--sva-icon-color-neutral-dark, #9aa0a6);
+  stroke: var(--sva-icon-color-neutral-dark, #9aa0a6);
+}
+
+[data-theme="dark"] .sva-icon--muted {
+  color: var(--sva-icon-color-muted-dark, #5f6368);
+  fill: var(--sva-icon-color-muted-dark, #5f6368);
+  stroke: var(--sva-icon-color-muted-dark, #5f6368);
+}
+/**
+ * High contrast theme adjustments
+ * Ensures accessibility in high contrast mode
+ */
+[data-theme="high-contrast"] .sva-icon--primary,
+[data-theme="high-contrast"] .sva-icon--secondary,
+[data-theme="high-contrast"] .sva-icon--neutral {
+  color: #000000;
+  fill: #000000;
+  stroke: #000000;
+}
+
+[data-theme="high-contrast"] .sva-icon--inverse {
+  color: #ffffff;
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+
+[data-theme="high-contrast"] .sva-icon--success {
+  color: #00ff00;
+  fill: #00ff00;
+  stroke: #00ff00;
+}
+
+[data-theme="high-contrast"] .sva-icon--warning {
+  color: #ffff00;
+  fill: #ffff00;
+  stroke: #ffff00;
+}
+
+[data-theme="high-contrast"] .sva-icon--error {
+  color: #ff0000;
+  fill: #ff0000;
+  stroke: #ff0000;
+}
+/* ==========================================================================
+   FORCED COLORS MODE (Windows High Contrast)
+   ========================================================================== */
+@media (forced-colors: active) {
+  .sva-icon--primary {
+    color: ButtonText;
+    fill: ButtonText;
+    stroke: ButtonText;
+  }
+
+.sva-icon--secondary,
+  .sva-icon--neutral,
+  .sva-icon--muted {
+    color: GrayText;
+    fill: GrayText;
+    stroke: GrayText;
+  }
+
+.sva-icon--success {
+    color: ButtonText;
+    fill: ButtonText;
+    stroke: ButtonText;
+  }
+
+.sva-icon--warning,
+  .sva-icon--error {
+    color: ButtonText;
+    fill: ButtonText;
+    stroke: ButtonText;
+  }
+
+.sva-icon--inverse {
+    color: ButtonFace;
+    fill: ButtonFace;
+    stroke: ButtonFace;
+  }
+
+.sva-icon--interactive:hover {
+    color: Highlight;
+    fill: Highlight;
+    stroke: Highlight;
+  }
+}
+/* ==========================================================================
+   PRINT STYLES
+   ========================================================================== */
+/**
+ * Print color adjustments
+ * Ensure icons print clearly in black and white
+ */
+@media print {
+  .sva-icon--primary,
+  .sva-icon--secondary,
+  .sva-icon--neutral,
+  .sva-icon--success,
+  .sva-icon--info {
+    color: #000000 !important;
+    fill: #000000 !important;
+    stroke: #000000 !important;
+  }
+
+.sva-icon--warning {
+    color: #666666 !important;
+    fill: #666666 !important;
+    stroke: #666666 !important;
+  }
+
+.sva-icon--error {
+    color: #000000 !important;
+    fill: #000000 !important;
+    stroke: #000000 !important;
+  }
+
+.sva-icon--muted {
+    color: #999999 !important;
+    fill: #999999 !important;
+    stroke: #999999 !important;
+  }
+
+.sva-icon--inverse {
+    color: #000000 !important;
+    fill: #000000 !important;
+    stroke: #000000 !important;
+  }
+}
+
+
+/* ====================================
+   POSITIONS
+   ==================================== */
+
+/**
+ * SVA Icons v2.2.0 - Position and Layout Modifiers
+ * 
+ * Position modifier classes for controlling icon placement and alignment.
+ * Includes utilities for flexbox alignment, absolute positioning, margins,
+ * and layout helpers for common use cases.
+ */
+/* ==========================================================================
+   ALIGNMENT UTILITIES
+   ========================================================================== */
+/* Vertical alignment modifiers */
+.sva-icon-align-top {
+  vertical-align: top;
+}
+
+.sva-icon-align-middle {
+  vertical-align: middle;
+}
+
+.sva-icon-align-bottom {
+  vertical-align: bottom;
+}
+
+.sva-icon-align-baseline {
+  vertical-align: baseline;
+}
+
+.sva-icon-align-text-top {
+  vertical-align: text-top;
+}
+
+.sva-icon-align-text-bottom {
+  vertical-align: text-bottom;
+}
+/* ==========================================================================
+   FLEXBOX ALIGNMENT
+   ========================================================================== */
+/* Flex container modifiers for parent elements */
+.sva-icon-flex-start {
+  display: flex;
+  align-items: flex-start;
+}
+
+.sva-icon-flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.sva-icon-flex-end {
+  display: flex;
+  align-items: flex-end;
+}
+
+.sva-icon-flex-stretch {
+  display: flex;
+  align-items: stretch;
+}
+/* Self alignment for individual icons */
+.sva-icon-self-start {
+  align-self: flex-start;
+}
+
+.sva-icon-self-center {
+  align-self: center;
+}
+
+.sva-icon-self-end {
+  align-self: flex-end;
+}
+
+.sva-icon-self-stretch {
+  align-self: stretch;
+}
+/* ==========================================================================
+   DISPLAY UTILITIES
+   ========================================================================== */
+.sva-icon-inline {
+  display: inline;
+}
+
+.sva-icon-inline-block {
+  display: inline-block;
+}
+
+.sva-icon-block {
+  display: block;
+}
+
+.sva-icon-inline-flex {
+  display: inline-flex;
+}
+
+.sva-icon-flex {
+  display: flex;
+}
+/* ==========================================================================
+   POSITION UTILITIES
+   ========================================================================== */
+.sva-icon-relative {
+  position: relative;
+}
+
+.sva-icon-absolute {
+  position: absolute;
+}
+
+.sva-icon-fixed {
+  position: fixed;
+}
+
+.sva-icon-sticky {
+  position: sticky;
+}
+/* ==========================================================================
+   FLOAT UTILITIES
+   ========================================================================== */
+.sva-icon-float-left {
+  float: left;
+}
+
+.sva-icon-float-right {
+  float: right;
+}
+
+.sva-icon-float-none {
+  float: none;
+}
+/* Clear floats */
+.sva-icon-clear {
+  clear: both;
+}
+
+.sva-icon-clear-left {
+  clear: left;
+}
+
+.sva-icon-clear-right {
+  clear: right;
+}
+/* ==========================================================================
+   MARGIN UTILITIES
+   ========================================================================== */
+/* All margins */
+.sva-icon-m-0 { margin: 0; }
+
+.sva-icon-m-xs { margin: var(--sva-icon-spacing-xs); }
+
+.sva-icon-m-s { margin: var(--sva-icon-spacing-s); }
+
+.sva-icon-m-m { margin: var(--sva-icon-spacing-m); }
+
+.sva-icon-m-l { margin: var(--sva-icon-spacing-l); }
+
+.sva-icon-m-xl { margin: var(--sva-icon-spacing-xl); }
+/* Horizontal margins */
+.sva-icon-mx-0 { margin-left: 0; margin-right: 0; }
+
+.sva-icon-mx-xs { margin-left: var(--sva-icon-spacing-xs); margin-right: var(--sva-icon-spacing-xs); }
+
+.sva-icon-mx-s { margin-left: var(--sva-icon-spacing-s); margin-right: var(--sva-icon-spacing-s); }
+
+.sva-icon-mx-m { margin-left: var(--sva-icon-spacing-m); margin-right: var(--sva-icon-spacing-m); }
+
+.sva-icon-mx-l { margin-left: var(--sva-icon-spacing-l); margin-right: var(--sva-icon-spacing-l); }
+
+.sva-icon-mx-xl { margin-left: var(--sva-icon-spacing-xl); margin-right: var(--sva-icon-spacing-xl); }
+/* Vertical margins */
+.sva-icon-my-0 { margin-top: 0; margin-bottom: 0; }
+
+.sva-icon-my-xs { margin-top: var(--sva-icon-spacing-xs); margin-bottom: var(--sva-icon-spacing-xs); }
+
+.sva-icon-my-s { margin-top: var(--sva-icon-spacing-s); margin-bottom: var(--sva-icon-spacing-s); }
+
+.sva-icon-my-m { margin-top: var(--sva-icon-spacing-m); margin-bottom: var(--sva-icon-spacing-m); }
+
+.sva-icon-my-l { margin-top: var(--sva-icon-spacing-l); margin-bottom: var(--sva-icon-spacing-l); }
+
+.sva-icon-my-xl { margin-top: var(--sva-icon-spacing-xl); margin-bottom: var(--sva-icon-spacing-xl); }
+/* Individual margins */
+.sva-icon-mt-0 { margin-top: 0; }
+
+.sva-icon-mt-xs { margin-top: var(--sva-icon-spacing-xs); }
+
+.sva-icon-mt-s { margin-top: var(--sva-icon-spacing-s); }
+
+.sva-icon-mt-m { margin-top: var(--sva-icon-spacing-m); }
+
+.sva-icon-mt-l { margin-top: var(--sva-icon-spacing-l); }
+
+.sva-icon-mt-xl { margin-top: var(--sva-icon-spacing-xl); }
+
+.sva-icon-mr-0 { margin-right: 0; }
+
+.sva-icon-mr-xs { margin-right: var(--sva-icon-spacing-xs); }
+
+.sva-icon-mr-s { margin-right: var(--sva-icon-spacing-s); }
+
+.sva-icon-mr-m { margin-right: var(--sva-icon-spacing-m); }
+
+.sva-icon-mr-l { margin-right: var(--sva-icon-spacing-l); }
+
+.sva-icon-mr-xl { margin-right: var(--sva-icon-spacing-xl); }
+
+.sva-icon-mb-0 { margin-bottom: 0; }
+
+.sva-icon-mb-xs { margin-bottom: var(--sva-icon-spacing-xs); }
+
+.sva-icon-mb-s { margin-bottom: var(--sva-icon-spacing-s); }
+
+.sva-icon-mb-m { margin-bottom: var(--sva-icon-spacing-m); }
+
+.sva-icon-mb-l { margin-bottom: var(--sva-icon-spacing-l); }
+
+.sva-icon-mb-xl { margin-bottom: var(--sva-icon-spacing-xl); }
+
+.sva-icon-ml-0 { margin-left: 0; }
+
+.sva-icon-ml-xs { margin-left: var(--sva-icon-spacing-xs); }
+
+.sva-icon-ml-s { margin-left: var(--sva-icon-spacing-s); }
+
+.sva-icon-ml-m { margin-left: var(--sva-icon-spacing-m); }
+
+.sva-icon-ml-l { margin-left: var(--sva-icon-spacing-l); }
+
+.sva-icon-ml-xl { margin-left: var(--sva-icon-spacing-xl); }
+/* ==========================================================================
+   PADDING UTILITIES
+   ========================================================================== */
+/* All padding */
+.sva-icon-p-0 { padding: 0; }
+
+.sva-icon-p-xs { padding: var(--sva-spacing-xs); }
+
+.sva-icon-p-s { padding: var(--sva-spacing-s); }
+
+.sva-icon-p-m { padding: var(--sva-spacing-m); }
+
+.sva-icon-p-l { padding: var(--sva-spacing-l); }
+
+.sva-icon-p-xl { padding: var(--sva-spacing-xl); }
+/* Horizontal padding */
+.sva-icon-px-0 { padding-left: 0; padding-right: 0; }
+
+.sva-icon-px-xs { padding-left: var(--sva-spacing-xs); padding-right: var(--sva-spacing-xs); }
+
+.sva-icon-px-s { padding-left: var(--sva-spacing-s); padding-right: var(--sva-spacing-s); }
+
+.sva-icon-px-m { padding-left: var(--sva-spacing-m); padding-right: var(--sva-spacing-m); }
+
+.sva-icon-px-l { padding-left: var(--sva-spacing-l); padding-right: var(--sva-spacing-l); }
+
+.sva-icon-px-xl { padding-left: var(--sva-spacing-xl); padding-right: var(--sva-spacing-xl); }
+/* Vertical padding */
+.sva-icon-py-0 { padding-top: 0; padding-bottom: 0; }
+
+.sva-icon-py-xs { padding-top: var(--sva-spacing-xs); padding-bottom: var(--sva-spacing-xs); }
+
+.sva-icon-py-s { padding-top: var(--sva-spacing-s); padding-bottom: var(--sva-spacing-s); }
+
+.sva-icon-py-m { padding-top: var(--sva-spacing-m); padding-bottom: var(--sva-spacing-m); }
+
+.sva-icon-py-l { padding-top: var(--sva-spacing-l); padding-bottom: var(--sva-spacing-l); }
+
+.sva-icon-py-xl { padding-top: var(--sva-spacing-xl); padding-bottom: var(--sva-spacing-xl); }
+/* Individual padding */
+.sva-icon-pt-0 { padding-top: 0; }
+
+.sva-icon-pt-xs { padding-top: var(--sva-spacing-xs); }
+
+.sva-icon-pt-s { padding-top: var(--sva-spacing-s); }
+
+.sva-icon-pt-m { padding-top: var(--sva-spacing-m); }
+
+.sva-icon-pt-l { padding-top: var(--sva-spacing-l); }
+
+.sva-icon-pt-xl { padding-top: var(--sva-spacing-xl); }
+
+.sva-icon-pr-0 { padding-right: 0; }
+
+.sva-icon-pr-xs { padding-right: var(--sva-spacing-xs); }
+
+.sva-icon-pr-s { padding-right: var(--sva-spacing-s); }
+
+.sva-icon-pr-m { padding-right: var(--sva-spacing-m); }
+
+.sva-icon-pr-l { padding-right: var(--sva-spacing-l); }
+
+.sva-icon-pr-xl { padding-right: var(--sva-spacing-xl); }
+
+.sva-icon-pb-0 { padding-bottom: 0; }
+
+.sva-icon-pb-xs { padding-bottom: var(--sva-spacing-xs); }
+
+.sva-icon-pb-s { padding-bottom: var(--sva-spacing-s); }
+
+.sva-icon-pb-m { padding-bottom: var(--sva-spacing-m); }
+
+.sva-icon-pb-l { padding-bottom: var(--sva-spacing-l); }
+
+.sva-icon-pb-xl { padding-bottom: var(--sva-spacing-xl); }
+
+.sva-icon-pl-0 { padding-left: 0; }
+
+.sva-icon-pl-xs { padding-left: var(--sva-spacing-xs); }
+
+.sva-icon-pl-s { padding-left: var(--sva-spacing-s); }
+
+.sva-icon-pl-m { padding-left: var(--sva-spacing-m); }
+
+.sva-icon-pl-l { padding-left: var(--sva-spacing-l); }
+
+.sva-icon-pl-xl { padding-left: var(--sva-spacing-xl); }
+/* ==========================================================================
+   Z-INDEX UTILITIES
+   ========================================================================== */
+.sva-icon-z-auto { z-index: auto; }
+
+.sva-icon-z-0 { z-index: 0; }
+
+.sva-icon-z-10 { z-index: 10; }
+
+.sva-icon-z-20 { z-index: 20; }
+
+.sva-icon-z-30 { z-index: 30; }
+
+.sva-icon-z-40 { z-index: 40; }
+
+.sva-icon-z-50 { z-index: 50; }
+/* ==========================================================================
+   SEMANTIC POSITION CLASSES
+   ========================================================================== */
+/* Icon positioning for buttons and text elements */
+.sva-icon--leading {
+  margin-right: var(--sva-icon-spacing-m);
+  margin-left: 0;
+}
+
+.sva-icon--trailing {
+  margin-left: var(--sva-icon-spacing-m);
+  margin-right: 0;
+}
+
+.sva-icon--center {
+  margin: 0 auto;
+}
+/* Compact variants for tighter spacing */
+.sva-icon--leading.sva-icon--compact {
+  margin-right: var(--sva-icon-spacing-s);
+}
+
+.sva-icon--trailing.sva-icon--compact {
+  margin-left: var(--sva-icon-spacing-s);
+}
+/* ==========================================================================
+   LAYOUT HELPERS
+   ========================================================================== */
+/* Center an icon absolutely */
+.sva-icon-center-absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Center an icon with flexbox */
+.sva-icon-center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Icon with text alignment helpers */
+.sva-icon-with-text-left {
+  margin-right: var(--sva-spacing-xs);
+  vertical-align: middle;
+}
+
+.sva-icon-with-text-right {
+  margin-left: var(--sva-spacing-xs);
+  vertical-align: middle;
+}
+
+.sva-icon-with-text-top {
+  margin-bottom: var(--sva-spacing-xs);
+  vertical-align: top;
+}
+
+.sva-icon-with-text-bottom {
+  margin-top: var(--sva-spacing-xs);
+  vertical-align: bottom;
+}
+/* ==========================================================================
+   RESPONSIVE UTILITIES
+   ========================================================================== */
+/* Mobile-first responsive positioning */
+@media (min-width: 640px) {
+  .sva-icon-sm-block { display: block; }
+
+.sva-icon-sm-inline { display: inline; }
+
+.sva-icon-sm-inline-block { display: inline-block; }
+
+.sva-icon-sm-flex { display: flex; }
+
+.sva-icon-sm-inline-flex { display: inline-flex; }
+
+.sva-icon-sm-hidden { display: none; }
+}
+@media (min-width: 768px) {
+  .sva-icon-md-block { display: block; }
+
+.sva-icon-md-inline { display: inline; }
+
+.sva-icon-md-inline-block { display: inline-block; }
+
+.sva-icon-md-flex { display: flex; }
+
+.sva-icon-md-inline-flex { display: inline-flex; }
+
+.sva-icon-md-hidden { display: none; }
+}
+@media (min-width: 1024px) {
+  .sva-icon-lg-block { display: block; }
+
+.sva-icon-lg-inline { display: inline; }
+
+.sva-icon-lg-inline-block { display: inline-block; }
+
+.sva-icon-lg-flex { display: flex; }
+
+.sva-icon-lg-inline-flex { display: inline-flex; }
+
+.sva-icon-lg-hidden { display: none; }
+}
+@media (min-width: 1280px) {
+  .sva-icon-xl-block { display: block; }
+
+.sva-icon-xl-inline { display: inline; }
+
+.sva-icon-xl-inline-block { display: inline-block; }
+
+.sva-icon-xl-flex { display: flex; }
+
+.sva-icon-xl-inline-flex { display: inline-flex; }
+
+.sva-icon-xl-hidden { display: none; }
+}
+/* ==========================================================================
+   ACCESSIBILITY
+   ========================================================================== */
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .sva-icon-animate {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+/* High contrast adjustments */
+@media (prefers-contrast: high) {
+  .sva-icon-center-absolute,
+  .sva-icon-center-flex {
+    outline: 1px solid currentColor;
+    outline-offset: 2px;
+  }
+}
+
+
+/* ====================================
+   UTILITY CLASSES
+   ==================================== */
+
+/* Icon visibility utilities */
+.sva-icon-hidden {
+  display: none !important;
+}
+
+.sva-icon-visible {
+  display: inline-block !important;
+}
+
+/* Icon state utilities */
+.sva-icon-loading {
+  opacity: 0.5;
+  animation: sva-icon-pulse 1.5s ease-in-out infinite;
+}
+
+.sva-icon-loaded {
+  opacity: 1;
+  animation: none;
+}
+
+/* Loading animation */
+@keyframes sva-icon-pulse {
+  0% { opacity: 0.3; }
+  50% { opacity: 0.7; }
+  100% { opacity: 0.3; }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .sva-icon {
+    filter: contrast(1.5);
+  }
+  
+  .sva-icon-loading {
+    animation: none;
+    opacity: 0.8;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .sva-icon-loading {
+    animation: none;
+    opacity: 0.5;
+  }
+  
+  @keyframes sva-icon-pulse {
+    0%, 100% { opacity: 0.5; }
+  }
+}
+
+/* Print styles */
+@media print {
+  .sva-icon {
+    filter: grayscale(100%);
+    opacity: 0.8;
+  }
+  
+  .sva-icon-loading {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+/* Focus management for accessibility */
+.sva-icon:focus-visible {
+  outline: 2px solid var(--sva-icon-focus-color, #005fcc);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Screen reader utilities */
+.sva-icon-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ====================================
+   RESPONSIVE UTILITIES
+   ==================================== */
+
+/* Mobile-first responsive sizes */
+@media (max-width: 768px) {
+  .sva-icon-responsive {
+    width: var(--sva-icon-size-sm, 16px);
+    height: var(--sva-icon-size-sm, 16px);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .sva-icon-responsive {
+    width: var(--sva-icon-size-md, 20px);
+    height: var(--sva-icon-size-md, 20px);
+  }
+}
+
+@media (min-width: 1025px) {
+  .sva-icon-responsive {
+    width: var(--sva-icon-size-lg, 24px);
+    height: var(--sva-icon-size-lg, 24px);
+  }
+}
+
+/* Container queries support (future-proof) */
+@supports (container-type: inline-size) {
+  .sva-icon-container {
+    container-type: inline-size;
+  }
+  
+  @container (max-width: 300px) {
+    .sva-icon-adaptive {
+      width: var(--sva-icon-size-sm, 16px);
+      height: var(--sva-icon-size-sm, 16px);
+    }
+  }
+  
+  @container (min-width: 301px) {
+    .sva-icon-adaptive {
+      width: var(--sva-icon-size-md, 20px);
+      height: var(--sva-icon-size-md, 20px);
+    }
+  }
+}

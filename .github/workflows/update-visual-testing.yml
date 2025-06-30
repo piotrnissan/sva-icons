@@ -1,0 +1,96 @@
+name: Update Visual Testing on Package Publish
+
+# Trigger when package is published or version tag is pushed
+on:
+  release:
+    types: [published]
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason for manual trigger'
+        required: false
+        default: 'Manual trigger'
+
+jobs:
+  trigger-visual-testing:
+    name: Trigger Visual Testing Rebuild
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Get package version
+        id: package_version
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "📦 Package version: $VERSION"
+          
+      - name: Trigger Vercel Visual Testing Rebuild
+        if: env.VERCEL_VISUAL_TESTING_HOOK != ''
+        env:
+          VERCEL_VISUAL_TESTING_HOOK: ${{ secrets.VERCEL_VISUAL_TESTING_HOOK }}
+          WEBHOOK_SECRET: ${{ secrets.VISUAL_TESTING_WEBHOOK_SECRET }}
+        run: |
+          echo "🚀 Triggering Visual Testing rebuild..."
+          
+          # Trigger Vercel build hook
+          BUILD_RESPONSE=$(curl -s -w "%{http_code}" -X POST "$VERCEL_VISUAL_TESTING_HOOK" \
+            -H "Content-Type: application/json" \
+            -d "{\"reason\": \"sva-icons v${{ steps.package_version.outputs.version }} published\"}")
+          
+          BUILD_HTTP_CODE=${BUILD_RESPONSE: -3}
+          
+          if [ "$BUILD_HTTP_CODE" -eq 201 ] || [ "$BUILD_HTTP_CODE" -eq 200 ]; then
+            echo "✅ Vercel rebuild triggered successfully (HTTP $BUILD_HTTP_CODE)"
+          else
+            echo "⚠️ Vercel rebuild failed (HTTP $BUILD_HTTP_CODE)"
+            echo "Response: ${BUILD_RESPONSE%???}"
+          fi
+          
+      - name: Notify Visual Testing App
+        if: env.VISUAL_TESTING_WEBHOOK_URL != ''
+        env:
+          VISUAL_TESTING_WEBHOOK_URL: ${{ secrets.VISUAL_TESTING_WEBHOOK_URL }}
+          WEBHOOK_SECRET: ${{ secrets.VISUAL_TESTING_WEBHOOK_SECRET }}
+        run: |
+          echo "📢 Notifying Visual Testing app..."
+          
+          # Notify the visual testing app's webhook endpoint
+          WEBHOOK_RESPONSE=$(curl -s -w "%{http_code}" -X POST "$VISUAL_TESTING_WEBHOOK_URL" \
+            -H "Content-Type: application/json" \
+            -H "X-Webhook-Secret: $WEBHOOK_SECRET" \
+            -d "{
+              \"package\": \"sva-icons\",
+              \"version\": \"${{ steps.package_version.outputs.version }}\",
+              \"source\": \"github-actions\",
+              \"trigger\": \"${{ github.event_name }}\",
+              \"ref\": \"${{ github.ref }}\",
+              \"repository\": \"${{ github.repository }}\"
+            }")
+          
+          WEBHOOK_HTTP_CODE=${WEBHOOK_RESPONSE: -3}
+          
+          if [ "$WEBHOOK_HTTP_CODE" -eq 200 ]; then
+            echo "✅ Visual Testing webhook triggered successfully"
+            echo "Response: ${WEBHOOK_RESPONSE%???}"
+          else
+            echo "⚠️ Visual Testing webhook failed (HTTP $WEBHOOK_HTTP_CODE)"
+            echo "Response: ${WEBHOOK_RESPONSE%???}"
+          fi
+          
+      - name: Summary
+        run: |
+          echo "## 🎉 Visual Testing Update Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Package:** sva-icons v${{ steps.package_version.outputs.version }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Trigger:** ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Time:** $(date -u)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "The visual testing application should rebuild automatically within 2-3 minutes." >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "🔗 [View Visual Testing App](https://your-visual-testing.vercel.app)" >> $GITHUB_STEP_SUMMARY

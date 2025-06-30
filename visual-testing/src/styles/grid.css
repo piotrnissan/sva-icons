@@ -1,0 +1,310 @@
+/**
+ * Grid layout styles for the icon grid component
+ */
+
+/* ===== ICON GRID CONTAINER ===== */
+.icon-grid-container {
+  width: 100%;
+}
+
+.icon-grid__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: white;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .icon-grid__controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.icon-grid__stats {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.icon-grid__count {
+  font-weight: 600;
+  color: #333;
+}
+
+.icon-grid__search-info {
+  color: #666;
+  font-style: italic;
+}
+
+.icon-grid__view-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon-grid__size-control {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon-grid__control-label {
+  font-weight: 500;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.icon-grid__control-select {
+  padding: 0.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+}
+
+.icon-grid__view-toggle {
+  display: flex;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.icon-grid__view-btn {
+  padding: 0.5rem;
+  background: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.icon-grid__view-btn:hover {
+  background: #f5f5f5;
+}
+
+.icon-grid__view-btn--active {
+  background: #007acc;
+  color: white;
+}
+
+.icon-grid__view-btn svg {
+  fill: currentColor;
+}
+
+/* ===== ICON GRID ===== */
+.icon-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  background: #fafafa;
+  width: 100%;
+}
+
+/* Grid size variations */
+.icon-grid.icon-grid--small {
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)) !important;
+  gap: 0.75rem;
+}
+
+.icon-grid.icon-grid--medium {
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)) !important;
+  gap: 1rem;
+}
+
+.icon-grid.icon-grid--large {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
+  gap: 1.25rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .icon-grid--small {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+  
+  .icon-grid--medium {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+  
+  .icon-grid--large {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .icon-grid--small {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  }
+  
+  .icon-grid--medium {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+  
+  .icon-grid--large {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .icon-grid {
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+  
+  .icon-grid--small {
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  }
+  
+  .icon-grid--medium {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+  
+  .icon-grid--large {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+}
+
+/* List view (for future implementation) */
+.icon-grid--list {
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+
+.icon-grid--list .icon-card {
+  flex-direction: row;
+  text-align: left;
+  min-height: auto;
+  padding: 0.75rem;
+}
+
+.icon-grid--list .icon-card__icon {
+  margin-bottom: 0;
+  margin-right: 1rem;
+  flex: 0 0 auto;
+}
+
+.icon-grid--list .icon-card__svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* ===== EMPTY STATE ===== */
+.icon-grid__empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  background: white;
+  border-radius: 8px;
+  border: 2px dashed #e0e0e0;
+}
+
+.icon-grid__empty-content {
+  text-align: center;
+  max-width: 400px;
+  padding: 2rem;
+}
+
+.icon-grid__empty-icon {
+  fill: #bdbdbd;
+  margin-bottom: 1rem;
+}
+
+.icon-grid__empty-title {
+  color: #666;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.icon-grid__empty-message {
+  color: #888;
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.icon-grid__empty-suggestion {
+  color: #999;
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* ===== LOADING STATES ===== */
+.icon-grid--loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.icon-grid__loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+/* ===== SELECTION HIGHLIGHTS ===== */
+.icon-grid__selection-highlight {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 2px solid #4caf50;
+  border-radius: 14px;
+  pointer-events: none;
+}
+
+/* ===== ACCESSIBILITY ===== */
+.icon-card:focus {
+  outline: 2px solid #007acc;
+  outline-offset: 2px;
+}
+
+.icon-grid__view-btn:focus {
+  outline: 2px solid #007acc;
+  outline-offset: 2px;
+}
+
+/* ===== ANIMATIONS ===== */
+.icon-card {
+  animation: fadeInUp 0.3s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stagger animation for grid items */
+.icon-card:nth-child(1) { animation-delay: 0ms; }
+.icon-card:nth-child(2) { animation-delay: 50ms; }
+.icon-card:nth-child(3) { animation-delay: 100ms; }
+.icon-card:nth-child(4) { animation-delay: 150ms; }
+.icon-card:nth-child(5) { animation-delay: 200ms; }
+.icon-card:nth-child(6) { animation-delay: 250ms; }
+.icon-card:nth-child(7) { animation-delay: 300ms; }
+.icon-card:nth-child(8) { animation-delay: 350ms; }
+.icon-card:nth-child(9) { animation-delay: 400ms; }
+.icon-card:nth-child(10) { animation-delay: 450ms; }
