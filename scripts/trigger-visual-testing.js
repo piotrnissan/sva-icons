@@ -24,7 +24,7 @@ console.log(`📦 Package: ${packageJson.name} v${packageJson.version}`);
 // Configuration from environment variables
 const config = {
   webhookUrl: process.env.VISUAL_TESTING_WEBHOOK_URL,
-  buildHookUrl: process.env.VERCEL_BUILD_HOOK_URL,
+  buildHookUrl: process.env.VERCEL_BUILD_HOOK_URL || 'https://api.vercel.com/v1/integrations/deploy/prj_d9XCmB6jEooHVyJfP77UVwpgzAit/Kn27FGyWSX',
   webhookSecret: process.env.VISUAL_TESTING_WEBHOOK_SECRET,
   enableTrigger: process.env.ENABLE_VISUAL_TESTING_TRIGGER !== 'false'
 };
