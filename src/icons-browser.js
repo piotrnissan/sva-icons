@@ -3,7 +3,7 @@
  * Contains ES module exports of all available icons
  * 
  * AUTO-GENERATED FILE - DO NOT EDIT MANUALLY
- * Generated: 2025-06-30T12:51:50.306Z
+ * Generated: 2025-07-02T17:31:05.307Z
  * Source: svg/ folder (358 icons)
  * 
  * To regenerate: npm run build:icons-browser

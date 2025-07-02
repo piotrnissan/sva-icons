@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVA Icon Autoloader Example</title>
+    <style>
+        body { font-family: sans-serif; padding: 2rem; }
+        .icon-example { display: flex; align-items: center; font-size: 1.5rem; margin-bottom: 1rem; }
+        .sva-icon { margin-right: 1rem; color: #333; }
+        .sva-icon-plus { width: 48px; height: 48px; color: green; }
+        .sva-icon-car, .sva-icon-settings { width: 48px; height: 48px; }
+    </style>
+</head>
+<body>
+    <h1>SVA Icons - Autoloader</h1>
+    <p>The icons below should be automatically replaced by the script.</p>
+
+    <div class="icon-example">
+        <i class="sva-icon-car"></i>
+        <span>Car Icon</span>
+    </div>
+
+    <div class="icon-example">
+        <i class="sva-icon-plus"></i>
+        <span>Plus Icon</span>
+    </div>
+
+    <div class="icon-example">
+        <i class="sva-icon-settings"></i>
+        <span>Settings Icon</span>
+    </div>
+
+    <!--
+      STEP 1: Include the browser registry.
+      This file contains all the icon data and registers them.
+      The build process creates this file at 'src/icons-browser.js'.
+    -->
+    <script type="module">
+      // STEP 1: Import the necessary functions and icon data
+      import { initializeClassBasedIcons, registerIconsForClassBased } from './dist/class-based/esm/index.js';
+      import { iconRegistry } from './src/icons-browser.js';
+
+      // STEP 2: Register the icons with the class-based system
+      // This makes the icon data available to the resolver.
+      registerIconsForClassBased(iconRegistry);
+
+      // STEP 3: Manually initialize the system.
+      // This will scan the document and inject the icons.
+      // We do this manually to ensure registration happens first.
+      initializeClassBasedIcons();
+    </script>
+
+</body>
+</html>
