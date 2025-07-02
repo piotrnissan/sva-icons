@@ -16,21 +16,21 @@ function QuickStartPage({ currentVersion }) {
         <div className="documentation-install-options">
           <CodeExample
             title="NPM"
-            code={`npm install sva-icons@^${currentVersion || '3.0.0'}`}
+            code={`npm install sva-icons@^${currentVersion || '3.1.0'}`}
             language="bash"
             copyable={true}
           />
 
           <CodeExample
             title="Yarn"
-            code={`yarn add sva-icons@^${currentVersion || '3.0.0'}`}
+            code={`yarn add sva-icons@^${currentVersion || '3.1.0'}`}
             language="bash"
             copyable={true}
           />
 
           <CodeExample
             title="PNPM"
-            code={`pnpm add sva-icons@^${currentVersion || '3.0.0'}`}
+            code={`pnpm add sva-icons@^${currentVersion || '3.1.0'}`}
             language="bash"
             copyable={true}
           />
@@ -44,7 +44,7 @@ function QuickStartPage({ currentVersion }) {
         <CodeExample
           title="Function-based Icons"
           code={`<!-- Include the library -->
-<script src="https://unpkg.com/sva-icons@${currentVersion || '3.0.0'}/dist/icons/index.js"></script>
+<script src="https://unpkg.com/sva-icons@${currentVersion || '3.1.0'}/dist/icons/index.js"></script>
 
 <!-- Use in your HTML -->
 <script>
@@ -66,14 +66,14 @@ function QuickStartPage({ currentVersion }) {
 <script type="importmap">
 {
   "imports": {
-    "sva-icons/class-based": "./node_modules/sva-icons/dist/class-based/esm/index.js"
+    "sva-icons/class-based/auto-register": "./node_modules/sva-icons/dist/class-based/esm/auto-register.js"
   }
 }
 </script>
 
 <!-- 2. Initialize auto-registration -->
 <script type="module">
-  import { initializeClassBasedIcons } from 'sva-icons/class-based';
+  import { initializeClassBasedIcons } from 'sva-icons/class-based/auto-register';
   
   // Scans DOM and auto-registers icons
   await initializeClassBasedIcons({
@@ -93,7 +93,7 @@ function QuickStartPage({ currentVersion }) {
         <CodeExample
           title="Bundle Registration"
           code={`// Register predefined bundles of icons
-import { initializeClassBasedIcons } from 'sva-icons/class-based';
+import { initializeClassBasedIcons } from 'sva-icons/class-based/auto-register';
 
 await initializeClassBasedIcons({
   registerBundles: ['ui-essentials', 'automotive-core'],

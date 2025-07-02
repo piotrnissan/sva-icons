@@ -51,7 +51,7 @@ function DocumentationContainer({ icons, currentVersion }) {
           </h2>
           <div className="documentation-content__meta">
             <span className="documentation-content__version">
-              v{currentVersion || '3.0.0'}
+              v{currentVersion || '3.1.0'}
             </span>
             <span className="documentation-content__icons-count">
               {icons?.length || 0} icons available

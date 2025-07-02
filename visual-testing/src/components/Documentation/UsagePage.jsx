@@ -447,7 +447,7 @@ export class IconService {
             <CodeExample
               title="Standard Web Components"
               code={`<!-- Include the web component script -->
-<script src="https://unpkg.com/sva-icons@3.0/dist/web-components/sva-icon.umd.js"></script>
+<script src="https://unpkg.com/sva-icons@3.1/dist/web-components/sva-icon.umd.js"></script>
 
 <!-- Use as HTML elements -->
 <sva-icon name="car" size="24" color="blue" aria-label="Car"></sva-icon>

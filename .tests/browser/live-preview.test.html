@@ -48,6 +48,7 @@
         "imports": {
             "sva-icons": "../../dist/icons/esm/index.js",
             "sva-icons/class-based": "../../dist/class-based/esm/index.js",
+            "sva-icons/class-based/auto-register": "../../dist/class-based/esm/auto-register.js",
             "sva-icons/react": "../../dist/react/esm/index.js",
             "sva-icons/icons/plus": "../../dist/icons/esm/plus.js",
             "sva-icons/icons/car": "../../dist/icons/esm/car.js",
@@ -235,7 +236,7 @@
             console.log('🚀 Testing auto-registration of class-based icons...');
             
             // Import the initializeClassBasedIcons function
-            const { initializeClassBasedIcons } = await import('sva-icons/class-based');
+            const { initializeClassBasedIcons } = await import('sva-icons/class-based/auto-register');
             
             // Test auto-registration with specific icons
             const result = await initializeClassBasedIcons({
@@ -248,9 +249,9 @@
             console.log('Auto-registration result:', result);
             
             if (result.success) {
-                const registeredCount = result.autoRegisterResult?.registered?.length || 0;
-                const scannedCount = result.autoRegisterResult?.scanned?.length || 0;
-                const injectedCount = result.autoRegisterResult?.stats?.injected || 0;
+                const registeredCount = result.registered?.length || 0;
+                const scannedCount = result.scanned?.length || 0;
+                const injectedCount = result.stats?.injected || 0;
                 
                 document.getElementById('auto-reg-status').className = 'status success';
                 document.getElementById('auto-reg-status').textContent = `✅ Auto-registration successful! Registered: ${registeredCount}, Found in DOM: ${scannedCount}, Injected: ${injectedCount}`;
@@ -258,8 +259,8 @@
                 document.getElementById('auto-reg-results').innerHTML = `
                     <div class="icon-display">
                         <strong>Auto-Registration Results:</strong><br>
-                        Registered Icons: ${result.autoRegisterResult?.registered?.join(', ') || 'none'}<br>
-                        Found in DOM: ${result.autoRegisterResult?.scanned?.join(', ') || 'none'}<br>
+                        Registered Icons: ${result.registered?.join(', ') || 'none'}<br>
+                        Found in DOM: ${result.scanned?.join(', ') || 'none'}<br>
                         Injected: ${injectedCount}<br>
                         Errors: ${result.errors?.length || 0}<br>
                         <em>Class-based icons should now work with CSS classes!</em>

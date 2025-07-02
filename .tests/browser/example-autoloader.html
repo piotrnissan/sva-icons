@@ -10,7 +10,8 @@
     {
         "imports": {
             "sva-icons": "../../dist/icons/esm/index.js",
-            "sva-icons/class-based": "../../dist/class-based/esm/index.js"
+            "sva-icons/class-based": "../../dist/class-based/esm/index.js",
+            "sva-icons/class-based/auto-register": "../../dist/class-based/esm/auto-register.js"
         }
     }
     </script>
@@ -55,8 +56,8 @@
     <script type="module">
         console.log('🚀 Starting SVA Icons auto-registration...');
         
-        // Import the new auto-registration system
-        const { initializeClassBasedIcons } = await import('sva-icons/class-based');
+        // Import the auto-registration system
+        const { initializeClassBasedIcons } = await import('sva-icons/class-based/auto-register');
         
         // Test bundle registration instead of DOM scanning
         const result = await initializeClassBasedIcons({
@@ -68,10 +69,10 @@
         
         if (result.success) {
             console.log('✅ Bundle registration successful!');
-            console.log('Registered icons:', result.autoRegisterResult?.registered);
-            console.log('Found in DOM:', result.autoRegisterResult?.scanned);
-            console.log('From bundles:', result.autoRegisterResult?.stats?.fromBundles);
-            console.log('From DOM scan:', result.autoRegisterResult?.stats?.fromDOMScan);
+            console.log('Registered icons:', result.registered);
+            console.log('Found in DOM:', result.scanned);
+            console.log('From bundles:', result.stats?.fromBundles);
+            console.log('From DOM scan:', result.stats?.fromDOMScan);
         } else {
             console.error('❌ Bundle registration failed:', result.errors);
         }

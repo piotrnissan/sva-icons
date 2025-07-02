@@ -82,7 +82,7 @@ function OverviewPage({ icons, currentVersion }) {
         <CodeExample
           title="Auto-Registration (New in v3.1+)"
           code={`// 🚀 NEW: Auto-registration with bundles
-import { initializeClassBasedIcons } from 'sva-icons/class-based';
+import { initializeClassBasedIcons } from 'sva-icons/class-based/auto-register';
 
 // Register icon bundles
 await initializeClassBasedIcons({

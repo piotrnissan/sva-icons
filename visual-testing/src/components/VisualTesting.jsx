@@ -229,7 +229,7 @@ function VisualTesting() {
           {activeSection === 'documentation' && (
             <DocumentationContainer 
               icons={icons}
-              currentVersion="3.0.0"
+              currentVersion="3.1.0"
             />
           )}
 
