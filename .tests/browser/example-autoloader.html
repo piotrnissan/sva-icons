@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVA Icon Autoloader Example</title>
+    
+    <!-- Import map for clean imports -->
+    <script type="importmap">
+    {
+        "imports": {
+            "sva-icons": "../../dist/icons/esm/index.js",
+            "sva-icons/class-based": "../../dist/class-based/esm/index.js"
+        }
+    }
+    </script>
+    
+    <style>
+        body { font-family: sans-serif; padding: 2rem; }
+        .icon-example { display: flex; align-items: center; font-size: 1.5rem; margin-bottom: 1rem; }
+        .sva-icon { margin-right: 1rem; color: #333; }
+        /* Fixed CSS selector with proper commas */
+        .sva-icon-plus, .sva-icon-car, .sva-icon-settings, .sva-icon-battery, .sva-icon-search { width: 48px; height: 48px; }
+    </style>
+</head>
+<body>
+    <h1>SVA Icons - Autoloader</h1>
+    <p>The icons below should be automatically replaced by the script.</p>
+
+    <div class="icon-example">
+        <i class="sva-icon-car"></i>
+        <span>Car Icon (from automotive-core bundle)</span>
+    </div>
+
+    <div class="icon-example">
+        <i class="sva-icon-plus"></i>
+        <span>Plus Icon (from ui-essentials bundle)</span>
+    </div>
+
+    <div class="icon-example">
+        <i class="sva-icon-settings"></i>
+        <span>Settings Icon (from ui-essentials bundle)</span>
+    </div>
+
+    <div class="icon-example">
+        <i class="sva-icon-battery"></i>
+        <span>Battery Icon (from automotive-core bundle)</span>
+    </div>
+
+    <div class="icon-example">
+        <i class="sva-icon-search"></i>
+        <span>Search Icon (from ui-essentials bundle)</span>
+    </div>
+
+    <script type="module">
+        console.log('🚀 Starting SVA Icons auto-registration...');
+        
+        // Import the new auto-registration system
+        const { initializeClassBasedIcons } = await import('sva-icons/class-based');
+        
+        // Test bundle registration instead of DOM scanning
+        const result = await initializeClassBasedIcons({
+            registerBundles: ['ui-essentials', 'automotive-core'], // 🧪 Test bundle registration
+            prefix: 'sva-icon-',                                   // ✅ CSS class prefix
+            scanDOM: true,                                         // ✅ Also scan for any additional icons
+            enableObserver: true                                   // ✅ Watch for dynamic content
+        });
+        
+        if (result.success) {
+            console.log('✅ Bundle registration successful!');
+            console.log('Registered icons:', result.autoRegisterResult?.registered);
+            console.log('Found in DOM:', result.autoRegisterResult?.scanned);
+            console.log('From bundles:', result.autoRegisterResult?.stats?.fromBundles);
+            console.log('From DOM scan:', result.autoRegisterResult?.stats?.fromDOMScan);
+        } else {
+            console.error('❌ Bundle registration failed:', result.errors);
+        }
+    </script>
+
+</body>
+</html>

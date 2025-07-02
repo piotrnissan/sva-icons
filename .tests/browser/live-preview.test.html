@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVA Icons - Live Preview Test</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .test-section {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .icon-display {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 4px;
+        }
+        .status {
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .status.success { background: #d4edda; color: #155724; }
+        .status.error { background: #f8d7da; color: #721c24; }
+        .status.warning { background: #fff3cd; color: #856404; }
+    </style>
+</head>
+<body>
+    <h1>🎯 SVA Icons v3.1 - Live Preview Test</h1>
+    <p>This page tests the new import map functionality in VS Code Live Preview environment.</p>
+    
+    <!-- Inline import map for Live Preview compatibility (external files don't work) -->
+    <script type="importmap">
+    {
+        "imports": {
+            "sva-icons": "../../dist/icons/esm/index.js",
+            "sva-icons/class-based": "../../dist/class-based/esm/index.js",
+            "sva-icons/react": "../../dist/react/esm/index.js",
+            "sva-icons/icons/plus": "../../dist/icons/esm/plus.js",
+            "sva-icons/icons/car": "../../dist/icons/esm/car.js",
+            "sva-icons/icons/minus": "../../dist/icons/esm/minus.js",
+            "sva-icons/icons/settings": "../../dist/icons/esm/settings.js"
+        }
+    }
+    </script>
+
+    <div class="test-section">
+        <h2>📦 Import Map Test</h2>
+        <div id="import-status" class="status warning">Testing clean imports...</div>
+        <div id="import-results"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>🎨 Visual Consistency Test</h2>
+        <div id="stroke-status" class="status warning">Testing stroke width...</div>
+        <div id="stroke-results"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>🔧 Class-Based Test</h2>
+        <div id="class-status" class="status warning">Testing class-based registration...</div>
+        <div id="class-results"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>🎯 Individual Icon Import Test</h2>
+        <div id="individual-status" class="status warning">Testing tree-shakable imports...</div>
+        <div id="individual-results"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>🚀 Auto-Registration Test (NEW v3.1+)</h2>
+        <div id="auto-reg-status" class="status warning">Testing auto-registration...</div>
+        <div id="auto-reg-results"></div>
+        
+        <!-- Test HTML with class-based icons -->
+        <div style="margin-top: 15px; padding: 15px; background: #f8f9fa; border-radius: 4px;">
+            <h4>Class-based icons that should auto-register:</h4>
+            <div class="sva-icon-plus" style="display: inline-block; margin: 5px; width: 24px; height: 24px; background: #ddd;"></div>
+            <div class="sva-icon-minus" style="display: inline-block; margin: 5px; width: 24px; height: 24px; background: #ddd;"></div>
+            <div class="sva-icon-settings" style="display: inline-block; margin: 5px; width: 24px; height: 24px; background: #ddd;"></div>
+            <div class="sva-icon-car" style="display: inline-block; margin: 5px; width: 24px; height: 24px; background: #ddd;"></div>
+            <div class="sva-icon-battery" style="display: inline-block; margin: 5px; width: 24px; height: 24px; background: #ddd;"></div>
+        </div>
+    </div>
+
+    <script type="module">
+        console.log('🚀 Starting SVA Icons v3.1 tests...');
+
+        // Test 1: Clean import functionality
+        try {
+            console.log('📦 Testing clean imports...');
+            
+            // This should work with import maps
+            const { Plus, Minus, Settings } = await import('sva-icons');
+            
+            document.getElementById('import-status').className = 'status success';
+            document.getElementById('import-status').textContent = '✅ Clean imports working!';
+            
+            // Test stroke width (should be 0 by default in v3.1)
+            console.log('🎨 Testing stroke width...');
+            const plusIcon = Plus({ size: 24 });
+            const minusIcon = Minus({ size: 24 });
+            
+            document.getElementById('import-results').innerHTML = `
+                <div class="icon-display">
+                    <strong>Plus Icon:</strong><br>
+                    ${plusIcon}
+                </div>
+                <div class="icon-display">
+                    <strong>Minus Icon:</strong><br>
+                    ${minusIcon}
+                </div>
+            `;
+            
+            // Check if stroke-width is 0 (or not present)
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = plusIcon;
+            const svg = tempDiv.querySelector('svg');
+            const strokeWidth = svg.getAttribute('stroke-width') || svg.style.strokeWidth;
+            
+            if (!strokeWidth || strokeWidth === '0') {
+                document.getElementById('stroke-status').className = 'status success';
+                document.getElementById('stroke-status').textContent = '✅ No stroke by default (correct)';
+            } else {
+                document.getElementById('stroke-status').className = 'status error';
+                document.getElementById('stroke-status').textContent = `❌ Stroke width: ${strokeWidth} (should be 0)`;
+            }
+            
+            document.getElementById('stroke-results').innerHTML = `
+                <div class="icon-display">
+                    <strong>Stroke Analysis:</strong><br>
+                    Stroke Width: ${strokeWidth || 'none'}<br>
+                    Expected: 0 or none
+                </div>
+            `;
+            
+        } catch (error) {
+            console.error('❌ Import test failed:', error);
+            document.getElementById('import-status').className = 'status error';
+            document.getElementById('import-status').textContent = `❌ Import failed: ${error.message}`;
+            
+            document.getElementById('import-results').innerHTML = `
+                <div class="icon-display">
+                    <strong>Error Details:</strong><br>
+                    ${error.message}<br>
+                    <em>This means import maps are not working correctly.</em>
+                </div>
+            `;
+        }
+
+        // Test 2: Class-based functionality
+        try {
+            console.log('🔧 Testing class-based imports...');
+            
+            const classBasedModule = await import('sva-icons/class-based');
+            
+            document.getElementById('class-status').className = 'status success';
+            document.getElementById('class-status').textContent = '✅ Class-based module loaded!';
+            
+            document.getElementById('class-results').innerHTML = `
+                <div class="icon-display">
+                    <strong>Class-Based Module:</strong><br>
+                    Loaded successfully<br>
+                    Available methods: ${Object.keys(classBasedModule).join(', ')}
+                </div>
+            `;
+            
+        } catch (error) {
+            console.error('❌ Class-based test failed:', error);
+            document.getElementById('class-status').className = 'status error';
+            document.getElementById('class-status').textContent = `❌ Class-based failed: ${error.message}`;
+            
+            document.getElementById('class-results').innerHTML = `
+                <div class="icon-display">
+                    <strong>Error Details:</strong><br>
+                    ${error.message}
+                </div>
+            `;
+        }
+        
+        // Test 3: Individual icon imports (tree-shaking)
+        try {
+            console.log('🎯 Testing individual icon imports...');
+            
+            // These should work with enhanced import maps
+            const { Plus: IndividualPlus } = await import('sva-icons/icons/plus');
+            const { Car: IndividualCar } = await import('sva-icons/icons/car');
+            
+            document.getElementById('individual-status').className = 'status success';
+            document.getElementById('individual-status').textContent = '✅ Individual imports working!';
+            
+            document.getElementById('individual-results').innerHTML = `
+                <div class="icon-display">
+                    <strong>Individual Plus Icon:</strong><br>
+                    ${IndividualPlus({ size: 24 })}
+                    <br><em>Imported from: sva-icons/icons/plus</em>
+                </div>
+                <div class="icon-display">
+                    <strong>Individual Car Icon:</strong><br>
+                    ${IndividualCar({ size: 24 })}
+                    <br><em>Imported from: sva-icons/icons/car</em>
+                </div>
+            `;
+            
+        } catch (error) {
+            console.error('❌ Individual import test failed:', error);
+            document.getElementById('individual-status').className = 'status error';
+            document.getElementById('individual-status').textContent = `❌ Individual imports failed: ${error.message}`;
+            
+            document.getElementById('individual-results').innerHTML = `
+                <div class="icon-display">
+                    <strong>Error Details:</strong><br>
+                    ${error.message}<br>
+                    <em>This means individual icon import maps are not working.</em>
+                </div>
+            `;
+        }
+
+        // Test 4: Auto-registration functionality (new in v3.1+)
+        try {
+            console.log('🚀 Testing auto-registration of class-based icons...');
+            
+            // Import the initializeClassBasedIcons function
+            const { initializeClassBasedIcons } = await import('sva-icons/class-based');
+            
+            // Test auto-registration with specific icons
+            const result = await initializeClassBasedIcons({
+                autoRegister: ['plus', 'minus', 'settings', 'car', 'battery'],
+                prefix: 'sva-icon-',
+                scanDOM: true,
+                enableObserver: true
+            });
+            
+            console.log('Auto-registration result:', result);
+            
+            if (result.success) {
+                const registeredCount = result.autoRegisterResult?.registered?.length || 0;
+                const scannedCount = result.autoRegisterResult?.scanned?.length || 0;
+                const injectedCount = result.autoRegisterResult?.stats?.injected || 0;
+                
+                document.getElementById('auto-reg-status').className = 'status success';
+                document.getElementById('auto-reg-status').textContent = `✅ Auto-registration successful! Registered: ${registeredCount}, Found in DOM: ${scannedCount}, Injected: ${injectedCount}`;
+                
+                document.getElementById('auto-reg-results').innerHTML = `
+                    <div class="icon-display">
+                        <strong>Auto-Registration Results:</strong><br>
+                        Registered Icons: ${result.autoRegisterResult?.registered?.join(', ') || 'none'}<br>
+                        Found in DOM: ${result.autoRegisterResult?.scanned?.join(', ') || 'none'}<br>
+                        Injected: ${injectedCount}<br>
+                        Errors: ${result.errors?.length || 0}<br>
+                        <em>Class-based icons should now work with CSS classes!</em>
+                    </div>
+                `;
+                
+                // Check if icons were actually injected
+                setTimeout(() => {
+                    const iconElements = document.querySelectorAll('.sva-icon-plus, .sva-icon-minus, .sva-icon-settings, .sva-icon-car, .sva-icon-battery');
+                    let actuallyInjected = 0;
+                    iconElements.forEach(el => {
+                        if (el.querySelector('svg')) {
+                            actuallyInjected++;
+                        }
+                    });
+                    
+                    if (actuallyInjected > 0) {
+                        document.getElementById('auto-reg-status').textContent += ` - ${actuallyInjected} icons visible in DOM!`;
+                    } else {
+                        document.getElementById('auto-reg-status').className = 'status warning';
+                        document.getElementById('auto-reg-status').textContent += ` - Warning: No SVG content found in icon elements`;
+                    }
+                }, 100);
+                
+            } else {
+                document.getElementById('auto-reg-status').className = 'status error';
+                document.getElementById('auto-reg-status').textContent = `❌ Auto-registration failed: ${result.errors.join(', ')}`;
+            }
+            
+        } catch (error) {
+            console.error('❌ Auto-registration test failed:', error);
+            document.getElementById('auto-reg-status').className = 'status error';
+            document.getElementById('auto-reg-status').textContent = `❌ Auto-registration failed: ${error.message}`;
+            
+            document.getElementById('auto-reg-results').innerHTML = `
+                <div class="icon-display">
+                    <strong>Error Details:</strong><br>
+                    ${error.message}<br>
+                    <em>Make sure the class-based auto-registration system is working.</em>
+                </div>
+            `;
+        }
+
+        console.log('✅ All tests completed');
+    </script>
+</body>
+</html>

@@ -57,7 +57,7 @@ function generateIconFunction(name, svgContent, format = 'esm') {
  * @param {number|string} props.size - Icon size (default: 24)
  * @param {string} props.color - Icon color (default: 'currentColor')
  * @param {string} props.className - CSS classes
- * @param {number} props.strokeWidth - Stroke width (default: 1.5)
+ * @param {number} props.strokeWidth - Stroke width (default: 0)
  * @param {string} props.title - Accessibility title
  * @param {boolean} props.focusable - Whether icon is focusable (default: false)
  * @returns {string} SVG string
@@ -67,7 +67,7 @@ export default function ${functionName}(props = {}) {
     size = 24, 
     color = 'currentColor', 
     className = '',
-    strokeWidth = 1.5,
+    strokeWidth = 0,
     title,
     focusable = false,
     'aria-hidden': ariaHidden = true,
@@ -109,7 +109,7 @@ export { ${functionName} };
  * @param {number|string} props.size - Icon size (default: 24)
  * @param {string} props.color - Icon color (default: 'currentColor')
  * @param {string} props.className - CSS classes
- * @param {number} props.strokeWidth - Stroke width (default: 1.5)
+ * @param {number} props.strokeWidth - Stroke width (default: 0)
  * @param {string} props.title - Accessibility title
  * @param {boolean} props.focusable - Whether icon is focusable (default: false)
  * @returns {string} SVG string
@@ -119,7 +119,7 @@ function ${functionName}(props = {}) {
     size = 24, 
     color = 'currentColor', 
     className = '',
-    strokeWidth = 1.5,
+    strokeWidth = 0,
     title,
     focusable = false,
     'aria-hidden': ariaHidden = true,

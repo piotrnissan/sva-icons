@@ -57,15 +57,71 @@ function QuickStartPage({ currentVersion }) {
       </div>
 
       <div className="documentation-section">
-        <h3>Basic Usage</h3>
-        <p>Import and use icons in your JavaScript/TypeScript projects:</p>
+        <h3>Auto-Registration (New in v3.1+)</h3>
+        <p>The easiest way to use SVA Icons - automatic registration for class-based icons:</p>
+
+        <CodeExample
+          title="Zero Configuration Setup"
+          code={`<!-- 1. Add import map for clean imports -->
+<script type="importmap">
+{
+  "imports": {
+    "sva-icons/class-based": "./node_modules/sva-icons/dist/class-based/esm/index.js"
+  }
+}
+</script>
+
+<!-- 2. Initialize auto-registration -->
+<script type="module">
+  import { initializeClassBasedIcons } from 'sva-icons/class-based';
+  
+  // Scans DOM and auto-registers icons
+  await initializeClassBasedIcons({
+    scanDOM: true,
+    prefix: 'sva-icon-'
+  });
+</script>
+
+<!-- 3. Use icons anywhere in HTML -->
+<div class="sva-icon-plus"></div>
+<div class="sva-icon-car"></div>
+<div class="sva-icon-settings"></div>`}
+          language="html"
+          copyable={true}
+        />
+
+        <CodeExample
+          title="Bundle Registration"
+          code={`// Register predefined bundles of icons
+import { initializeClassBasedIcons } from 'sva-icons/class-based';
+
+await initializeClassBasedIcons({
+  registerBundles: ['ui-essentials', 'automotive-core'],
+  prefix: 'sva-icon-',
+  enableObserver: true  // Watch for dynamic content
+});
+
+// Available bundles:
+// - ui-essentials: plus, minus, settings, search, filter, etc.
+// - automotive-core: car, battery, charging, alert, speed, etc.
+// - navigation: arrows, directions, map-view, etc.
+// - communication: phone, email, chat, message, etc.
+// - media: play, pause, volume, camera, video, etc.`}
+          language="javascript"
+          copyable={true}
+        />
+      </div>
+
+      <div className="documentation-section">
+        <h3>Function-Based Icons</h3>
+        <p>For programmatic usage, import individual icon functions:</p>
 
         <CodeExample
           title="ES6 Imports"
           code={`import { Plus, Minus, Car, Settings } from 'sva-icons';
 
-// Basic usage - returns SVG string
-const iconHtml = Plus();
+// Basic usage - returns SVG string (strokeWidth: 0 by default in v3.1+)
+const iconHtml = Plus({ size: 24 });
 
 // With configuration
 const customIcon = Car({

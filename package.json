@@ -1,7 +1,7 @@
 {
   "name": "sva-icons",
-  "version": "3.0.1",
-  "description": "SVA Icons v3.0 - Function-based icon library with configurable props and full framework integration support",
+  "version": "3.1.0",
+  "description": "SVA Icons v3.1 - Function-based icons with auto-registration, smart bundles, and enhanced browser support for SVA Framework integration",
   "type": "module",
   "main": "./dist/icons/index.js",
   "module": "./dist/icons/esm/index.js",
@@ -131,7 +131,13 @@
   "engines": {
     "node": ">=16.0.0"
   },
+  "bin": {
+    "sva-icons": "./cli/index.js"
+  },
   "scripts": {
+    "sva-icons:import-map": "node cli/index.js generate-import-map",
+    "sva-icons:validate": "node cli/index.js validate",
+    "sva-icons:serve": "node cli/index.js serve",
     "build:web": "node scripts/build-web-component.js && rollup -c scripts/rollup.web.config.js",
     "build:web-tree-shakable": "copy tree-shakable-web-components.js dist\\web-components\\",
     "build:icons": "node scripts/build-icons.js && node scripts/build-function-icons.js && node scripts/build-index-files.js && node scripts/build-individual-types.js && node scripts/build-cjs-package-json.js",
@@ -142,7 +148,8 @@
     "build:class-based": "npm run build:icons-browser && node scripts/build-class-based.js",
     "build:css": "node scripts/build-css.js",
     "build:typescript": "node scripts/build-typescript-definitions.js",
-    "build:all": "npm run build:icons && npm run build:sprite && npm run build:react && npm run build:web && npm run build:web-tree-shakable && npm run build:create-icons && npm run build:class-based && npm run build:css && npm run build:typescript",
+    "build:import-maps": "node cli/index.js generate-import-map --environment browser && node cli/index.js generate-import-map --environment vite --output ./import-map.vite.json && node cli/index.js generate-import-map --environment webpack --output ./import-map.webpack.json",
+    "build:all": "npm run build:icons && npm run build:sprite && npm run build:react && npm run build:web && npm run build:web-tree-shakable && npm run build:create-icons && npm run build:class-based && npm run build:css && npm run build:typescript && npm run build:import-maps",
     "update-icons": "node scripts/update-icons.js",
     "clean": "node scripts/clean-dist.js",
     "validate-icons": "node scripts/validate-icons.js",

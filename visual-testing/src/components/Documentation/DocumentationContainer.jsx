@@ -3,6 +3,7 @@ import DocumentationSidebar from './DocumentationSidebar';
 import OverviewPage from './OverviewPage';
 import QuickStartPage from './QuickStartPage';
 import UsagePage from './UsagePage';
+import RoadmapPage from './RoadmapPage';
 
 /**
  * Documentation Container Component
@@ -24,6 +25,10 @@ function DocumentationContainer({ icons, currentVersion }) {
     usage: {
       title: 'Usage',
       component: UsagePage
+    },
+    roadmap: {
+      title: 'Roadmap',
+      component: RoadmapPage
     }
   };
 

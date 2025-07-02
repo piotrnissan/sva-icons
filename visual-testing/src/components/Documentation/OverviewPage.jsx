@@ -44,10 +44,13 @@ function OverviewPage({ icons, currentVersion }) {
         <h3>What's New in v{currentVersion}</h3>
         <div className="documentation-new-features">
           <ul>
-            <li><strong>Enhanced Performance:</strong> Improved icon loading and rendering speed</li>
-            <li><strong>Expanded Icon Set:</strong> {iconCount} automotive and UI icons available</li>
-            <li><strong>Better Developer Experience:</strong> Enhanced TypeScript support and documentation</li>
-            <li><strong>Smart Bundles:</strong> Optimized icon bundles for specific use cases</li>
+            <li><strong>🚀 Auto-Registration System:</strong> Smart class-based icon registration with DOM scanning</li>
+            <li><strong>📦 Bundle System:</strong> Predefined icon bundles (ui-essentials, automotive-core, etc.)</li>
+            <li><strong>🎯 Zero Configuration:</strong> Automatic icon discovery from HTML classes</li>
+            <li><strong>🔧 Import Maps:</strong> Clean imports for browser development and VS Code Live Preview</li>
+            <li><strong>✨ Visual Consistency:</strong> Default strokeWidth: 0 for SVA design system alignment</li>
+            <li><strong>⚡ Dynamic Content:</strong> Mutation observer for SPA and dynamic applications</li>
+            <li><strong>🌐 Browser-First:</strong> Enhanced support for unbundled development</li>
           </ul>
         </div>
       </div>
@@ -77,11 +80,34 @@ function OverviewPage({ icons, currentVersion }) {
       <div className="documentation-section">
         <h3>Quick Example</h3>
         <CodeExample
-          title="Basic Usage"
+          title="Auto-Registration (New in v3.1+)"
+          code={`// 🚀 NEW: Auto-registration with bundles
+import { initializeClassBasedIcons } from 'sva-icons/class-based';
+
+// Register icon bundles
+await initializeClassBasedIcons({
+  registerBundles: ['ui-essentials', 'automotive-core'],
+  prefix: 'sva-icon-'
+});
+
+// Or use DOM scanning (zero config!)
+await initializeClassBasedIcons({
+  scanDOM: true,  // Finds class="sva-icon-*" automatically
+  prefix: 'sva-icon-'
+});
+
+// Then use in HTML - icons auto-inject!
+// <div class="sva-icon-plus"></div>
+// <div class="sva-icon-car"></div>`}
+          language="javascript"
+        />
+        
+        <CodeExample
+          title="Function-Based Icons"
           code={`import { Plus, Car, Alert } from 'sva-icons';
 
-// Basic usage
-const iconHtml = Plus();
+// Basic usage (strokeWidth: 0 by default in v3.1+)
+const iconHtml = Plus({ size: 24 });
 
 // With configuration
 const customIcon = Car({
