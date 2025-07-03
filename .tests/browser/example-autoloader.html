@@ -29,27 +29,27 @@
     <p>The icons below should be automatically replaced by the script.</p>
 
     <div class="icon-example">
-        <i class="sva-icon-car"></i>
+        <i data-sva-icon="car"></i>
         <span>Car Icon (from automotive-core bundle)</span>
     </div>
 
     <div class="icon-example">
-        <i class="sva-icon-plus"></i>
+        <i data-sva-icon="plus"></i>
         <span>Plus Icon (from ui-essentials bundle)</span>
     </div>
 
     <div class="icon-example">
-        <i class="sva-icon-settings"></i>
+        <i data-sva-icon="settings"></i>
         <span>Settings Icon (from ui-essentials bundle)</span>
     </div>
 
     <div class="icon-example">
-        <i class="sva-icon-battery"></i>
+        <i data-sva-icon="battery"></i>
         <span>Battery Icon (from automotive-core bundle)</span>
     </div>
 
     <div class="icon-example">
-        <i class="sva-icon-search"></i>
+        <i data-sva-icon="search"></i>
         <span>Search Icon (from ui-essentials bundle)</span>
     </div>
 
@@ -62,7 +62,6 @@
         // Test bundle registration instead of DOM scanning
         const result = await initializeClassBasedIcons({
             registerBundles: ['ui-essentials', 'automotive-core'], // 🧪 Test bundle registration
-            prefix: 'sva-icon-',                                   // ✅ CSS class prefix
             scanDOM: true,                                         // ✅ Also scan for any additional icons
             enableObserver: true                                   // ✅ Watch for dynamic content
         });

@@ -15,7 +15,7 @@
 /**
  * Configuration for the class scanner
  * @typedef {Object} ScannerConfig
- * @property {string} prefix - Class prefix to scan for (default: 'sva-icon-')
+ * @property {string} attributeName - Data attribute name to scan for (default: 'data-sva-icon')
  * @property {Element} scope - Root element to scan within (default: document)
  * @property {boolean} includeInvisible - Include hidden elements (default: true)
  * @property {number} batchSize - Number of elements to process in each batch (default: 100)
@@ -27,7 +27,7 @@
  * @property {Element} element - The DOM element
  * @property {string} iconName - Extracted icon name (e.g., 'plus', 'arrow-right')
  * @property {string[]} modifiers - Modifier classes (e.g., ['large', 'primary'])
- * @property {boolean} isValid - Whether the icon class is valid
+ * @property {boolean} isValid - Whether the icon name is valid
  */
 
 /**
@@ -35,8 +35,8 @@
  * @typedef {Object} ScanResult
  * @property {IconElement[]} icons - Array of found icon elements
  * @property {number} totalElements - Total elements scanned
- * @property {number} matchedElements - Number of elements with icon classes
- * @property {number} validElements - Number of elements with valid icon classes
+ * @property {number} matchedElements - Number of elements with data attributes
+ * @property {number} validElements - Number of elements with valid icon names
  * @property {number} scanTime - Time taken to scan in milliseconds
  * @property {string[]} errors - Array of error messages for invalid elements
  */
@@ -45,7 +45,7 @@
  * Default scanner configuration
  */
 const DEFAULT_CONFIG = {
-    prefix: 'sva-icon-',
+    attributeName: 'data-sva-icon',
     scope: typeof document !== 'undefined' ? document : null,
     includeInvisible: true,
     batchSize: 100
@@ -55,24 +55,16 @@ const DEFAULT_CONFIG = {
  * Regular expression patterns for validation
  */
 const PATTERNS = {
-    // Main icon class pattern: sva-icon-{icon-name}
-    iconClass: /^sva-icon-([a-z0-9]+(?:-[a-z0-9]+)*)$/,
-    
-    // Modifier class patterns: sva-icon--{modifier}
-    sizeModifier: /^sva-icon--(xs|s|m|l|xl)$/,
-    colorModifier: /^sva-icon--(primary|secondary|success|warning|error|inverse)$/,
-    positionModifier: /^sva-icon--(leading|trailing|center|compact)$/,
-    
     // Valid icon name pattern (kebab-case)
     validIconName: /^[a-z0-9]+(?:-[a-z0-9]+)*$/
 };
 
 /**
- * Core class scanner implementation
+ * Core data attribute scanner implementation
  */
 class IconScanner {
     /**
-     * Create a new icon scanner
+     * Create a new icon scanner for data attributes
      * @param {ScannerConfig} config - Scanner configuration
      */
     constructor(config = {}) {
@@ -159,17 +151,17 @@ class IconScanner {
     }
 
     /**
-     * Check if an element has valid icon classes
+     * Check if an element has valid data attribute
      * @param {Element} element - Element to check
-     * @returns {boolean} True if element has valid icon classes
+     * @returns {boolean} True if element has valid data attribute
      */
-    hasValidIconClass(element) {
-        if (!element || !element.classList) {
+    hasValidDataAttribute(element) {
+        if (!element) {
             return false;
         }
 
-        const classes = Array.from(element.classList);
-        return classes.some(className => this._isIconClass(className));
+        const iconName = element.getAttribute(this.config.attributeName);
+        return iconName && this._isValidIconName(iconName.trim());
     }
 
     /**
@@ -199,13 +191,13 @@ class IconScanner {
     // Private methods
 
     /**
-     * Build optimized CSS selector for finding icon elements
+     * Build optimized CSS selector for finding data attribute elements
      * @private
      * @returns {string} CSS selector
      */
     _buildOptimizedSelector() {
-        // Use attribute selector for better performance than class matching
-        return `[class*="${this.config.prefix}"]`;
+        // Use data attribute selector for efficient element matching
+        return `[${this.config.attributeName}]`;
     }
 
     /**
@@ -261,7 +253,7 @@ class IconScanner {
     }
 
     /**
-     * Analyze a single element for icon information
+     * Analyze a single element for icon information from data attributes
      * @private
      * @param {Element} element - Element to analyze
      * @returns {IconElement} Icon element information
@@ -274,53 +266,30 @@ class IconScanner {
             isValid: false
         };
 
-        if (!element || !element.classList) {
+        if (!element) {
             return iconElement;
         }
 
-        const classes = Array.from(element.classList);
+        // Extract icon name from data attribute
+        const iconName = element.getAttribute(this.config.attributeName);
         
-        // Find the main icon class
-        for (const className of classes) {
-            const iconMatch = className.match(PATTERNS.iconClass);
-            if (iconMatch) {
-                iconElement.iconName = iconMatch[1];
-                iconElement.isValid = this._isValidIconName(iconElement.iconName);
-                break;
-            }
+        if (iconName) {
+            iconElement.iconName = iconName.trim();
+            iconElement.isValid = this._isValidIconName(iconElement.iconName);
         }
 
-        // Find modifier classes
-        for (const className of classes) {
-            if (this._isModifierClass(className)) {
-                const modifier = className.replace(/^sva-icon--/, '');
-                iconElement.modifiers.push(modifier);
+        // Extract size modifiers from CSS classes for theming
+        if (element.classList) {
+            const classes = Array.from(element.classList);
+            for (const className of classes) {
+                if (className.match(/^sva-icon--(xs|s|m|l|xl)$/)) {
+                    const modifier = className.replace(/^sva-icon--/, '');
+                    iconElement.modifiers.push(modifier);
+                }
             }
         }
 
         return iconElement;
-    }
-
-    /**
-     * Check if a class name is an icon class
-     * @private
-     * @param {string} className - Class name to check
-     * @returns {boolean} True if it's an icon class
-     */
-    _isIconClass(className) {
-        return PATTERNS.iconClass.test(className);
-    }
-
-    /**
-     * Check if a class name is a modifier class
-     * @private
-     * @param {string} className - Class name to check
-     * @returns {boolean} True if it's a modifier class
-     */
-    _isModifierClass(className) {
-        return PATTERNS.sizeModifier.test(className) ||
-               PATTERNS.colorModifier.test(className) ||
-               PATTERNS.positionModifier.test(className);
     }
 
     /**
@@ -369,13 +338,14 @@ export function scanForIcons(config = {}) {
 }
 
 /**
- * Utility function to check if an element has valid icon classes
+ * Utility function to check if an element has valid data attribute
  * @param {Element} element - Element to check
- * @returns {boolean} True if element has valid icon classes
+ * @param {string} attributeName - Data attribute name (default: 'data-sva-icon')
+ * @returns {boolean} True if element has valid data attribute
  */
-export function hasIconClasses(element) {
-    const scanner = new IconScanner();
-    return scanner.hasValidIconClass(element);
+export function hasDataAttribute(element, attributeName = 'data-sva-icon') {
+    const scanner = new IconScanner({ attributeName });
+    return scanner.hasValidDataAttribute(element);
 }
 
 /**
@@ -393,6 +363,6 @@ export default {
     IconScanner,
     createScanner,
     scanForIcons,
-    hasIconClasses,
+    hasDataAttribute,
     PATTERNS
 };

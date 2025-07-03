@@ -1,12 +1,42 @@
-# React + Vite
+# SVA Icons Visual Testing v3.1.1
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Visual testing environment for SVA Icons with React + Vite. This application provides comprehensive testing and demonstration of all SVA Icons features including the new **data attribute-based injection** system.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Function-based Icons**: Test configurable icon functions with props
+- **Data Attribute Testing**: Comprehensive testing of data attribute injection (NEW in v3.1.1)
+- **React Components**: Visual testing of React icon components  
+- **Auto-Registration**: Test bundle registration and DOM scanning
+- **Performance Testing**: Large icon set rendering and performance
+- **Framework Integration**: Examples for React, Vue, Angular patterns
 
-## Expanding the ESLint configuration
+## Quick Start
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## Testing Data Attribute Injection
+
+The visual testing app includes dedicated pages for testing data attribute functionality:
+
+- **/data-attributes** - Basic data attribute injection examples
+- **/sva-framework** - SVA Framework integration patterns
+- **/performance** - Large-scale data attribute performance testing
+- **/dynamic** - Dynamic content and SPA integration testing
+
+## Development Setup
+
+This template uses:
+- **React 18** with functional components and hooks
+- **Vite** for fast development and building
+- **ESLint** for code quality
+- **SVA Icons v3.1.1** with full feature support

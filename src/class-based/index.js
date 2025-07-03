@@ -25,7 +25,7 @@ import { IconMutationObserver, initializeObserver, stopObserver, getObserver } f
 
 /**
  * @typedef {Object} ClassBasedConfig
- * @property {string} prefix - Class prefix to scan for (default: 'sva-icon-')
+ * @property {string} attributeName - Data attribute name to scan for (default: 'data-sva-icon')
  * @property {boolean} autoInit - Auto-initialize on DOMContentLoaded (default: true)
  * @property {boolean} mutationObserver - Watch for dynamic content (default: true)
  * @property {number} debounceDelay - Mutation observer debounce delay in ms (default: 50)
@@ -57,7 +57,7 @@ import { IconMutationObserver, initializeObserver, stopObserver, getObserver } f
  * Default configuration for the class-based icon system
  */
 const DEFAULT_CONFIG = {
-    prefix: 'sva-icon-',
+    attributeName: 'data-sva-icon',
     autoInit: true,
     mutationObserver: true,
     debounceDelay: 50,
@@ -187,22 +187,13 @@ async function processIcons(iconElements) {
             
             for (const iconElement of batch) {
                 try {
-                    // Resolve icon function
-                    const resolution = resolver.resolve(`${currentConfig.prefix}${iconElement.iconName}`);
-                    
-                    if (!resolution.iconFunction) {
-                        handleError(`Icon not found: ${iconElement.iconName}`, resolution.error, iconElement.element);
-                        continue;
-                    }
-                    
-                    // Inject the SVG
-                    const injectionResult = await injector.inject(
-                        iconElement.element, 
-                        iconElement.iconName,
-                        iconElement.modifierClasses || []
+                    // Use the injector's processIcon method for data attribute processing
+                    const success = await injector.processIcon(
+                        iconElement.element,
+                        currentConfig.attributeName
                     );
                     
-                    if (injectionResult.success) {
+                    if (success) {
                         injected++;
                         statistics.totalInjections++;
                         
@@ -215,7 +206,7 @@ async function processIcons(iconElements) {
                             }
                         }
                     } else {
-                        handleError(`Injection failed: ${iconElement.iconName}`, injectionResult.error, iconElement.element);
+                        handleError(`Icon injection failed: ${iconElement.iconName}`, 'Processing failed', iconElement.element);
                     }
                     
                 } catch (error) {
@@ -288,7 +279,7 @@ function setupMutationObserver() {
     
     const observerConfig = {
         scope: currentConfig.scope || document.body,
-        prefix: currentConfig.prefix,
+        attributeName: currentConfig.attributeName,
         debounceDelay: currentConfig.debounceDelay,
         enableLogging: currentConfig.enableLogging,
         onIconsDetected: (info) => {
@@ -302,9 +293,8 @@ function setupMutationObserver() {
                 info.elements.forEach((element, index) => {
                     if (index < info.processedCount) { // Only call for successfully processed icons
                         try {
-                            // Extract icon name from class
-                            const iconClass = Array.from(element.classList).find(cls => cls.startsWith(currentConfig.prefix));
-                            const iconName = iconClass ? iconClass.substring(currentConfig.prefix.length) : 'unknown';
+                            // Extract icon name from data attribute
+                            const iconName = element.getAttribute(currentConfig.attributeName) || 'unknown';
                             currentConfig.onIconInjected(element, iconName);
                         } catch (callbackError) {
                             log('warn', 'Error in onIconInjected callback:', callbackError);
@@ -331,7 +321,7 @@ function setupMutationObserver() {
 }
 
 /**
- * Initialize the class-based icon system
+ * Initialize the class-based icon system with data attribute support
  * @param {ClassBasedConfig} config - Configuration options
  * @returns {Promise<InitializationResult>} Initialization result
  */
@@ -347,11 +337,16 @@ export async function initializeClassBasedIcons(config = {}) {
             throw new Error('No valid scope provided - requires DOM environment');
         }
         
-        log('info', 'Initializing class-based icon system...', currentConfig);
+        // Validate data attribute name
+        if (!currentConfig.attributeName || typeof currentConfig.attributeName !== 'string') {
+            throw new Error('Invalid attributeName - must be a non-empty string');
+        }
+        
+        log('info', 'Initializing class-based icon system with data attributes...', currentConfig);
         
         // Create instances
         scanner = new IconScanner({
-            prefix: currentConfig.prefix,
+            attributeName: currentConfig.attributeName,
             scope: currentConfig.scope
         });
         
@@ -363,7 +358,7 @@ export async function initializeClassBasedIcons(config = {}) {
         });
         
         resolver = createResolver({
-            prefix: currentConfig.prefix,
+            attributeName: currentConfig.attributeName,
             fallbackIcon: currentConfig.fallbackIcon,
             strictMode: false,
             cacheResults: true

@@ -1,6 +1,8 @@
-# SVA Icons v3.0: Complete Usage Guide
+# SVA Icons v3.1.1: Complete Usage Guide
 
-A modern, enterprise-ready icon system designed for automotive and framework integration. Features function-based icons with configurable props, smart bundles, enhanced React components, and comprehensive framework support.
+A modern, enterprise-ready icon system designed for automotive and framework integration. Features function-based icons with configurable props, smart bundles, enhanced React components, data attribute-based injection, and comprehensive framework support.
+
+**✨ New in v3.1.1:** Data attribute-based icon injection for clean separation of styling and content. Perfect for SVA Framework integration.
 
 **✨ New in v3.0:** Enhanced version with improved performance, expanded icon set, and refined developer experience.
 
@@ -11,31 +13,148 @@ A modern, enterprise-ready icon system designed for automotive and framework int
 ### Package Managers
 
 ```sh
-npm install sva-icons@^3.0.0
+npm install sva-icons@^3.1.1
 # or
-yarn add sva-icons@^3.0.0
+yarn add sva-icons@^3.1.1
 # or
-pnpm add sva-icons@^3.0.0
+pnpm add sva-icons@^3.1.1
 ```
 
 ### CDN
 
 ```html
-<!-- Function-based icons (v3.0) -->
-<script src="https://unpkg.com/sva-icons@3.0/dist/icons/index.js"></script>
+<!-- Function-based icons (v3.1.1) -->
+<script src="https://unpkg.com/sva-icons@3.1.1/dist/icons/index.js"></script>
 
 <!-- Web Components -->
-<script src="https://unpkg.com/sva-icons@3.0/dist/web-components/sva-icon.umd.js"></script>
+<script src="https://unpkg.com/sva-icons@3.1.1/dist/web-components/sva-icon.umd.js"></script>
 
 <!-- CSS Theme System -->
-<link rel="stylesheet" href="https://unpkg.com/sva-icons@3.0/dist/sva-icons.css">
+<link rel="stylesheet" href="https://unpkg.com/sva-icons@3.1.1/dist/sva-icons.css">
 ```
 
 ---
 
 ## Usage Methods
 
-### 1. Function-Based Icons (v2.1 NEW!) ⭐
+### 1. Data Attribute-Based Icons (v3.1.1 NEW!) 🎯
+
+**Perfect for SVA Framework integration** - Clean separation between styling and content:
+
+```html
+<!-- SVA Framework-friendly approach -->
+<span class="sva-icon sva-icon--s" data-sva-icon="plus"></span>
+<span class="sva-icon sva-icon--m" data-sva-icon="settings"></span>
+<span class="sva-icon sva-icon--l" data-sva-icon="car"></span>
+
+<!-- Works with any CSS classes -->
+<i class="custom-icon-class" data-sva-icon="arrow-right"></i>
+<button class="btn btn-primary" data-sva-icon="search">Search</button>
+```
+
+#### Auto-Registration Setup
+```javascript
+import { initializeClassBasedIcons } from 'sva-icons/class-based/auto-register';
+
+// Simple setup - scans for data attributes and auto-registers icons
+await initializeClassBasedIcons({
+    registerBundles: ['ui-essentials', 'automotive-core'],
+    scanDOM: true,           // Scan existing DOM for data attributes
+    enableObserver: true     // Watch for dynamic content
+});
+
+``Icons are automatically injected into elements with data-sva-icon attributes
+```
+
+#### Bundle Registration Options
+```javascript
+// Register specific bundles
+await initializeClassBasedIcons({
+    registerBundles: [
+        'ui-essentials',     // plus, minus, settings, search, etc.
+        'automotive-core',   // car, battery, charging, etc.
+        'navigation',        // arrows, directions, map-view
+        'communication',     // phone, email, chat, message
+        'media',            // play, pause, volume, camera
+        'commerce'          // price, payment, offers
+    ],
+    scanDOM: true,
+    enableObserver: true
+});
+
+// Register specific icons
+await initializeClassBasedIcons({
+    autoRegister: ['plus', 'minus', 'car', 'settings'],
+    enableObserver: true
+});
+```
+
+#### Framework Integration Examples
+
+**React Component:**
+```jsx
+// Clean React component using data attributes
+function SvaIcon({ name, size = 'm', className = '', ...props }) {
+    return (
+        <span 
+            className={`sva-icon sva-icon--${size} ${className}`}
+            data-sva-icon={name}
+            {...props}
+        />
+    );
+}
+
+// Usage
+<SvaIcon name="plus" size="s" />
+<SvaIcon name="car" size="l" className="text-blue-500" />
+```
+
+**Vue Component:**
+```vue
+<template>
+    <span 
+        :class="`sva-icon sva-icon--${size} ${className}`"
+        :data-sva-icon="name"
+        v-bind="$attrs"
+    />
+</template>
+
+<script>
+export default {
+    props: {
+        name: { type: String, required: true },
+        size: { type: String, default: 'm' },
+        className: { type: String, default: '' }
+    }
+}
+</script>
+```
+
+**Angular Component:**
+```typescript
+@Component({
+    selector: 'sva-icon',
+    template: `
+        <span 
+            [class]="'sva-icon sva-icon--' + size + ' ' + className"
+            [attr.data-sva-icon]="name">
+        </span>
+    `
+})
+export class SvaIconComponent {
+    @Input() name!: string;
+    @Input() size: string = 'm';
+    @Input() className: string = '';
+}
+```
+
+#### Benefits for SVA Framework
+- ✅ **No CSS Class Conflicts** - Styling classes (`sva-icon--s`) separate from content (`data-sva-icon="plus"`)
+- ✅ **Clean HTML** - Semantic separation of concerns
+- ✅ **Framework Integration** - Works seamlessly with component libraries
+- ✅ **Dynamic Content** - Automatic injection for SPAs and dynamic content
+
+### 2. Function-Based Icons (v2.1 NEW!) ⭐
 
 The most modern and flexible approach with configurable props:
 
@@ -74,7 +193,7 @@ interface SvaIconProps {
 }
 ```
 
-### 2. Framework Integration
+### 3. Framework Integration
 
 #### React Integration
 ```jsx
@@ -168,7 +287,7 @@ export class IconButtonComponent {
 }
 ```
 
-### 3. Smart Bundles (v2.1)
+### 4. Smart Bundles (v2.1)
 
 Import optimized bundles for specific use cases:
 
@@ -192,7 +311,7 @@ const searchIcon = uiEssentials.search({ size: 20 });
 - `controls` - Control and action icons
 - `navigation` - Navigation and directional icons
 
-### 4. Button Integration (Legacy Migration)
+### 5. Button Integration (Legacy Migration)
 
 Perfect for migrating from CSS `::before` pseudo-elements:
 
@@ -216,7 +335,7 @@ createIcons({
 });
 ```
 
-### 5. Web Components
+### 6. Web Components
 
 #### Standard Web Components
 ```html
@@ -237,35 +356,6 @@ SvaIconRegistry.registerMultiple({ plus, minus });
 
 <sva-button variant="hotspot" icon="plus">Add Item</sva-button>
 <sva-button variant="hotspot" icon="minus" size="small">Remove</sva-button>
-```
-
-### 6. CSS Theme System (v2.1)
-
-```css
-/* Import the theme system */
-@import 'sva-icons/dist/sva-icons.css';
-
-/* Use predefined classes */
-.sva-icon-sm { width: 16px; height: 16px; }
-.sva-icon-md { width: 24px; height: 24px; }
-.sva-icon-lg { width: 32px; height: 32px; }
-.sva-icon-xl { width: 48px; height: 48px; }
-
-.sva-icon-primary { color: var(--sva-icon-primary); }
-.sva-icon-secondary { color: var(--sva-icon-secondary); }
-.sva-icon-danger { color: var(--sva-icon-danger); }
-
-.sva-icon-animated { transition: all 0.3s ease; }
-.sva-icon-spinning { animation: spin 1s linear infinite; }
-
-/* Custom theme variables */
-:root {
-  --sva-icon-primary: #007bff;
-  --sva-icon-secondary: #6c757d;
-  --sva-icon-danger: #dc3545;
-  --sva-icon-warning: #ffc107;
-  --sva-icon-success: #28a745;
-}
 ```
 
 ### 7. Class-Based API (v2.1)

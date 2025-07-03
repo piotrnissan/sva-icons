@@ -6,7 +6,7 @@
  * processes new icon elements that are added dynamically.
  * 
  * Features:
- * - Detects dynamically added icon elements
+ * - Detects dynamically added icon elements using data attributes
  * - Debounced processing for performance optimization
  * - SPA framework compatibility (React, Vue, Angular)
  * - Proper cleanup on disconnect
@@ -26,9 +26,9 @@ import { SVGInjector } from './injector.js';
  * Configuration for the mutation observer
  * @typedef {Object} ObserverConfig
  * @property {Element} scope - Root element to observe (default: document.body)
- * @property {string} prefix - Icon class prefix to watch for (default: 'sva-icon-')
+ * @property {string} attributeName - Data attribute name to watch for (default: 'data-sva-icon')
  * @property {number} debounceDelay - Debounce delay in milliseconds (default: 50)
- * @property {boolean} observeAttributes - Watch for class attribute changes (default: true)
+ * @property {boolean} observeAttributes - Watch for data attribute changes (default: true)
  * @property {boolean} observeCharacterData - Watch for text content changes (default: false)
  * @property {boolean} subtree - Observe all descendant nodes (default: true)
  * @property {Function} onIconsDetected - Callback when new icons are detected
@@ -51,7 +51,7 @@ import { SVGInjector } from './injector.js';
  */
 const DEFAULT_CONFIG = {
     scope: typeof document !== 'undefined' && document.body ? document.body : null,
-    prefix: 'sva-icon-',
+    attributeName: 'data-sva-icon',
     debounceDelay: 50,
     observeAttributes: true,
     observeCharacterData: false,
@@ -118,12 +118,12 @@ export class IconMutationObserver {
             // Create the MutationObserver
             this.observer = new MutationObserver(this._handleMutations);
 
-            // Configure observer options
+            // Configure observer options for data attributes
             const observerOptions = {
                 childList: true,
                 subtree: this.config.subtree,
                 attributes: this.config.observeAttributes,
-                attributeFilter: this.config.observeAttributes ? ['class'] : undefined,
+                attributeFilter: this.config.observeAttributes ? [this.config.attributeName] : undefined,
                 characterData: this.config.observeCharacterData
             };
 
@@ -133,6 +133,7 @@ export class IconMutationObserver {
 
             this._log('Mutation observer started successfully', {
                 scope: this.config.scope.tagName || 'document',
+                attributeName: this.config.attributeName,
                 options: observerOptions
             });
 
@@ -210,17 +211,20 @@ export class IconMutationObserver {
         try {
             const startTime = performance.now();
             
-            // Scan for icons in the element
+            // Scan for icons in the element using data attributes
             const scanResult = scanForIcons({
                 scope: element,
-                prefix: this.config.prefix
+                attributeName: this.config.attributeName
             });
 
             // Process found icons
             let processedCount = 0;
             if (scanResult.icons.length > 0) {
                 for (const iconElement of scanResult.icons) {
-                    const success = await this.injector.processIcon(iconElement);
+                    const success = await this.injector.processIcon(
+                        iconElement.element, 
+                        this.config.attributeName
+                    );
                     if (success) {
                         processedCount++;
                     }
@@ -280,15 +284,15 @@ export class IconMutationObserver {
                 }
                 
                 return true;
-            } else if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
-                // Skip if the target is already processed or being processed
+            } else if (mutation.type === 'attributes' && mutation.attributeName === this.config.attributeName) {
+                // Only care about our specific data attribute changes
                 const target = mutation.target;
                 if (target.hasAttribute('data-sva-processed') || 
                     target.hasAttribute('data-sva-injecting') ||
                     target.querySelector('svg')) {
                     return false;
                 }
-                return this._hasIconClass(target);
+                return this._hasDataAttribute(target);
             }
             return false;
         });
@@ -385,22 +389,22 @@ export class IconMutationObserver {
                 for (const node of mutation.addedNodes) {
                     if (node.nodeType === Node.ELEMENT_NODE) {
                         // Check the node itself
-                        if (this._hasIconClass(node)) {
+                        if (this._hasDataAttribute(node)) {
                             iconElements.add(node);
                         }
 
-                        // Check descendants
-                        const descendants = node.querySelectorAll(`[class*="${this.config.prefix}"]`);
+                        // Check descendants with the data attribute
+                        const descendants = node.querySelectorAll(`[${this.config.attributeName}]`);
                         for (const descendant of descendants) {
-                            if (this._hasIconClass(descendant)) {
+                            if (this._hasDataAttribute(descendant)) {
                                 iconElements.add(descendant);
                             }
                         }
                     }
                 }
-            } else if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
-                // Check if class change added icon class
-                if (this._hasIconClass(mutation.target)) {
+            } else if (mutation.type === 'attributes' && mutation.attributeName === this.config.attributeName) {
+                // Check if data attribute change added icon attribute
+                if (this._hasDataAttribute(mutation.target)) {
                     iconElements.add(mutation.target);
                 }
             }
@@ -410,13 +414,13 @@ export class IconMutationObserver {
     }
 
     /**
-     * Check if element has icon class
+     * Check if element has the data attribute for icons
      * @private
      * @param {Element} element - Element to check
-     * @returns {boolean} True if element has icon class
+     * @returns {boolean} True if element has data attribute
      */
-    _hasIconClass(element) {
-        if (!element || !element.classList) {
+    _hasDataAttribute(element) {
+        if (!element || !element.hasAttribute) {
             return false;
         }
 
@@ -440,14 +444,9 @@ export class IconMutationObserver {
             return false;
         }
 
-        // Check for icon classes
-        for (const className of element.classList) {
-            if (className.startsWith(this.config.prefix)) {
-                return true;
-            }
-        }
-
-        return false;
+        // Check for the data attribute
+        return element.hasAttribute(this.config.attributeName) && 
+               element.getAttribute(this.config.attributeName).trim().length > 0;
     }
 
     /**
@@ -463,8 +462,8 @@ export class IconMutationObserver {
             this.config.debounceDelay = 0;
         }
 
-        if (!this.config.prefix || typeof this.config.prefix !== 'string') {
-            this.config.prefix = 'sva-icon-';
+        if (!this.config.attributeName || typeof this.config.attributeName !== 'string') {
+            this.config.attributeName = 'data-sva-icon';
         }
     }
 

@@ -1,7 +1,7 @@
 {
   "name": "sva-icons",
-  "version": "3.1.0",
-  "description": "SVA Icons v3.1 - Function-based icons with auto-registration, smart bundles, and enhanced browser support for SVA Framework integration",
+  "version": "3.1.1",
+  "description": "SVA Icons v3.1.1 - Function-based icons with data attribute injection, auto-registration, smart bundles, and enhanced browser support for SVA Framework integration",
   "type": "module",
   "main": "./dist/icons/index.js",
   "module": "./dist/icons/esm/index.js",

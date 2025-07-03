@@ -223,32 +223,25 @@ class SVGInjector {
     }
 
     /**
-     * Process an icon element for mutation observer compatibility
+     * Process an icon element for data attribute-based injection
      * @param {Element} element - Element to process
+     * @param {string} attributeName - Data attribute name (default: 'data-sva-icon')
      * @returns {Promise<boolean>} True if processing succeeded
      */
-    async processIcon(element) {
-        if (!element || !element.classList) {
+    async processIcon(element, attributeName = 'data-sva-icon') {
+        if (!element) {
             return false;
         }
 
-        // Find the icon class
-        const iconClass = Array.from(element.classList).find(cls => cls.startsWith('sva-icon-'));
-        if (!iconClass) {
+        // Get icon name from data attribute
+        const iconName = element.getAttribute(attributeName);
+        if (!iconName) {
             return false;
         }
-
-        // Extract icon name from class (remove 'sva-icon-' prefix)
-        const iconName = iconClass.substring('sva-icon-'.length);
-        
-        // Extract modifier classes
-        const modifierClasses = Array.from(element.classList).filter(cls => 
-            cls.startsWith('sva-icon--') || cls.includes('sva-icon')
-        );
 
         try {
-            // Use the main inject method
-            const result = this.inject(element, iconName, modifierClasses);
+            // Use the main inject method with no modifiers (styling handled by CSS)
+            const result = this.inject(element, iconName.trim(), []);
             return result.success;
         } catch (error) {
             console.error(`[SVA Icons] Failed to process icon element:`, error);
@@ -366,50 +359,19 @@ class SVGInjector {
     }
 
     /**
-     * Convert modifier classes to props for icon function
+     * Get default props for icon function (modifiers handled by CSS)
      * @private
-     * @param {string[]} modifiers - Modifier classes
+     * @param {string[]} modifiers - Modifier classes (unused in data attribute mode)
      * @returns {Object} Props object for icon function
      */
     _modifiersToProps(modifiers) {
-        const props = {
+        return {
             // Default: no stroke for fill-based icons
             stroke: 'none',
             strokeWidth: 0,
             // Ensure these override the function defaults
             'stroke-width': 0
         };
-
-        for (const modifier of modifiers) {
-            // Size modifiers
-            if (['xs', 's', 'm', 'l', 'xl'].includes(modifier)) {
-                props.size = this._sizeModifierToPixels(modifier);
-            }
-            
-            // Color modifiers
-            if (['primary', 'secondary', 'success', 'warning', 'error', 'inverse'].includes(modifier)) {
-                props.color = `var(--sva-icon-color-${modifier})`;
-            }
-        }
-
-        return props;
-    }
-
-    /**
-     * Convert size modifier to pixel value
-     * @private
-     * @param {string} sizeModifier - Size modifier (xs, s, m, l, xl)
-     * @returns {number} Size in pixels
-     */
-    _sizeModifierToPixels(sizeModifier) {
-        const sizeMap = {
-            xs: 12,
-            s: 16,
-            m: 24,
-            l: 32,
-            xl: 48
-        };
-        return sizeMap[sizeModifier] || 24;
     }
 
     /**
@@ -447,14 +409,14 @@ class SVGInjector {
     _preserveAttributes(originalElement, svgElement) {
         if (!this.config.preserveClasses) return;
 
-        // Preserve important attributes
+        // Preserve important attributes (focus on data attributes)
         const attributesToPreserve = ['id', 'data-*', 'aria-*', 'title'];
         
         for (const attr of originalElement.attributes) {
             const name = attr.name;
             const value = attr.value;
 
-            // Skip class attribute (handled separately)
+            // Skip class attribute (SVG styling handled by CSS)
             if (name === 'class') continue;
 
             // Check if this attribute should be preserved
@@ -470,39 +432,28 @@ class SVGInjector {
             }
         }
 
-        // Merge classes
-        const originalClasses = Array.from(originalElement.classList);
-        const svgClasses = Array.from(svgElement.classList);
-        const allClasses = [...new Set([...originalClasses, ...svgClasses])];
-        
-        // Use setAttribute for SVG elements instead of className
-        svgElement.setAttribute('class', allClasses.join(' '));
+        // Preserve data-sva-icon attribute to maintain semantic meaning
+        const iconAttribute = originalElement.getAttribute('data-sva-icon');
+        if (iconAttribute) {
+            svgElement.setAttribute('data-sva-icon', iconAttribute);
+        }
     }
 
     /**
-     * Apply modifier classes to SVG element
+     * Apply base icon class to SVG element
      * @private
      * @param {Element} svgElement - SVG element
-     * @param {string[]} modifiers - Modifier classes
-     * @returns {string[]} Applied modifiers
+     * @param {string[]} modifiers - Modifier classes (unused in data attribute mode)
+     * @returns {string[]} Applied modifiers (empty array for simplicity)
      */
     _applyModifiers(svgElement, modifiers) {
-        const appliedModifiers = [];
-
-        for (const modifier of modifiers) {
-            const className = `sva-icon--${modifier}`;
-            if (!svgElement.classList.contains(className)) {
-                svgElement.classList.add(className);
-                appliedModifiers.push(modifier);
-            }
-        }
-
-        // Always add base icon class
+        // Always add base icon class for consistent styling
         if (!svgElement.classList.contains('sva-icon')) {
             svgElement.classList.add('sva-icon');
         }
 
-        return appliedModifiers;
+        // Return empty array since modifiers are handled by CSS, not JavaScript
+        return [];
     }
 
     /**
