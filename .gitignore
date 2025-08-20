@@ -28,3 +28,7 @@ Thumbs.db
 icons-sprite.svg
 svg/processed/
 GEMINI.md 
+
+# Local artifacts
+.backup-dist/
+clean-report.json
