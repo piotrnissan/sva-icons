@@ -1,6 +1,6 @@
 {
   "name": "sva-icons",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "SVA Icons v3.1.1 - Function-based icons with data attribute injection, auto-registration, smart bundles, and enhanced browser support for SVA Framework integration",
   "type": "module",
   "main": "./dist/icons/index.js",
@@ -153,8 +153,8 @@
     "update-icons": "node scripts/update-icons.js",
     "clean": "node scripts/clean-dist.js",
     "validate-icons": "node scripts/validate-icons.js",
-  "validate-attributes": "node scripts/validate-svg-attributes.js",
-  "test:integrity": "node .tests/generation-integrity.mjs",
+    "validate-attributes": "node scripts/validate-svg-attributes.js",
+    "test:integrity": "node .tests/generation-integrity.mjs",
     "validate-icon-names": "node scripts/validate-icon-names.js",
     "clean-build": "npm run clean && npm run build:all",
     "full-update": "npm run update-icons -- --clean --validate",
