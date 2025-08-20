@@ -43,10 +43,19 @@ function generateIconFunction(name, svgContent, format = 'esm') {
   // Extract viewBox from SVG if present
   const viewBoxMatch = cleanSvg.match(/viewBox="([^"]+)"/);
   const defaultViewBox = viewBoxMatch ? viewBoxMatch[1] : '0 0 24 24';
-  
-  // Extract path content
-  const pathMatch = cleanSvg.match(/<path[^>]*d="([^"]+)"[^>]*>/);
-  const pathData = pathMatch ? pathMatch[1] : '';
+
+  // Extract full inner SVG content (all children), preserving multiple paths/groups
+  const innerMatch = cleanSvg.match(/<svg[^>]*>([\s\S]*?)<\/svg>/i);
+  let innerContent = innerMatch ? innerMatch[1].trim() : cleanSvg;
+
+  // Enforce single-color theming and no-stroke policy on inner content
+  // - Remove any stroke/stroke-width/style attributes if present
+  // - Remove any hard-coded fill values except fill="none"
+  innerContent = innerContent
+    .replace(/\sstroke=\"[^\"]*\"/gi, '')
+    .replace(/\sstroke-width=\"[^\"]*\"/gi, '')
+    .replace(/\sstyle=\"[^\"]*\"/gi, '')
+    .replace(/\sfill=\"(?!none\b)[^\"]*\"/gi, '');
   
   if (format === 'esm') {
     return `/**
@@ -57,7 +66,7 @@ function generateIconFunction(name, svgContent, format = 'esm') {
  * @param {number|string} props.size - Icon size (default: 24)
  * @param {string} props.color - Icon color (default: 'currentColor')
  * @param {string} props.className - CSS classes
- * @param {number} props.strokeWidth - Stroke width (default: 0)
+ * @param {number} props.strokeWidth - Stroke width (unused; strokes disabled)
  * @param {string} props.title - Accessibility title
  * @param {boolean} props.focusable - Whether icon is focusable (default: false)
  * @returns {string} SVG string
@@ -88,12 +97,11 @@ export default function ${functionName}(props = {}) {
     viewBox="${defaultViewBox}" 
     class="\${classNames}"
     fill="\${color}"
-    stroke="\${color}"
-    stroke-width="\${strokeWidth}"
+    stroke="none"
     focusable="\${focusable}"
     aria-hidden="\${ariaHidden}"
     \${additionalProps ? ' ' + additionalProps : ''}
-  >\${titleElement}<path d="${pathData}"/></svg>\`;
+  >\${titleElement}${innerContent}</svg>\`;
 }
 
 // Named export for convenience
@@ -109,7 +117,7 @@ export { ${functionName} };
  * @param {number|string} props.size - Icon size (default: 24)
  * @param {string} props.color - Icon color (default: 'currentColor')
  * @param {string} props.className - CSS classes
- * @param {number} props.strokeWidth - Stroke width (default: 0)
+ * @param {number} props.strokeWidth - Stroke width (unused; strokes disabled)
  * @param {string} props.title - Accessibility title
  * @param {boolean} props.focusable - Whether icon is focusable (default: false)
  * @returns {string} SVG string
@@ -140,12 +148,11 @@ function ${functionName}(props = {}) {
     viewBox="${defaultViewBox}" 
     class="\${classNames}"
     fill="\${color}"
-    stroke="\${color}"
-    stroke-width="\${strokeWidth}"
+    stroke="none"
     focusable="\${focusable}"
     aria-hidden="\${ariaHidden}"
     \${additionalProps ? ' ' + additionalProps : ''}
-  >\${titleElement}<path d="${pathData}"/></svg>\`;
+  >\${titleElement}${innerContent}</svg>\`;
 }
 
 module.exports = ${functionName};

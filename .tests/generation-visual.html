@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>SVA Icons – Generation Visual Check</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 16px; }
+    .row { display: flex; gap: 24px; align-items: center; margin-bottom: 16px; }
+    .cell { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+    .box { width: 56px; height: 56px; display: grid; place-items: center; border: 1px dashed #ccc; }
+    svg { width: 32px; height: 32px; }
+    .ok { color: #0a8; }
+    .bad { color: #c00; }
+  </style>
+  <script type="importmap">
+    {
+      "imports": {
+        "sva-icons": "../dist/icons/esm/index.js"
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Generation Visual Check</h1>
+  <p>Left: raw source SVG; Right: generated ESM render (color: brand).</p>
+
+  <div id="grid"></div>
+
+  <script type="module">
+    import { BookService, Battery, Car } from 'sva-icons';
+
+    const icons = [
+      { name: 'book-service', fn: BookService },
+      { name: 'battery', fn: Battery },
+      { name: 'car', fn: Car }
+    ];
+
+    const grid = document.getElementById('grid');
+
+    const brand = '#CC0000';
+    const size = 32;
+
+    const row = document.createElement('div');
+    row.className = 'row';
+
+    for (const { name, fn } of icons) {
+      const cell = document.createElement('div');
+      cell.className = 'cell';
+
+      const srcBox = document.createElement('div');
+      srcBox.className = 'box';
+      // Inline the raw SVG for consistent rendering
+      fetch(`../svg/${name}.svg`)
+        .then(r => r.ok ? r.text() : Promise.reject(new Error(r.status)))
+        .then(svg => { srcBox.innerHTML = svg; })
+        .catch(err => {
+          srcBox.innerHTML = `<small class=bad>load error</small>`;
+          console.error('Failed to load raw SVG', name, err);
+        });
+
+      const outBox = document.createElement('div');
+      outBox.className = 'box';
+  outBox.innerHTML = fn({ size, color: brand });
+
+      cell.appendChild(srcBox);
+      cell.appendChild(outBox);
+      const label = document.createElement('div');
+      label.textContent = name;
+      cell.appendChild(label);
+
+      row.appendChild(cell);
+    }
+
+    grid.appendChild(row);
+  </script>
+</body>
+</html>

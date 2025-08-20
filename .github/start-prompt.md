@@ -1,0 +1,1 @@
+Please read #file:copilot-instructions.md , then read project documentation in `.docs` Do not take any actions, just carefully read whole documentation and familiarize yourself with the project.

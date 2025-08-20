@@ -153,6 +153,8 @@
     "update-icons": "node scripts/update-icons.js",
     "clean": "node scripts/clean-dist.js",
     "validate-icons": "node scripts/validate-icons.js",
+  "validate-attributes": "node scripts/validate-svg-attributes.js",
+  "test:integrity": "node .tests/generation-integrity.mjs",
     "validate-icon-names": "node scripts/validate-icon-names.js",
     "clean-build": "npm run clean && npm run build:all",
     "full-update": "npm run update-icons -- --clean --validate",
